@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="48px" viewBox="0 0 55 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>arrows_mini_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M236.7276,389.224006 L230.775939,383.272344 C230.412813,382.909219 229.823896,382.909219 229.46077,383.272344 C229.09757,383.635544 229.09757,384.224313 229.46077,384.587513 L233.8249,388.951643 L217.929947,388.951643 C217.416393,388.951643 217,389.368036 217,389.88159 C217,390.395069 217.416393,390.811537 217.929947,390.811537 L233.8249,390.811537 L229.460919,395.175667 C229.097719,395.538867 229.097719,396.127635 229.460919,396.490835 C229.642445,396.672287 229.880511,396.763198 230.118503,396.763198 C230.356495,396.763198 230.594487,396.672287 230.776087,396.490835 L236.7276,390.539174 C237.0908,390.175974 237.0908,389.587206 236.7276,389.224006 Z" id="path-1"></path>
+        <filter x="-175.0%" y="-181.6%" width="450.0%" height="608.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.819607843   0 0 0 0 0.239215686   0 0 0 0 0.141176471  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Portal_glavnaja" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pravjizn-Doroga-Home" transform="translate(-199.000000, -9625.000000)">
+            <g id="10" transform="translate(0.000000, 9249.000000)">
+                <g id="arrows_mini_left" transform="translate(227.000000, 389.881599) scale(-1, 1) translate(-227.000000, -389.881599) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#EA3518" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

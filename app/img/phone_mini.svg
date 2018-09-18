@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="27px" viewBox="0 0 16 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>phone_mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Portal_glavnaja" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pravjizn-Doroga-Home" transform="translate(-920.000000, -11561.000000)" fill="#9B9B9B" fill-rule="nonzero">
+            <g id="13" transform="translate(0.000000, 11079.000000)">
+                <g id="app" transform="translate(920.000000, 408.000000)">
+                    <path d="M14.039,74 L2.761,74 C1.683,74 0.812,74.875 0.812,75.952 L0.812,98.851 C0.812,99.927 1.683,100.802 2.761,100.802 L14.038,100.802 C15.116,100.802 15.989,99.927 15.989,98.851 L15.989,75.952 C15.99,74.875 15.118,74 14.039,74 Z M8.4004998,98.875 C7.71377559,98.875 7.155,98.317 7.155,97.629 C7.155,96.941 7.71477519,96.385 8.4004998,96.385 C9.08622442,96.385 9.64500001,96.942 9.64500001,97.629 C9.64500001,98.317 9.08522482,98.875 8.4004998,98.875 Z M14.528,95.0100002 L2.274,95.0100002 L2.274,76.7000008 C2.274,76.147716 2.72171525,75.7000008 3.274,75.7000008 L13.528,75.7000008 C14.0802847,75.7000008 14.528,76.147716 14.528,76.7000008 L14.528,95.0100002 Z" id="phone_mini"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
