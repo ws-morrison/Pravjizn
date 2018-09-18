@@ -52,7 +52,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-	return del.sync('dist'); // Удаляем папку dist перед сборкой
+	return del.sync('docs'); // Удаляем папку docs перед сборкой
 });
 
 gulp.task('img', function() {
@@ -64,7 +64,7 @@ gulp.task('img', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))/**/)
-		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+		.pipe(gulp.dest('docs/img')); // Выгружаем на продакшен
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
@@ -73,16 +73,16 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 		'app/css/main.css',
 		'app/css/libs.min.css'
 		])
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('docs/css'))
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('dist/fonts'))
+	.pipe(gulp.dest('docs/fonts'))
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('docs/js'))
 
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('docs'));
 
 });
 
