@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+select {
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.contanier {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .contanier {
+        padding: 0 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contanier {
+        padding: 0 60px;
+    }
+}

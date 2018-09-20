@@ -1,0 +1,95 @@
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    &--bg {
+        background-image: url("../img/main_bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-size: cover;
+        margin-bottom: 40px;
+    }
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    margin-bottom: 33px;
+}
+
+.header__logo-wrapper {
+    display: flex;
+}
+
+.header-nav__logo {
+    width: 60px;
+    height: 48px;
+    background-image: url("../img/main_logo.svg");
+    background-repeat: no-repeat;
+}
+.header-nav__title {
+    @include MC700-m;
+    text-transform: uppercase;
+    color: $white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav__title-caption {
+    @include MC300-s;
+    color: $white;
+    text-transform: lowercase;
+}
+
+.header__desc {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.header__text {
+    @include MC500-s;
+    color: $white;
+    text-align: center;
+    &--large {
+        @include MC500-xl;
+        margin: 0;
+    }
+}
+.header-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__text {
+    @include MSC500-s;
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.header-form__input {
+    @include MC500-3xl;
+    color: $accient;
+    box-sizing: border-box;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+// .header-form__input-caption::before {
+//     content: "р/месяц";
+//     position: absolute;
+//     @include MC500-s;
+//     color: $faded;
+//     font-style: italic;
+// }
+
+.header-form__input {
+    width: 240px;
+    height: 60px;
+    border: none;
+    border-radius: 100px;
+}
