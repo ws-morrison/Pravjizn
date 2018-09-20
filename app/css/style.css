@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -411,7 +412,7 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .contanier {
-    padding: 0 60px; } }
+    padding: 0 100px; } }
 
 @font-face {
   font-family: 'Museo Sans Cyrl';
@@ -701,7 +702,7 @@ input[type="number"] {
     font-weight: 500;
     margin: 0; }
 
-.header-form {
+.donate-form {
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -724,7 +725,7 @@ input[type="number"] {
   color: #fff;
   margin-bottom: 20px; }
 
-.header-form__input {
+.donate-form__input {
   font-family: "Museo Cyrillic";
   font-size: 40px;
   font-weight: 500;
@@ -732,9 +733,20 @@ input[type="number"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 24px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: block; }
 
-.header-form__input {
+.donate-form__input-caption::after {
+  content: "р/месяц";
+  position: absolute;
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-weight: 500;
+  color: #9b9b9b;
+  font-style: italic;
+  right: 80px; }
+
+.donate-form__input {
   width: 240px;
   height: 60px;
   border: none;

@@ -59,7 +59,7 @@
         margin: 0;
     }
 }
-.header-form {
+.donate-form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -71,23 +71,26 @@
     margin-bottom: 20px;
 }
 
-.header-form__input {
+.donate-form__input {
     @include MC500-3xl;
     color: $accient;
     box-sizing: border-box;
     padding-left: 24px;
     margin-bottom: 20px;
+    display: block;
 }
 
-// .header-form__input-caption::before {
-//     content: "р/месяц";
-//     position: absolute;
-//     @include MC500-s;
-//     color: $faded;
-//     font-style: italic;
-// }
+.donate-form__input-caption::after {
+    content: "р/месяц";
+    position: absolute;
+    @include MSC500-s;
+    color: $faded;
+    font-style: italic;
+    right: 80px;
+    // z-index: 10;
+}
 
-.header-form__input {
+.donate-form__input {
     width: 240px;
     height: 60px;
     border: none;
