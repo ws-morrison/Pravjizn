@@ -1,0 +1,27 @@
+.pod__quote-lead {
+    @include PR300-2xl;
+    color: $primary-text;
+}
+.pod__quote-text {
+    @include SC500-m;
+    color: $primary-text;
+    line-height: 26px;
+}
+
+.pod__quote-link {
+    color: $link-color;
+}
+
+.pod__author-heading {
+    @include PR700-xl;
+    color: $primary-text;
+    margin: 0;
+}
+
+.pod__author-caption {
+    @include SC500-s;
+    color: $primary-text;
+    font-style: italic;
+    line-height: 26px;
+    margin: 0;
+}

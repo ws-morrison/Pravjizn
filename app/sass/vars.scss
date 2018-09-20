@@ -1,0 +1,78 @@
+// Colors
+$white: #fff;
+$primary-text: #212121;
+$faded: #9b9b9b;
+$accient: #ff482f;
+$link-color: #8d9e5a;
+
+// Typography
+// PR - Primary font, SC - Secondary font
+// 300, 500, 700, etc - weight
+// s, m , l, etc- sizes
+
+///////////// Museo Cyrillic
+@mixin PR500-s {
+    font-family: "Museo Cyrillic";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin PR300-s {
+    font-family: "Museo Cyrillic";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin PR300-2xl {
+    font-family: "Museo Cyrillic";
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@mixin PR700-m {
+    font-family: "Museo Cyrillic";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@mixin PR500-xl {
+    font-family: "Museo Cyrillic";
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@mixin PR700-xl {
+    font-family: "Museo Cyrillic";
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@mixin PR500-3xl {
+    font-family: "Museo Cyrillic";
+    font-size: 40px;
+    font-weight: 500;
+}
+
+///////////// Museo Sans Cyrillic
+@mixin SC500-s {
+    font-family: "Museo Sans Cyrl";
+    font-size: 16px;
+    font-weight: 500;
+}
+@mixin SC500-m {
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@mixin SC300-s {
+    font-family: "Museo Sans Cyrl";
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin SC300-m {
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 300;
+}

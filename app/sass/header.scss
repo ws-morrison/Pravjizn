@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
 }
 .header-nav__title {
-    @include MC700-m;
+    @include PR700-m;
     text-transform: uppercase;
     color: $white;
 
@@ -39,60 +39,9 @@
 }
 
 .header-nav__title-caption {
-    @include MC300-s;
+    @include PR300-s;
     color: $white;
     text-transform: lowercase;
 }
 
-.header__desc {
-    width: 280px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.header__text {
-    @include MC500-s;
-    color: $white;
-    text-align: center;
-    &--large {
-        @include MC500-xl;
-        margin: 0;
-    }
-}
-.donate-form {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form__text {
-    @include MSC500-s;
-    color: $white;
-    margin-bottom: 20px;
-}
-
-.donate-form__input {
-    @include MC500-3xl;
-    color: $accient;
-    box-sizing: border-box;
-    padding-left: 24px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.donate-form__input-caption::after {
-    content: "р/месяц";
-    position: absolute;
-    @include MSC500-s;
-    color: $faded;
-    font-style: italic;
-    right: 80px;
-    // z-index: 10;
-}
-
-.donate-form__input {
-    width: 240px;
-    height: 60px;
-    border: none;
-    border-radius: 100px;
-}
+//

@@ -375,9 +375,6 @@ th {
 body {
   width: 100%; }
 
-a {
-  text-decoration: none; }
-
 img {
   max-width: 100%;
   height: auto; }
@@ -685,23 +682,6 @@ input[type="number"] {
   color: #fff;
   text-transform: lowercase; }
 
-.header__desc {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 30px; }
-
-.header__text {
-  font-family: "Museo Cyrillic";
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  text-align: center; }
-  .header__text--large {
-    font-family: "Museo Cyrillic";
-    font-size: 25px;
-    font-weight: 500;
-    margin: 0; }
-
 .donate-form {
   margin: 0 auto;
   display: -webkit-box;
@@ -733,10 +713,14 @@ input[type="number"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 24px;
-  margin-bottom: 20px;
-  display: block; }
+  margin-bottom: 20px; }
 
-.donate-form__input-caption::after {
+.donate-input-wrapper {
+  display: block;
+  position: relative; }
+
+.donate-input-wrapper::after {
+  display: block;
   content: "р/месяц";
   position: absolute;
   font-family: "Museo Sans Cyrl";
@@ -744,14 +728,38 @@ input[type="number"] {
   font-weight: 500;
   color: #9b9b9b;
   font-style: italic;
-  right: 80px; }
+  top: 20px;
+  right: 20px; }
 
 .donate-form__input {
   width: 240px;
   height: 60px;
   border: none;
+  border: 1px solid #CCCCCC;
   -webkit-border-radius: 100px;
           border-radius: 100px; }
+
+.section__desc {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+  .section__desc--white-text {
+    color: #fff; }
+
+.section__text {
+  font-family: "Museo Cyrillic";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px; }
+  .section__text--large {
+    font-family: "Museo Cyrillic";
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 30px; }
+  .section__text--grey {
+    color: #9b9b9b; }
 
 .burger {
   width: 24px;
@@ -811,9 +819,78 @@ input[type="number"] {
           box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
   margin-bottom: 55px; }
 
+.button--green {
+  background-image: -webkit-gradient(linear, left top, right top, from(#02C7B5), to(#029550));
+  background-image: -webkit-linear-gradient(left, #02C7B5 0%, #029550 100%);
+  background-image: -o-linear-gradient(left, #02C7B5 0%, #029550 100%);
+  background-image: linear-gradient(90deg, #02C7B5 0%, #029550 100%);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+          box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  margin-bottom: 55px; }
+
 .button__text {
   font-family: "Museo Sans Cyrl";
   font-size: 16px;
   font-weight: 500; }
   .button__text--black {
     color: #212121; }
+  .button__text--white {
+    color: #fff; }
+
+.feedback {
+  margin-bottom: 30px; }
+
+.feedback__lead-text {
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-weight: 300;
+  color: #212121;
+  line-height: 26px; }
+
+.feedback__author-heading {
+  font-family: "Museo Cyrillic";
+  font-size: 25px;
+  font-weight: 700;
+  color: #212121;
+  margin: 0; }
+
+.feedback__author-caption {
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  font-style: italic;
+  line-height: 26px;
+  margin: 0; }
+
+.pod__quote-lead {
+  font-family: "Museo Cyrillic";
+  font-size: 30px;
+  font-weight: 300;
+  color: #212121; }
+
+.pod__quote-text {
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  font-weight: 500;
+  color: #212121;
+  line-height: 26px; }
+
+.pod__quote-link {
+  color: #8d9e5a; }
+
+.pod__author-heading {
+  font-family: "Museo Cyrillic";
+  font-size: 25px;
+  font-weight: 700;
+  color: #212121;
+  margin: 0; }
+
+.pod__author-caption {
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  font-style: italic;
+  line-height: 26px;
+  margin: 0; }

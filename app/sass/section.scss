@@ -1,0 +1,22 @@
+.section__desc {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &--white-text {
+        color: $white;
+    }
+}
+
+.section__text {
+    @include PR500-s;
+    text-align: center;
+    line-height: 20px;
+    &--large {
+        @include PR500-xl;
+        margin: 0;
+        line-height: 30px;
+    }
+    &--grey {
+        color: $faded;
+    }
+}

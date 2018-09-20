@@ -1,0 +1,34 @@
+.feedback {
+    margin-bottom: 30px;
+}
+.feedback__lead-text {
+    @include SC300-s;
+    color: $primary-text;
+    line-height: 26px;
+}
+
+.feedback__author-heading {
+    @include PR700-xl;
+    color: $primary-text;
+    margin: 0;
+}
+
+.feedback__author-caption {
+    @include SC500-s;
+    color: $primary-text;
+    font-style: italic;
+    line-height: 26px;
+    margin: 0;
+}
+
+// .feedback__video {
+//     width: 100%;
+//     height: 562px;
+//     &--bg {
+//         background-image: url("../img/alexandr_img.png");
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         // background-size: cover;
+//         margin-bottom: 40px;
+//     }
+// }

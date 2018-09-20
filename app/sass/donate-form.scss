@@ -1,0 +1,43 @@
+.donate-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__text {
+    @include SC500-s;
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.donate-form__input {
+    @include PR500-3xl;
+    color: $accient;
+    box-sizing: border-box;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+.donate-input-wrapper {
+    display: block;
+    position: relative;
+}
+
+.donate-input-wrapper::after {
+    display: block;
+    content: "р/месяц";
+    position: absolute;
+    @include SC500-s;
+    color: $faded;
+    font-style: italic;
+    top: 20px;
+    right: 20px;
+}
+
+.donate-form__input {
+    width: 240px;
+    height: 60px;
+    border: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 100px;
+}
