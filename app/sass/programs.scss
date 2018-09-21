@@ -1,0 +1,78 @@
+.program-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 160px;
+    padding-top: 410px;
+}
+
+.program-item__logo {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    z-index: 101;
+    position: relative;
+    top: -435px;
+    left: 20px;
+    &--green {
+        background-image: url("../img/main_logo-green.svg");
+    }
+    &--blue {
+        background-image: url("../img/main_logo-blue.svg");
+    }
+}
+
+.program-item-1 {
+    background-image: url("../img/vostanovlenie_svyatih-filtered.png");
+    background-color: $prog-accient-1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.program-item-2 {
+    background-image: url("../img/bratstvo_trezvosty-filtered.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.program__desc {
+    color: $white;
+}
+.program__desc-heading {
+    @include PR700-xl;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.program__desc-lead {
+    @include SC500-m;
+    text-align: center;
+    margin: 0;
+}
+
+.program-button {
+    position: relative;
+    bottom: -43px;
+    width: 270px;
+    height: 86px;
+    &--prog-accient-1 {
+        border: 2px solid #026837;
+    }
+    &--prog-accient-2 {
+        border: 2px solid #1b1564;
+    }
+}
+
+.program-button__link {
+    @include SC500-s;
+    text-align: center;
+    text-decoration: none;
+    &--prog-accient-1 {
+        color: $prog-accient-1;
+    }
+    &--prog-accient-2 {
+        color: $prog-accient-2;
+    }
+}

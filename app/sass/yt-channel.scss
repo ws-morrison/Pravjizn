@@ -1,0 +1,142 @@
+.yt-channel  {
+    padding-bottom: 80px;
+    margin-bottom: 65px;
+}
+.yt__desc {
+    width: 270px;
+    margin: 0 auto;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+// .yt__desc::before {
+//     content: "";
+//     width: 60px;
+//     height: 60px;
+//     background-image: url("../img/logo_youtube.png");
+//     background-repeat: no-repeat;
+//     position: relative;
+// }
+
+.yt__desc-img {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/logo_youtube.png");
+    background-repeat: no-repeat;
+}
+.yt__text {
+    @include SC500-s;
+    line-height: 20px;
+    margin: 0;
+    &--large {
+        @include PR700-l;
+        margin: 0;
+    }
+    &--grey {
+        color: $faded;
+    }
+}
+
+.yt__items-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yt__video-preview {
+    width: 260px;
+    height: 230px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    &--1 {
+        background-image: url("../img/youtube_preview_1.png");
+    }
+    &--2 {
+        background-image: url("../img/youtube_preview_2.png");
+    }
+    &--3 {
+        background-image: url("../img/youtube_preview_3.png");
+    }
+}
+.yt__button {
+    width: 160px;
+    height: 60px;
+    background-color: $primary-text;
+    opacity: 0.8;
+}
+
+.yt__button-thumb {
+    display: block;
+    // content: "►";
+    // color: $white;
+    margin: 0 auto;
+    width: 12px;
+    height: 15px;
+    background-image: url("../img/play_icon.svg");
+    background-repeat: no-repeat;
+}
+
+.yt__button-text {
+    display: none;
+    @include SC500-s;
+    color: $white;
+}
+
+@media (min-width: 1024px) {
+    .yt__button {
+    width: 267px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .yt__button-text {
+        display: block;
+        padding-right: 30px;
+    }
+}
+
+.yt__item-caption {
+    display: block;
+    max-width: 260px;
+    @include SC500-s;
+    color: $primary-text;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.yt__sub-button {
+    width: 260px;
+    height: 60px;
+    margin-bottom: 60px;
+    background-color: $yt-red;
+    display: flex;
+    align-items: center;
+}
+
+.yt__sub-button-thumb {
+    display: block;
+    // content: "►";
+    // color: $white;
+    margin: 0 auto;
+    width: 24px;
+    height: 17px;
+    background-image: url("../img/youtube_icon.png");
+    background-repeat: no-repeat;
+}
+.yt__sub-button-inner {
+    display: block;
+    width: 160px;
+    text-align: left;
+}
+
+.yt__sub-button-text {
+    @include SC500-s;
+    color: $white;
+}

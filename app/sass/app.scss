@@ -1,0 +1,56 @@
+.app {
+    margin-bottom: 50px;
+}
+.app__image {
+    width: 254px;
+    height: 255px;
+    background-image: url("../img/iphone_x.png");
+    background-repeat: no-repeat;
+}
+
+.app__wrapper-list {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.app__item {
+    @include SC500-s;
+    color: $primary-text;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.app__text {
+    @include PR500-s;
+    line-height: 20px;
+    &--large {
+        @include PR500-xl;
+        margin: 0;
+        line-height: 30px;
+    }
+    &--grey {
+        color: $faded;
+        font-style: italic;
+    }
+}
+.app__logos {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 25px 0;
+}
+.app__logo {
+    width: 177px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+    &--appstore {
+        background-image: url("../img/app_store.svg");
+    }
+    &--playstore {
+        background-image: url("../img/google_play.svg");
+    }
+}

@@ -20,3 +20,23 @@
         color: $faded;
     }
 }
+
+.section--secondary-bg {
+    background-color: $secondary-bg;
+}
+
+.section__desc--thumb-notif {
+    position: relative;
+}
+
+.section__desc--thumb-notif::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    background-image: url("../img/notification_icon.svg");
+    background-repeat: no-repeat;
+    right: 130px;
+    top: -25px;
+}

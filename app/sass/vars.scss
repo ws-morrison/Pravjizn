@@ -1,9 +1,16 @@
 // Colors
 $white: #fff;
+
 $primary-text: #212121;
 $faded: #9b9b9b;
 $accient: #ff482f;
 $link-color: #8d9e5a;
+$secondary-bg: #FAF7DF;
+$yt-red: #EA3518 ;
+// _b programs
+$prog-accient-1: #026837;
+$prog-accient-2: #1B1564;
+
 
 // Typography
 // PR - Primary font, SC - Secondary font
@@ -34,6 +41,13 @@ $link-color: #8d9e5a;
     font-size: 18px;
     font-weight: 700;
 }
+
+@mixin PR700-l {
+    font-family: "Museo Cyrillic";
+    font-size: 18px;
+    font-weight: 700;
+}
+
 
 @mixin PR500-xl {
     font-family: "Museo Cyrillic";
