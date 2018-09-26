@@ -1,57 +1,67 @@
 .holydays--green-bg {
-    background-color: $dark-green-bg;
-    padding-top: 65px;
-    padding-bottom: 65px;
+  background-color: $dark-green-bg;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .holydays__desc {
-    width: 280px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    &--white-text {
-        color: $white;
-    }
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  &--white-text {
+    color: $white;
+  }
 }
 
 .holydays__text {
-    // @include PR500-s;
-    font-family: $primary-regular;
-    font-size: $font-size-s;
-    text-align: center;
-    line-height: 20px;
-    &--large {
-        // @include PR500-xl;
-        font-family: $primary-medium;
-        font-size: $font-size-xl;
-        margin: 0;
-        line-height: 30px;
-    }
-    &--grey {
-        color: $faded;
-    }
+  font-family: $primary-regular;
+  font-size: $font-size-s;
+  text-align: center;
+  line-height: 20px;
+  &--large {
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
+    margin: 0;
+    line-height: 30px;
+  }
+  &--grey {
+    color: $faded;
+  }
 
-    &--bold {
-        font-family: $primary-bold;
-    }
-    &--line-height {
-        line-height: 26px;
-    }
+  &--bold {
+    font-family: $primary-bold;
+  }
+  &--line-height {
+    line-height: 26px;
+  }
 }
 
 .holydays__img-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
+.shadow-wrapper {
+  width: 320px;
+  box-shadow: 0px 0px 30px 0px rgba(33, 33, 33, 1);
+}
+.holydays__img {
+  width: 320px;
+  height: 424px;
+  margin: 0 auto;
+  background-image: url("../img/holyday.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .holydays__button {
-    border: 2px solid $white;
-    background-color: hsla(142, 61%, 35%, 0.014);
+  border: 2px solid $white;
+  background-color: hsla(142, 61%, 35%, 0.014);
 }
 
 .holydays__button-link {
-    text-decoration: none;
-    color: $white;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
+  text-decoration: none;
+  color: $white;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
 }

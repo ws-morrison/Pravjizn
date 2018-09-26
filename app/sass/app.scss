@@ -17,7 +17,9 @@
     flex-direction: column;
     margin: 0 auto;
 }
-
+.app__list {
+  list-style: none;
+}
 .app__item {
     // @include SC500-s;
     font-family: $secondary-regular;
@@ -25,8 +27,15 @@
     color: $primary-text;
     line-height: 26px;
     margin-bottom: 20px;
+    position: relative;
 }
-
+.app__item::before {
+  content: "•";
+  position: absolute;
+  font-size: 24px;
+  color: $list-dot;
+  left: -20px;
+}
 .app__text {
     // @include PR500-s;
     font-family: $primary-regular;

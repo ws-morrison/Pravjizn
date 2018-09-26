@@ -1,39 +1,44 @@
 .pod {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .pod__quote-lead {
-    // @include PR300-2xl;
-    font-family: $primary-thin;
-    font-size: $font-size-2xl;
-    color: $primary-text;
+  font-family: $primary-thin;
+  font-size: $font-size-2xl;
+  color: $primary-text;
+}
+.pod__img {
+  width: 320px;
+  height: 324px;
+  margin: 0 auto;
+  background-image: url("../img/batushka_img.png");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position-x: -35px;
 }
 .pod__quote-text {
-    // @include SC500-m;
-    font-family: $secondary-regular;
-    font-size: $font-size-m;
-    color: $primary-text;
-    line-height: 26px;
-    margin-bottom: 40px;
+  font-family: $secondary-regular;
+  font-size: $font-size-m;
+  color: $primary-text;
+  line-height: 26px;
+  margin-bottom: 40px;
 }
 
 .pod__quote-link {
-    color: $link-color;
+  color: $link-color;
 }
 
 .pod__author-heading {
-    // @include PR700-xl;
-    font-family: $primary-medium;
-    font-size: $font-size-xl;
-    color: $primary-text;
-    margin: 0;
+  font-family: $primary-medium;
+  font-size: $font-size-xl;
+  color: $primary-text;
+  margin: 0;
 }
 
 .pod__author-caption {
-    // @include SC500-s;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    color: $primary-text;
-    font-style: italic;
-    line-height: 26px;
-    margin: 0;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  color: $primary-text;
+  font-style: italic;
+  line-height: 26px;
+  margin: 0;
 }

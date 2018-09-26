@@ -750,6 +750,16 @@ input[type="number"] {
   margin: 0;
   margin-bottom: 60px; }
 
+.feedback__video-img {
+  width: 320px;
+  height: 373px;
+  margin: 0 auto;
+  background-image: url("../img/alexandr_img.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 120% 120%;
+          background-size: 120%;
+  background-position-x: -35px; }
+
 .pod {
   margin-bottom: 100px; }
 
@@ -757,6 +767,16 @@ input[type="number"] {
   font-family: "Museo Cyrillic Thin", sans-serif;
   font-size: 30px;
   color: #212121; }
+
+.pod__img {
+  width: 320px;
+  height: 324px;
+  margin: 0 auto;
+  background-image: url("../img/batushka_img.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 120% 120%;
+          background-size: 120%;
+  background-position-x: -35px; }
 
 .pod__quote-text {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -886,12 +906,23 @@ input[type="number"] {
           flex-direction: column;
   margin: 0 auto; }
 
+.app__list {
+  list-style: none; }
+
 .app__item {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px;
   color: #212121;
   line-height: 26px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
+
+.app__item::before {
+  content: "•";
+  position: absolute;
+  font-size: 24px;
+  color: #D13D24;
+  left: -20px; }
 
 .app__text {
   font-family: "Museo Cyrillic Regular", sans-serif;
@@ -1245,10 +1276,21 @@ input[type="number"] {
           justify-content: center;
   margin-bottom: 30px; }
 
+.patron-form__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .patron-form__label {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px;
-  color: #212121; }
+  color: #212121;
+  position: relative; }
 
 .patron-form__input {
   display: block;
@@ -1259,13 +1301,32 @@ input[type="number"] {
   border: 1px solid #cccccc;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
   line-height: 26px;
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 18px;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+  position: relative;
+  z-index: 1; }
+  .patron-form__input--name {
+    padding-left: 20px; }
+  .patron-form__input--date {
+    padding-left: 60px;
+    position: relative; }
+  .patron-form__input--email {
+    padding-left: 30px; }
+
+.patron-form__label--calendar-thumb::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/calendar_icon.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+  top: 48px;
+  left: 20px; }
 
 .patron__button {
   width: 260px;
@@ -1315,7 +1376,21 @@ input[type="number"] {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px; }
+  margin-bottom: 50px; }
+
+.shadow-wrapper {
+  width: 320px;
+  -webkit-box-shadow: 0px 0px 30px 0px #212121;
+          box-shadow: 0px 0px 30px 0px #212121; }
+
+.holydays__img {
+  width: 320px;
+  height: 424px;
+  margin: 0 auto;
+  background-image: url("../img/holyday.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%; }
 
 .holydays__button {
   border: 2px solid #FFF;
@@ -1355,8 +1430,8 @@ input[type="number"] {
   font-size: 16px; }
 
 .account {
-  margin-bottom: 50px;
-  font-family: "Museo Sans Cyrl Bold"; }
+  padding-top: 50px;
+  margin-bottom: 50px; }
 
 .account__image {
   width: 137px;
@@ -1380,12 +1455,23 @@ input[type="number"] {
   margin: 0 auto;
   margin-bottom: 55px; }
 
+.account__list {
+  list-style: none; }
+
 .account__item {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px;
   color: #212121;
   line-height: 26px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
+
+.account__item::before {
+  content: "•";
+  position: absolute;
+  font-size: 24px;
+  color: #D13D24;
+  left: -20px; }
 
 .footer {
   padding-top: 40px;
@@ -1393,13 +1479,24 @@ input[type="number"] {
   .footer--bg-color {
     background-color: #FAF7DF; }
 
+.footer-item {
+  margin-bottom: 55px; }
+
 .footer-item__heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 20px;
   color: #212121;
   text-decoration: none;
   margin-bottom: 30px;
-  display: block; }
+  display: block;
+  position: relative; }
+
+.footer-item__heading::after {
+  content: "▼";
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: 5px; }
 
 .footer-list {
   margin: 0;

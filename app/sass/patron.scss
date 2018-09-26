@@ -1,41 +1,69 @@
 .patron {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 .patron__img-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.patron-form__wrapper {
+  display: flex;
+  justify-content: center;
 }
 .patron-form__label {
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    color: $primary-text;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  color: $primary-text;
+  position: relative;
 }
 .patron-form__input {
-    display: block;
-    box-sizing: border-box;
-    width: 279px;
-    min-height: 60px;
-    border: 1px solid #cccccc;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    line-height: 26px;
-    font-family: $secondary-regular;
-    font-size: $font-size-m;
-    color: $faded;
+  display: block;
+  box-sizing: border-box;
+  width: 279px;
+  min-height: 60px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 26px;
+  font-family: $secondary-regular;
+  font-size: $font-size-m;
+  color: $faded;
+  position: relative;
+  z-index: 1;
+  &--name {
+    padding-left: 20px;
+  }
+  &--date {
+    padding-left: 60px;
+    position: relative;
+  }
+  &--email {
+    padding-left: 30px;
+  }
+}
+
+.patron-form__label--calendar-thumb::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/calendar_icon.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+  top: 48px;
+  left: 20px;
 }
 
 .patron__button {
-    width: 260px;
-    height: 60px;
+  width: 260px;
+  height: 60px;
 }
 
 .patron__button-link {
-    // @include SC500-xs;
-    font-family: $secondary-regular;
-    font-size: $font-size-xs;
-    text-decoration: none;
-    color: $white;
+  // @include SC500-xs;
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  text-decoration: none;
+  color: $white;
 }
