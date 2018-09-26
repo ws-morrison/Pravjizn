@@ -1,48 +1,60 @@
 body {
-    width: 100%;
+  width: 100%;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 select {
-    -ms-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .contanier {
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-    box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  max-width: 0;
+  max-height: 0;
+  overflow: auto;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .contanier {
-        padding: 0 80px;
-    }
+  .contanier {
+    padding: 0 80px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .contanier {
-        padding: 0 100px;
-    }
+  .contanier {
+    padding: 0 100px;
+  }
 }
