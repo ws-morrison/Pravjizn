@@ -1,5 +1,6 @@
-.yt-channel  {
-    padding-bottom: 80px;
+.yt-channel {
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-bottom: 65px;
 }
 .yt__desc {
@@ -12,14 +13,6 @@
     margin-top: 20px;
     margin-bottom: 50px;
 }
-// .yt__desc::before {
-//     content: "";
-//     width: 60px;
-//     height: 60px;
-//     background-image: url("../img/logo_youtube.png");
-//     background-repeat: no-repeat;
-//     position: relative;
-// }
 
 .yt__desc-img {
     width: 60px;
@@ -28,11 +21,15 @@
     background-repeat: no-repeat;
 }
 .yt__text {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     line-height: 20px;
     margin: 0;
     &--large {
-        @include PR700-l;
+        // @include PR700-l;
+        font-family: $primary-regular;
+        font-size: $font-size-l;
         margin: 0;
     }
     &--grey {
@@ -85,17 +82,19 @@
 
 .yt__button-text {
     display: none;
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $white;
 }
 
 @media (min-width: 1024px) {
     .yt__button {
-    width: 267px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        width: 267px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .yt__button-text {
         display: block;
         padding-right: 30px;
@@ -105,7 +104,9 @@
 .yt__item-caption {
     display: block;
     max-width: 260px;
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $primary-text;
     line-height: 25px;
     margin-bottom: 30px;
@@ -137,6 +138,8 @@
 }
 
 .yt__sub-button-text {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $white;
 }

@@ -29,8 +29,14 @@
     background-image: url("../img/main_logo.svg");
     background-repeat: no-repeat;
 }
+
+.header-nav__heading-wrapper {
+    // display: block;
+}
 .header-nav__title {
-    @include PR700-m;
+    // @include PR700-m;
+    font-family: $primary-medium;
+    font-size: $font-size-m;
     text-transform: uppercase;
     color: $white;
 
@@ -39,7 +45,9 @@
 }
 
 .header-nav__title-caption {
-    @include PR300-s;
+    // @include PR300-s;
+    font-family: $secondary-thin;
+    font-size: $font-size-s;
     color: $white;
     text-transform: lowercase;
 }

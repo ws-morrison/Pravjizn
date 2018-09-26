@@ -1,11 +1,19 @@
+.pod {
+    margin-bottom: 100px;
+}
 .pod__quote-lead {
-    @include PR300-2xl;
+    // @include PR300-2xl;
+    font-family: $primary-thin;
+    font-size: $font-size-2xl;
     color: $primary-text;
 }
 .pod__quote-text {
-    @include SC500-m;
+    // @include SC500-m;
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
     color: $primary-text;
     line-height: 26px;
+    margin-bottom: 40px;
 }
 
 .pod__quote-link {
@@ -13,13 +21,17 @@
 }
 
 .pod__author-heading {
-    @include PR700-xl;
+    // @include PR700-xl;
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
     color: $primary-text;
     margin: 0;
 }
 
 .pod__author-caption {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $primary-text;
     font-style: italic;
     line-height: 26px;

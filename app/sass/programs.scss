@@ -1,7 +1,7 @@
 .program-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 160px;
+    margin-bottom: 110px;
     padding-top: 410px;
 }
 
@@ -12,7 +12,7 @@
     z-index: 101;
     position: relative;
     top: -435px;
-    left: 20px;
+    left: 40px;
     &--green {
         background-image: url("../img/main_logo-green.svg");
     }
@@ -37,23 +37,29 @@
 }
 
 .program__desc {
+    width: 280px;
     color: $white;
 }
 .program__desc-heading {
-    @include PR700-xl;
+    // @include PR700-xl;
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
     text-align: center;
     margin: 0;
     margin-bottom: 15px;
 }
 
 .program__desc-lead {
-    @include SC500-m;
+    // @include SC500-m;
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
     text-align: center;
     margin: 0;
 }
 
 .program-button {
     position: relative;
+    background-color: $white;
     bottom: -43px;
     width: 270px;
     height: 86px;
@@ -66,7 +72,9 @@
 }
 
 .program-button__link {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     text-align: center;
     text-decoration: none;
     &--prog-accient-1 {

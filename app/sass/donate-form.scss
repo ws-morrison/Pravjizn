@@ -5,13 +5,17 @@
     align-items: center;
 }
 .form__text {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $white;
     margin-bottom: 20px;
 }
 
 .donate-form__input {
-    @include PR500-3xl;
+    // @include PR500-3xl;
+    font-family: $primary-regular;
+    font-size: $font-size-3xl;
     color: $accient;
     box-sizing: border-box;
     padding-left: 24px;
@@ -27,7 +31,9 @@
     display: block;
     content: "р/месяц";
     position: absolute;
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $faded;
     font-style: italic;
     top: 20px;
@@ -38,6 +44,6 @@
     width: 240px;
     height: 60px;
     border: none;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
     border-radius: 100px;
 }

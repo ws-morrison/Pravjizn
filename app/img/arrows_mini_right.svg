@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="48px" viewBox="0 0 55 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrows_mini_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1221.7276,389.224006 L1215.77594,383.272344 C1215.41281,382.909219 1214.8239,382.909219 1214.46077,383.272344 C1214.09757,383.635544 1214.09757,384.224313 1214.46077,384.587513 L1218.8249,388.951643 L1202.92995,388.951643 C1202.41639,388.951643 1202,389.368036 1202,389.88159 C1202,390.395069 1202.41639,390.811537 1202.92995,390.811537 L1218.8249,390.811537 L1214.46092,395.175667 C1214.09772,395.538867 1214.09772,396.127635 1214.46092,396.490835 C1214.64244,396.672287 1214.88051,396.763198 1215.1185,396.763198 C1215.3565,396.763198 1215.59449,396.672287 1215.77609,396.490835 L1221.7276,390.539174 C1222.0908,390.175974 1222.0908,389.587206 1221.7276,389.224006 Z" id="path-1"></path>
+        <filter x="-175.0%" y="-181.6%" width="450.0%" height="608.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.819607843   0 0 0 0 0.239215686   0 0 0 0 0.141176471  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Portal_glavnaja" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pravjizn-Doroga-Home" transform="translate(-1185.000000, -9625.000000)">
+            <g id="10" transform="translate(0.000000, 9249.000000)">
+                <g id="arrows_mini_right">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#EA3518" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

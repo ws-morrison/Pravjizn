@@ -1,0 +1,154 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &--bg-color {
+        background-color: $secondary-bg;
+    }
+}
+
+.footer-item__heading {
+    font-family: $primary-medium;
+    font-size: $font-size-l;
+    color: $primary-text;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: block;
+}
+.footer-list {
+    margin: 0;
+    list-style: none;
+}
+.footer-list__item {
+    margin-bottom: 20px;
+}
+.footer-list__link {
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $primary-text;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.props {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-top: 2px solid $footer-border;
+}
+.props__heading {
+    font-family: $primary-medium;
+    font-size: $font-size-l;
+    color: $primary-text;
+}
+
+.props__text {
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $primary-text;
+    line-height: 22px;
+}
+
+.social {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-top: 2px solid $footer-border;
+}
+.social__heading {
+    font-family: $primary-medium;
+    font-size: $font-size-l;
+    color: $primary-text;
+}
+
+.social-list {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    list-style: none;
+}
+.social-list__item {
+    //
+}
+.social-list__link {
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $primary-text;
+    text-decoration: none;
+    line-height: 22px;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-repeat: no-repeat;
+
+    &--vk {
+        background-image: url("../img/vk.png");
+    }
+    &--fb {
+        background-image: url("../img/fb.png");
+    }
+    &--yt {
+        background-image: url("../img/yt.png");
+    }
+    &--tg {
+        background-image: url("../img/tg.png");
+    }
+}
+
+.promo-app {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-top: 2px solid $footer-border;
+}
+.promo-app__heading {
+    font-family: $primary-medium;
+    font-size: $font-size-l;
+    color: $primary-text;
+}
+
+.promo-app__text {
+    font-family: $secondary-regular;
+    color: $primary-text;
+    padding-left: 35px;
+    &--small {
+        font-size: $font-size-2xs;
+        line-height: 14px;
+    }
+}
+
+.promo-app__text-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+.promo-app__text-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 27px;
+
+    background-image: url("../img/phone_mini.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+.promo-app__logos {
+    width: 75px;
+    min-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo-app__logos-link {
+    display: block;
+    width: 22px;
+    height: 27px;
+    align-self: center;
+    background-repeat: no-repeat;
+    &--appstore {
+        background-image: url("../img/apple_mini.svg");
+    }
+    &--playstore {
+        background-image: url("../img/google_mini.svg");
+         align-self: flex-end;
+    }
+}

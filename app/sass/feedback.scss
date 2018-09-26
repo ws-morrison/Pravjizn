@@ -2,23 +2,44 @@
     margin-bottom: 30px;
 }
 .feedback__lead-text {
-    @include SC300-s;
+    // @include SC300-s;
+    font-family: $secondary-thin;
+    font-size: $font-size-m;
     color: $primary-text;
     line-height: 26px;
+    margin-top: 60px;
+    position: relative;
 }
 
+.feedback__lead-thumb {
+    position: absolute;
+    box-sizing: content-box;
+    font-family: $primary-regular;
+    font-size: 100px;
+    margin-bottom: 10px;
+    padding: 0;
+    color: $accient;
+    display: inline;
+    font-style: italic;
+    line-height: 0;
+}
 .feedback__author-heading {
-    @include PR700-xl;
+    // @include PR700-xl;
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
     color: $primary-text;
     margin: 0;
 }
 
 .feedback__author-caption {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $primary-text;
     font-style: italic;
     line-height: 26px;
     margin: 0;
+    margin-bottom: 60px;
 }
 
 // .feedback__video {

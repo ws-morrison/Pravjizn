@@ -1,0 +1,30 @@
+.account {
+    margin-bottom: 50px;
+    font-family: "Museo Sans Cyrl Bold";
+}
+.account__image {
+    width: 137px;
+    height: 137px;
+    background-image: url("../img/account.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.account__wrapper-list {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.account__item {
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $primary-text;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+

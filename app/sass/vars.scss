@@ -1,92 +1,122 @@
 // Colors
-$white: #fff;
-
+$white: #FFF;
 $primary-text: #212121;
-$faded: #9b9b9b;
-$accient: #ff482f;
-$link-color: #8d9e5a;
+$faded: #9B9B9B;
+$accient: #FF482F;
+$secondary-accient: #0071BC;
+$link-color: #8D9E5A;
+$primary-bg: rgba(236, 236, 229, 0.23);
 $secondary-bg: #FAF7DF;
+$footer-border: #ECE9CB;
+$dark-green-bg: #238F4B;
 $yt-red: #EA3518 ;
-// _b programs
 $prog-accient-1: #026837;
 $prog-accient-2: #1B1564;
 
 
 // Typography
+
+// Font Family. Primary - Museo, Secondary Museo Sans
+$primary-thin: 'Museo Cyrillic Thin', sans-serif; // 300
+$primary-regular: 'Museo Cyrillic Regular', sans-serif; // 500
+$primary-medium: 'Museo Cyrillic Medium', sans-serif; // 700
+$primary-bold: 'Museo Cyrillic Bold', sans-serif; // 900
+
+$secondary-thin: 'Museo Sans Cyrl Thin', sans-serif; // 300
+$secondary-regular: 'Museo Sans Cyrl Regular', sans-serif; // 500
+$secondary-medium: 'Museo Sans Cyrl Medium', sans-serif; // 700
+$secondary-bold: 'Museo Sans Cyrl Bold', sans-serif; // 900
+
+// Font Sizes
+$font-size-2xs: 12px;
+$font-size-xs: 13px;
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-l: 20px;
+$font-size-xl: 25px;
+$font-size-2xl: 30px;
+$font-size-3xl: 40px;
+
+
 // PR - Primary font, SC - Secondary font
 // 300, 500, 700, etc - weight
 // s, m , l, etc- sizes
 
 ///////////// Museo Cyrillic
-@mixin PR500-s {
-    font-family: "Museo Cyrillic";
-    font-size: 16px;
-    font-weight: 500;
-}
+// @mixin PR500-s {
+//     font-family: "Museo Cyrillic";
+//     font-size: 16px;
+//     font-weight: 500;
+// }
 
-@mixin PR300-s {
-    font-family: "Museo Cyrillic";
-    font-size: 16px;
-    font-weight: 300;
-}
+// @mixin PR300-s {
+//     font-family: "Museo Cyrillic";
+//     font-size: 16px;
+//     font-weight: 300;
+// }
 
-@mixin PR300-2xl {
-    font-family: "Museo Cyrillic";
-    font-size: 30px;
-    font-weight: 300;
-}
+// @mixin PR300-2xl {
+//     font-family: "Museo Cyrillic";
+//     font-size: 30px;
+//     font-weight: 300;
+// }
 
-@mixin PR700-m {
-    font-family: "Museo Cyrillic";
-    font-size: 18px;
-    font-weight: 700;
-}
+// @mixin PR700-m {
+//     font-family: "Museo Cyrillic";
+//     font-size: 18px;
+//     font-weight: 700;
+// }
 
-@mixin PR700-l {
-    font-family: "Museo Cyrillic";
-    font-size: 18px;
-    font-weight: 700;
-}
+// @mixin PR700-l {
+//     font-family: "Museo Cyrillic";
+//     font-size: 18px;
+//     font-weight: 700;
+// }
 
 
-@mixin PR500-xl {
-    font-family: "Museo Cyrillic";
-    font-size: 25px;
-    font-weight: 500;
-}
+// @mixin PR500-xl {
+//     font-family: "Museo Cyrillic";
+//     font-size: 25px;
+//     font-weight: 500;
+// }
 
-@mixin PR700-xl {
-    font-family: "Museo Cyrillic";
-    font-size: 25px;
-    font-weight: 700;
-}
+// @mixin PR700-xl {
+//     font-family: "Museo Cyrillic";
+//     font-size: 25px;
+//     font-weight: 700;
+// }
 
-@mixin PR500-3xl {
-    font-family: "Museo Cyrillic";
-    font-size: 40px;
-    font-weight: 500;
-}
+// @mixin PR500-3xl {
+//     font-family: "Museo Cyrillic";
+//     font-size: 40px;
+//     font-weight: 500;
+// }
 
 ///////////// Museo Sans Cyrillic
-@mixin SC500-s {
-    font-family: "Museo Sans Cyrl";
-    font-size: 16px;
-    font-weight: 500;
-}
-@mixin SC500-m {
-    font-family: "Museo Sans Cyrl";
-    font-size: 18px;
-    font-weight: 500;
-}
+// @mixin SC500-xs {
+//     font-family: "Museo Sans Cyrl";
+//     font-size: 13px;
+//     font-weight: 500;
+// }
+// @mixin SC500-s {
+//     font-family: "Museo Sans Cyrl";
+//     font-size: 16px;
+//     font-weight: 500;
+// }
+// @mixin SC500-m {
+//     font-family: "Museo Sans Cyrl";
+//     font-size: 18px;
+//     font-weight: 500;
+// }
 
-@mixin SC300-s {
-    font-family: "Museo Sans Cyrl";
-    font-size: 16px;
-    font-weight: 300;
-}
+// @mixin SC300-s {
+//     font-family: "Museo Sans Cyrl";
+//     font-size: 16px;
+//     font-weight: 300;
+// }
 
-@mixin SC300-m {
-    font-family: "Museo Sans Cyrl";
-    font-size: 18px;
-    font-weight: 300;
-}
+// @mixin SC300-m {
+//     font-family: "Museo Sans Cyrl";
+//     font-size: 18px;
+//     font-weight: 300;
+// }

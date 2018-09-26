@@ -1,0 +1,78 @@
+.info-services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $primary-bg;
+}
+
+.info-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.info-service-item__heading {
+    // @include PR700-l;
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    text-align: center;
+    &--color-1 {
+        color: $secondary-accient;
+    }
+    &--color-2 {
+        color: $link-color;
+    }
+    &--color-3 {
+        color: $accient;
+    }
+}
+
+.info-service-item__desc {
+    // @include SC500-m;
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    text-align: center;
+    line-height: 26px;
+    color: $primary-text;
+}
+.info-service-item__caption {
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $faded;
+    font-style: italic;
+}
+.info-service-item__button {
+    width: 260px;
+    height: 60px;
+}
+
+.info-service-item__button-link {
+    // @include SC500-xs;
+    font-family: $secondary-regular;
+    font-size: $font-size-xs;
+    text-decoration: none;
+    color: $white;
+}
+
+.info-service-item__link {
+    text-align: center;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $link-color;
+    margin-top: 20px;
+}
+
+.info-service-item__thumb {
+    width: 50px;
+    height: 48px;
+    &--lightblue {
+        background-image: url("../img/main_logo-lightblue.svg");
+    }
+    &--lightgreen {
+        background-image: url("../img/main_logo-lightgreen.svg");
+    }
+    &--orange {
+        background-image: url("../img/main_logo-orange.svg");
+    }
+}

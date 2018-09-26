@@ -1,23 +1,34 @@
 .section__desc {
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     &--white-text {
         color: $white;
     }
 }
 
 .section__text {
-    @include PR500-s;
+    // @include PR500-s;
+    font-family: $primary-regular;
+    font-size: $font-size-s;
     text-align: center;
     line-height: 20px;
     &--large {
-        @include PR500-xl;
+        // @include PR500-xl;
+        font-family: $primary-medium;
+        font-size: $font-size-xl;
         margin: 0;
-        line-height: 30px;
+        line-height: 35px;
     }
     &--grey {
         color: $faded;
+    }
+
+    &--bold {
+        font-family: $primary-bold;
+    }
+    &--line-height {
+        line-height: 26px;
     }
 }
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>check_box</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Portal_glavnaja" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pop_up_payment_every_time" transform="translate(-411.000000, -750.000000)" fill="#F65500" fill-rule="nonzero">
+            <g id="имя" transform="translate(373.000000, 616.000000)">
+                <g id="Group-9">
+                    <g id="Group-13" transform="translate(30.000000, 125.000000)">
+                        <path d="M20.7392673,9.38770593 L13.0677649,17.0597984 L10.2605852,14.2526186 C9.74364396,13.7350873 8.90508975,13.7350873 8.38814851,14.2526186 C7.87061716,14.7695599 7.87061716,15.6081141 8.38814851,16.1250553 L12.1318417,19.8687485 C12.3903123,20.1272191 12.7296287,20.2570445 13.0683551,20.2570445 C13.4070814,20.2570445 13.7458077,20.1278092 14.0042783,19.8687485 L22.6122941,11.2607327 C23.1292353,10.7432014 23.1292353,9.90523728 22.6122941,9.38770593 C22.0947627,8.87076469 21.2567986,8.87076469 20.7392673,9.38770593 Z" id="check_box"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

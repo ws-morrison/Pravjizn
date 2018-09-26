@@ -1,0 +1,41 @@
+.patron {
+    padding-bottom: 80px;
+}
+.patron__img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.patron-form__label {
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $primary-text;
+}
+.patron-form__input {
+    display: block;
+    box-sizing: border-box;
+    width: 279px;
+    min-height: 60px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    color: $faded;
+}
+
+.patron__button {
+    width: 260px;
+    height: 60px;
+}
+
+.patron__button-link {
+    // @include SC500-xs;
+    font-family: $secondary-regular;
+    font-size: $font-size-xs;
+    text-decoration: none;
+    color: $white;
+}

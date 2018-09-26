@@ -1,11 +1,14 @@
 .app {
     margin-bottom: 50px;
+    font-family: "Museo Sans Cyrl Bold";
 }
 .app__image {
     width: 254px;
-    height: 255px;
+    height: 225px;
     background-image: url("../img/iphone_x.png");
     background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 45px;
 }
 
 .app__wrapper-list {
@@ -16,21 +19,28 @@
 }
 
 .app__item {
-    @include SC500-s;
+    // @include SC500-s;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
     color: $primary-text;
     line-height: 26px;
     margin-bottom: 20px;
 }
 
 .app__text {
-    @include PR500-s;
+    // @include PR500-s;
+    font-family: $primary-regular;
+    font-size: $font-size-s;
     line-height: 20px;
     &--large {
-        @include PR500-xl;
+        // @include PR500-xl;
+        font-family: $primary-regular;
+        font-size: $font-size-xl;
         margin: 0;
         line-height: 30px;
     }
     &--grey {
+        font-family: $secondary-regular;
         color: $faded;
         font-style: italic;
     }
