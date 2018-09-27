@@ -502,7 +502,8 @@ input[type="number"] {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  z-index: 101; }
 
 .header-nav__logo {
   width: 60px;
@@ -601,6 +602,8 @@ input[type="number"] {
     font-family: "Museo Cyrillic Bold", sans-serif; }
   .section__text--line-height {
     line-height: 26px; }
+  .section__text--margin-bottom {
+    margin-bottom: 25px; }
 
 .section--secondary-bg {
   background-color: #FAF7DF; }
@@ -625,7 +628,7 @@ input[type="number"] {
   z-index: 103; }
 
 .burger-item {
-  height: 0.1em;
+  height: 2px;
   background: #FFF;
   margin-bottom: 4px;
   -webkit-transition: 0.3s ease-out;
@@ -653,8 +656,8 @@ input[type="number"] {
 .open .burger-item--middle::before {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 3px;
+  width: 24px;
+  height: 2px;
   background: #FFF;
   margin-bottom: 4px;
   -webkit-transform: rotate(90deg);
@@ -1584,18 +1587,23 @@ input[type="number"] {
 
 .promo-app {
   padding-top: 30px;
-  padding-bottom: 40px;
-  border-top: 2px solid #ECE9CB; }
+  padding-bottom: 40px; }
+  .promo-app--border {
+    border-top: 2px solid #ECE9CB; }
 
 .promo-app__heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 20px;
   color: #212121; }
+  .promo-app__heading--white-text {
+    color: #FFF; }
 
 .promo-app__text {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   color: #212121;
   padding-left: 35px; }
+  .promo-app__text--white-text {
+    color: #FFF; }
   .promo-app__text--small {
     font-size: 12px;
     line-height: 14px; }
@@ -1604,13 +1612,26 @@ input[type="number"] {
   position: relative;
   margin-bottom: 20px; }
 
-.promo-app__text-wrapper::before {
+.phone-thumb::before {
   content: "";
   display: block;
   position: absolute;
   width: 16px;
   height: 27px;
   background-image: url("../img/phone_mini.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0; }
+  .phone-thumb::before--white {
+    background-image: url("../img/phone_mini-white.svg"); }
+
+.phone-thumb--white::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 27px;
+  background-image: url("../img/phone_mini_white.svg");
   background-repeat: no-repeat;
   top: 0;
   left: 0; }
@@ -1646,3 +1667,47 @@ input[type="number"] {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end; }
+  .promo-app__logos-link--appstore-white {
+    background-image: url("../img/apple_mini-white.svg"); }
+  .promo-app__logos-link--playstore-white {
+    background-image: url("../img/google_mini-white.svg");
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
+
+.drop-menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .drop-menu--bg {
+    background-color: #f7a806; }
+
+.drop-menu__list {
+  margin-top: 180px; }
+
+.drop-menu-button__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.drop-menu-button {
+  width: 160px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: inherit;
+  border: 2px solid rgba(255, 255, 255, 0.25); }
+  .drop-menu-button--accient-border {
+    border: 2px solid #f7f606; }

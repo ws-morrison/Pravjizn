@@ -1,0 +1,32 @@
+.drop-menu {
+  width: 100%;
+  // margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 100;
+  &--bg {
+    background-color: #f7a806;
+  }
+}
+.drop-menu__list {
+  margin-top: 180px;
+}
+.drop-menu-button__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drop-menu-button {
+  width: 160px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: inherit;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  &--accient-border {
+    border: 2px solid #f7f606;
+  }
+}

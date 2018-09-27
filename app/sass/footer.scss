@@ -80,9 +80,7 @@
   margin: 0;
   list-style: none;
 }
-.social-list__item {
-  //
-}
+
 .social-list__link {
   font-family: $secondary-regular;
   font-size: $font-size-s;
@@ -108,61 +106,3 @@
   }
 }
 
-.promo-app {
-  padding-top: 30px;
-  padding-bottom: 40px;
-  border-top: 2px solid $footer-border;
-}
-.promo-app__heading {
-  font-family: $primary-medium;
-  font-size: $font-size-l;
-  color: $primary-text;
-}
-
-.promo-app__text {
-  font-family: $secondary-regular;
-  color: $primary-text;
-  padding-left: 35px;
-  &--small {
-    font-size: $font-size-2xs;
-    line-height: 14px;
-  }
-}
-
-.promo-app__text-wrapper {
-  position: relative;
-  margin-bottom: 20px;
-}
-.promo-app__text-wrapper::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 27px;
-
-  background-image: url("../img/phone_mini.svg");
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-}
-.promo-app__logos {
-  width: 75px;
-  min-height: 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.promo-app__logos-link {
-  display: block;
-  width: 22px;
-  height: 27px;
-  align-self: center;
-  background-repeat: no-repeat;
-  &--appstore {
-    background-image: url("../img/apple_mini.svg");
-  }
-  &--playstore {
-    background-image: url("../img/google_mini.svg");
-    align-self: flex-end;
-  }
-}

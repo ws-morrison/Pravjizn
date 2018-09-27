@@ -1,9 +1,8 @@
 "use strict";
 
-// Dropdown menu
+// Dropdown footer menu
 $(document).ready(function() {
-
-  $(".footer-list").css({"display":"none"});
+  $(".footer-list").css({ display: "none" });
 
   $(".opened-item").each(function() {
     $(this).on("click", function() {
@@ -12,4 +11,16 @@ $(document).ready(function() {
         .slideToggle(300);
     });
   });
+});
+
+// Dropdown header menu
+$(".drop-menu").css({ display: "none" });
+$(".burger").on("click", function() {
+  $(".drop-menu").slideToggle(300);
+});
+
+// Burger animation
+$(".burger").click(function() {
+  $(this).toggleClass("open");
+  $(".menu").toggleClass("opened-menu");
 });

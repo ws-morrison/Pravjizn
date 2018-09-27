@@ -8,13 +8,11 @@
 }
 
 .section__text {
-    // @include PR500-s;
     font-family: $primary-regular;
     font-size: $font-size-s;
     text-align: center;
     line-height: 20px;
     &--large {
-        // @include PR500-xl;
         font-family: $primary-medium;
         font-size: $font-size-xl;
         margin: 0;
@@ -29,6 +27,9 @@
     }
     &--line-height {
         line-height: 26px;
+    }
+    &--margin-bottom {
+      margin-bottom: 25px;
     }
 }
 
