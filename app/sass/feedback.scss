@@ -47,4 +47,25 @@
   background-repeat: no-repeat;
   background-size: 120%;
   background-position-x: -35px;
+
+  position: relative;
+}
+
+.feedback__video-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: none;
+  background-color: $white;
+  position: absolute;
+  top: 195px;
+  right: 25px;
+}
+
+.feedback__video-button::before {
+  content: "►";
+  color: $accient;
+  font-size: 26px;
+  top: 0;
+  left: 0;
 }
