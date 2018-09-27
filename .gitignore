@@ -1,6 +1,5 @@
 /node_modules/
 /.git/
-/app/fonts/
 /**/*.psd
 /**/package-lock.json
 /**/Thumbs.db
