@@ -4,3 +4,10 @@
 /**/package-lock.json
 /**/Thumbs.db
 /**/.DS_Store
+
+
+.idea/Pravjizn.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/**/*
