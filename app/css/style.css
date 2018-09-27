@@ -664,23 +664,30 @@ input[type="number"] {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.button__wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .button {
-  width: 240px;
-  height: 60px;
-  border: none;
-  -webkit-border-radius: 100px;
-          border-radius: 100px; }
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto; }
+  .button--big {
+    font-family: "Museo Sans Cyrl Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    max-width: 273px;
+    padding: 26px 38px 21px 40px;
+    -webkit-border-radius: 43.5px;
+            border-radius: 43.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .button--white-green {
+    color: #026837;
+    border: 2px solid #026837;
+    background-color: #FFFFFF; }
+  .button--white-blue {
+    color: #1B1564;
+    border: 2px solid #1B1564;
+    background-color: #FFFFFF; }
 
 .button--yellow {
   background-image: -webkit-gradient(linear, left top, right top, from(#f7f606), to(#f7a406));
@@ -857,7 +864,8 @@ input[type="number"] {
 
 .program__desc {
   width: 280px;
-  color: #FFF; }
+  color: #FFF;
+  margin-bottom: 30px; }
 
 .program__desc-heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
