@@ -27,9 +27,9 @@
     position: relative;
 }
 
-.donate-input-wrapper::after {
+.donate-input__thumb {
     display: block;
-    content: "р/месяц";
+    content: "";
     position: absolute;
     // @include SC500-s;
     font-family: $secondary-regular;
