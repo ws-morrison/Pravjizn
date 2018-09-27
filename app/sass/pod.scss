@@ -7,13 +7,28 @@
   color: $primary-text;
 }
 .pod__img {
-  width: 320px;
-  height: 324px;
+  //OLD
+  //width: 320px;
+  //height: 324px;
+  //margin: 0 auto;
+  //background-image: url("../img/batushka_img.png");
+  //background-repeat: no-repeat;
+  //background-size: 120%;
+  //background-position-x: -35px;
+
+  //NEW
+  position: relative;
+
+  width: 100%;
+  max-width: 468px;
+  height: 384px;
   margin: 0 auto;
+
   background-image: url("../img/batushka_img.png");
+  -webkit-background-size: 468px 384px;
+  background-size: 468px 384px;
   background-repeat: no-repeat;
-  background-size: 120%;
-  background-position-x: -35px;
+  background-position: center 0;
 }
 .pod__quote-text {
   font-family: $secondary-regular;

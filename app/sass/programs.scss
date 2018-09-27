@@ -1,40 +1,67 @@
+//NEW
+
 .program-item {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 110px;
-    padding-top: 410px;
-}
 
-.program-item__logo {
-    width: 80px;
-    height: 80px;
     background-repeat: no-repeat;
-    z-index: 101;
-    position: relative;
-    top: -435px;
-    left: 40px;
-    &--green {
-        background-image: url("../img/main_logo-green.svg");
+    background-position: center 36px;
+    //background-size: contain;
+    background-size: 545px 583px;
+
+    &--holies {
+        background-image: url("../img/vostanovlenie_svyatih-filtered.png");
     }
-    &--blue {
-        background-image: url("../img/main_logo-blue.svg");
+
+    &--sobriety {
+        background-image: url("../img/bratstvo_trezvosty-filtered.png");
+    }
+
+    .logo {
+        margin-bottom: 344px;
     }
 }
 
-.program-item-1 {
-    background-image: url("../img/vostanovlenie_svyatih-filtered.png");
-    background-color: $prog-accient-1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+//OLD
+//.program-item {
+//    display: flex;
+//    flex-direction: column;
+//    margin-bottom: 110px;
+//    padding-top: 410px;
+//}
 
-.program-item-2 {
-    background-image: url("../img/bratstvo_trezvosty-filtered.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+//OLD
+//.program-item__logo {
+//    width: 80px;
+//    height: 80px;
+//    background-repeat: no-repeat;
+//    z-index: 101;
+//    position: relative;
+//    top: -435px;
+//    left: 40px;
+//
+//    &--green {
+//        background-image: url("../img/main_logo-green.svg");
+//    }
+//    &--blue {
+//        background-image: url("../img/main_logo-blue.svg");
+//    }
+//}
+
+//OLD
+//.program-item-1 {
+//    background-image: url("../img/vostanovlenie_svyatih-filtered.png");
+//    background-color: $prog-accient-1;
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    background-size: cover;
+//}
+//
+//.program-item-2 {
+//    background-image: url("../img/bratstvo_trezvosty-filtered.png");
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    background-size: cover;
+//}
 
 .program__desc {
     width: 280px;
@@ -57,6 +84,8 @@
     margin: 0;
 }
 
+
+//OLD
 .program-button {
     position: relative;
     background-color: $white;

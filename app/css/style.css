@@ -766,15 +766,16 @@ input[type="number"] {
   margin-bottom: 60px; }
 
 .feedback__video-img {
-  width: 320px;
+  position: relative;
+  width: 100%;
+  max-width: 376px;
   height: 373px;
   margin: 0 auto;
   background-image: url("../img/alexandr_img.png");
+  -webkit-background-size: 376px 373px;
+  background-size: 376px 373px;
   background-repeat: no-repeat;
-  -webkit-background-size: 120% 120%;
-          background-size: 120%;
-  background-position-x: -35px;
-  position: relative; }
+  background-position: center 0; }
 
 .feedback__video-button {
   width: 80px;
@@ -803,14 +804,16 @@ input[type="number"] {
   color: #212121; }
 
 .pod__img {
-  width: 320px;
-  height: 324px;
+  position: relative;
+  width: 100%;
+  max-width: 468px;
+  height: 384px;
   margin: 0 auto;
   background-image: url("../img/batushka_img.png");
+  -webkit-background-size: 468px 384px;
+  background-size: 468px 384px;
   background-repeat: no-repeat;
-  -webkit-background-size: 120% 120%;
-          background-size: 120%;
-  background-position-x: -35px; }
+  background-position: center 0; }
 
 .pod__quote-text {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -841,41 +844,16 @@ input[type="number"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 110px;
-  padding-top: 410px; }
-
-.program-item__logo {
-  width: 80px;
-  height: 80px;
   background-repeat: no-repeat;
-  z-index: 101;
-  position: relative;
-  top: -435px;
-  left: 40px; }
-  .program-item__logo--green {
-    background-image: url("../img/main_logo-green.svg"); }
-  .program-item__logo--blue {
-    background-image: url("../img/main_logo-blue.svg"); }
-
-.program-item-1 {
-  background-image: url("../img/vostanovlenie_svyatih-filtered.png");
-  background-color: #026837;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover; }
-
-.program-item-2 {
-  background-image: url("../img/bratstvo_trezvosty-filtered.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  background-position: center 36px;
+  -webkit-background-size: 545px 583px;
+          background-size: 545px 583px; }
+  .program-item--holies {
+    background-image: url("../img/vostanovlenie_svyatih-filtered.png"); }
+  .program-item--sobriety {
+    background-image: url("../img/bratstvo_trezvosty-filtered.png"); }
+  .program-item .logo {
+    margin-bottom: 344px; }
 
 .program__desc {
   width: 280px;
@@ -1730,3 +1708,16 @@ input[type="number"] {
   border: 2px solid rgba(255, 255, 255, 0.25); }
   .drop-menu-button--accient-border {
     border: 2px solid #f7f606; }
+
+.logo {
+  display: block;
+  content: '';
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.logo__pz {
+  width: 79px;
+  height: 80px; }
+  .logo__pz--green {
+    background-image: url("../img/icon/main_logo-green.svg"); }

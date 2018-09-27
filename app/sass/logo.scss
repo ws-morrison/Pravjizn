@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+  content: '';
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+//.program-item__logo {
+//  display: block;
+//  width: 79px;
+//  height: 80px;
+//  background-repeat: no-repeat;
+//  -webkit-background-size: contain;
+//  background-size: contain;
+//
+//  &--green {
+//    background-image: url("../img/icon/main_logo-green_.svg");
+//  }
+//  &--blue {
+//    background-image: url("../img/main_logo-blue.svg");
+//  }
+//}
+
+.logo__pz {
+  width: 79px;
+  height: 80px;
+
+  &--green {
+    background-image: url("../img/icon/main_logo-green.svg");
+  }
+
+}

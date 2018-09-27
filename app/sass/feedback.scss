@@ -40,15 +40,30 @@
 }
 
 .feedback__video-img {
-  width: 320px;
+  //OLD
+  //width: 320px;
+  //height: 373px;
+  //margin: 0 auto;
+  //background-image: url("../img/alexandr_img.png");
+  //background-repeat: no-repeat;
+  //background-size: 120%;
+  //background-position-x: -35px;
+  //
+  //position: relative;
+
+  //NEW
+  position: relative;
+
+  width: 100%;
+  max-width: 376px;
   height: 373px;
   margin: 0 auto;
-  background-image: url("../img/alexandr_img.png");
-  background-repeat: no-repeat;
-  background-size: 120%;
-  background-position-x: -35px;
 
-  position: relative;
+  background-image: url("../img/alexandr_img.png");
+  -webkit-background-size: 376px 373px;
+  background-size: 376px 373px;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .feedback__video-button {
