@@ -75,12 +75,16 @@
   position: absolute;
   top: 195px;
   right: 25px;
+  text-decoration: none;
+  color: $accient;
+  font-size: 26px;
 }
 
 .feedback__video-button::before {
+  position: absolute;
   content: "►";
-  color: $accient;
+  color: #ff482f;
   font-size: 26px;
-  top: 0;
-  left: 0;
+  top: 25px;
+  left: 30px;
 }

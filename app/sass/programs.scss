@@ -1,116 +1,77 @@
-//NEW
-
 .program-item {
-    display: flex;
+  display: flex;
 
-    background-repeat: no-repeat;
-    background-position: center 36px;
-    //background-size: contain;
-    background-size: 545px 583px;
+  background-repeat: no-repeat;
+  background-position: center 36px;
+  background-size: 545px 583px;
+  margin-bottom: 100px;
 
-    &--holies {
-        background-image: url("../img/vostanovlenie_svyatih-filtered.png");
-    }
+  &--holies {
+    background-image: linear-gradient(
+        -180deg,
+        rgba(26, 174, 104, 0.4) 0%,
+        #157044 100%
+      ),
+      url("../img/vostanovlenie_svyatih.png");
+  }
 
-    &--sobriety {
-        background-image: url("../img/bratstvo_trezvosty-filtered.png");
-    }
+  &--sobriety {
+    background-image: linear-gradient(
+        -180deg,
+        rgba(68, 89, 140, 0.4) 0%,
+        #44598c 100%
+      ),
+      url("../img/bratstvo_trezvosty.png");
+  }
 
-    .logo {
-        margin-bottom: 344px;
-    }
+  .logo {
+    margin-bottom: 344px;
+  }
 }
-
-//OLD
-//.program-item {
-//    display: flex;
-//    flex-direction: column;
-//    margin-bottom: 110px;
-//    padding-top: 410px;
-//}
-
-//OLD
-//.program-item__logo {
-//    width: 80px;
-//    height: 80px;
-//    background-repeat: no-repeat;
-//    z-index: 101;
-//    position: relative;
-//    top: -435px;
-//    left: 40px;
-//
-//    &--green {
-//        background-image: url("../img/main_logo-green.svg");
-//    }
-//    &--blue {
-//        background-image: url("../img/main_logo-blue.svg");
-//    }
-//}
-
-//OLD
-//.program-item-1 {
-//    background-image: url("../img/vostanovlenie_svyatih-filtered.png");
-//    background-color: $prog-accient-1;
-//    background-repeat: no-repeat;
-//    background-position: center;
-//    background-size: cover;
-//}
-//
-//.program-item-2 {
-//    background-image: url("../img/bratstvo_trezvosty-filtered.png");
-//    background-repeat: no-repeat;
-//    background-position: center;
-//    background-size: cover;
-//}
 
 .program__desc {
-    width: 280px;
-    color: $white;
-    margin-bottom: 30px;
+  width: 280px;
+  color: $white;
+  margin-bottom: 30px;
 }
 .program__desc-heading {
-    // @include PR700-xl;
-    font-family: $primary-medium;
-    font-size: $font-size-xl;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 15px;
+  font-family: $primary-medium;
+  font-size: $font-size-xl;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .program__desc-lead {
-    // @include SC500-m;
-    font-family: $secondary-regular;
-    font-size: $font-size-m;
-    text-align: center;
-    margin: 0;
+  font-family: $secondary-regular;
+  font-size: $font-size-m;
+  text-align: center;
+  margin: 0;
 }
 
-
-//OLD
 .program-button {
-    position: relative;
-    background-color: $white;
-    bottom: -43px;
-    width: 270px;
-    height: 86px;
-    &--prog-accient-1 {
-        border: 2px solid #026837;
-    }
-    &--prog-accient-2 {
-        border: 2px solid #1b1564;
-    }
+  position: relative;
+  background-color: $white;
+  bottom: -43px;
+  width: 270px;
+  height: 86px;
+  &--prog-accient-1 {
+    border: 2px solid #026837;
+  }
+  &--prog-accient-2 {
+    border: 2px solid #1b1564;
+  }
 }
 
 .program-button__link {
-    // @include SC500-s;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    text-align: center;
-    text-decoration: none;
-    &--prog-accient-1 {
-        color: $prog-accient-1;
-    }
-    &--prog-accient-2 {
-        color: $prog-accient-2;
-    }
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  text-align: center;
+  text-decoration: none;
+  &--prog-accient-1 {
+    color: $prog-accient-1;
+  }
+  &--prog-accient-2 {
+    color: $prog-accient-2;
+  }
 }

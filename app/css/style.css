@@ -397,7 +397,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; }
 
-.contanier {
+.container {
   margin: 0 auto;
   padding: 0 20px 0 20px;
   -webkit-box-sizing: border-box;
@@ -416,11 +416,11 @@ input[type="number"] {
   display: none; }
 
 @media (min-width: 768px) {
-  .contanier {
+  .container {
     padding: 0 80px; } }
 
 @media (min-width: 1024px) {
-  .contanier {
+  .container {
     padding: 0 100px; } }
 
 @font-face {
@@ -665,10 +665,26 @@ input[type="number"] {
   transform: rotate(90deg); }
 
 .button {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 240px;
+  min-height: 60px;
+  border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px; }
   .button--big {
     font-family: "Museo Sans Cyrl Regular", sans-serif;
     font-size: 16px;
@@ -793,14 +809,18 @@ input[type="number"] {
   background-color: #FFF;
   position: absolute;
   top: 195px;
-  right: 25px; }
+  right: 25px;
+  text-decoration: none;
+  color: #FF482F;
+  font-size: 26px; }
 
 .feedback__video-button::before {
+  position: absolute;
   content: "►";
-  color: #FF482F;
+  color: #ff482f;
   font-size: 26px;
-  top: 0;
-  left: 0; }
+  top: 25px;
+  left: 30px; }
 
 .pod {
   margin-bottom: 100px; }
@@ -854,11 +874,18 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: center 36px;
   -webkit-background-size: 545px 583px;
-          background-size: 545px 583px; }
+          background-size: 545px 583px;
+  margin-bottom: 100px; }
   .program-item--holies {
-    background-image: url("../img/vostanovlenie_svyatih-filtered.png"); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 174, 104, 0.4)), to(#157044)), url("../img/vostanovlenie_svyatih.png");
+    background-image: -webkit-linear-gradient(top, rgba(26, 174, 104, 0.4) 0%, #157044 100%), url("../img/vostanovlenie_svyatih.png");
+    background-image: -o-linear-gradient(top, rgba(26, 174, 104, 0.4) 0%, #157044 100%), url("../img/vostanovlenie_svyatih.png");
+    background-image: linear-gradient(-180deg, rgba(26, 174, 104, 0.4) 0%, #157044 100%), url("../img/vostanovlenie_svyatih.png"); }
   .program-item--sobriety {
-    background-image: url("../img/bratstvo_trezvosty-filtered.png"); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 89, 140, 0.4)), to(#44598c)), url("../img/bratstvo_trezvosty.png");
+    background-image: -webkit-linear-gradient(top, rgba(68, 89, 140, 0.4) 0%, #44598c 100%), url("../img/bratstvo_trezvosty.png");
+    background-image: -o-linear-gradient(top, rgba(68, 89, 140, 0.4) 0%, #44598c 100%), url("../img/bratstvo_trezvosty.png");
+    background-image: linear-gradient(-180deg, rgba(68, 89, 140, 0.4) 0%, #44598c 100%), url("../img/bratstvo_trezvosty.png"); }
   .program-item .logo {
     margin-bottom: 344px; }
 
@@ -1231,16 +1258,31 @@ input[type="number"] {
           align-items: center;
   margin-bottom: 60px; }
 
-.info-service-item__heading {
-  font-family: "Museo Cyrillic Regular", sans-serif;
+.info-services__title {
+  font-family: "Museo Cyrillic Thin", sans-serif;
   font-size: 20px;
   text-align: center; }
-  .info-service-item__heading--color-1 {
-    color: #0071BC; }
-  .info-service-item__heading--color-2 {
-    color: #8D9E5A; }
-  .info-service-item__heading--color-3 {
+  .info-services__title--active {
     color: #FF482F; }
+  .info-services__title--color-1 {
+    color: #0071BC; }
+  .info-services__title--color-2 {
+    color: #8D9E5A; }
+  .info-services__title--color-3 {
+    color: #FF482F; }
+
+.info-services__heading {
+  display: block;
+  font-family: "Museo Cyrillic Thin", sans-serif;
+  font-size: 20px;
+  color: #212121;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.info-services__wrapper {
+  border-bottom: 2px solid #edede6; }
 
 .info-service-item__desc {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -1359,9 +1401,15 @@ input[type="number"] {
   color: #FFF; }
 
 .holydays--green-bg {
-  background-color: #238F4B;
+  background-color: #238f4b;
   padding-top: 65px;
-  padding-bottom: 65px; }
+  padding-bottom: 65px;
+  background-image: url("../img/bg_green.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position-x: center;
+  background-position-y: 0; }
 
 .holydays__desc {
   width: 280px;
@@ -1456,7 +1504,7 @@ input[type="number"] {
 .account__image {
   width: 137px;
   height: 137px;
-  background-image: url("../img/account.png");
+  background-image: url("../img/orange_userpick.png");
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-bottom: 45px; }
@@ -1682,6 +1730,7 @@ input[type="number"] {
 
 .drop-menu {
   width: 100%;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1690,7 +1739,27 @@ input[type="number"] {
     background-color: #f7a806; }
 
 .drop-menu__list {
-  margin-top: 180px; }
+  margin-top: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.drop-menu__link {
+  text-decoration: none;
+  color: #FFF;
+  font-family: "Museo Cyrillic Medium", sans-serif;
+  font-size: 25px;
+  margin-bottom: 25px; }
 
 .drop-menu-button__wrapper {
   width: 100%;
@@ -1729,3 +1798,5 @@ input[type="number"] {
   height: 80px; }
   .logo__pz--green {
     background-image: url("../img/icon/main_logo-green.svg"); }
+  .logo__pz--blue {
+    background-image: url("../img/icon/main_logo-blue.svg"); }

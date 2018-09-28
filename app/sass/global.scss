@@ -29,7 +29,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.contanier {
+.container {
   margin: 0 auto;
   padding: 0 20px 0 20px;
   box-sizing: border-box;
@@ -48,13 +48,13 @@ input[type="number"] {
 }
 
 @media (min-width: 768px) {
-  .contanier {
+  .container {
     padding: 0 80px;
   }
 }
 
 @media (min-width: 1024px) {
-  .contanier {
+  .container {
     padding: 0 100px;
   }
 }
