@@ -40,7 +40,9 @@
 }
 
 .info-services__wrapper {
+  position: relative;
   border-bottom: 2px solid #edede6;
+  border-width: 100%;
 }
 
 .info-service-item__desc {

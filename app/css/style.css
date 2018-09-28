@@ -1282,7 +1282,9 @@ input[type="number"] {
   margin-bottom: 25px; }
 
 .info-services__wrapper {
-  border-bottom: 2px solid #edede6; }
+  position: relative;
+  border-bottom: 2px solid #edede6;
+  border-width: 100%; }
 
 .info-service-item__desc {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
