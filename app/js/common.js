@@ -13,7 +13,6 @@ $(document).ready(function() {
       // Change Title Color
       $(this).toggleClass("info-services__title--active");
     });
-
   });
 
   // Dropdown header menu
@@ -26,4 +25,5 @@ $(document).ready(function() {
     $(this).toggleClass("open");
     $(".menu").toggleClass("opened-menu");
   });
+
 });

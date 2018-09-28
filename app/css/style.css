@@ -809,7 +809,7 @@ input[type="number"] {
   background-color: #FFF;
   position: absolute;
   top: 195px;
-  right: 25px;
+  right: 45px;
   text-decoration: none;
   color: #FF482F;
   font-size: 26px; }
@@ -1785,6 +1785,17 @@ input[type="number"] {
   border: 2px solid rgba(255, 255, 255, 0.25); }
   .drop-menu-button--accient-border {
     border: 2px solid #f7f606; }
+
+.shop-carousel__item-link {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Museo Cyrillic Medium", sans-serif;
+  font-size: 20px;
+  color: #212121;
+  line-height: 24px; }
 
 .logo {
   display: block;

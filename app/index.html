@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <!-- <link rel="stylesheet" href="css/libs.min.css"> -->
+  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,10 +37,6 @@
           <div class="drop-menu__list">
             <a href="" class="drop-menu__link">О фонде</a>
             <a href="" class="drop-menu__link">Программы</a>
-            <!-- <div class="section__desc section__desc--white-text">
-              <p class="section__text section__text--large section__text--margin-bottom">О фонде</p>
-              <p class="section__text section__text--large section__text--margin-bottom">Программы</p>
-            </div> -->
           </div>
 
           <div class="drop-menu-button__wrapper">
@@ -493,7 +491,31 @@
             интернет-магазине!</p>
           <p class="section__text section__text--large">Поддержите наш фонд и православных мастеров</p>
         </div>
-        <!-- OWL -->
+
+        <!-- Set up your HTML -->
+        <div class="owl-carousel owl-theme loop shop-carousel">
+
+          <div class="shop-carousel__item">
+            <img class="shop-carousel__img" src="img/icony_shop.png" alt="">
+            <a href="" class="shop-carousel__item-link">Иконы</a>
+          </div>
+
+          <div class="shop-carousel__item">
+            <img class="shop-carousel__img" src="img/odejda_shop.png" alt="">
+            <a href="" class="shop-carousel__item-link">Одежда</a>
+          </div>
+
+          <div class="shop-carousel__item">
+            <img class="shop-carousel__img" src="img/svechi_shop.png" alt="">
+            <a href="" class="shop-carousel__item-link">Свечи</a>
+          </div>
+
+          <div class="shop-carousel__item">
+            <img class="shop-carousel__img" src="img/ukrashenie_shop.png" alt="">
+            <a href="" class="shop-carousel__item-link">Украшения</a>
+          </div>
+        </div>
+
         <div class="shop-desc">
           <p class="shop-desc__text">Более 50 000 Православных товаров
             с доставкой по всему миру</p>
@@ -612,6 +634,8 @@
 
   <script src="js/libs.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="js/pz-carousel.js"></script>
 </body>
 
 </html>
