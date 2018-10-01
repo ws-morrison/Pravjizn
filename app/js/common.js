@@ -18,6 +18,7 @@ $(document).ready(function() {
   // Dropdown header menu
   $(".burger").on("click", function() {
     $(".drop-menu").slideToggle(300);
+      $(".drop-menu").css('display', 'flex');
   });
 
   // Burger animation

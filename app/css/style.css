@@ -469,7 +469,7 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 110px; } }
+    padding: 0 40px; } }
 
 .header {
   width: 100%;
@@ -1742,6 +1742,13 @@ input[type="number"] {
   width: 100%;
   display: none;
   position: absolute;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 0;
   left: 0;
   z-index: 100; }
@@ -1799,28 +1806,57 @@ input[type="number"] {
     border: 2px solid #f7f606; }
 
 @media (min-width: 1024px) {
-  .drop-menu {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: static;
-    background-color: inherit; }
+  .menu__wrapper {
+    width: -webkit-calc(100% - 175px);
+    width: calc(100% - 175px); }
   .drop-menu__link {
     text-decoration: none;
     color: #FFF;
     font-family: "Museo Sans Cyrl Regular", sans-serif;
     font-size: 16px;
     margin: 0; }
+  .drop-menu__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .drop-menu-button {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
-    min-height: 40px; } }
+    min-width: 134px;
+    min-height: 40px; }
+  .drop-menu {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+    .drop-menu--bg {
+      background-color: transparent; }
+  .drop-menu-button__wrapper {
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .drop-menu-button {
+    min-width: auto;
+    margin-bottom: 0; }
+  .drop-menu__list {
+    margin: 0px; }
+  .promo-app {
+    margin: 0;
+    padding: 0; }
+  .promo-app__text-wrapper {
+    margin-bottom: 0; }
+  .promo-app__text-wrapper .phone-thumb .phone-thumb--white {
+    margin-bottom: 0; }
+  .promo-app__text .promo-app__text--small .promo-app__text--white-text {
+    margin: 0px; } }
 
 .shop-carousel__item-link {
   display: block;
