@@ -1,49 +1,85 @@
 .donate-form {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+  // .donate-form--row-wrapper {
+  // margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // }
 .form__text {
-    // @include SC500-s;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    color: $white;
-    margin-bottom: 20px;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  color: $white;
+  margin-bottom: 20px;
+}
+.donate-form__input-caption {
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  color: $white;
+  display: none;
 }
 
 .donate-form__input {
-    // @include PR500-3xl;
-    font-family: $primary-regular;
-    font-size: $font-size-3xl;
-    color: $accient;
-    box-sizing: border-box;
-    padding-left: 24px;
-    margin-bottom: 20px;
+  font-family: $primary-regular;
+  font-size: $font-size-3xl;
+  color: $accient;
+  box-sizing: border-box;
+  padding-left: 24px;
+  margin-bottom: 20px;
 }
 
 .donate-input-wrapper {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
 .donate-input__thumb {
-    display: block;
-    content: "";
-    position: absolute;
-    // @include SC500-s;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    color: $faded;
-    font-style: italic;
-    top: 20px;
-    right: 20px;
+  display: block;
+  content: "";
+  position: absolute;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  color: $faded;
+  font-style: italic;
+  top: 20px;
+  right: 20px;
 }
 
 .donate-form__input {
-    width: 240px;
-    height: 60px;
-    border: none;
-    border: 1px solid #cccccc;
-    border-radius: 100px;
+  width: 240px;
+  height: 60px;
+  border: none;
+  border: 1px solid #cccccc;
+  border-radius: 100px;
+}
+
+// DESKTOP
+@media (min-width: $desktop) {
+  .form__text {
+    display: block;
+    position: relative;
+    margin: 0;
+    top: 57px;
+    right: 160px;
+  }
+  .donate-form__input-caption {
+    display: block;
+    position: relative;
+    margin: 0;
+    top: 39px;
+    left: 190px;
+  }
+
+  .donate-wrapper {
+    display: flex;
+    width: 480px;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

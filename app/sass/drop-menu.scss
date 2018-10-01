@@ -47,7 +47,6 @@
 
 //  DESKTOP
 @media (min-width: $desktop) {
-
   // .menu__wrapper {
   //   display: flex;
   //   flex-direction: row-reverse;
@@ -62,6 +61,7 @@
 
   .menu__wrapper {
     width: calc(100% - 175px);
+    display: flex;
   }
   .drop-menu__link {
     text-decoration: none;
@@ -77,7 +77,7 @@
 
   .drop-menu-button {
     box-sizing: content-box;
-     min-width: 134px;
+    min-width: 134px;
     min-height: 40px;
   }
 
@@ -89,11 +89,10 @@
     &--bg {
       background-color: transparent;
     }
-
   }
 
   .drop-menu-button__wrapper {
-    width: auto;
+    width: 354px;
     flex-direction: row;
   }
 
@@ -104,23 +103,29 @@
 
   .drop-menu__list {
     margin: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    justify-content: space-around;
   }
 
-  .promo-app {
-    margin: 0;
-    padding: 0;
-  }
+  // .promo-app {
+  //   margin: 0;
+  //   padding: 0;
+  //   order: -1;
+  //   margin-right: auto;
+  //   margin-left: 55px;
+  // }
 
-  .promo-app__text-wrapper {
-    margin-bottom: 0;
-  }
+  // .promo-app__text-wrapper {
+  //   margin-bottom: 0;
+  // }
 
-  .promo-app__text-wrapper .phone-thumb .phone-thumb--white {
-    margin-bottom: 0;
-  }
+  // .promo-app__text-wrapper .phone-thumb .phone-thumb--white {
+  //   margin-bottom: 0;
+  // }
 
-  .promo-app__text .promo-app__text--small .promo-app__text--white-text {
-    margin: 0px;
-  }
-
+  // .promo-app__text .promo-app__text--small .promo-app__text--white-text {
+  //   margin: 0px;
+  // }
 }

@@ -19,6 +19,9 @@
   font-family: $secondary-regular;
   color: $primary-text;
   padding-left: 35px;
+  padding: 0;
+  margin: 0;
+
   &--white-text {
     color: $white;
   }
@@ -41,7 +44,7 @@
   background-image: url("../img/phone_mini.svg");
   background-repeat: no-repeat;
   top: 0;
-  left: 0;
+  left: -30px;
   &--white {
     background-image: url("../img/phone_mini-white.svg");
   }
@@ -56,7 +59,7 @@
   background-image: url("../img/phone_mini_white.svg");
   background-repeat: no-repeat;
   top: 0;
-  left: 0;
+  left: -30px;
 }
 
 .promo-app__logos {
@@ -91,5 +94,24 @@
 @media (min-width: $desktop) {
   .promo-app__logos {
     display: none;
+  }
+  .promo-app {
+    margin: 0;
+    padding: 0;
+    order: -1;
+    margin-right: auto;
+    margin-left: 55px;
+  }
+
+  .promo-app__text-wrapper {
+    margin-bottom: 0;
+  }
+
+  .promo-app__text-wrapper .phone-thumb .phone-thumb--white {
+    margin-bottom: 0;
+  }
+
+  .promo-app__text .promo-app__text--small .promo-app__text--white-text {
+    margin: 0px;
   }
 }

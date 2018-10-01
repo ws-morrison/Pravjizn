@@ -1,54 +1,97 @@
 .section__desc {
-    width: 280px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    &--white-text {
-        color: $white;
-    }
+  // width: 280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  &--white-text {
+    color: $white;
+  }
 }
 
 .section__text {
+  font-family: $primary-regular;
+  font-size: $font-size-s;
+  text-align: center;
+  line-height: 20px;
+  &--large {
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
+    margin: 0;
+    line-height: 35px;
+  }
+  &--grey {
+    color: $faded;
+  }
+
+  &--bold {
+    font-family: $primary-bold;
+  }
+  &--line-height {
+    line-height: 26px;
+  }
+  &--margin-bottom {
+    margin-bottom: 25px;
+  }
+}
+
+.section--secondary-bg {
+  background-color: $secondary-bg;
+}
+
+.section__desc--thumb-notif {
+  position: relative;
+}
+
+.section__desc--thumb-notif::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  background-image: url("../img/notification_icon.svg");
+  background-repeat: no-repeat;
+  right: 130px;
+  top: -25px;
+}
+
+// DESKTOP
+@media (min-width: $desktop) {
+  .section__desc {
+    // width: 520px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    &--white-text {
+      color: $white;
+    }
+  }
+  .section__text {
     font-family: $primary-regular;
-    font-size: $font-size-s;
+    font-size: $font-size-desktop-s;
     text-align: center;
     line-height: 20px;
     &--large {
-        font-family: $primary-medium;
-        font-size: $font-size-xl;
-        margin: 0;
-        line-height: 35px;
+      font-family: $primary-medium;
+      font-size: $font-size-desktop-xl;
+      margin: 0;
+      line-height: 35px;
+    }
+    &--huge {
+      font-family: $primary-thin;
+      font-size: $font-size-desktop-2xl;
+      margin: 0;
+      line-height: 50px;
     }
     &--grey {
-        color: $faded;
+      color: $faded;
     }
 
     &--bold {
-        font-family: $primary-bold;
+      font-family: $primary-bold;
     }
     &--line-height {
-        line-height: 26px;
+      line-height: 26px;
     }
     &--margin-bottom {
       margin-bottom: 25px;
     }
-}
-
-.section--secondary-bg {
-    background-color: $secondary-bg;
-}
-
-.section__desc--thumb-notif {
-    position: relative;
-}
-
-.section__desc--thumb-notif::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 20px;
-    background-image: url("../img/notification_icon.svg");
-    background-repeat: no-repeat;
-    right: 130px;
-    top: -25px;
+  }
 }

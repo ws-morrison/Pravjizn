@@ -5,7 +5,6 @@
         background-image: url("../img/main_bg.png");
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: cover;
         margin-bottom: 40px;
     }
 }
@@ -31,11 +30,8 @@
     background-repeat: no-repeat;
 }
 
-.header-nav__heading-wrapper {
-    // display: block;
-}
+
 .header-nav__title {
-    // @include PR700-m;
     font-family: $primary-medium;
     font-size: $font-size-m;
     text-transform: uppercase;
@@ -46,11 +42,19 @@
 }
 
 .header-nav__title-caption {
-    // @include PR300-s;
     font-family: $secondary-thin;
     font-size: $font-size-s;
     color: $white;
     text-transform: lowercase;
 }
 
-//
+// DESKTOP
+@media (min-width: $desktop) {
+  .header-nav {
+    margin-bottom: 120px;
+  }
+  .header--bg {
+    padding-bottom: 122px;
+    background-size: 1440px 648px;
+  }
+}

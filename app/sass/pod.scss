@@ -57,3 +57,21 @@
   line-height: 26px;
   margin: 0;
 }
+
+// .pod__container {
+//   margin: 0 auto;
+//   padding: 0 20px 0 20px;
+//   box-sizing: border-box;
+// }
+
+@media (min-width: $desktop) {
+  .pod__quote {
+    width: 420px;
+    margin-left: 140px;
+  }
+  .pod__img {
+    float: right;
+    margin-right: 140px;
+    top: -130px;
+  }
+}

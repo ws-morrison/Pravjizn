@@ -88,3 +88,24 @@
   top: 25px;
   left: 30px;
 }
+
+.feedback__container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $desktop) {
+  .feedback__item {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .feedback__right-col {
+    width: 480px;
+    padding-top: 50px;
+  }
+    .feedback__left-col {
+    width: 480px;
+  }
+}

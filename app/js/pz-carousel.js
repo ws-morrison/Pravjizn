@@ -10,7 +10,11 @@ $(document).ready(function() {
     responsive: {
       320: {
         items: 1
-      }
+      },
+      // 1024: {
+      //   items: 4,
+      //   responsiveBaseWidth: ".shop-carousel__item"
+      // }
     },
   });
 });
