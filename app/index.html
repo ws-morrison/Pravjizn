@@ -138,11 +138,11 @@
       <div class="pod-item">
 
         <div class="pod__quote">
-          <!-- <div class="container"> -->
-          <p class="pod__quote-lead">«Уже 190 детей из окрестных
-            деревень ждут открытия
-            воскресной школы»</p>
-          <!-- </div> -->
+          <div class="container">
+            <p class="pod__quote-lead">«Уже 190 детей из окрестных
+              деревень ждут открытия
+              воскресной школы»</p>
+          </div>
         </div>
 
         <div class="pod-item__left-col">
@@ -152,49 +152,34 @@
 
 
         <div class="pod__quote">
-          <!-- <div class="container"> -->
-          <p class="pod__quote-text">
-            Здравствуйте, братья и сестры!<br>
-            Просим посильной помощи отцу Владимиру (Дроздову)
-            и его приходу, которым просто негде обучить желающих
-            воцерковиться ребят! <br> <a href="#" class="link pod__quote-link">Читать полностью</a>
-          </p>
-          <div class="pod__author">
-            <p class="pod__author-heading">Отец Владимир</p>
-            <p class="pod__author-caption">настоятель храма в д.Власовка</p>
+          <div class="container">
+            <p class="pod__quote-text">
+              Здравствуйте, братья и сестры!<br>
+              Просим посильной помощи отцу Владимиру (Дроздову)
+              и его приходу, которым просто негде обучить желающих
+              воцерковиться ребят! <br> <a href="#" class="link pod__quote-link">Читать полностью</a>
+            </p>
+            <div class="pod__author">
+              <p class="pod__author-heading">Отец Владимир</p>
+              <p class="pod__author-caption">настоятель храма в д.Власовка</p>
+            </div>
           </div>
-          <!-- </div> -->
         </div>
 
-
-        <form action="" class="donate-form">
-          <div class="donate-input-wrapper">
-            <label for="donate-input">
-              <input class="donate-form__input" type="number" name="donate__form" id="donate-input" min="0" value="500">
-              <span class="donate-form__input-caption"></span>
-            </label>
-          </div>
+        <form action="" class="donate-form donate-form--row">
+          <label for="donate-input">
+            <input class="donate-form__input donate-form__input--wide" type="number" name="donate__form" id="donate-input"
+              min="0" value="500">
+            <span class="donate-form__input-caption"></span>
+          </label>
           <button class="button button--green button__text button__text--white" type="submit">Помочь</button>
         </form>
       </div>
 
-      <!-- <form action="" class="donate-form">
-        <div class="container">
-          <span class="form__text">Всего</span>
-          <div class="donate-input-wrapper">
-            <label for="donate-input">
-              <input class="donate-form__input" type="number" name="donate__form" id="donate-input" min="0" value="500">
-              <span class="donate-form__input-caption"></span>
-            </label>
-          </div>
-          <button class="button button--green button__text button__text--white" type="submit">Помочь</button>
-        </div>
-      </form> -->
-
-
     </section>
 
     <section class="programs">
+      <!-- <div class="container"> -->
       <div class="container">
         <div class="section__desc">
           <p class="section__text section__text--large">Программы БФ Правжизнь,
@@ -202,39 +187,42 @@
         </div>
       </div>
 
-      <div class="program-item program-item--holies">
-        <div class="container">
-          <div class="logo logo__pz logo__pz--green"></div>
-          <div class="program__desc">
-            <p class="program__desc-heading">
-              Восстановление святынь
-            </p>
-            <p class="program__desc-lead">
-              Помогаем спасти разрушенные
-              храмы и монастыри
-            </p>
+      <div class="programs__wrapper">
+        <div class="program-item program-item--holies">
+          <div class="container">
+            <div class="logo logo__pz logo__pz--green"></div>
+            <div class="program__desc">
+              <p class="program__desc-heading">
+                Восстановление святынь
+              </p>
+              <p class="program__desc-lead">
+                Помогаем спасти разрушенные
+                храмы и монастыри
+              </p>
+            </div>
+            <a href="#" class="button button--big button--white-green">Переходите на страницу проекта</a>
           </div>
-          <a href="#" class="button button--big button--white-green">Переходите на страницу проекта</a>
-        </div>
-      </div>
-
-      <div class="program-item program-item--sobriety">
-        <div class="container">
-          <div class="logo logo__pz logo__pz--blue"></div>
-          <div class="program__desc">
-            <p class="program__desc-heading">
-              Братство трезвости
-            </p>
-            <p class="program__desc-lead">
-              Бесплатные реабилитационные
-              центры при храмах
-            </p>
-          </div>
-          <a href="#" class="button button--big button--white-blue">Узнайте больше
-            о Братстве</a>
         </div>
 
+        <div class="program-item program-item--sobriety">
+          <div class="container">
+            <div class="logo logo__pz logo__pz--blue"></div>
+            <div class="program__desc">
+              <p class="program__desc-heading">
+                Братство трезвости
+              </p>
+              <p class="program__desc-lead">
+                Бесплатные реабилитационные
+                центры при храмах
+              </p>
+            </div>
+            <a href="#" class="button button--big button--white-blue">Узнайте больше
+              о Братстве</a>
+          </div>
+        </div>
+
       </div>
+      <!-- </div> -->
     </section>
 
     <section class="app">
@@ -243,29 +231,45 @@
           <p class="section__text section__text--grey">Мобильное приложение Правжизнь</p>
           <p class="section__text section__text--large">Молитвослов, Календарь, Библия</p>
         </div>
-        <div class="app__image"></div>
-        <div class="app__wrapper-list">
-          <ul class="app__list">
-            <li class="app__item">Планы чтения Евангелия + Библии — последовательно
-              и ежедневно читайте Священное Писание
-            </li>
-            <li class="app__item">Теперь точно не забудете о праздниках, именинах,
-              начале поста.
-            </li>
-            <li class="app__item">Полный канонический текст Евангелия на 80 языках.Православный молитвослов
-              на 15 языках.
-            </li>
-          </ul>
-          <div class="app__desc">
-            <p class="app__text app__text--grey">Все, что нужно православному христианину, каждый день</p>
-            <p class="app__text app__text--large">Скачать :</p>
+
+        <div class="app__wrapper">
+          <div class="app__right-col">
+            <div class="app__image"></div>
           </div>
 
-          <div class="app__logos">
-            <div class="app__logo app__logo--appstore"></div>
-            <div class="app__logo app__logo--playstore"></div>
+          <div class="app__left-col">
+            <div class="app__wrapper-list">
+              <ul class="app__list">
+                <li class="app__item">Планы чтения Евангелия + Библии — последовательно
+                  и ежедневно читайте Священное Писание
+                </li>
+                <li class="app__item">Теперь точно не забудете о праздниках, именинах,
+                  начале поста.
+                </li>
+                <li class="app__item">Полный канонический текст Евангелия на 80 языках.Православный молитвослов
+                  на 15 языках.
+                </li>
+              </ul>
+              <div class="app__desc">
+                <p class="app__text app__text--grey">Все, что нужно православному христианину, каждый день</p>
+                <div class="app__desktop-wrapper">
+                  <p class="app__text app__text--large">Скачать :</p>
+                  <div class="app__logos">
+                    <span class="app__logo app__logo--appstore"></span>
+                    <span class="app__logo app__logo--playstore"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="app__logos">
+                <div class="app__logo app__logo--appstore"></div>
+                <div class="app__logo app__logo--playstore"></div>
+              </div> -->
+            </div>
           </div>
+          <!--  -->
         </div>
+        <!--  -->
       </div>
     </section>
 

@@ -65,13 +65,27 @@
 // }
 
 @media (min-width: $desktop) {
-  .pod__quote {
-    width: 420px;
-    margin-left: 140px;
+  // .pod__quote {
+  //   width: 420px;
+  //   margin-left: 140px;
+  // }
+  // .pod__img {
+  //   float: right;
+  //   margin-right: 140px;
+  //   top: -130px;
+  // }
+
+
+  .pod-item {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
+
   .pod__img {
-    float: right;
-    margin-right: 140px;
-    top: -130px;
+    position: absolute;
+    top: 30px;
+    left: 660px;
   }
 }

@@ -5,7 +5,7 @@
 
 .app__image {
   width: 254px;
-  height: 225px;
+  min-height: 225px;
   background-image: url("../img/iphone_x.png");
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -78,3 +78,33 @@
   }
 }
 
+//DESKTOP
+@media (min-width: $desktop) {
+  .app__wrapper-list {
+    width: 480px;
+  }
+  .app__wrapper {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .app__image {
+    min-height: 510px;
+  }
+.app__desktop-wrapper {
+  width: 520px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  .app__logos {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 25px 0;
+  }
+  .app__logo:first-child {
+    margin-right: 20px;
+  }
+}

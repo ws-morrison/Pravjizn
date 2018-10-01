@@ -4,12 +4,7 @@
   flex-direction: column;
   align-items: center;
 }
-  // .donate-form--row-wrapper {
-  // margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // }
+
 .form__text {
   font-family: $secondary-regular;
   font-size: $font-size-s;
@@ -66,6 +61,21 @@
     top: 57px;
     right: 160px;
   }
+  .donate-form__input {
+  &--wide {
+    width: 290px;
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+.donate-form {
+  &--row {
+    width: 480px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
   .donate-form__input-caption {
     display: block;
     position: relative;
