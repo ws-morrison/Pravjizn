@@ -31,13 +31,42 @@
   align-items: center;
 }
 .drop-menu-button {
+  box-sizing: content-box;
   width: 160px;
-  height: 50px;
+  min-height: 50px;
   margin-bottom: 20px;
   background-color: inherit;
   border: 2px solid rgba(255, 255, 255, 0.25);
 
   &--accient-border {
     border: 2px solid #f7f606;
+  }
+}
+
+//  DESKTOP
+@media (min-width: $desktop) {
+  // .menu__wrapper {
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  // }
+  .drop-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: inherit;
+  }
+
+  .drop-menu__link {
+    text-decoration: none;
+    color: $white;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    margin: 0;
+  }
+
+  .drop-menu-button {
+    box-sizing: content-box;
+    // min-width: 134px;
+    min-height: 40px;
   }
 }

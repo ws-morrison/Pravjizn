@@ -87,3 +87,9 @@
     align-self: flex-end;
   }
 }
+
+@media (min-width: $desktop) {
+  .promo-app__logos {
+    display: none;
+  }
+}

@@ -372,6 +372,54 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: 'Museo Cyrillic Thin';
+  src: url("../fonts/MuseoCyrillic-300.woff2") format("woff2"), url("../fonts/MuseoCyrillic-300.woff") format("woff"), url("../fonts/MuseoCyrillic-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Cyrillic Regular';
+  src: url("../fonts/MuseoCyrillic-500.woff2") format("woff2"), url("../fonts/MuseoCyrillic-500.woff") format("woff"), url("../fonts/MuseoCyrillic-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Cyrillic Medium';
+  src: url("../fonts/MuseoCyrillic-700.woff2") format("woff2"), url("../fonts/MuseoCyrillic-700.woff") format("woff"), url("../fonts/MuseoCyrillic-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Cyrillic Bold';
+  src: url("../fonts/MuseoCyrillic-900.woff2") format("woff2"), url("../fonts/MuseoCyrillic-900.woff") format("woff"), url("../fonts/MuseoCyrillic-900.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Thin';
+  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Regular';
+  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Medium';
+  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Bold';
+  src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   width: 100%; }
 
@@ -421,55 +469,7 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 100px; } }
-
-@font-face {
-  font-family: 'Museo Cyrillic Thin';
-  src: url("../fonts/MuseoCyrillic-300.woff2") format("woff2"), url("../fonts/MuseoCyrillic-300.woff") format("woff"), url("../fonts/MuseoCyrillic-300.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Cyrillic Regular';
-  src: url("../fonts/MuseoCyrillic-500.woff2") format("woff2"), url("../fonts/MuseoCyrillic-500.woff") format("woff"), url("../fonts/MuseoCyrillic-500.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Cyrillic Medium';
-  src: url("../fonts/MuseoCyrillic-700.woff2") format("woff2"), url("../fonts/MuseoCyrillic-700.woff") format("woff"), url("../fonts/MuseoCyrillic-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Cyrillic Bold';
-  src: url("../fonts/MuseoCyrillic-900.woff2") format("woff2"), url("../fonts/MuseoCyrillic-900.woff") format("woff"), url("../fonts/MuseoCyrillic-900.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Sans Cyrl Thin';
-  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Sans Cyrl Regular';
-  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Sans Cyrl Medium';
-  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Museo Sans Cyrl Bold';
-  src: url("../fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+    padding: 0 110px; } }
 
 .header {
   width: 100%;
@@ -663,6 +663,10 @@ input[type="number"] {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
+
+@media (min-width: 1024px) {
+  .burger {
+    display: none; } }
 
 .button {
   display: -webkit-box;
@@ -1730,6 +1734,10 @@ input[type="number"] {
         -ms-flex-item-align: end;
             align-self: flex-end; }
 
+@media (min-width: 1024px) {
+  .promo-app__logos {
+    display: none; } }
+
 .drop-menu {
   width: 100%;
   display: none;
@@ -1780,13 +1788,39 @@ input[type="number"] {
           align-items: center; }
 
 .drop-menu-button {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 160px;
-  height: 50px;
+  min-height: 50px;
   margin-bottom: 20px;
   background-color: inherit;
   border: 2px solid rgba(255, 255, 255, 0.25); }
   .drop-menu-button--accient-border {
     border: 2px solid #f7f606; }
+
+@media (min-width: 1024px) {
+  .drop-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+    background-color: inherit; }
+  .drop-menu__link {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Museo Sans Cyrl Regular", sans-serif;
+    font-size: 16px;
+    margin: 0; }
+  .drop-menu-button {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    min-height: 40px; } }
 
 .shop-carousel__item-link {
   display: block;

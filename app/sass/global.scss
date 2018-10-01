@@ -47,14 +47,14 @@ input[type="number"] {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .container {
     padding: 0 80px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $desktop) {
   .container {
-    padding: 0 100px;
+    padding: 0 110px;
   }
 }

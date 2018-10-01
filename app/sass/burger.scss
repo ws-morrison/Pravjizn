@@ -59,3 +59,9 @@
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+@media (min-width: $desktop) {
+    .burger {
+       display: none;
+    }
+}
