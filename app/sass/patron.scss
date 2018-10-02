@@ -67,3 +67,25 @@
   text-decoration: none;
   color: $white;
 }
+
+// DESKTOP
+
+@media (min-width: $desktop) {
+  .patron__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+  }
+
+  .patron__img {
+    width: 340px;
+    height: 433px;
+  }
+  .patron-form__input {
+    width: 460px;
+  }
+  .patron__button {
+    margin: 0;
+  }
+}

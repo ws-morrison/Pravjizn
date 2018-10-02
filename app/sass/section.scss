@@ -37,21 +37,22 @@
   background-color: $secondary-bg;
 }
 
-.section__desc--thumb-notif {
-  position: relative;
-}
+// .section__desc--thumb-notif {
+//   display: block;
+//   position: relative;
+// }
 
-.section__desc--thumb-notif::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 20px;
-  background-image: url("../img/notification_icon.svg");
-  background-repeat: no-repeat;
-  right: 130px;
-  top: -25px;
-}
+// .section__desc--thumb-notif::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   width: 16px;
+//   height: 20px;
+//   background-image: url("../img/notification_icon.svg");
+//   background-repeat: no-repeat;
+//   right: 50%;
+//   top: -25px;
+// }
 
 // DESKTOP
 @media (min-width: $desktop) {
@@ -94,4 +95,21 @@
       margin-bottom: 25px;
     }
   }
+
+  // .section__desc--thumb-notif {
+  //   display: block;
+  //   position: relative;
+  // }
+
+  // .section__desc--thumb-notif::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 16px;
+  //   height: 20px;
+  //   background-image: url("../img/notification_icon.svg");
+  //   background-repeat: no-repeat;
+  //   right: 25%;
+  //   top: 0px;
+  // }
 }
