@@ -12,15 +12,14 @@
   box-sizing: content-box;
 
   &--big {
-    margin-top: 57px;
-
+    // margin-top: 25px;
     font-family: $secondary-regular;
     font-size: $font-size-s;
     line-height: 20px;
-
     width: 100%;
     max-width: 273px;
-    padding: 26px 38px 21px 40px;
+    min-height: 85px;
+    padding: 10px 40px 10px 40px;
     border-radius: 43.5px;
     box-sizing: border-box;
   }
@@ -28,15 +27,15 @@
   &--white-green {
     color: #026837;
     border: 2px solid #026837;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &--white-blue {
-    color: #1B1564;
-    border: 2px solid #1B1564;
-    background-color: #FFFFFF;
+    color: #1b1564;
+    border: 2px solid #1b1564;
+    background-color: #ffffff;
+    margin-top: 60px;
   }
-
 }
 
 .button--yellow {
@@ -48,19 +47,16 @@
 .button--green {
   background-image: linear-gradient(90deg, #02c7b5 0%, #029550 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
-
 }
 
 .button--blue {
   background-image: linear-gradient(90deg, #4794ef 0%, #2fb9aa 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
-
 }
 
 .button--orange {
   background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
-
 }
 
 .button--red {
@@ -68,7 +64,6 @@
 }
 
 .button__text {
-
   font-family: $secondary-regular;
   font-size: $font-size-s;
 
@@ -83,7 +78,6 @@
   &--red {
     color: $yt-red;
   }
-
 }
 
 //DESKTOP
@@ -92,6 +86,17 @@
     &--big {
       padding: 10px 40px 10px 40px;
       max-width: 440px;
+      margin-top: 65px;
+
+      font-family: $secondary-regular;
+      font-size: $font-size-s;
+      line-height: 20px;
+      min-height: 60px;
+
+      width: 100%;
+      // max-width: 273px;
+      border-radius: 43.5px;
+      box-sizing: border-box;
     }
   }
 }

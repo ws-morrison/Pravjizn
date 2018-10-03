@@ -93,39 +93,18 @@
     width: 50%;
     position: relative;
     background-repeat: no-repeat;
-    &--holies::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 108px;
-      bottom: 80px;
-      left: 45px;
-      background-image: url("../img/arrow-white-left.svg");
-    }
+  }
+  .container--program-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    &--sobriety::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 108px;
-      bottom: 80px;
-      right: 45px;
-      background-image: url("../img/arrow-white-right.svg");
-    }
+  .logo {
+    margin-right: 340px;
+  }
 
-    .container--program-item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .logo {
-      margin-right: 340px;
-    }
-
-    .program__desc {
-      width: 100%;
-    }
-
+  .program__desc {
+    width: 100%;
   }
 }
