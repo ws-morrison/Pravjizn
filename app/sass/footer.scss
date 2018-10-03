@@ -31,7 +31,15 @@
 .footer-list {
   margin: 0;
   list-style: none;
+
+  max-height: 0;
+  overflow: hidden;
 }
+
+.footer-list.show {
+ max-height: 100%;
+}
+
 .footer-list__item {
   margin-bottom: 20px;
 }

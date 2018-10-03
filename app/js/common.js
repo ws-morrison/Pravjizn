@@ -1,42 +1,63 @@
 "use strict";
 
 // Dropdown footer menu
-$(document).ready(function() {
-  var onFooterMenu = function() {
-    $(".footer-list").css({ display: "none" });
-    $(".opened-item").each(function() {
-      $(this).on("click", function() {
-        $(this)
-          .children(".open-list")
-          .slideToggle("fast");
-      });
-    });
-  };
-  onFooterMenu();
+$(document).ready(function () {
 
-  // Dropdown header menu
-  var OnBurgerMenu = function() {
-    $(".burger").on("click", function() {
-      $(".drop-menu").slideToggle(300);
-      $(".drop-menu").css("display", "flex");
+    $(".opened-item").on('click', function (evt) {
+        evt.preventDefault();
+
+        var list = $(this).find('.open-list');
+
+        if (list.hasClass('show') != true) {
+            $('.open-list').removeClass('show');
+            list.addClass('show');
+        } else {
+            list.removeClass('show');
+        }
+
     });
 
-    // Burger animation
-    $(".burger").click(function() {
-      $(this).toggleClass("open");
-      $(".menu").toggleClass("opened-menu");
-    });
-  };
-  OnBurgerMenu();
 
-  var onInfoServices = function() {
-    $(".info-service-item").addClass("visually-hidden");
-    $(".info-services__wrapper").each(function() {
-      $(this).on("click", function() {
-        $(this).children('.info-service-item').toggleClass("visually-hidden");
-      });
+    $(window).load(function () {
+        if ($(window).width() >= 1024) {
+            $('.open-list').addClass('show');
+        } else {
+            $('.open-list').removeClass('show');
+        }
     });
-  };
-  onInfoServices();
+
+    $(window).resize(function () {
+        if ($(window).width() >= 1024) {
+            $('.open-list').addClass('show');
+        } else {
+            $('.open-list').removeClass('show');
+        }
+    });
+
+
+    // Dropdown header menu
+    var OnBurgerMenu = function () {
+        $(".burger").on("click", function () {
+            $(".drop-menu").slideToggle(300);
+            $(".drop-menu").css("display", "flex");
+        });
+
+        // Burger animation
+        $(".burger").click(function () {
+            $(this).toggleClass("open");
+            $(".menu").toggleClass("opened-menu");
+        });
+    };
+    OnBurgerMenu();
+
+    var onInfoServices = function () {
+        $(".info-service-item").addClass("visually-hidden");
+        $(".info-services__wrapper").each(function () {
+            $(this).on("click", function () {
+                $(this).children('.info-service-item').toggleClass("visually-hidden");
+            });
+        });
+    };
+    onInfoServices();
 
 });

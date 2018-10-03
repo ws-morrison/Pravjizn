@@ -1,96 +1,97 @@
 .button {
-display: flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
-text-align: center;
-// margin: 0 auto;
-width: 240px;
-min-height: 60px;
-border: none;
-border-radius: 50px;
-box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  // margin: 0 auto;
+  width: 240px;
+  min-height: 60px;
+  border: none;
+  border-radius: 50px;
+  box-sizing: content-box;
 
-    &--big {
-        font-family: $secondary-regular;
-        font-size: $font-size-s;
-        line-height: 20px;
+  &--big {
+    margin-top: 57px;
 
-        width: 100%;
-        max-width: 273px;
-        padding: 26px 38px 21px 40px;
-        border-radius: 43.5px;
-        box-sizing: border-box;
-    }
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    line-height: 20px;
 
-    &--white-green {
-        color: #026837;
-        border: 2px solid #026837;
-        background-color: #FFFFFF;
-    }
+    width: 100%;
+    max-width: 273px;
+    padding: 26px 38px 21px 40px;
+    border-radius: 43.5px;
+    box-sizing: border-box;
+  }
 
-    &--white-blue {
-        color: #1B1564;
-        border: 2px solid #1B1564;
-        background-color: #FFFFFF;
-        margin-top: 57px;
-    }
+  &--white-green {
+    color: #026837;
+    border: 2px solid #026837;
+    background-color: #FFFFFF;
+  }
+
+  &--white-blue {
+    color: #1B1564;
+    border: 2px solid #1B1564;
+    background-color: #FFFFFF;
+  }
 
 }
 
 .button--yellow {
-    background-image: linear-gradient(90deg, #f7f606 0%, #f7a406 100%);
-    box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
-    margin-bottom: 55px;
+  background-image: linear-gradient(90deg, #f7f606 0%, #f7a406 100%);
+  box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  margin-bottom: 55px;
 }
 
 .button--green {
-    background-image: linear-gradient(90deg, #02c7b5 0%, #029550 100%);
-    box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  background-image: linear-gradient(90deg, #02c7b5 0%, #029550 100%);
+  box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
 
 }
 
 .button--blue {
-    background-image: linear-gradient(90deg, #4794ef 0%, #2fb9aa 100%);
-    box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  background-image: linear-gradient(90deg, #4794ef 0%, #2fb9aa 100%);
+  box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
 
 }
 
 .button--orange {
-    background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
-    box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
+  box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
 
 }
 
 .button--red {
-    background: #ea3518;
+  background: #ea3518;
 }
 
 .button__text {
 
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
 
-    &--black {
-        color: $primary-text;
-    }
+  &--black {
+    color: $primary-text;
+  }
 
-    &--white {
-        color: $white;
-    }
+  &--white {
+    color: $white;
+  }
 
-    &--red {
-      color: $yt-red;
-    }
+  &--red {
+    color: $yt-red;
+  }
 
 }
-
 
 //DESKTOP
 @media (min-width: $desktop) {
   .button {
     &--big {
-     padding: 10px 40px 10px 40px;
+      padding: 10px 40px 10px 40px;
+      max-width: 440px;
     }
   }
 }

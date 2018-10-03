@@ -77,7 +77,8 @@
 
 
   .pod-item {
-    width: 720px;
+    //width: 720px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -86,6 +87,6 @@
   .pod__img {
     position: absolute;
     top: 30px;
-    left: 660px;
+    left: 500px;
   }
 }

@@ -79,7 +79,9 @@
 //DESKTOP
 @media (min-width: $desktop) {
   .programs__wrapper {
-    width: 80%;
+    //width: 80%;
+    width: 100%;
+    //padding: 0px 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -88,6 +90,7 @@
   }
 
   .program-item {
+    width: 50%;
     position: relative;
     background-repeat: no-repeat;
     &--holies::before {
@@ -109,5 +112,20 @@
       right: 45px;
       background-image: url("../img/arrow-white-right.svg");
     }
+
+    .container--program-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .logo {
+      margin-right: 340px;
+    }
+
+    .program__desc {
+      width: 100%;
+    }
+
   }
 }
