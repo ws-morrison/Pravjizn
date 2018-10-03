@@ -1391,17 +1391,12 @@ input[type="number"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
     width: 270px;
     min-height: 60px;
-    margin: 0 auto;
-    border: 2px solid grey; }
+    border: 2px solid rgba(33, 33, 33, 0.2); }
   .yt__sub-button-inner {
     display: block;
     width: 260px;
@@ -1497,6 +1492,17 @@ input[type="number"] {
   line-height: 26px;
   color: #212121; }
 
+.service-item__links-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .service-item__caption {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px;
@@ -1511,7 +1517,8 @@ input[type="number"] {
   margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 20px; }
 
 .service-item__button-link {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -1523,7 +1530,9 @@ input[type="number"] {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px;
   color: #8D9E5A;
-  margin-top: 20px; }
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
 
 .service-item__thumb {
   width: 50px;
@@ -1672,9 +1681,9 @@ input[type="number"] {
     padding-left: 20px;
     padding-right: 20px; }
   .service-item__link {
-    -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-            align-self: flex-start; } }
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; } }
 
 .info-services {
   padding-top: 40px;
