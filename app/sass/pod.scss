@@ -1,93 +1,93 @@
-.pod {
-  margin-bottom: 100px;
-}
-.pod__quote-lead {
-  font-family: $primary-thin;
-  font-size: $font-size-2xl;
-  color: $primary-text;
-}
-.pod__img {
-  //OLD
-  //width: 320px;
-  //height: 324px;
-  //margin: 0 auto;
-  //background-image: url("../img/batushka_img.png");
-  //background-repeat: no-repeat;
-  //background-size: 120%;
-  //background-position-x: -35px;
+// .pod {
+//   margin-bottom: 100px;
+// }
+// .pod__quote-lead {
+//   font-family: $primary-thin;
+//   font-size: $font-size-2xl;
+//   color: $primary-text;
+// }
+// .pod__img {
+//   //OLD
+//   //width: 320px;
+//   //height: 324px;
+//   //margin: 0 auto;
+//   //background-image: url("../img/batushka_img.png");
+//   //background-repeat: no-repeat;
+//   //background-size: 120%;
+//   //background-position-x: -35px;
 
-  //NEW
-  position: relative;
+//   //NEW
+//   position: relative;
 
-  width: 100%;
-  max-width: 468px;
-  height: 384px;
-  margin: 0 auto;
-
-  background-image: url("../img/batushka_img.png");
-  -webkit-background-size: 468px 384px;
-  background-size: 468px 384px;
-  background-repeat: no-repeat;
-  background-position: center 0;
-}
-.pod__quote-text {
-  font-family: $secondary-regular;
-  font-size: $font-size-m;
-  color: $primary-text;
-  line-height: 26px;
-  margin-bottom: 40px;
-}
-
-.pod__quote-link {
-  color: $link-color;
-}
-
-.pod__author-heading {
-  font-family: $primary-medium;
-  font-size: $font-size-xl;
-  color: $primary-text;
-  margin: 0;
-}
-
-.pod__author-caption {
-  font-family: $secondary-regular;
-  font-size: $font-size-s;
-  color: $primary-text;
-  font-style: italic;
-  line-height: 26px;
-  margin: 0;
-  margin-bottom: 25px;
-}
-
-// .pod__container {
+//   width: 100%;
+//   // max-width: 468px;
+//   // height: 384px;
 //   margin: 0 auto;
-//   padding: 0 20px 0 20px;
-//   box-sizing: border-box;
+
+//   background-image: url("../img/batushka_img.png");
+//   -webkit-background-size: 468px 384px;
+//   background-size: 468px 384px;
+//   background-repeat: no-repeat;
+//   background-position: center 0;
+// }
+// .pod__quote-text {
+//   font-family: $secondary-regular;
+//   font-size: $font-size-m;
+//   color: $primary-text;
+//   line-height: 26px;
+//   margin-bottom: 40px;
 // }
 
-@media (min-width: $desktop) {
-  // .pod__quote {
-  //   width: 420px;
-  //   margin-left: 140px;
-  // }
-  // .pod__img {
-  //   float: right;
-  //   margin-right: 140px;
-  //   top: -130px;
-  // }
+// .pod__quote-link {
+//   color: $link-color;
+// }
+
+// .pod__author-heading {
+//   font-family: $primary-medium;
+//   font-size: $font-size-xl;
+//   color: $primary-text;
+//   margin: 0;
+// }
+
+// .pod__author-caption {
+//   font-family: $secondary-regular;
+//   font-size: $font-size-s;
+//   color: $primary-text;
+//   font-style: italic;
+//   line-height: 26px;
+//   margin: 0;
+//   margin-bottom: 25px;
+// }
+
+// // .pod__container {
+// //   margin: 0 auto;
+// //   padding: 0 20px 0 20px;
+// //   box-sizing: border-box;
+// // }
+
+// @media (min-width: $desktop) {
+//   // .pod__quote {
+//   //   width: 420px;
+//   //   margin-left: 140px;
+//   // }
+//   // .pod__img {
+//   //   float: right;
+//   //   margin-right: 140px;
+//   //   top: -130px;
+//   // }
 
 
-  .pod-item {
-    //width: 720px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
+//   .pod-item {
+//     //width: 720px;
+//     width: 50%;
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//   }
 
-  .pod__img {
-    position: absolute;
-    top: 30px;
-    left: 95%;
-  }
-}
+//   .pod__img {
+//     position: absolute;
+//     top: 30px;
+//     left: 95%;
+//   }
+// }
