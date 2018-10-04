@@ -23,10 +23,6 @@
       ),
       url("../img/bratstvo_trezvosty.png");
   }
-
-  .logo {
-    margin-bottom: 344px;
-  }
 }
 
 .program__desc {
@@ -48,44 +44,18 @@
   text-align: center;
   margin: 0;
 }
-// .program-button {
-//   position: relative;
-//   background-color: $white;
-//   bottom: -43px;
-//   width: 270px;
-//   height: 86px;
-//   &--prog-accient-1 {
-//     border: 2px solid #026837;
-//   }
-//   &--prog-accient-2 {
-//     border: 2px solid #1b1564;
-//   }
-// }
-// .program-button__link {
-//   font-family: $secondary-regular;
-//   font-size: $font-size-s;
-//   text-align: center;
-//   text-decoration: none;
-//   &--prog-accient-1 {
-//     color: $prog-accient-1;
-//   }
-//   &--prog-accient-2 {
-//     color: $prog-accient-2;
-//   }
-// }
+
 .programs__container {
   padding: 0 120px;
 }
 //DESKTOP
 @media (min-width: $desktop) {
   .programs__wrapper {
-    //width: 80%;
     width: 100%;
-    //padding: 0px 40px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    // padding: 0 150px;
+    // justify-content: space-between;
+    justify-content: center;
     margin-top: 90px;
   }
 
@@ -99,7 +69,38 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .program__desc-lead {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .program__desc-lead--left::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 108px;
+    background-image: url("../img/arrow-white-left.svg");
+    background-repeat: no-repeat;
+    left: -85px;
+    bottom: -50px;
+  }
+    .program__desc-lead--right::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 108px;
+    background-image: url("../img/arrow-white-right.svg");
+    background-repeat: no-repeat;
+    right: -85px;
+    bottom: -50px;
+  }
+  .program-item:nth-child(1) {
+    margin-left: 120px;
+  }
+  .program-item:nth-child(2) {
+    margin-right: 120px;
+  }
   .logo {
     margin-right: 340px;
   }

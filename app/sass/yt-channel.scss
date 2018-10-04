@@ -115,9 +115,6 @@
 
 .yt__sub-button-thumb {
   display: block;
-  // content: "►";
-  // color: $white;
-  // margin: 0 auto;
   margin-right: 20px;
   width: 24px;
   height: 17px;
@@ -138,6 +135,11 @@
 
 // DESKTOP
 @media (min-width: 1024px) {
+  .yt-channel {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+}
   .yt__desc {
     width: 100%;
     display: flex;

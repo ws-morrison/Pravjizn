@@ -80,9 +80,16 @@
 
 //DESKTOP
 @media (min-width: $desktop) {
+  .app {
+    margin-bottom: 120px;
+  }
   .app__wrapper-list {
     width: 480px;
+    margin-top: 50px;
   }
+  .app__list {
+  margin-bottom: 20px;
+}
   .app__wrapper {
     margin-top: 55px;
     display: flex;
@@ -105,6 +112,6 @@
     margin: 25px 0;
   }
   .app__logo:first-child {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }

@@ -1,5 +1,4 @@
 .section__desc {
-  // width: 280px;
   margin: 0 auto;
   margin-bottom: 50px;
   &--white-text {
@@ -7,11 +6,17 @@
   }
 }
 
+.section__text-width {
+  display: block;
+  // margin: 0 auto;
+}
 .section__text {
   font-family: $primary-regular;
   font-size: $font-size-s;
   text-align: center;
   line-height: 20px;
+
+  margin-bottom: 30px;
   &--large {
     font-family: $primary-medium;
     font-size: $font-size-xl;
@@ -37,43 +42,33 @@
   background-color: $secondary-bg;
 }
 
-// .section__desc--thumb-notif {
-//   display: block;
-//   position: relative;
-// }
-
-// .section__desc--thumb-notif::before {
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   width: 16px;
-//   height: 20px;
-//   background-image: url("../img/notification_icon.svg");
-//   background-repeat: no-repeat;
-//   right: 50%;
-//   top: -25px;
-// }
-
 // DESKTOP
 @media (min-width: $desktop) {
   .section__desc {
-    // width: 520px;
     margin: 0 auto;
     margin-bottom: 10px;
     &--white-text {
       color: $white;
+      line-height: 30px;
+    }
+  }
+
+  .section__text-width {
+    display: block;
+    &--header {
+      width: 45%;
     }
   }
   .section__text {
     font-family: $primary-regular;
     font-size: $font-size-desktop-s;
     text-align: center;
-    line-height: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
     &--large {
       font-family: $primary-medium;
       font-size: $font-size-desktop-xl;
-      margin: 0;
-      line-height: 35px;
+      line-height: 45px;
     }
     &--huge {
       font-family: $primary-thin;
@@ -83,6 +78,7 @@
     }
     &--grey {
       color: $faded;
+      margin-bottom: 15px;
     }
 
     &--bold {
@@ -95,21 +91,4 @@
       margin-bottom: 25px;
     }
   }
-
-  // .section__desc--thumb-notif {
-  //   display: block;
-  //   position: relative;
-  // }
-
-  // .section__desc--thumb-notif::before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   width: 16px;
-  //   height: 20px;
-  //   background-image: url("../img/notification_icon.svg");
-  //   background-repeat: no-repeat;
-  //   right: 25%;
-  //   top: 0px;
-  // }
 }

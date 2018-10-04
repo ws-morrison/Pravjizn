@@ -540,13 +540,12 @@ input[type="number"] {
     background-position: center;
     -webkit-background-size: contain;
             background-size: contain;
-    margin-bottom: 40px; }
-  .header-nav {
-    margin-bottom: 120px; }
-  .header--bg {
-    padding-bottom: 122px;
+    margin-bottom: 120px;
+    padding-bottom: 65px;
     -webkit-background-size: 1440px 648px;
-            background-size: 1440px 648px; } }
+            background-size: 1440px 648px; }
+  .header-nav {
+    margin-bottom: 125px; } }
 
 .donate-form {
   margin: 0 auto;
@@ -663,11 +662,15 @@ input[type="number"] {
   .section__desc--white-text {
     color: #FFF; }
 
+.section__text-width {
+  display: block; }
+
 .section__text {
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 16px;
   text-align: center;
-  line-height: 20px; }
+  line-height: 20px;
+  margin-bottom: 30px; }
   .section__text--large {
     font-family: "Museo Cyrillic Medium", sans-serif;
     font-size: 25px;
@@ -690,24 +693,30 @@ input[type="number"] {
     margin: 0 auto;
     margin-bottom: 10px; }
     .section__desc--white-text {
-      color: #FFF; }
+      color: #FFF;
+      line-height: 30px; }
+  .section__text-width {
+    display: block; }
+    .section__text-width--header {
+      width: 45%; }
   .section__text {
     font-family: "Museo Cyrillic Regular", sans-serif;
     font-size: 20px;
     text-align: center;
-    line-height: 20px; }
+    line-height: 30px;
+    margin-bottom: 30px; }
     .section__text--large {
       font-family: "Museo Cyrillic Medium", sans-serif;
       font-size: 35px;
-      margin: 0;
-      line-height: 35px; }
+      line-height: 45px; }
     .section__text--huge {
       font-family: "Museo Cyrillic Thin", sans-serif;
       font-size: 45px;
       margin: 0;
       line-height: 50px; }
     .section__text--grey {
-      color: #9B9B9B; }
+      color: #9B9B9B;
+      margin-bottom: 15px; }
     .section__text--bold {
       font-family: "Museo Cyrillic Bold", sans-serif; }
     .section__text--line-height {
@@ -855,7 +864,7 @@ input[type="number"] {
   .button--big {
     padding: 10px 40px 10px 40px;
     max-width: 440px;
-    margin-top: 65px;
+    margin-top: 45px;
     font-family: "Museo Sans Cyrl Regular", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -894,7 +903,8 @@ input[type="number"] {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 25px;
   color: #212121;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 15px; }
 
 .feedback__author-caption {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -983,6 +993,8 @@ input[type="number"] {
   color: #8D9E5A; }
 
 @media (min-width: 1024px) {
+  .feedback {
+    margin-bottom: 130px; }
   .feedback__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -990,7 +1002,8 @@ input[type="number"] {
     display: flex;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; }
+            justify-content: space-around;
+    margin-bottom: 95px; }
     .feedback__item--row-reverse {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
@@ -1012,7 +1025,8 @@ input[type="number"] {
     top: unset;
     left: unset; }
   .feedback__img--pod {
-    margin: 0; } }
+    margin: 0;
+    margin-top: 83px; } }
 
 .program-item {
   display: -webkit-box;
@@ -1034,8 +1048,6 @@ input[type="number"] {
     background-image: -webkit-linear-gradient(top, rgba(68, 89, 140, 0.4) 0%, #44598c 100%), url("../img/bratstvo_trezvosty.png");
     background-image: -o-linear-gradient(top, rgba(68, 89, 140, 0.4) 0%, #44598c 100%), url("../img/bratstvo_trezvosty.png");
     background-image: linear-gradient(-180deg, rgba(68, 89, 140, 0.4) 0%, #44598c 100%), url("../img/bratstvo_trezvosty.png"); }
-  .program-item .logo {
-    margin-bottom: 344px; }
 
 .program__desc {
   width: 280px;
@@ -1066,10 +1078,10 @@ input[type="number"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 90px; }
   .program-item {
     width: 50%;
@@ -1087,6 +1099,33 @@ input[type="number"] {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .program__desc-lead {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    position: relative; }
+  .program__desc-lead--left::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 108px;
+    background-image: url("../img/arrow-white-left.svg");
+    background-repeat: no-repeat;
+    left: -85px;
+    bottom: -50px; }
+  .program__desc-lead--right::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 108px;
+    background-image: url("../img/arrow-white-right.svg");
+    background-repeat: no-repeat;
+    right: -85px;
+    bottom: -50px; }
+  .program-item:nth-child(1) {
+    margin-left: 120px; }
+  .program-item:nth-child(2) {
+    margin-right: 120px; }
   .logo {
     margin-right: 340px; }
   .program__desc {
@@ -1176,8 +1215,13 @@ input[type="number"] {
     background-image: url("../img/google_play.svg"); }
 
 @media (min-width: 1024px) {
+  .app {
+    margin-bottom: 120px; }
   .app__wrapper-list {
-    width: 480px; }
+    width: 480px;
+    margin-top: 50px; }
+  .app__list {
+    margin-bottom: 20px; }
   .app__wrapper {
     margin-top: 55px;
     display: -webkit-box;
@@ -1222,7 +1266,7 @@ input[type="number"] {
             align-self: center;
     margin: 25px 0; }
   .app__logo:first-child {
-    margin-right: 10px; } }
+    margin-right: 20px; } }
 
 .yt-channel {
   padding-top: 40px;
@@ -1388,6 +1432,10 @@ input[type="number"] {
   color: #FFF; }
 
 @media (min-width: 1024px) {
+  .yt-channel {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 120px; }
   .yt__desc {
     width: 100%;
     display: -webkit-box;
@@ -2422,6 +2470,9 @@ input[type="number"] {
   font-size: 20px;
   color: #212121;
   line-height: 24px; }
+
+.logo {
+  margin-bottom: 344px; }
 
 .logo {
   display: block;

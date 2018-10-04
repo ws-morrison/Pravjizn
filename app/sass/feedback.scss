@@ -27,6 +27,7 @@
   font-size: $font-size-xl;
   color: $primary-text;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .feedback__author-caption {
@@ -127,10 +128,13 @@
 }
 
 @media (min-width: $desktop) {
+  .feedback {
+  margin-bottom: 130px;
+}
   .feedback__item {
     display: flex;
     justify-content: space-around;
-
+    margin-bottom: 95px;
     &--row-reverse {
       flex-direction: row-reverse;
     }
@@ -157,6 +161,7 @@
   .feedback__img {
     &--pod {
       margin: 0;
+      margin-top: 83px;
     }
   }
 }
