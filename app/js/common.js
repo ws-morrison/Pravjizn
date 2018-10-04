@@ -3,24 +3,25 @@
 // Dropdown footer menu
 $(document).ready(function () {
 
+  var onFooterMenu = function() {
     $(".opened-item").on('click', function (evt) {
         evt.preventDefault();
-
         var list = $(this).find('.open-list');
-
         if (list.hasClass('show') != true) {
             $('.open-list').removeClass('show');
             list.addClass('show');
         } else {
             list.removeClass('show');
         }
-
     });
+  };
+  onFooterMenu();
 
 
     $(window).load(function () {
         if ($(window).width() >= 1024) {
             $('.open-list').addClass('show');
+          $('opened-item').off('click', '.opened-item');
         } else {
             $('.open-list').removeClass('show');
         }
@@ -33,7 +34,6 @@ $(document).ready(function () {
             $('.open-list').removeClass('show');
         }
     });
-
 
     // Dropdown header menu
     var OnBurgerMenu = function () {

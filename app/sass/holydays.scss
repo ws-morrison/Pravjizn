@@ -27,7 +27,6 @@
   &--large {
     font-family: $primary-medium;
     font-size: $font-size-xl;
-    margin: 0;
     line-height: 30px;
   }
   &--grey {
@@ -76,5 +75,61 @@
 
 // DESKTOP
 @media (min-width: 1024px) {
+  .holydays {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .holydays--green-bg {
+    width: 100%;
+    background-image: url("../img/bg_green.png");
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+  }
+  .holydays__wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .holydays__item {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  .holydays__img-wrapper {
+    position: absolute;
+    top: 30px;
+    right: 50%;
+  }
 
+  .holydays__text {
+    font-family: $primary-regular;
+    font-size: $font-size-m;
+    text-align: left;
+    margin: 0;
+    line-height: 26px;
+    &--large {
+      font-family: $primary-medium;
+      font-size: $font-size-desktop-xl;
+      margin: 0;
+      margin-bottom: 50px;
+      line-height: 30px;
+    }
+    &--grey {
+      color: $faded;
+    }
+
+    &--bold {
+      font-family: $primary-bold;
+    }
+    &--line-height {
+      line-height: 26px;
+    }
+  }
+
+  .holydays__button {
+    margin: 0;
+  }
 }
