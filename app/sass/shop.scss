@@ -1,31 +1,43 @@
 .shop {
-    padding-top: 70px;
-    padding-bottom: 50px;
-    background-color: $primary-bg;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: $primary-bg;
 }
 .shop__logo {
-    width: 50px;
-    height: 48px;
-    margin: 0 auto;
-    background-image: url("../img/main_logo-red.svg");
+  width: 79px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url("../img/icon/main_logo-red.svg");
 }
 
 .shop-desc__text {
-    text-align: center;
-    font-family: $primary-regular;
-    font-size: $font-size-l;
-    color: $primary-text;
-    line-height: 30px;
+  text-align: center;
+  font-family: $primary-regular;
+  font-size: $font-size-l;
+  color: $primary-text;
+  line-height: 30px;
 }
 
 .shop__button {
-    width: 280px;
-    margin: 0 auto;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .shop__button-link {
-    text-decoration: none;
-    color: $white;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
+  text-decoration: none;
+  color: $white;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+}
+
+// DESKTOP
+@media (min-width: $desktop) {
+  .shop {
+    padding-bottom: 110px;
+    margin-bottom: 110px;
+  }
+  .shop-desc__text {
+margin-top: 60px;
+margin-bottom: 40px;
+  }
 }

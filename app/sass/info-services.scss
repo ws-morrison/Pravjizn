@@ -1,4 +1,5 @@
 .info-services {
+  display: block;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $primary-bg;
@@ -8,7 +9,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //margin-bottom: 60px;
 }
 
 .info-services__title {
@@ -41,7 +41,8 @@
 
 .info-services__wrapper {
   position: relative;
-  border-bottom: 2px solid #edede6;
+  border-bottom: 1px solid $service-item-border;
+  border-top: 1px solid $service-item-border;
   border-width: 100%;
 }
 
@@ -63,6 +64,7 @@
 .info-service-item__button {
   width: 260px;
   height: 60px;
+  margin-bottom: 40px;
 }
 
 .info-service-item__button-link {
@@ -82,14 +84,14 @@
 
 .info-service-item__thumb {
   width: 50px;
-  height: 48px;
-  &--lightblue {
-    background-image: url("../img/main_logo-lightblue.svg");
-  }
-  &--lightgreen {
-    background-image: url("../img/main_logo-lightgreen.svg");
-  }
+  height: 50px;
   &--orange {
-    background-image: url("../img/main_logo-orange.svg");
+    background-image: url("../img/icon/main_logo-dark-orange-small.svg");
+  }
+}
+
+@media (min-width: $desktop) {
+  .info-service {
+    display: none;
   }
 }

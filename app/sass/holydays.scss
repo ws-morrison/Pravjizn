@@ -99,9 +99,10 @@
     flex-direction: column;
   }
   .holydays__img-wrapper {
+    display: block;
     position: absolute;
-    top: 30px;
-    right: 50%;
+    top: -15px;
+    right: 47%;
   }
 
   .holydays__text {

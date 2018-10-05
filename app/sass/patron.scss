@@ -10,6 +10,9 @@
   display: flex;
   justify-content: center;
 }
+.patron-form {
+  margin-top: 20px;
+}
 .patron-form__label {
   font-family: $secondary-regular;
   font-size: $font-size-s;
@@ -71,21 +74,36 @@
 // DESKTOP
 
 @media (min-width: $desktop) {
+  .patron {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .patron__wrapper {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 75px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
-
+  .patron__img-left-col {
+    // width: 50%;
+    // padding-left: 50px;
+  }
+  .patron__img-right-col {
+    // width: 50%;
+    // padding-right: 50px;
+  }
   .patron__img {
     width: 340px;
-    height: 433px;
+    height: 483px;
   }
   .patron-form__input {
     width: 460px;
   }
   .patron__button {
+    width: 330px;
     margin: 0;
   }
 }

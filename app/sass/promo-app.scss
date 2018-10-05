@@ -60,7 +60,7 @@
   background-image: url("../img/phone_mini_white.svg");
   background-repeat: no-repeat;
   top: 0;
-  left: -30px;
+  left: -15px;
 }
 
 .promo-app__logos {
@@ -99,7 +99,7 @@
       margin-left: 20px;
     }
   }
-  .promo-app {
+  .promo-app--order {
     margin: 0;
     padding: 0;
     order: -1;
@@ -117,5 +117,13 @@
 
   .promo-app__text .promo-app__text--small .promo-app__text--white-text {
     margin: 0px;
+  }
+  .promo-app__logos--desktop {
+    width: 75px;
+    min-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
   }
 }
