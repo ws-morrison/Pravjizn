@@ -101,8 +101,9 @@
 .pod__quote {
   &--mobile-relative {
     display: block;
-    width: 273px;
+    width: 100%;
     position: absolute;
+    text-align: center;
     left: 0;
     right: 0;
     top: -675px;
