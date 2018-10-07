@@ -25,7 +25,7 @@
   content: "▼";
   position: absolute;
   font-size: 14px;
-  right: 0;
+  margin-left: 20px;
   top: 5px;
 }
 .footer-list {
@@ -113,6 +113,22 @@
   }
 }
 
+
+@media (min-width: $tablet) {
+.footer-item__heading {
+  text-align: center;
+}
+.footer-list {
+  text-align: center;
+}
+  .footer-list__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+// DESKTOP
 @media (min-width: $desktop) {
   .footer {
     padding-top: 120px;
@@ -121,10 +137,15 @@
   .footer-item {
     width: 100%;
   }
-
+ .footer-item__heading {
+  text-align: left;
+  }
   .footer-item__heading::after {
     display: none;
   }
+  .footer-list {
+  text-align: left;
+}
   .footer__wrapper {
     display: flex;
     flex-direction: row;

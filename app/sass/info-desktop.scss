@@ -103,6 +103,8 @@
     max-width: 370px;
     margin: 0 auto;
     margin-top: 80px;
+    position: relative;
+    padding: 20px;
   }
 
   .info-item__button {
@@ -117,7 +119,7 @@
     border-radius: 43.5px;
     box-sizing: border-box;
     position: relative;
-    top: 50px;
+    top: 33px;
   }
   .info-item__text {
     font-family: $secondary-regular;

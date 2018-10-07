@@ -58,6 +58,7 @@
   font-size: $font-size-s;
   color: $faded;
   font-style: italic;
+  text-align: center;
 }
 .service-item__button {
   width: 260px;
@@ -193,6 +194,9 @@
   .service-item__desc {
     text-align: left;
   }
+  .service-item__caption {
+  text-align: left;
+}
 
   .service-item__right-col {
     width: 35%;

@@ -57,6 +57,19 @@
 .section--secondary-bg {
   background-color: $secondary-bg;
 }
+.section__text-width {
+  display: block;
+  &--yt::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    top: -25px;
+    right: 125px;
+    background-image: url("../img/icon/notification_icon.svg");
+    background-repeat: no-repeat;
+  }
+}
 
 // DESKTOP
 @media (min-width: $desktop) {
