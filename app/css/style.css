@@ -2248,9 +2248,6 @@ input[type="number"] {
     margin-top: 75px;
     padding-left: 200px;
     padding-right: 200px; }
-  .patron__img {
-    width: 340px;
-    height: 483px; }
   .patron-form__input {
     width: 460px; }
   .patron__button {
@@ -2263,8 +2260,8 @@ input[type="number"] {
   padding-bottom: 65px;
   background-image: url("../img/bg_green.png");
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  -webkit-background-size: 450% 450%;
+          background-size: 450%;
   background-position-x: center;
   background-position-y: 0; }
 
@@ -2308,9 +2305,9 @@ input[type="number"] {
 
 .holydays__img {
   width: 320px;
-  height: 424px;
+  height: 414px;
   margin: 0 auto;
-  background-image: url("../img/holyday.jpg");
+  background-image: url("../img/holydays-1.png");
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
           background-size: 100%; }
