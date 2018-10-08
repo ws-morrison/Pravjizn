@@ -54,6 +54,10 @@ input[type="number"] {
 // }
 
 @media (min-width: $desktop) {
+  section {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
   .container {
     padding: 0 40px;
     &--wide {

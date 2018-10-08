@@ -1,8 +1,11 @@
 .donate-form {
-  margin: 0 auto;
+  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: flex-start;
 }
 
 .form__text {
@@ -62,20 +65,25 @@
     right: 160px;
   }
   .donate-form__input {
-  &--wide {
-    width: 290px;
-    margin: 0;
-    margin-right: 10px;
+    &--wide {
+      width: 290px;
+      margin: 0;
+      margin-right: 10px;
+    }
   }
-}
-.donate-form {
-  &--row {
-    width: 480px;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 50px;
+  .donate-form {
+    padding-left: 20px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--row {
+      width: 480px;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 50px;
+    }
   }
-}
   .donate-form__input-caption {
     display: block;
     position: relative;
@@ -91,5 +99,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
+}
+
+@media (min-width: 1490px) {
+  .donate-form {
+    padding-left: 120px;
   }
 }

@@ -1,4 +1,6 @@
 .program-item {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
 
   background-repeat: no-repeat;
@@ -85,7 +87,7 @@
     left: -85px;
     bottom: -50px;
   }
-    .program__desc-lead--right::before {
+  .program__desc-lead--right::before {
     content: "";
     position: absolute;
     width: 30px;
