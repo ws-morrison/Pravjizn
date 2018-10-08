@@ -629,7 +629,6 @@ input[type="number"] {
     margin: 0;
     margin-right: 10px; }
   .donate-form {
-    padding-left: 20px;
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
@@ -646,6 +645,8 @@ input[type="number"] {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .donate-form--padding {
+      padding-left: 20px; }
     .donate-form--row {
       width: 480px;
       -webkit-box-pack: justify;
@@ -685,7 +686,7 @@ input[type="number"] {
             align-items: center; } }
 
 @media (min-width: 1490px) {
-  .donate-form {
+  .donate-form--padding {
     padding-left: 120px; } }
 
 .section__desc {
