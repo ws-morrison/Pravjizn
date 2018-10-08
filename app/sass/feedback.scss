@@ -127,8 +127,15 @@
 .pod__quote-link {
   color: $link-color;
 }
+.feedback__img__wrapper--mobile {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 @media (min-width: $desktop) {
+  .feedback__img__wrapper--mobile {
+    display: unset;
+  }
   .feedback {
   margin-bottom: 130px;
 }

@@ -4,10 +4,11 @@
   background-color: $primary-bg;
 }
 .shop__logo {
-  width: 79px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
-  background-image: url("../img/icon/main_logo-red.svg");
+  margin-bottom: 30px;
+  background-image: url("../img/icon/main_logo-red-medium.svg");
 }
 
 .shop-desc__text {
@@ -16,6 +17,10 @@
   font-size: $font-size-l;
   color: $primary-text;
   line-height: 30px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .shop__button {
@@ -37,7 +42,7 @@
     margin-bottom: 110px;
   }
   .shop-desc__text {
-margin-top: 60px;
-margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }

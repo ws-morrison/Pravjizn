@@ -668,7 +668,7 @@ input[type="number"] {
 .section__text-width {
   display: block; }
   .section__text-width--yt {
-    width: 280px;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     margin-top: 60px; }
@@ -681,6 +681,15 @@ input[type="number"] {
     right: 130px;
     background-image: url("../img/notification_icon.svg");
     background-repeat: no-repeat; }
+  .section__text-width--app-caption {
+    width: 75%;
+    margin: 0 auto; }
+  .section__text-width--yt-channel {
+    width: 80%;
+    margin: 0 auto; }
+  .section__text-width--shop-caption {
+    width: 90%;
+    margin: 0 auto; }
 
 .section__text {
   font-family: "Museo Cyrillic Regular", sans-serif;
@@ -692,6 +701,7 @@ input[type="number"] {
     font-family: "Museo Cyrillic Medium", sans-serif;
     font-size: 25px;
     margin: 0;
+    margin: 0 auto;
     line-height: 35px; }
   .section__text--grey {
     color: #9B9B9B; }
@@ -1044,7 +1054,20 @@ input[type="number"] {
 .pod__quote-link {
   color: #8D9E5A; }
 
+.feedback__img__wrapper--mobile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+
 @media (min-width: 1024px) {
+  .feedback__img__wrapper--mobile {
+    display: unset; }
   .feedback {
     margin-bottom: 130px; }
   .feedback__item {
@@ -1550,7 +1573,7 @@ input[type="number"] {
 .yt__sub-button-text {
   display: block;
   font-family: "Museo Sans Cyrl Regular", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #FFF; }
 
 @media (min-width: 1024px) {
@@ -1671,14 +1694,6 @@ input[type="number"] {
   .service-item__heading--account {
     display: none; }
 
-.account__image {
-  width: 137px;
-  height: 137px;
-  background-image: url("../img/orange_userpick.png");
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  margin-bottom: 45px; }
-
 .service-item__desc {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 18px;
@@ -1720,6 +1735,8 @@ input[type="number"] {
   font-size: 13px;
   text-decoration: none;
   color: #FFF; }
+  .service-item__button-link--large {
+    font-size: 16px; }
 
 .service-item__link {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -1730,14 +1747,16 @@ input[type="number"] {
           align-self: center; }
 
 .service-item__thumb {
-  width: 79px;
-  height: 80px; }
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat; }
   .service-item__thumb--lightblue {
-    background-image: url("../img/icon/main_logo-lightblue.svg"); }
+    background-image: url("../img/icon/main_logo-lightblue-small.svg"); }
   .service-item__thumb--lightgreen {
-    background-image: url("../img/icon/main_logo-lightgreen.svg"); }
+    background-image: url("../img/icon/main_logo-lightgreen-small.svg"); }
   .service-item__thumb--orange {
-    background-image: url("../img/icon/main_logo-orange.svg"); }
+    background-image: url("../img/icon/main_logo-orange-small.svg"); }
   .service-item__thumb--account {
     width: 137px;
     height: 137px;
@@ -1817,6 +1836,23 @@ input[type="number"] {
     font-family: "Museo Cyrillic Thin", sans-serif;
     font-size: 25px;
     color: #0f0f0f; }
+  .service-item__thumb {
+    display: block;
+    width: 80px;
+    height: 80px; }
+    .service-item__thumb--lightblue {
+      background-image: url("../img/icon/main_logo-lightblue.svg"); }
+    .service-item__thumb--lightgreen {
+      background-image: url("../img/icon/main_logo-lightgreen.svg"); }
+    .service-item__thumb--orange {
+      background-image: url("../img/icon/main_logo-orange.svg"); }
+    .service-item__thumb--account {
+      width: 137px;
+      height: 137px;
+      background-image: url("../img/orange_userpick.png");
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-bottom: 45px; }
   .service-item__left-col {
     width: 35%;
     min-height: 480px;
@@ -2113,6 +2149,7 @@ input[type="number"] {
     line-height: 26px; } }
 
 .patron {
+  padding-top: 65px;
   padding-bottom: 80px; }
 
 .patron__img-wrapper {
@@ -2238,7 +2275,7 @@ input[type="number"] {
 
 .holydays__text {
   font-family: "Museo Cyrillic Regular", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   line-height: 20px; }
   .holydays__text--large {
@@ -2354,17 +2391,22 @@ input[type="number"] {
   background-color: #f7f7f7; }
 
 .shop__logo {
-  width: 79px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
-  background-image: url("../img/icon/main_logo-red.svg"); }
+  margin-bottom: 30px;
+  background-image: url("../img/icon/main_logo-red-medium.svg"); }
 
 .shop-desc__text {
   text-align: center;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 20px;
   color: #212121;
-  line-height: 30px; }
+  line-height: 30px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px; }
 
 .shop__button {
   width: 280px;
@@ -2391,7 +2433,7 @@ input[type="number"] {
     background-color: #FAF7DF; }
 
 .footer-item {
-  margin-bottom: 55px; }
+  margin-bottom: 25px; }
 
 .footer-item__heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
@@ -2484,7 +2526,16 @@ input[type="number"] {
   .social-list__link--tg {
     background-image: url("../img/tg.png"); }
 
+.props,
+.social,
+.promo-app--border {
+  border-top: 2px solid #ece9cb; }
+
 @media (min-width: 768px) {
+  .props,
+  .social,
+  .promo-app--border {
+    border: none; }
   .footer-item__heading {
     text-align: center; }
   .footer-list {
@@ -2800,7 +2851,8 @@ input[type="number"] {
 .shop-carousel__item-link {
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   text-decoration: none;
   font-family: "Museo Cyrillic Medium", sans-serif;

@@ -32,14 +32,14 @@
   }
 }
 
-.account__image {
-  width: 137px;
-  height: 137px;
-  background-image: url("../img/orange_userpick.png");
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  margin-bottom: 45px;
-}
+// .account__image {
+//   width: 137px;
+//   height: 137px;
+//   background-image: url("../img/orange_userpick.png");
+//   background-repeat: no-repeat;
+//   margin: 0 auto;
+//   margin-bottom: 45px;
+// }
 
 .service-item__desc {
   font-family: $secondary-regular;
@@ -76,6 +76,9 @@
   font-size: $font-size-xs;
   text-decoration: none;
   color: $white;
+  &--large {
+    font-size: $font-size-s;
+  }
 }
 
 .service-item__link {
@@ -87,16 +90,18 @@
 }
 
 .service-item__thumb {
-  width: 79px;
-  height: 80px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
   &--lightblue {
-    background-image: url("../img/icon/main_logo-lightblue.svg");
+    background-image: url("../img/icon/main_logo-lightblue-small.svg");
   }
   &--lightgreen {
-    background-image: url("../img/icon/main_logo-lightgreen.svg");
+    background-image: url("../img/icon/main_logo-lightgreen-small.svg");
   }
   &--orange {
-    background-image: url("../img/icon/main_logo-orange.svg");
+    background-image: url("../img/icon/main_logo-orange-small.svg");
   }
   &--account {
     width: 137px;
@@ -175,6 +180,29 @@
     font-size: $font-size-xl;
     color: #0f0f0f;
   }
+
+  .service-item__thumb {
+  display: block;
+  width: 80px;
+  height: 80px;
+  &--lightblue {
+    background-image: url("../img/icon/main_logo-lightblue.svg");
+  }
+  &--lightgreen {
+    background-image: url("../img/icon/main_logo-lightgreen.svg");
+  }
+  &--orange {
+    background-image: url("../img/icon/main_logo-orange.svg");
+  }
+  &--account {
+    width: 137px;
+    height: 137px;
+    background-image: url("../img/orange_userpick.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+}
   .service-item__left-col {
     width: 35%;
     min-height: 480px;
