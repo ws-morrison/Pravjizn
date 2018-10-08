@@ -471,6 +471,8 @@ input[type="number"] {
     padding: 0 40px; }
     .container--wide {
       padding: 0 20px; }
+    .container--pod {
+      padding-left: 120px; }
     .container--program-item {
       max-width: none;
       width: 100%; }
@@ -554,6 +556,7 @@ input[type="number"] {
     margin-bottom: 125px; } }
 
 .donate-form {
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -566,12 +569,10 @@ input[type="number"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start; }
+          align-items: center; }
+  .donate-form--padding {
+    padding-left: 20px;
+    padding-right: 20px; }
 
 .form__text {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -646,7 +647,8 @@ input[type="number"] {
         -ms-flex-align: center;
             align-items: center; }
     .donate-form--padding {
-      padding-left: 20px; }
+      padding: 0;
+      margin-left: 120px; }
     .donate-form--row {
       width: 480px;
       -webkit-box-pack: justify;
@@ -684,10 +686,6 @@ input[type="number"] {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; } }
-
-@media (min-width: 1490px) {
-  .donate-form--padding {
-    padding-left: 120px; } }
 
 .section__desc {
   margin: 0 auto;
@@ -785,6 +783,9 @@ input[type="number"] {
       background-repeat: no-repeat; }
     .section__text-width--services {
       width: 45%;
+      margin: 0 auto; }
+    .section__text-width--large {
+      width: 50%;
       margin: 0 auto; }
   .section__text {
     font-family: "Museo Cyrillic Regular", sans-serif;
@@ -1166,9 +1167,12 @@ input[type="number"] {
   .pod__quote {
     display: block;
     width: 50%; }
+    .pod__quote--thin {
+      width: 40%; }
   .pod__img {
     bottom: 100px;
-    right: 140px; }
+    right: 140px;
+    padding-left: -200px; }
   .pod-item {
     margin-top: 75px; } }
 
@@ -1924,7 +1928,6 @@ input[type="number"] {
 .info-services {
   display: block;
   padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #f7f7f7; }
 
 .info-service-item {
@@ -1971,6 +1974,10 @@ input[type="number"] {
   border-top: 1px solid rgba(207, 204, 185, 0.2);
   border-width: 100%; }
 
+.info-services__wrapper:last-child {
+  border-bottom: none;
+  border-top: 1px solid rgba(207, 204, 185, 0.2); }
+
 .info-service-item__desc {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 18px;
@@ -2009,7 +2016,7 @@ input[type="number"] {
     background-image: url("../img/icon/main_logo-dark-orange-small.svg"); }
 
 @media (min-width: 1024px) {
-  .info-service {
+  .info-services {
     display: none; } }
 
 .info-desktop {

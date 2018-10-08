@@ -1,7 +1,7 @@
 .info-services {
   display: block;
   padding-top: 40px;
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
   background-color: $primary-bg;
 }
 
@@ -44,6 +44,10 @@
   border-bottom: 1px solid $service-item-border;
   border-top: 1px solid $service-item-border;
   border-width: 100%;
+}
+.info-services__wrapper:last-child {
+  border-bottom: none;
+  border-top: 1px solid $service-item-border;
 }
 
 .info-service-item__desc {
@@ -91,7 +95,7 @@
 }
 
 @media (min-width: $desktop) {
-  .info-service {
+  .info-services {
     display: none;
   }
 }

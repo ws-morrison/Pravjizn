@@ -63,7 +63,9 @@ input[type="number"] {
     &--wide {
       padding: 0 20px;
     }
-
+ &--pod {
+   padding-left: 120px;
+ }
     &--program-item {
       max-width: none;
       width: 100%;

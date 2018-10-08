@@ -70,11 +70,15 @@
     display: block;
     // margin: 0 auto;
     width: 50%;
+    &--thin {
+       width: 40%;
+    }
   }
 
   .pod__img {
     bottom: 100px;
     right: 140px;
+    padding-left: -200px;
   }
   .pod-item {
     margin-top: 75px;

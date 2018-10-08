@@ -27,7 +27,6 @@ $(document).ready(function() {
 
   $(window).load(function() {
     if ($(window).width() >= 1024) {
-      $(".info-services").addClass('hidden');
       $(".open-list").addClass("show");
     } else {
       $(".open-list").removeClass("show");
@@ -36,7 +35,6 @@ $(document).ready(function() {
 
   $(window).resize(function() {
     if ($(window).width() >= 1024) {
-      // $(".info-services").addClass('hidden');
       $(".open-list").addClass("show");
     } else {
       $(".open-list").removeClass("show");
