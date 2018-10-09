@@ -2185,6 +2185,10 @@ input[type="number"] {
           justify-content: center;
   margin-bottom: 30px; }
 
+.patron__img {
+  width: 260px;
+  height: 340px; }
+
 .patron-form__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2271,6 +2275,9 @@ input[type="number"] {
     margin-top: 75px;
     padding-left: 200px;
     padding-right: 200px; }
+  .patron__img {
+    width: 340px;
+    height: 460px; }
   .patron-form__input {
     width: 460px; }
   .patron__button {
