@@ -71,8 +71,8 @@
 .yt__button {
   width: 160px;
   height: 60px;
-  background-color: $primary-text;
-  opacity: 0.8;
+  background-color: rgba(33, 33, 33, 0.5);
+  // opacity: 0.8;
 }
 
 .yt__button-thumb {
@@ -127,6 +127,7 @@
 }
 
 .yt__sub-button-text {
+  text-align: left;
   display: block;
   font-family: $secondary-regular;
   font-size: $font-size-ms;

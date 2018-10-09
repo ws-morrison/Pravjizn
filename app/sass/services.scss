@@ -32,15 +32,6 @@
   }
 }
 
-// .account__image {
-//   width: 137px;
-//   height: 137px;
-//   background-image: url("../img/orange_userpick.png");
-//   background-repeat: no-repeat;
-//   margin: 0 auto;
-//   margin-bottom: 45px;
-// }
-
 .service-item__desc {
   font-family: $secondary-regular;
   font-size: $font-size-m;
@@ -65,8 +56,6 @@
   box-sizing: content-box;
   min-height: 60px;
   margin-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -85,14 +74,13 @@
   font-family: $secondary-regular;
   font-size: $font-size-s;
   color: $link-color;
-  // margin-top: 20px;
   align-self: center;
 }
 
 .service-item__thumb {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   background-repeat: no-repeat;
   &--lightblue {
     background-image: url("../img/icon/main_logo-lightblue-small.svg");
@@ -124,9 +112,8 @@
   list-style: none;
 }
 .service-list__item {
-  // @include SC500-s;
   font-family: $secondary-regular;
-  font-size: $font-size-s;
+  font-size: $font-size-m;
   color: $primary-text;
   line-height: 26px;
   margin-bottom: 20px;
@@ -144,10 +131,7 @@
 //DESKTOP
 @media (min-width: $desktop) {
   .services {
-    // margin-bottom: 120px;
-    // padding-top: 120px;
     padding-bottom: 120px;
-
   }
 
   .account__image {
