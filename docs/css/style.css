@@ -696,12 +696,13 @@ input[type="number"] {
 .section__text-width {
   display: block; }
   .section__text-width--yt {
-    width: 80%;
+    width: 260px;
     margin: 0 auto;
     position: relative;
     margin-top: 60px; }
   .section__text-width--yt::before {
     content: "";
+    display: block;
     position: absolute;
     width: 16px;
     height: 20px;
@@ -727,10 +728,12 @@ input[type="number"] {
   margin-bottom: 30px; }
   .section__text--large {
     font-family: "Museo Cyrillic Medium", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     margin: 0;
     margin: 0 auto;
     line-height: 35px; }
+  .section__text--large-header {
+    font-size: 25px; }
   .section__text--grey {
     color: #9B9B9B; }
   .section__text--bold {
@@ -751,7 +754,7 @@ input[type="number"] {
     width: 16px;
     height: 20px;
     top: -25px;
-    right: 125px;
+    right: 122px;
     background-image: url("../img/icon/notification_icon.svg");
     background-repeat: no-repeat; }
 
@@ -898,13 +901,17 @@ input[type="number"] {
     color: #026837;
     border: 2px solid #026837;
     background-color: #ffffff;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.1);
+            box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.1); }
   .button--white-blue {
     color: #1b1564;
     border: 2px solid #1b1564;
     background-color: #ffffff;
     margin: 0 auto;
-    margin-top: 60px; }
+    margin-top: 60px;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.1);
+            box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.1); }
 
 .button--yellow {
   background-image: -webkit-gradient(linear, left top, right top, from(#f7f606), to(#f7a406));
@@ -993,7 +1000,7 @@ input[type="number"] {
 
 .feedback__author-heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   color: #212121;
   margin: 0;
   margin-bottom: 15px; }
@@ -1135,7 +1142,7 @@ input[type="number"] {
 
 .pod__author-heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   color: #212121;
   margin: 0; }
 
@@ -1206,7 +1213,7 @@ input[type="number"] {
 
 .program__desc-heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   text-align: center;
   margin: 0;
   margin-bottom: 15px; }
@@ -1311,7 +1318,7 @@ input[type="number"] {
 
 .app__item {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #212121;
   line-height: 26px;
   margin-bottom: 20px;
@@ -1330,7 +1337,7 @@ input[type="number"] {
   line-height: 20px; }
   .app__text--large {
     font-family: "Museo Cyrillic Regular", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     margin: 0;
     line-height: 30px; }
   .app__text--grey {
@@ -1522,8 +1529,7 @@ input[type="number"] {
 .yt__button {
   width: 160px;
   height: 60px;
-  background-color: #212121;
-  opacity: 0.8; }
+  background-color: rgba(33, 33, 33, 0.5); }
 
 .yt__button-thumb {
   display: block;
@@ -1576,6 +1582,7 @@ input[type="number"] {
   width: 160px; }
 
 .yt__sub-button-text {
+  text-align: left;
   display: block;
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 14px;
@@ -1730,8 +1737,6 @@ input[type="number"] {
           box-sizing: content-box;
   min-height: 60px;
   margin-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
   margin-bottom: 20px; }
 
@@ -1753,8 +1758,8 @@ input[type="number"] {
 
 .service-item__thumb {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   background-repeat: no-repeat; }
   .service-item__thumb--lightblue {
     background-image: url("../img/icon/main_logo-lightblue-small.svg"); }
@@ -1789,7 +1794,7 @@ input[type="number"] {
 
 .service-list__item {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #212121;
   line-height: 26px;
   margin-bottom: 20px;
@@ -1833,13 +1838,13 @@ input[type="number"] {
     text-align: center; }
   .service-title__heading {
     font-family: "Museo Cyrillic Medium", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     color: #212121; }
   .service-list__wrapper {
     width: 420px; }
   .service-title__name {
     font-family: "Museo Cyrillic Thin", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     color: #0f0f0f; }
   .service-item__thumb {
     display: block;
@@ -2285,7 +2290,7 @@ input[type="number"] {
   line-height: 20px; }
   .holydays__text--large {
     font-family: "Museo Cyrillic Medium", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 30px; }
   .holydays__text--grey {
     color: #9B9B9B; }
@@ -2759,7 +2764,7 @@ input[type="number"] {
   text-decoration: none;
   color: #FFF;
   font-family: "Museo Cyrillic Medium", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   margin-bottom: 25px; }
 
 .drop-menu-button__wrapper {
