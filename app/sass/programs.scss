@@ -9,21 +9,11 @@
   margin-bottom: 100px;
 
   &--holies {
-    background-image: linear-gradient(
-        -180deg,
-        rgba(26, 174, 104, 0.4) 0%,
-        #157044 100%
-      ),
-      url("../img/vostanovlenie_svyatih.png");
+    background-image: url("../img/vostanovlenie_svyatih.jpg");
   }
 
   &--sobriety {
-    background-image: linear-gradient(
-        -180deg,
-        rgba(68, 89, 140, 0.4) 0%,
-        #44598c 100%
-      ),
-      url("../img/bratstvo_trezvosty.png");
+    background-image: url("../img/bratstvo_trezvosty.jpg");
   }
 }
 
