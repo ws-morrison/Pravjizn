@@ -2023,8 +2023,8 @@ input[type="number"] {
   margin-top: 20px; }
 
 .info-service-item__thumb {
-  width: 50px;
-  height: 50px; }
+  width: 42px;
+  height: 42px; }
   .info-service-item__thumb--orange {
     background-image: url("../img/icon/main_logo-dark-orange-small.svg"); }
 
