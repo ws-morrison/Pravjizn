@@ -878,6 +878,7 @@ input[type="number"] {
           align-items: center;
   text-decoration: none;
   text-align: center;
+  padding: 0;
   width: 240px;
   min-height: 60px;
   border: none;
