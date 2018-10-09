@@ -34,6 +34,7 @@
   }
   &--grey {
     color: $faded;
+     line-height: 18px;
   }
 }
 .yt__desc-inner {
@@ -111,6 +112,7 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
+  line-height: 16px;
 }
 
 .yt__sub-button-thumb {

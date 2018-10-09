@@ -896,7 +896,9 @@ input[type="number"] {
     -webkit-border-radius: 43.5px;
             border-radius: 43.5px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    line-height: 20px;
+    position: relative; }
   .button--white-green {
     color: #026837;
     border: 2px solid #026837;
@@ -1115,7 +1117,8 @@ input[type="number"] {
 .pod__quote-lead {
   font-family: "Museo Cyrillic Thin", sans-serif;
   font-size: 30px;
-  color: #212121; }
+  color: #212121;
+  line-height: 40px; }
 
 .pod__img {
   position: relative;
@@ -1214,6 +1217,7 @@ input[type="number"] {
 .program__desc-heading {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 24px;
+  line-height: 24px;
   text-align: center;
   margin: 0;
   margin-bottom: 15px; }
@@ -1221,6 +1225,7 @@ input[type="number"] {
 .program__desc-lead {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 18px;
+  line-height: 26px;
   text-align: center;
   margin: 0; }
 
@@ -1466,7 +1471,8 @@ input[type="number"] {
     font-size: 20px;
     margin: 0; }
   .yt__text--grey {
-    color: #9B9B9B; }
+    color: #9B9B9B;
+    line-height: 18px; }
 
 .yt__desc-inner {
   width: 240px;
@@ -1567,7 +1573,8 @@ input[type="number"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  line-height: 16px; }
 
 .yt__sub-button-thumb {
   display: block;
@@ -1743,6 +1750,7 @@ input[type="number"] {
 .service-item__button-link {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 13px;
+  line-height: 16px;
   text-decoration: none;
   color: #FFF; }
   .service-item__button-link--large {
@@ -2192,6 +2200,7 @@ input[type="number"] {
 .patron-form__label {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px;
+  line-height: 26px;
   color: #212121;
   position: relative; }
 
@@ -2238,6 +2247,7 @@ input[type="number"] {
 .patron__button-link {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 13px;
+  line-height: 16px;
   text-decoration: none;
   color: #FFF; }
 
@@ -2385,7 +2395,7 @@ input[type="number"] {
       font-size: 35px;
       margin: 0;
       margin-bottom: 50px;
-      line-height: 30px; }
+      line-height: 35px; }
     .holydays__text--grey {
       color: #9B9B9B; }
     .holydays__text--bold {
@@ -2426,7 +2436,8 @@ input[type="number"] {
   text-decoration: none;
   color: #FFF;
   font-family: "Museo Sans Cyrl Regular", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 16px; }
 
 @media (min-width: 1024px) {
   .shop {
@@ -2449,6 +2460,7 @@ input[type="number"] {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 20px;
   color: #212121;
+  line-height: 20px;
   text-decoration: none;
   margin-bottom: 30px;
   display: block;

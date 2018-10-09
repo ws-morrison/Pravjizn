@@ -63,6 +63,7 @@
 .service-item__button-link {
   font-family: $secondary-regular;
   font-size: $font-size-xs;
+  line-height: 16px;
   text-decoration: none;
   color: $white;
   &--large {

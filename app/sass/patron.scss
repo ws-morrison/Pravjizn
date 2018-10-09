@@ -24,6 +24,7 @@
 .patron-form__label {
   font-family: $secondary-regular;
   font-size: $font-size-s;
+  line-height: 26px;
   color: $primary-text;
   position: relative;
 }
@@ -72,15 +73,14 @@
 }
 
 .patron__button-link {
-  // @include SC500-xs;
   font-family: $secondary-regular;
   font-size: $font-size-xs;
+  line-height: 16px;
   text-decoration: none;
   color: $white;
 }
 
 // DESKTOP
-
 @media (min-width: $desktop) {
   .patron {
     padding-top: 120px;
