@@ -1037,17 +1037,6 @@ input[type="number"] {
     background-repeat: no-repeat;
     background-position: center 0;
     margin: 0; }
-  .feedback__img--pod {
-    position: relative;
-    width: 100%;
-    max-width: 468px;
-    height: 384px;
-    margin: 0 auto;
-    background-image: url("../img/batushka_img.png");
-    -webkit-background-size: 468px 384px;
-    background-size: 468px 384px;
-    background-repeat: no-repeat;
-    background-position: center 0; }
 
 .feedback__video-button {
   width: 80px;
@@ -1207,7 +1196,7 @@ input[type="number"] {
     display: block;
     width: 50%; }
     .pod__quote--thin {
-      width: 40%; }
+      width: 55%; }
   .pod__img {
     bottom: 140px;
     right: 80px; }

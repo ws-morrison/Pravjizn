@@ -56,18 +56,18 @@
     margin: 0;
   }
 
-  &--pod {
-    position: relative;
-    width: 100%;
-    max-width: 468px;
-    height: 384px;
-    margin: 0 auto;
-    background-image: url("../img/batushka_img.png");
-    -webkit-background-size: 468px 384px;
-    background-size: 468px 384px;
-    background-repeat: no-repeat;
-    background-position: center 0;
-  }
+  // &--pod {
+  //   position: relative;
+  //   width: 100%;
+  //   max-width: 468px;
+  //   height: 384px;
+  //   margin: 0 auto;
+  //   background-image: url("../img/batushka_img.png");
+  //   -webkit-background-size: 468px 384px;
+  //   background-size: 468px 384px;
+  //   background-repeat: no-repeat;
+  //   background-position: center 0;
+  // }
 }
 
 .feedback__video-button {
