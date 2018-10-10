@@ -46,6 +46,9 @@ input[type="number"] {
 .hidden {
   display: none;
 }
+.clear {
+  clear: both;
+}
 
 // @media (min-width: $tablet) {
 //   .container {
@@ -55,17 +58,17 @@ input[type="number"] {
 
 @media (min-width: $desktop) {
   section {
-    max-width: 1600px;
+    max-width: 1560px;
     margin: 0 auto;
   }
   .container {
-    padding: 0 40px;
+    padding: 0 100px;
     &--wide {
       padding: 0 20px;
     }
- &--pod {
-   padding-left: 120px;
- }
+    &--yt {
+      padding: 0 150px;
+    }
     &--program-item {
       max-width: none;
       width: 100%;
@@ -74,11 +77,5 @@ input[type="number"] {
       max-width: none;
       width: 100%;
     }
-  }
-}
-
-@media (min-width: 1490px) {
-  .container {
-    padding: 0 120px;
   }
 }

@@ -72,18 +72,24 @@
     // margin: 0 auto;
     width: 50%;
     &--thin {
-       width: 40%;
+       width: 55%;
     }
   }
 
   .pod__img {
-    bottom: 100px;
-    right: 140px;
-    padding-left: -200px;
+    bottom: 140px;
+    right: 80px;
+    // padding-left: -200px;
   }
   .pod-item {
     margin-top: 75px;
+    padding-top: 40px;
+    max-width: 1024px;
+    margin: 0 auto;
   }
+
+
+
   // .pod-item {
   //   width: 60%;
   //   display: flex;

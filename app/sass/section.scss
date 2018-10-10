@@ -33,6 +33,7 @@
   &--yt-channel {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
   // &--shop {
   //   width: 260px;
@@ -80,6 +81,8 @@
 }
 .section__text-width {
   display: block;
+  margin: 0 auto;
+  width: 100%;;
   &--yt::before {
     content: "";
     position: absolute;
@@ -130,6 +133,10 @@
       margin: 0 auto;
     }
     &--large {
+      width: 50%;
+      margin: 0 auto;
+    }
+    &--feedback {
       width: 50%;
       margin: 0 auto;
     }
