@@ -166,6 +166,17 @@
     color: #0f0f0f;
   }
 
+.service-item__button-link {
+  font-family: $secondary-regular;
+  font-size: 15px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $white;
+  &--large {
+    font-size: $font-size-s;
+  }
+}
+
   .service-item__thumb {
   display: block;
   width: 80px;
@@ -199,9 +210,11 @@
   }
   .service-item__heading {
     text-align: left;
+    font-size: $font-size-desktop-m;
     &--account {
       display: block;
       width: 300px;
+      margin-bottom: 50px;
     }
   }
   .service-item__desc {
@@ -220,14 +233,14 @@
     align-items: flex-start;
   }
   .service-item__button {
-    width: 260px;
+    // width: 50%;
     align-self: flex-start;
     margin: 0;
     min-height: 60px;
     box-sizing: content-box;
     margin-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .service-item__link {
     align-self: center;

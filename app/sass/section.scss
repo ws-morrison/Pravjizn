@@ -4,6 +4,9 @@
   &--white-text {
     color: $white;
   }
+    &--feedback {
+    margin-bottom: 80px;;
+  }
 }
 
 .section__text-width {
@@ -82,7 +85,7 @@
 .section__text-width {
   display: block;
   margin: 0 auto;
-  width: 100%;;
+  width: 100%;
   &--yt::before {
     content: "";
     position: absolute;
@@ -92,6 +95,11 @@
     right: 122px;
     background-image: url("../img/icon/notification_icon.svg");
     background-repeat: no-repeat;
+  }
+  &--pod {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
 

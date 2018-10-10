@@ -31,6 +31,7 @@
     font-family: $primary-regular;
     font-size: $font-size-l;
     margin: 0;
+    margin-bottom: 5px;
   }
   &--grey {
     color: $faded;
@@ -171,6 +172,11 @@
     justify-content: center;
     align-items: center;
   }
+  .yt__sub-button-text {
+  text-align: center;
+  display: block;
+  font-size: $font-size-s;
+}
   .yt__button-text {
     display: block;
     padding-right: 30px;
