@@ -1878,12 +1878,14 @@ input[type="number"] {
   .service-title__heading {
     font-family: "Museo Cyrillic Medium", sans-serif;
     font-size: 24px;
-    color: #212121; }
+    color: #212121;
+    margin-bottom: 15px; }
   .service-list__wrapper {
     width: 420px; }
   .service-title__name {
     font-family: "Museo Cyrillic Thin", sans-serif;
     font-size: 24px;
+    margin: 0;
     color: #0f0f0f; }
   .service-item__button-link {
     font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -2002,6 +2004,9 @@ input[type="number"] {
   font-family: "Museo Cyrillic Thin", sans-serif;
   font-size: 20px;
   text-align: center; }
+  .info-services__title--container {
+    padding-left: 20px;
+    padding-right: 20px; }
   .info-services__title--active {
     color: #FF482F; }
   .info-services__title--color-1 {
@@ -2326,7 +2331,7 @@ input[type="number"] {
 
 .holydays--green-bg {
   background-color: #238f4b;
-  padding-top: 65px;
+  padding-top: 45px;
   padding-bottom: 65px;
   background-image: url("../img/bg_green.png");
   background-repeat: no-repeat;
@@ -2400,8 +2405,8 @@ input[type="number"] {
   .holydays--green-bg {
     width: 100%;
     background-image: url("../img/bg_green.png");
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    -webkit-background-size: 107% 107%;
+            background-size: 107%;
     background-position-x: 50%;
     background-position-y: 0px;
     background-repeat: no-repeat; }
@@ -2596,6 +2601,13 @@ input[type="number"] {
   .social-list__link--tg {
     background-image: url("../img/tg.png"); }
 
+.footer-container {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.desktop-footer-container {
+  padding: 0; }
+
 .props,
 .social,
 .promo-app--border {
@@ -2654,6 +2666,11 @@ input[type="number"] {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
+  .footer-container {
+    padding: 0; }
+  .desktop-footer-container {
+    padding-left: 157px;
+    padding-right: 157px; }
   .props {
     padding: 0; }
   .props__heading {

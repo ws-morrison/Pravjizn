@@ -113,6 +113,15 @@
   }
 }
 
+.footer-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.desktop-footer-container {
+  padding: 0;
+}
+
 .props,
 .social,
 .promo-app--border {
@@ -168,11 +177,20 @@
   .footer-list {
     text-align: left;
   }
+
   .footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+  }
+  .footer-container {
+    padding: 0;
+  }
+
+  .desktop-footer-container {
+    padding-left: 157px;
+    padding-right: 157px;
   }
   .props {
     padding: 0;

@@ -156,6 +156,7 @@
     font-family: $primary-medium;
     font-size: $font-size-xl;
     color: $primary-text;
+    margin-bottom: 15px;
   }
 .service-list__wrapper {
   width: 420px;
@@ -163,6 +164,7 @@
   .service-title__name {
     font-family: $primary-thin;
     font-size: $font-size-xl;
+    margin: 0;
     color: #0f0f0f;
   }
 
