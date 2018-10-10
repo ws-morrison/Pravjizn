@@ -1005,8 +1005,7 @@ input[type="number"] {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 24px;
   color: #212121;
-  margin: 0;
-  margin-bottom: 15px; }
+  margin: 0; }
 
 .feedback__author-caption {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -1029,7 +1028,7 @@ input[type="number"] {
     background-size: 376px 373px;
     background-repeat: no-repeat;
     background-position: center 0; }
-  .feedback__img--feedback {
+  .feedback__img--pod {
     max-width: 468px;
     height: 384px;
     background-image: url("../img/batushka_img.png");
@@ -1070,33 +1069,39 @@ input[type="number"] {
 .feedback__right-col {
   position: relative; }
 
-.feedback__quote--mobile-relative {
+.pod__quote--mobile-relative {
   display: block;
-  width: 100%;
+  width: 273px;
   position: absolute;
-  text-align: center;
   left: 0;
   right: 0;
   top: -675px;
   margin: 0 auto; }
 
+.pod__quote-lead {
+  font-family: "Museo Cyrillic Thin", sans-serif;
+  font-size: 30px;
+  color: #212121; }
+
+.pod__quote-text {
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 18px;
+  color: #212121;
+  line-height: 26px;
+  margin-bottom: 40px; }
+
+.pod__quote-link {
+  color: #8D9E5A; }
+
 @media (min-width: 1024px) {
-  .feedback__img__wrapper--mobile {
-    display: unset; }
-  .feedback {
-    margin-bottom: 130px; }
   .feedback__item {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
-    margin-bottom: 95px; }
+            justify-content: space-around; }
     .feedback__item--row-reverse {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
@@ -1108,9 +1113,17 @@ input[type="number"] {
     padding-top: 50px; }
   .feedback__left-col {
     width: 480px; }
-  .feedback__img--feedback {
-    margin: 0;
-    margin-top: 83px; } }
+  .pod__quote--mobile-relative {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: unset;
+    top: unset;
+    left: unset; }
+  .feedback__img--pod {
+    margin: 0; } }
 
 .pod {
   margin-bottom: 100px; }
