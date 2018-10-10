@@ -86,11 +86,16 @@
 
 .feedback__video-button::before {
   position: absolute;
-  content: "►";
-  color: #ff482f;
-  font-size: 26px;
-  top: 25px;
-  left: 30px;
+  // content: "►";
+  // color: #ff482f;
+  // font-size: 26px;
+  content: "";
+  width: 18px;
+  height: 21px;
+  background-image: url("../img/icon/play_orange.svg");
+  background-repeat: no-repeat;
+  top: 29px;
+  left: 32px;
 }
 
 .feedback__container {

@@ -468,22 +468,20 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   section {
-    max-width: 1600px;
+    max-width: 1560px;
     margin: 0 auto; }
   .container {
-    padding: 0 40px; }
+    padding: 0 100px; }
     .container--wide {
       padding: 0 20px; }
+    .container--yt {
+      padding: 0 150px; }
     .container--program-item {
       max-width: none;
       width: 100%; }
     .container--holydays {
       max-width: none;
       width: 100%; } }
-
-@media (min-width: 1490px) {
-  .container {
-    padding: 0 120px; } }
 
 .header {
   width: 100%;
@@ -716,7 +714,8 @@ input[type="number"] {
     margin: 0 auto; }
   .section__text-width--yt-channel {
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 15px; }
   .section__text-width--shop-caption {
     width: 90%;
     margin: 0 auto; }
@@ -1054,11 +1053,13 @@ input[type="number"] {
 
 .feedback__video-button::before {
   position: absolute;
-  content: "►";
-  color: #ff482f;
-  font-size: 26px;
-  top: 25px;
-  left: 30px; }
+  content: "";
+  width: 18px;
+  height: 21px;
+  background-image: url("../img/icon/play_orange.svg");
+  background-repeat: no-repeat;
+  top: 29px;
+  left: 32px; }
 
 .feedback__container {
   margin: 0 auto;
@@ -1258,7 +1259,7 @@ input[type="number"] {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 90px; }
+    margin-top: 50px; }
   .program-item {
     width: 50%;
     position: relative;
@@ -1886,7 +1887,7 @@ input[type="number"] {
       margin: 0 auto;
       margin-bottom: 45px; }
   .service-item__left-col {
-    width: 35%;
+    width: 36%;
     min-height: 480px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1916,7 +1917,7 @@ input[type="number"] {
   .service-item__caption {
     text-align: left; }
   .service-item__right-col {
-    width: 35%;
+    width: 50%;
     min-height: 480px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2286,8 +2287,8 @@ input[type="number"] {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     margin-top: 75px;
-    padding-left: 200px;
-    padding-right: 200px; }
+    padding-left: 120px;
+    padding-right: 120px; }
   .patron__img {
     width: 340px;
     height: 460px; }
@@ -2404,7 +2405,7 @@ input[type="number"] {
     display: block;
     position: absolute;
     top: -15px;
-    right: 47%; }
+    right: 50%; }
   .holydays__text {
     font-family: "Museo Cyrillic Regular", sans-serif;
     font-size: 18px;

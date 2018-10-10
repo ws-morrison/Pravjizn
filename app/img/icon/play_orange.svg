@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>play_orange</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pravjizn-Doroga-Home" transform="translate(-610.000000, -1201.000000)" fill="#FF482F">
+            <g id="play" transform="translate(577.000000, 1172.000000)">
+                <path d="M44.2086676,32.1930473 L52.469137,45.0797244 C53.0652244,46.0096457 52.7945986,47.2467202 51.8646773,47.8428076 C51.5425614,48.0492867 51.167978,48.1590362 50.7853656,48.1590362 L34.2644268,48.1590362 C33.1598573,48.1590362 32.2644268,47.2636057 32.2644268,46.1590362 C32.2644268,45.7764237 32.3741764,45.4018404 32.5806554,45.0797244 L40.8411248,32.1930473 C41.4372122,31.2631261 42.6742867,30.9925003 43.604208,31.5885877 C43.8469025,31.744157 44.0530983,31.9503528 44.2086676,32.1930473 Z" id="play_orange" transform="translate(42.525000, 39.579518) rotate(-270.000000) translate(-42.525000, -39.579518) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
