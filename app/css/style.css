@@ -1378,6 +1378,10 @@ input[type="number"] {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 25px 0; }
 
 .app__logo {
@@ -2261,7 +2265,8 @@ input[type="number"] {
 
 .patron__button {
   width: 260px;
-  height: 60px; }
+  height: 60px;
+  margin: 0 auto; }
 
 .patron__button-link {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
