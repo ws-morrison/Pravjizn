@@ -46,6 +46,9 @@ input[type="number"] {
 .hidden {
   display: none;
 }
+.clear {
+  clear: both;
+}
 
 // @media (min-width: $tablet) {
 //   .container {
@@ -64,7 +67,7 @@ input[type="number"] {
       padding: 0 20px;
     }
  &--pod {
-   padding-left: 120px;
+  //  padding-left: 120px;
  }
     &--program-item {
       max-width: none;

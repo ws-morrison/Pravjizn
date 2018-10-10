@@ -1,152 +1,3 @@
-// .feedback {
-//   margin-bottom: 30px;
-// }
-// .feedback__lead-text {
-//   font-family: $secondary-thin;
-//   font-size: $font-size-m;
-//   color: $primary-text;
-//   line-height: 26px;
-//   margin-top: 30px;
-//   position: relative;
-// }
-
-// .feedback__lead-thumb {
-//   position: absolute;
-//   box-sizing: content-box;
-//   font-family: $primary-regular;
-//   font-size: 100px;
-//   margin-bottom: 10px;
-//   padding: 0;
-//   color: $accient;
-//   display: inline;
-//   font-style: italic;
-//   line-height: 0;
-// }
-// .feedback__author-heading {
-//   font-family: $primary-medium;
-//   font-size: $font-size-xl;
-//   color: $primary-text;
-//   margin: 0;
-//   margin-bottom: 15px;
-// }
-
-// .feedback__author-caption {
-//   font-family: $secondary-regular;
-//   font-size: $font-size-s;
-//   color: $primary-text;
-//   font-style: italic;
-//   line-height: 26px;
-//   margin: 0;
-//   margin-bottom: 60px;
-// }
-
-// .feedback__img {
-//   position: relative;
-//   width: 100%;
-//   margin: 0 auto;
-//   &--video {
-//     max-width: 376px;
-//     height: 373px;
-//     background-image: url("../img/alexandr_img.png");
-//     -webkit-background-size: 376px 373px;
-//     background-size: 376px 373px;
-//     background-repeat: no-repeat;
-//     background-position: center 0;
-//   }
-//   &--feedback {
-//     max-width: 468px;
-//     height: 384px;
-//     background-image: url("../img/batushka_img.png");
-//     -webkit-background-size: 468px 384px;
-//     background-size: 468px 384px;
-//     background-repeat: no-repeat;
-//     background-position: center 0;
-//     margin-top: 260px;
-//   }
-// }
-
-// .feedback__video-button {
-//   width: 80px;
-//   height: 80px;
-//   border-radius: 100%;
-//   border: none;
-//   background-color: $white;
-//   position: absolute;
-//   top: 195px;
-//   right: 45px;
-//   text-decoration: none;
-//   color: $accient;
-//   font-size: 26px;
-// }
-
-// .feedback__video-button::before {
-//   position: absolute;
-//   content: "►";
-//   color: #ff482f;
-//   font-size: 26px;
-//   top: 25px;
-//   left: 30px;
-// }
-
-// .feedback__container {
-//   margin: 0 auto;
-//   padding: 0 20px 0 20px;
-//   box-sizing: border-box;
-// }
-
-// .feedback__right-col {
-//   position: relative;
-// }
-
-// .feedback__quote {
-//   &--mobile-relative {
-//     display: block;
-//     width: 100%;
-//     position: absolute;
-//     text-align: center;
-//     left: 0;
-//     right: 0;
-//     top: -675px;
-//     margin: 0 auto;
-//   }
-// }
-
-// @media (min-width: $desktop) {
-//   .feedback__img__wrapper--mobile {
-//     display: unset;
-//   }
-//   .feedback {
-//   margin-bottom: 130px;
-// }
-//   .feedback__item {
-//     display: flex;
-//     width: 100%;
-//     max-width: 1440px;
-//     margin: 0 auto;
-//     justify-content: space-around;
-//     margin-bottom: 95px;
-//     &--row-reverse {
-//       flex-direction: row-reverse;
-//     }
-//   }
-
-//   .feedback__right-col {
-//     width: 480px;
-//     padding-top: 50px;
-//   }
-//   .feedback__left-col {
-//     width: 480px;
-//   }
-
-//   .feedback__img {
-//     &--feedback {
-//       margin: 0;
-//       margin-top: 83px;
-//     }
-//   }
-// }
-
-
 .feedback {
   margin-bottom: 30px;
 }
@@ -157,20 +8,23 @@
   line-height: 26px;
   margin-top: 30px;
   position: relative;
+  display: block;
+  margin: 0 auto;
 }
-
-.feedback__lead-thumb {
+.feedback__lead-text::before {
+  content: "\0022";
   position: absolute;
   box-sizing: content-box;
   font-family: $primary-regular;
   font-size: 100px;
-  margin-bottom: 10px;
   padding: 0;
   color: $accient;
   display: inline;
   font-style: italic;
   line-height: 0;
+  left: -15px;
 }
+
 .feedback__author-heading {
   font-family: $primary-medium;
   font-size: $font-size-xl;
@@ -191,7 +45,6 @@
 .feedback__img {
   position: relative;
   width: 100%;
-  margin: 0 auto;
   &--video {
     max-width: 376px;
     height: 373px;
@@ -200,16 +53,20 @@
     background-size: 376px 373px;
     background-repeat: no-repeat;
     background-position: center 0;
+    margin: 0;
   }
+
   &--pod {
+    position: relative;
+    width: 100%;
     max-width: 468px;
     height: 384px;
+    margin: 0 auto;
     background-image: url("../img/batushka_img.png");
     -webkit-background-size: 468px 384px;
     background-size: 468px 384px;
     background-repeat: no-repeat;
     background-position: center 0;
-    margin-top: 260px;
   }
 }
 
@@ -246,40 +103,41 @@
   position: relative;
 }
 
-.pod__quote {
-  &--mobile-relative {
-    display: block;
-    width: 273px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -675px;
+@media (min-width: $tablet) {
+  .feedback__lead-text {
+    width: 420px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .feedback__author {
+    width: 420px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .feedback__img--video {
     margin: 0 auto;
   }
+  .feedback__lead-thumb {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    font-family: $primary-regular;
+    font-size: 100px;
+    padding: 0;
+    color: $accient;
+    display: inline;
+    font-style: italic;
+    line-height: 0;
+    left: 75px;
+  }
 }
-.pod__quote-lead {
-  font-family: $primary-thin;
-  font-size: $font-size-2xl;
-  color: $primary-text;
-}
-
-.pod__quote-text {
-  font-family: $secondary-regular;
-  font-size: $font-size-m;
-  color: $primary-text;
-  line-height: 26px;
-  margin-bottom: 40px;
-}
-
-.pod__quote-link {
-  color: $link-color;
-}
-
 @media (min-width: $desktop) {
   .feedback__item {
+    padding-top: 120px;
+    max-width: 863px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: flex-end;
     &--row-reverse {
       flex-direction: row-reverse;
     }
@@ -287,25 +145,33 @@
 
   .feedback__right-col {
     width: 480px;
-    padding-top: 50px;
+    // padding-top: 50px;
   }
   .feedback__left-col {
     width: 480px;
   }
 
-  .pod__quote {
-    &--mobile-relative {
-      display: flex;
+  .feedback__img {
+    &--video {
+      position: absolute;
       width: 100%;
-      position: unset;
-      top: unset;
-      left: unset;
+      left: -420px;
+      bottom: 25px;
     }
+    // &--pod {
+    //   position: absolute;
+    //   width: 100%;
+    //   right: -420px;
+    //   bottom: 25px;
+    // }
   }
 
-  .feedback__img {
-    &--pod {
-      margin: 0;
-    }
+  .feedback__lead-text {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .feedback__author {
+    margin: 0;
+    margin-bottom: 40px;
   }
 }
