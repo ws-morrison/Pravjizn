@@ -62,7 +62,10 @@ input[type="number"] {
     margin: 0 auto;
   }
   .container {
-    padding: 0 100px;
+    padding: 0 157px;
+    &--pod {
+      padding: 0 20px;
+    }
     &--wide {
       padding: 0 20px;
     }

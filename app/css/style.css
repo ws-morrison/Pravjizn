@@ -471,7 +471,9 @@ input[type="number"] {
     max-width: 1560px;
     margin: 0 auto; }
   .container {
-    padding: 0 100px; }
+    padding: 0 157px; }
+    .container--pod {
+      padding: 0 20px; }
     .container--wide {
       padding: 0 20px; }
     .container--yt {
@@ -549,7 +551,7 @@ input[type="number"] {
     -webkit-background-size: 1440px 648px;
             background-size: 1440px 648px; }
   .header-nav {
-    width: 93%;
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 90px; } }
@@ -1274,7 +1276,8 @@ input[type="number"] {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    padding: 0 90px; }
   .program__desc-lead {
     display: block;
     width: 280px;
@@ -1418,6 +1421,8 @@ input[type="number"] {
             justify-content: space-around; }
   .app__image {
     min-height: 510px; }
+  .app__left-col {
+    margin-right: 25px; }
   .app__desktop-wrapper {
     width: 500px;
     display: -webkit-box;
@@ -1445,8 +1450,8 @@ input[type="number"] {
         -ms-flex-item-align: center;
             align-self: center;
     margin: 25px 0; }
-  .app__logo:first-child {
-    margin-right: 20px; } }
+  .app__logo {
+    margin: 10px; } }
 
 .yt-channel {
   padding-top: 40px;
@@ -1906,6 +1911,8 @@ input[type="number"] {
       margin-bottom: 45px; }
   .service-item__left-col {
     width: 36%;
+    padding-left: 20px;
+    padding-right: 20px;
     min-height: 480px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2072,7 +2079,7 @@ input[type="number"] {
 .info-desktop {
   display: none; }
 
-@media (min-width: 1014px) {
+@media (min-width: 1024px) {
   .info-desktop {
     display: block;
     background-color: #f7f7f7;
@@ -2122,6 +2129,8 @@ input[type="number"] {
     background-image: -webkit-linear-gradient(left, #faa533 0%, #c42f2e 100%);
     background-image: -o-linear-gradient(left, #faa533 0%, #c42f2e 100%);
     background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%); }
+  .info-item {
+    padding: 20px; }
   .info-desktop__right_col {
     background-color: #f7f7f7;
     width: 100%;
@@ -2198,7 +2207,7 @@ input[type="number"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
-    top: 33px; }
+    top: 51px; }
   .info-item__text {
     font-family: "Museo Sans Cyrl Regular", sans-serif;
     font-size: 18px;
@@ -2303,15 +2312,17 @@ input[type="number"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    margin: 0 auto;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-top: 75px;
-    padding-left: 120px;
-    padding-right: 120px; }
+    margin-top: 75px; }
+  .patron-form__wrapper {
+    margin-left: 20px; }
   .patron__img {
     width: 340px;
     height: 460px; }
@@ -2327,8 +2338,6 @@ input[type="number"] {
   padding-bottom: 65px;
   background-image: url("../img/bg_green.png");
   background-repeat: no-repeat;
-  -webkit-background-size: 450% 450%;
-          background-size: 450%;
   background-position-x: center;
   background-position-y: 0; }
 
@@ -2390,17 +2399,23 @@ input[type="number"] {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px; }
 
-@media (min-width: 1024px) {
-  .holydays {
-    padding-top: 150px;
-    padding-bottom: 150px; }
+@media (min-width: 768px) {
   .holydays--green-bg {
     width: 100%;
     background-image: url("../img/bg_green.png");
-    -webkit-background-size: 107% 107%;
-            background-size: 107%;
-    background-position-x: 50%;
-    background-position-y: 0px;
+    -webkit-background-size: 1600px 815px;
+            background-size: 1600px 815px;
+    background-repeat: no-repeat; } }
+
+@media (min-width: 1024px) {
+  .holydays {
+    padding-top: 150px;
+    padding-bottom: 100px; }
+  .holydays--green-bg {
+    width: 100%;
+    background-image: url("../img/bg_green.png");
+    -webkit-background-size: 1600px 870px;
+            background-size: 1600px 870px;
     background-repeat: no-repeat; }
   .holydays__wrapper {
     width: 80%;

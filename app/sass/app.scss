@@ -100,6 +100,9 @@
   .app__image {
     min-height: 510px;
   }
+  .app__left-col {
+    margin-right: 25px;
+  }
   .app__desktop-wrapper {
     width: 500px;
     display: flex;
@@ -112,7 +115,7 @@
     align-self: center;
     margin: 25px 0;
   }
-  .app__logo:first-child {
-    margin-right: 20px;
+  .app__logo {
+    margin: 10px;
   }
 }
