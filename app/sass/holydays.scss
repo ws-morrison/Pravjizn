@@ -1,19 +1,40 @@
 .holydays {
+
   &--green-bg {
+    position: relative;
     background-color: #238f4b;
     padding-top: 45px;
     padding-bottom: 65px;
+
     background-image: url("../img/bg_green.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 0;
     background-size: 1440px 803px;
   }
+
+  //&--green-bg::before {
+  //  position: absolute;
+  //  content: '';
+  //  display: block;
+  //  width: 100%;
+  //  height: 493px;
+  //  top: 0px;
+  //
+  //  background-image: url("../img/bg_green.png");
+  //  background-repeat: no-repeat;
+  //  -webkit-background-size: 1440px 700px;
+  //  background-size: 1440px 700px;
+  //  background-position: center 0;
+  //
+  //}
+
 }
 
 .holydays__desc {
   margin: 0 auto;
   margin-bottom: 50px;
+  position: relative;
   &--white-text {
     color: $white;
   }
@@ -24,6 +45,8 @@
   font-size: $font-size-m;
   text-align: center;
   line-height: 20px;
+
+
   &--large {
     font-family: $primary-medium;
     font-size: $font-size-xl;
@@ -45,9 +68,23 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 40px);
+    height: calc(100% + 100px);
+    top: 0px;
+    left: -20px;
+
+    background-color: #238f4b;
+    z-index: 0;
+  }
 }
 
 .shadow-wrapper {
+  position: relative;
   width: 320px;
   box-shadow: 0px 0px 30px 0px rgba(33, 33, 33, 1);
 }
@@ -73,13 +110,32 @@
   font-size: $font-size-s;
 }
 
+.button__wrapper {
+  position: relative;
+}
+
+//@media (min-width: 450px) {
+//
+//  .holydays__text--line-height {
+//    padding: 40px 0px;
+//    margin: 0px;
+//  }
+//
+//}
+
 // TABLET
 @media (min-width: $tablet) {
   .holydays--green-bg {
     width: 100%;
+<<<<<<< HEAD
+    //background-image: url("../img/bg_green.png");
+    //background-size: 1440px 868px;
+    //background-repeat: no-repeat;
+=======
     background-image: url("../img/bg_green.png");
     background-size: 1440px 803px;
     background-repeat: no-repeat;
+>>>>>>> master
   }
 }
 // DESKTOP
@@ -90,11 +146,17 @@
   }
   .holydays--green-bg {
     width: 100%;
+<<<<<<< HEAD
+    //background-image: url("../img/bg_green.png");
+    //background-size: 1600px 870px;
+    //background-size: 1440px 700px;
+=======
     background-image: url("../img/bg_green.png");
     background-size: 1440px 803px;
+>>>>>>> master
     // background-position-x: 50%;
     // background-position-y: 0px;
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
   }
   .holydays__wrapper {
     width: 83%;
@@ -116,6 +178,12 @@
     position: absolute;
     top: -15px;
     right: 603px;
+  }
+
+  .holydays__img-wrapper {
+    &::before {
+      display: none;
+    }
   }
 
   .holydays__text {
