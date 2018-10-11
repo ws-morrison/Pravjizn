@@ -1,5 +1,4 @@
 .holydays {
-
   &--green-bg {
     position: relative;
     background-color: #238f4b;
@@ -28,7 +27,6 @@
   //  background-position: center 0;
   //
   //}
-
 }
 
 .holydays__desc {
@@ -45,7 +43,6 @@
   font-size: $font-size-m;
   text-align: center;
   line-height: 20px;
-
 
   &--large {
     font-family: $primary-medium;
@@ -72,7 +69,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: calc(100% + 40px);
     height: calc(100% + 100px);
     top: 0px;
@@ -135,8 +132,8 @@
 // DESKTOP
 @media (min-width: $desktop) {
   .holydays {
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .holydays--green-bg {
     width: 100%;
@@ -147,25 +144,35 @@
     //background-repeat: no-repeat;
   }
   .holydays__wrapper {
-    width: 83%;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    position: relative;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    // justify-content: flex-end;
+    // position: relative;
+    // margin-top: 50px;
+    // padding-left: 380px;
   }
   .holydays__img {
     width: 340px;
   }
   .holydays__item {
-    width: 460px;
+    width: 53%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .holydays__desc {
+    padding-right: 50px;
   }
   .holydays__img-wrapper {
     display: block;
     position: absolute;
-    top: -15px;
-    right: 603px;
+    top: -12%;
+    right: 122%;
   }
 
   .holydays__img-wrapper {

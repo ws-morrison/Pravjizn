@@ -2388,7 +2388,7 @@ input[type="number"] {
   position: relative; }
   .holydays__img-wrapper::before {
     position: absolute;
-    content: '';
+    content: "";
     width: -webkit-calc(100% + 40px);
     width: calc(100% + 40px);
     height: -webkit-calc(100% + 100px);
@@ -2437,29 +2437,35 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .holydays {
-    padding-top: 120px;
-    padding-bottom: 100px; }
+    padding-top: 150px;
+    padding-bottom: 150px; }
   .holydays--green-bg {
     width: 100%;
     background-image: url("../img/bg_green.png");
     -webkit-background-size: 1440px 803px;
             background-size: 1440px 803px; }
   .holydays__wrapper {
-    width: 83%;
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    position: relative;
-    margin-top: 50px; }
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .holydays__img {
     width: 340px; }
   .holydays__item {
-    width: 460px;
+    width: 53%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2468,12 +2474,19 @@ input[type="number"] {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative; }
+  .holydays__desc {
+    padding-right: 50px; }
   .holydays__img-wrapper {
     display: block;
     position: absolute;
-    top: -15px;
-    right: 603px; }
+    top: -12%;
+    right: 122%; }
   .holydays__img-wrapper::before {
     display: none; }
   .holydays__text {
