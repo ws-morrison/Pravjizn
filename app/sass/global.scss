@@ -50,12 +50,6 @@ input[type="number"] {
   clear: both;
 }
 
-// @media (min-width: $tablet) {
-//   .container {
-//     padding: 0 80px;
-//   }
-// }
-
 @media (min-width: $desktop) {
   section {
     max-width: 1560px;
@@ -83,3 +77,12 @@ input[type="number"] {
   }
 }
 
+
+/////////
+@media (min-width: 2560px) {
+   .container {
+    &--wide {
+      padding: 0 620px;
+    }
+  }
+}
