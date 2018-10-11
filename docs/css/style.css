@@ -2341,6 +2341,7 @@ input[type="number"] {
     margin: 0; } }
 
 .holydays--green-bg {
+  position: relative;
   background-color: #238f4b;
   padding-top: 45px;
   padding-bottom: 65px;
@@ -2353,7 +2354,8 @@ input[type="number"] {
 
 .holydays__desc {
   margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
   .holydays__desc--white-text {
     color: #FFF; }
 
@@ -2382,9 +2384,22 @@ input[type="number"] {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
+  .holydays__img-wrapper::before {
+    position: absolute;
+    content: '';
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    height: -webkit-calc(100% + 100px);
+    height: calc(100% + 100px);
+    top: 0px;
+    left: -20px;
+    background-color: #238f4b;
+    z-index: 0; }
 
 .shadow-wrapper {
+  position: relative;
   width: 320px;
   -webkit-box-shadow: 0px 0px 30px 0px #212121;
           box-shadow: 0px 0px 30px 0px #212121; }
@@ -2409,6 +2424,9 @@ input[type="number"] {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 16px; }
 
+.button__wrapper {
+  position: relative; }
+
 @media (min-width: 768px) {
   .holydays--green-bg {
     width: 100%;
@@ -2425,8 +2443,7 @@ input[type="number"] {
     width: 100%;
     background-image: url("../img/bg_green.png");
     -webkit-background-size: 1440px 803px;
-            background-size: 1440px 803px;
-    background-repeat: no-repeat; }
+            background-size: 1440px 803px; }
   .holydays__wrapper {
     width: 83%;
     display: -webkit-box;
@@ -2457,6 +2474,8 @@ input[type="number"] {
     position: absolute;
     top: -15px;
     right: 603px; }
+  .holydays__img-wrapper::before {
+    display: none; }
   .holydays__text {
     font-family: "Museo Cyrillic Regular", sans-serif;
     font-size: 18px;
@@ -2464,7 +2483,7 @@ input[type="number"] {
     margin: 0;
     line-height: 26px; }
     .holydays__text--large {
-      font-family: "Museo Cyrillic Medium", sans-serif;
+      font-family: "Museo Cyrillic Regular", sans-serif;
       font-size: 35px;
       margin: 0;
       margin-bottom: 50px;

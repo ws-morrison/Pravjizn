@@ -127,15 +127,9 @@
 @media (min-width: $tablet) {
   .holydays--green-bg {
     width: 100%;
-<<<<<<< HEAD
-    //background-image: url("../img/bg_green.png");
-    //background-size: 1440px 868px;
-    //background-repeat: no-repeat;
-=======
     background-image: url("../img/bg_green.png");
     background-size: 1440px 803px;
     background-repeat: no-repeat;
->>>>>>> master
   }
 }
 // DESKTOP
@@ -146,14 +140,8 @@
   }
   .holydays--green-bg {
     width: 100%;
-<<<<<<< HEAD
-    //background-image: url("../img/bg_green.png");
-    //background-size: 1600px 870px;
-    //background-size: 1440px 700px;
-=======
     background-image: url("../img/bg_green.png");
     background-size: 1440px 803px;
->>>>>>> master
     // background-position-x: 50%;
     // background-position-y: 0px;
     //background-repeat: no-repeat;
@@ -193,7 +181,7 @@
     margin: 0;
     line-height: 26px;
     &--large {
-      font-family: $primary-medium;
+      font-family: $primary-regular;
       font-size: $font-size-desktop-xl;
       margin: 0;
       margin-bottom: 50px;
