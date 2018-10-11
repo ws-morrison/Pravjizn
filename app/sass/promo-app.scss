@@ -68,6 +68,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &--margin-bottom {
+    margin-bottom: 30px;
+  }
 }
 .promo-app__logos-link {
   display: block;

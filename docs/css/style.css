@@ -695,22 +695,14 @@ input[type="number"] {
     margin-bottom: 80px; }
 
 .section__text-width {
-  display: block; }
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
   .section__text-width--yt {
     width: 260px;
     margin: 0 auto;
     position: relative;
     margin-top: 60px; }
-  .section__text-width--yt::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 20px;
-    top: -25px;
-    right: 130px;
-    background-image: url("../img/notification_icon.svg");
-    background-repeat: no-repeat; }
   .section__text-width--app-caption {
     width: 75%;
     margin: 0 auto; }
@@ -721,6 +713,19 @@ input[type="number"] {
   .section__text-width--shop-caption {
     width: 90%;
     margin: 0 auto; }
+  .section__text-width--yt::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    top: -25px;
+    right: 122px;
+    background-image: url("../img/icon/notification_icon.svg");
+    background-repeat: no-repeat; }
+  .section__text-width--pod {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px; }
 
 .section__text {
   font-family: "Museo Cyrillic Regular", sans-serif;
@@ -737,7 +742,8 @@ input[type="number"] {
   .section__text--large-header {
     font-size: 25px; }
   .section__text--grey {
-    color: #9B9B9B; }
+    color: #9B9B9B;
+    margin-bottom: 15px; }
   .section__text--bold {
     font-family: "Museo Cyrillic Bold", sans-serif; }
   .section__text--line-height {
@@ -747,24 +753,6 @@ input[type="number"] {
 
 .section--secondary-bg {
   background-color: #FAF7DF; }
-
-.section__text-width {
-  display: block;
-  margin: 0 auto;
-  width: 100%; }
-  .section__text-width--yt::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 20px;
-    top: -25px;
-    right: 122px;
-    background-image: url("../img/icon/notification_icon.svg");
-    background-repeat: no-repeat; }
-  .section__text-width--pod {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 15px; }
 
 @media (min-width: 1024px) {
   .section__desc {
@@ -788,8 +776,8 @@ input[type="number"] {
       position: absolute;
       width: 16px;
       height: 20px;
-      top: 5px;
-      right: 0;
+      top: 0px;
+      right: 50px;
       background-image: url("../img/icon/notification_icon.svg");
       background-repeat: no-repeat; }
     .section__text-width--services {
@@ -807,6 +795,9 @@ input[type="number"] {
     text-align: center;
     line-height: 30px;
     margin-bottom: 30px; }
+    .section__text--desktop-small {
+      font-size: 16px;
+      line-height: 18px; }
     .section__text--shop {
       margin-bottom: 60px; }
     .section__text--large {
@@ -1173,7 +1164,8 @@ input[type="number"] {
   font-family: "Museo Cyrillic Medium", sans-serif;
   font-size: 24px;
   color: #212121;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 15px; }
 
 .pod__author-caption {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -2524,7 +2516,7 @@ input[type="number"] {
   position: absolute;
   font-size: 14px;
   margin-left: 20px;
-  top: 5px; }
+  top: 0; }
 
 .footer-list {
   margin: 0;
@@ -2742,6 +2734,8 @@ input[type="number"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .promo-app__logos--margin-bottom {
+    margin-bottom: 30px; }
 
 .promo-app__logos-link {
   display: block;
