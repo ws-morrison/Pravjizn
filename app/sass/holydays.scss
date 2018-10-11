@@ -172,7 +172,7 @@
     display: block;
     position: absolute;
     top: -12%;
-    right: 122%;
+    right: 125%;
   }
 
   .holydays__img-wrapper {
@@ -192,7 +192,7 @@
       font-size: $font-size-desktop-xl;
       margin: 0;
       margin-bottom: 50px;
-      line-height: 35px;
+      line-height: 45px;
     }
     &--grey {
       color: $faded;
@@ -201,11 +201,11 @@
     &--bold {
       font-family: $primary-bold;
     }
-    &--line-height {
-      line-height: 26px;
-    }
   }
-
+.holydays__desc-text {
+  display: block;
+  width: 85%;
+}
   .holydays__button {
     margin: 0;
   }

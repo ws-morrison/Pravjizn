@@ -471,7 +471,7 @@ input[type="number"] {
     max-width: 1560px;
     margin: 0 auto; }
   .container {
-    padding: 0 157px; }
+    padding: 0 80px; }
     .container--pod {
       padding: 0 20px; }
     .container--wide {
@@ -484,10 +484,6 @@ input[type="number"] {
     .container--holydays {
       max-width: none;
       width: 100%; } }
-
-@media (min-width: 2560px) {
-  .container--wide {
-    padding: 0 620px; } }
 
 .header {
   width: 100%;
@@ -2486,7 +2482,7 @@ input[type="number"] {
     display: block;
     position: absolute;
     top: -12%;
-    right: 122%; }
+    right: 125%; }
   .holydays__img-wrapper::before {
     display: none; }
   .holydays__text {
@@ -2500,13 +2496,14 @@ input[type="number"] {
       font-size: 35px;
       margin: 0;
       margin-bottom: 50px;
-      line-height: 35px; }
+      line-height: 45px; }
     .holydays__text--grey {
       color: #9B9B9B; }
     .holydays__text--bold {
       font-family: "Museo Cyrillic Bold", sans-serif; }
-    .holydays__text--line-height {
-      line-height: 26px; }
+  .holydays__desc-text {
+    display: block;
+    width: 85%; }
   .holydays__button {
     margin: 0; } }
 
