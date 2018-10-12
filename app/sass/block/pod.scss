@@ -38,3 +38,10 @@
   background-size: 468px 384px;
   background-repeat: no-repeat;
 }
+
+.pod__quote-link {
+  font-size: 18px;
+  line-height: 26px;
+  color: $link-color;
+  font-family: $secondary-regular;
+}
