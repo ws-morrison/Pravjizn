@@ -50,6 +50,13 @@ input[type="number"] {
   clear: both;
 }
 
+.text-main {
+  font-family: "Museo Sans Cyrl Regular";
+  font-size: 18px;
+  line-height: 26px;
+  color: $primary-text;
+}
+
 @media (min-width: $desktop) {
   section {
     max-width: 1560px;
