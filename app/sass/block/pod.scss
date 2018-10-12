@@ -1,0 +1,40 @@
+.pod {
+
+  .section__desc {
+    margin: 0px;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  &__author-heading {
+    font-family: $primary-medium;
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary-text;
+  }
+
+  &__author-caption {
+    font-family: $secondary-regular-italic;
+    font-size: 16px;
+    line-height: 26px;
+    color: $primary-text;
+  }
+
+}
+
+.pod__quote-lead {
+  font-family: $primary-thin;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.pod__img {
+  width: 100%;
+  height: 384px;
+  margin: 0 auto;
+  background-image: url("../img/batushka_img.png");
+  background-size: 468px 384px;
+  background-repeat: no-repeat;
+}

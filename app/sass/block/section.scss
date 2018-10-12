@@ -4,14 +4,11 @@
   &--white-text {
     color: $white;
   }
-  &--feedback {
-    margin-bottom: 80px;
-  }
+
 }
 
 .section__text-width {
-  // display: block;
-  // margin: 0 auto;
+
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -21,17 +18,7 @@
     position: relative;
     margin-top: 60px;
   }
-  // &--yt::before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   width: 16px;
-  //   height: 20px;
-  //   top: -25px;
-  //   right: 130px;
-  //   background-image: url("../img/notification_icon.svg");
-  //   background-repeat: no-repeat;
-  // }
+
   &--app-caption {
     width: 75%;
     margin: 0 auto;
@@ -41,10 +28,7 @@
     margin: 0 auto;
     margin-bottom: 15px;
   }
-  // &--shop {
-  //   width: 260px;
-  //   margin: 0 auto;
-  // }
+
   &--shop-caption {
     width: 90%;
     margin: 0 auto;
