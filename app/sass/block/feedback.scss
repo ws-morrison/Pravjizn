@@ -8,6 +8,21 @@
   p {
     margin: 0px;
   }
+
+  &__author-heading {
+    font-family: $primary-medium;
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary-text;
+  }
+
+  &__author-caption {
+    font-family: $secondary-regular-italic;
+    font-size: 16px;
+    line-height: 26px;
+    color: $primary-text;
+  }
+
 }
 
 .feedback__img {
@@ -17,18 +32,4 @@
   -webkit-background-size: 376px 373px;
   background-size: 376px 373px;
   //original width="566" height="562"
-}
-
-.feedback__author-heading {
-  font-family: $primary-medium;
-  font-size: 24px;
-  line-height: 24px;
-  color: $primary-text;
-}
-
-.feedback__author-caption {
-  font-family: $secondary-regular-italic;
-  font-size: 16px;
-  line-height: 26px;
-  color: $primary-text;
 }

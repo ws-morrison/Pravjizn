@@ -8,6 +8,20 @@
     margin: 0px;
   }
 
+  &__author-heading {
+    font-family: $primary-medium;
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary-text;
+  }
+
+  &__author-caption {
+    font-family: $secondary-regular-italic;
+    font-size: 16px;
+    line-height: 26px;
+    color: $primary-text;
+  }
+
 }
 
 .pod__quote-lead {

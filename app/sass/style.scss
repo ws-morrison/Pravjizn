@@ -1,28 +1,30 @@
-
+//global
 @import "normalize";
 @import "vars";
 @import "fonts";
 @import "global";
+@import "mixin";
 
-@import "header";
-@import "donate-form";
-@import "section";
-@import "burger";
-@import "buttons";
-@import "feedback";
-@import "pod";
-@import "programs";
-@import "app";
-@import "yt-channel";
-@import "services";
-@import "info-services";
-@import "info-desktop";
-@import "patron";
-@import "holydays";
-@import "shop";
-@import "account";
-@import "footer";
-@import "promo-app";
-@import "drop-menu";
-@import "shop-carousel";
-@import "logo";
+//blocks
+@import "block/header";
+@import "block/donate-form";
+@import "block/section";
+@import "block/burger";
+@import "block/buttons";
+@import "block/feedback";
+@import "block/pod";
+@import "block/programs";
+@import "block/app";
+@import "block/yt-channel";
+@import "block/services";
+@import "block/info-services";
+@import "block/info-desktop";
+@import "block/patron";
+@import "block/holydays";
+@import "block/shop";
+@import "block/account";
+@import "block/footer";
+@import "block/promo-app";
+@import "block/drop-menu";
+@import "block/shop-carousel";
+@import "block/logo";
