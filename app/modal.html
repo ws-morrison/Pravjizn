@@ -2,47 +2,50 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Modal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Modal</title>
 </head>
 
 <body>
 
-<div class="modal">
+  <div class="modal">
 
     <div class="modal__col-1">
-        <img src="https://via.placeholder.com/268x359" alt="">
+      <img class="modal__img" src="./img/book.png" alt="" width="268px" height="359px">
     </div>
 
     <div class="modal__col-2">
 
-        <form action="" class="form-gift exit-form--row exit-modal__col-2">
-            <span class="form-gift__caption">Не спешите уходить!...</span>
+      <form action="" class="form-gift form-gift--row">
+        <span class="form-gift__slogan">Не спешите уходить!...</span>
 
-            <div class="form-gift__desc">
-                <p class="form-gift__desc-title">Получите полезную мини-книгу</p>
-                <p class="form-gift__desc-text">«5 способов участвовать в благотворительности без
-                    денег»</p>
-            </div>
+        <div class="form-gift__desc">
+          <p class="form-gift__desc-title">Получите полезную мини-книгу</p>
+          <p class="form-gift__desc-text">«5 способов участвовать в благотворительности без
+            денег»</p>
+        </div>
 
-            <label>
-                <input class="form-gift__input form-gift__input--wide" type="email" name="exit__form"
-                       id="form-gift-input"
-                       placeholder="На какой E-mail отправить книгу?">
-                <span class="form-gift__input-caption"></span>
-            </label>
-            <button class="" type="submit">Получить книгу (1.4Mb)</button>
-            <p class="form-gift__caption">Нажимая на кнопку, я соглашаюсь с условиями
-                <a href="" class="form-gift__link">политики конфиденциальности</a> и <a href="" class="form-gift__link">договором оферты</a></p>
-        </form>
+        <div class="form-gift__wrapper">
+          <label>
+            <input class="form-gift__input form-gift__input--wide" type="email" name="gift__form" id="form-gift-input"
+              placeholder="На какой E-mail отправить книгу?">
+          </label>
+          <button class="button button--blue button__text button__text--white" type="submit">Получить книгу (1.4Mb)</button>
+        </div>
+
+        <p class="form-gift__caption">Нажимая на кнопку, я соглашаюсь с условиями
+          <a href="" class="form-gift__link">политики конфиденциальности</a> и <a href="" class="form-gift__link">договором
+            оферты</a></p>
+      </form>
 
     </div>
 
-</div>
+  </div>
 
+  <!-- <div class="modal-overlay"></div> -->
 </body>
 
 </html>

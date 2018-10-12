@@ -478,6 +478,14 @@ input[type="number"] {
   line-height: 26px;
   color: #212121; }
 
+.modal-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 102; }
+
 @media (min-width: 1024px) {
   section {
     max-width: 1560px;
@@ -2687,9 +2695,56 @@ input[type="number"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  position: fixed; }
+
+.modal__col-1 {
+  background-color: #FAFAF9; }
+
+.form-gift__slogan {
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F65500; }
+
+.form-gift__desc-title {
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  color: #9B9B9B; }
+
+.form-gift__desc-text {
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 35px;
+  line-height: 45px;
+  color: #212121; }
+
+.form-gift__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form-gift__input {
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 18px;
+  color: #9B9B9B;
+  line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 58px;
+  padding-right: 50px;
+  border: 1px solid #CCCCCC;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  width: 295px; }
+
+.form-gift__caption {
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 13px;
+  color: #9B9B9B;
+  line-height: 20px; }
+
+.form-gift__link {
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 13px;
+  color: #F65500;
+  line-height: 20px; }

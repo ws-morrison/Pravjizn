@@ -57,6 +57,16 @@ input[type="number"] {
   color: $primary-text;
 }
 
+.modal-overlay {
+  // display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 102;
+}
+
 @media (min-width: $desktop) {
   section {
     max-width: 1560px;
@@ -83,7 +93,6 @@ input[type="number"] {
     }
   }
 }
-
 
 /////////
 // @media (min-width: 2560px) {

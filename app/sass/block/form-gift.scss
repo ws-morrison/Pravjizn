@@ -1,0 +1,50 @@
+.form-gift__slogan {
+  font-family: $primary-regular;
+  font-size: $font-size-desktop-s;
+  line-height: 24px;
+  color: $accient-2;
+}
+
+.form-gift__desc-title {
+  font-family: $primary-regular;
+  font-size: $font-size-desktop-s;
+  color: $faded;
+}
+
+.form-gift__desc-text {
+  font-family: $primary-regular;
+  font-size: $font-size-desktop-xl;
+  line-height: 45px;
+  color: $primary-text;
+}
+
+.form-gift__wrapper {
+  display: flex;
+}
+
+.form-gift__input {
+  font-family: $secondary-regular;
+  font-size: $font-size-m;
+  color: $faded;
+  line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 58px;
+  padding-right: 50px;
+  border: 1px solid $grey-border;
+  border-radius: 30px;
+  width: 295px;
+}
+
+.form-gift__caption {
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  color: $faded;
+  line-height: 20px;
+}
+.form-gift__link {
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  color: $accient-2;
+  line-height: 20px;
+}

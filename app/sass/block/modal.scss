@@ -1,5 +1,8 @@
 .modal {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  position: fixed;
+}
+
+.modal__col-1 {
+  background-color: $grey-bg;
 }
