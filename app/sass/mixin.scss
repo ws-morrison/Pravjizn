@@ -7,12 +7,6 @@
 
 @mixin author-heading-text($color) {
 
-  &__title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   &__author {
     display: flex;
     flex-direction: column;
@@ -43,6 +37,9 @@
 
   &__title {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__title-text {
@@ -59,6 +56,23 @@
       line-height: 30px;
       margin-bottom: 31px;
       color: $color2;
+    }
+
+  }
+
+  @media (min-width: $desktop-full) {
+
+    &__title-text {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 19px;
+
+      &--big {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 51px;
+      }
+
     }
 
   }

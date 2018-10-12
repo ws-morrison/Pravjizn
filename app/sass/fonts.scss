@@ -93,3 +93,13 @@
     font-weight:  normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'MuseoCyrillic-100';
+    src:
+            url('../fonts/MuseoCyrillic-100.woff2') format('woff2'),
+            url('../fonts/MuseoCyrillic-100.woff') format('woff'),
+            url('../fonts/MuseoCyrillic-100.ttf') format('truetype');
+    font-weight:  normal;
+    font-style: normal;
+}

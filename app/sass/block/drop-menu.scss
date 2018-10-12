@@ -124,3 +124,33 @@
   }
 
 }
+
+@media (min-width: $desktop-full) {
+
+  .menu__wrapper {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .drop-menu__link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .drop-menu__list {
+    width: auto;
+  }
+
+  .drop-menu__link {
+    display: block;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .drop-menu-button__wrapper {
+    width: 317px;
+    justify-content: space-between;
+  }
+
+}
