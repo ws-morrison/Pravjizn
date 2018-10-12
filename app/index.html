@@ -24,7 +24,7 @@
             </div>
 
 
-            <!-- Выпадающее меню -->
+            <!-- DROPDOWN -->
             <div class="menu__wrapper">
                 <div class="drop-menu drop-menu--desktop drop-menu--bg">
 
@@ -34,7 +34,8 @@
                     </div>
 
                     <div class="drop-menu-button__wrapper">
-                        <a href="#" class="button drop-menu-button drop-menu-button__login button__text button__text--white">Войти</a>
+                        <a href="#"
+                           class="button drop-menu-button drop-menu-button__login button__text button__text--white">Войти</a>
                         <a href="#"
                            class="button drop-menu-button drop-menu-button--accient-border button__text button__text--white">Хочу
                             помочь</a>
@@ -132,52 +133,53 @@
 
     <!--POD-->
     <section class="pod">
+        <div class="container">
 
-        <div class="section__desc">
-            <p class="section__text section__text-width section__text-width--pod section__text--grey">Нищего посылает к
-                тебе Бог (с) Иоанн Златоуст</p>
-            <p class="section__text section__text--large">История дня</p>
-        </div>
-
-        <div class="pod-item">
-
-            <div class="pod__quote pod__quote--thin">
-                <p class="pod__quote-lead">«Уже 190 детей из окрестных
-                    деревень ждут открытия
-                    воскресной школы»</p>
+            <div class="pod__title">
+                <p class="pod__title-text">Нищего посылает к тебе Бог (с) Иоанн Златоуст</p>
+                <p class="pod__title-text pod__title-text--big">История дня</p>
             </div>
 
-            <div class="pod__img"></div>
-            <div class="pod__quote">
-                <div class="container container--pod">
-                    <p class="pod__quote-text text-main">
-                        Здравствуйте, братья и сестры!<br>
-                        Просим посильной помощи отцу Владимиру (Дроздову)
-                        и его приходу, которым просто негде обучить желающих
-                        воцерковиться ребят!
-                        <a href="#" class="link pod__quote-link">Читать полностью</a>
-                    </p>
-                    <div class="pod__author">
-                        <b class="pod__author-heading">Отец Владимир</b>
-                        <i class="pod__author-caption">настоятель храма в д.Власовка</i>
+            <div class="pod__item">
+
+                <div class="pod__item-wrapper">
+                    <div class="pod-item__title">
+                        <p class="pod-item__title-text">«Уже 190 детей из окрестных деревень ждут открытия воскресной
+                            школы»</p>
                     </div>
 
-                    <form action="" class="donate-form donate-form--row">
-                        <label class="donate-form__label" for="">
-                            <input class="donate-form__input donate-form__input--wide"
-                                   type="number"
-                                   name="donate__form" id=""
-                                   min="0" value="500">
-                            <span class="donate-form__input-caption">р/месяц</span>
-                        </label>
-                        <button class="button button--green button__text button__text--white" type="submit">Помочь
-                        </button>
-                    </form>
-
+                    <div class="pod__img-wrapper">
+                        <div class="pod__img"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
+                <p class="pod__quote-text">
+                    Здравствуйте, братья и сестры!<br>
+                    Просим посильной помощи отцу Владимиру (Дроздову)
+                    и его приходу, которым просто негде обучить желающих
+                    воцерковиться ребят!
+                    <a href="#" class="link pod__quote-link">Читать полностью</a>
+                </p>
+
+                <div class="pod__author">
+                    <b class="pod__author-heading">Отец Владимир</b>
+                    <i class="pod__author-caption">настоятель храма в д.Власовка</i>
+                </div>
+
+
+                <form action="" class="donate-form">
+                    <div class="donate-form__wrapper">
+                        <div class="donate-form__input-wrapper">
+                            <input class="donate-form__input" type="number" name="donate__form" id="" min="0" value="500">
+                            <span class="donate-form__input-thumb">р/месяц</span>
+                        </div>
+                        <button class="button button--green button__text button__text--white" type="submit">Помочь</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
     </section>
 
     <section class="programs">
