@@ -75,6 +75,7 @@
 .button__text {
   font-family: $secondary-regular;
   font-size: $font-size-s;
+  line-height: $font-size-s;
 
   &--black {
     color: $primary-text;

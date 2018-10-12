@@ -2,28 +2,48 @@
   margin: 0;
   padding: 0px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &--padding {
-    //padding-left: 20px;
-    //padding-right: 20px;
-  }
-
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-.donate-form__label {
-  display: block;
+.donate-form__text-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  font-family: $secondary-regular;
+  color: $white;
+}
+
+.donate-form__wrapper {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.donate-form__input-wrapper {
+  width: 100%;
   position: relative;
   max-height: 60px;
   margin-bottom: 20px;
 }
 
-.donate-form__input {
-  padding: 8px 24px 2px 24px;
-  margin-bottom: 20px;
+//.donate-form__label {
+//  display: block;
+//  position: relative;
+//  max-height: 60px;
+//  margin-bottom: 20px;
+//  max-width: 400px;
+//}
 
-  max-width: 240px;
+.donate-form__input {
+  width: 100%;
+  padding: 8px 24px 2px 24px;
+
+  max-width: 400px;
   border: none;
   border: 1px solid #cccccc;
   border-radius: 100px;
@@ -34,6 +54,18 @@
   color: $accient;
   box-sizing: border-box;
 }
+
+//.donate-input__thumb {
+//  display: block;
+//  content: "";
+//  position: absolute;
+//  font-family: $secondary-regular;
+//  font-size: $font-size-s;
+//  color: $faded;
+//  font-style: italic;
+//  top: 20px;
+//  right: 20px;
+//}
 
 .donate-form__input-caption {
   position: absolute;
@@ -55,29 +87,18 @@
   color: $faded;
 }
 
-.form__text {
-  font-family: $secondary-regular;
-  font-size: $font-size-s;
-  color: $white;
+//.form__text {
+  //font-family: $secondary-regular;
+  //font-size: $font-size-s;
+  //color: $white;
   //margin-bottom: 20px;
-}
+//}
 
-.donate-input-wrapper {
-  display: block;
-  position: relative;
-}
-
-.donate-input__thumb {
-  display: block;
-  content: "";
-  position: absolute;
-  font-family: $secondary-regular;
-  font-size: $font-size-s;
-  color: $faded;
-  font-style: italic;
-  top: 20px;
-  right: 20px;
-}
+//.donate-input-wrapper {
+//  width: 100%;
+//  display: block;
+//  position: relative;
+//}
 
 // DESKTOP
 @media (min-width: $desktop) {

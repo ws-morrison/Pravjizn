@@ -1,11 +1,21 @@
 .header {
   width: 100%;
   box-sizing: border-box;
+
   &--bg {
     background-image: url("../img/main_bg.png");
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @include title-text($white, $white);
+
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-nav {
@@ -15,6 +25,10 @@
   align-items: center;
   padding-top: 25px;
   margin-bottom: 33px;
+}
+
+.header__title {
+
 }
 
 .header__logo-wrapper {
@@ -54,8 +68,8 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      margin-bottom: 120px;
-      padding-bottom: 65px;
+      //margin-bottom: 120px;
+      padding-bottom: 84px;
       background-size: 1440px 648px;
     }
   }

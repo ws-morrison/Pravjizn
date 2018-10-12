@@ -46,6 +46,7 @@ input[type="number"] {
 .hidden {
   display: none;
 }
+
 .clear {
   clear: both;
 }
@@ -63,12 +64,13 @@ input[type="number"] {
     margin: 0 auto;
   }
   .container {
-    padding: 0 80px;
+    padding: 0 40px;
+
     &--pod {
       padding: 0 20px;
     }
     &--wide {
-      padding: 0 20px;
+      padding: 0 40px;
     }
     &--yt {
       padding: 0 150px;
@@ -84,6 +86,18 @@ input[type="number"] {
   }
 }
 
+@media (min-width: $desktop-full) {
+
+  .container {
+    padding: 0px 157px;
+
+    &--wide {
+      padding: 0 40px;
+    }
+
+  }
+
+}
 
 /////////
 // @media (min-width: 2560px) {
