@@ -104,13 +104,19 @@
   .promo-app--order {
     margin: 0;
     padding: 0;
-    order: -1;
+    order: 1;
     margin-right: auto;
-    margin-left: 55px;
+    margin-left: 40px;
   }
 
   .promo-app__text-wrapper {
     margin-bottom: 0;
+  }
+
+  .promo-app__text--small {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 20px;
   }
 
   .promo-app__text-wrapper .phone-thumb .phone-thumb--white {
@@ -128,4 +134,19 @@
     align-items: center;
     margin-top: 10px;
   }
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .promo-app--order {
+    margin-left: 69px;
+  }
+
+  .promo-app__text--small {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 20px;
+  }
+
 }

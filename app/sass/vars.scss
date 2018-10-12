@@ -1,6 +1,7 @@
 // Media Q
 $tablet: 768px;
 $desktop: 1024px;
+$desktop-full: 1260px;
 
 // Colors
 $white: #FFF;
@@ -10,7 +11,7 @@ $accient: #FF482F;
 $accient-2: #F65500;
 $list-dot: #D13D24;
 $secondary-accient: #0071BC;
-$link-color: #8D9E5A;
+$link-color: #7C872F;
 // $primary-bg: rgba(236, 236, 229, 0.23);
 $primary-bg: #f7f7f7;
 $secondary-bg: #FAF7DF;
@@ -26,12 +27,15 @@ $grey-border: #CCCCCC;
 // Typography
 
 // Font Family. Primary - Museo, Secondary Museo Sans
+
+//Museo Cyrillic
+$primary-thin-xs: 'MuseoCyrillic-100', sans-serif; // 300
 $primary-thin: 'Museo Cyrillic Thin', sans-serif; // 300
 $primary-regular: 'Museo Cyrillic Regular', sans-serif; // 500
 $primary-medium: 'Museo Cyrillic Medium', sans-serif; // 700
 $primary-bold: 'Museo Cyrillic Bold', sans-serif; // 900
 
-
+//Museo Sans Cyrl
 $secondary-thin: 'Museo Sans Cyrl Thin', sans-serif; // 300
 $secondary-regular: 'Museo Sans Cyrl Regular', sans-serif; // 500
 $secondary-regular-italic: 'MuseoSansCyrl-500It', sans-serif; // 500

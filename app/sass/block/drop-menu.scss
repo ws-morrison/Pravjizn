@@ -12,6 +12,7 @@
     background-color: #f7a806;
   }
 }
+
 .drop-menu__list {
   margin-top: 180px;
   display: flex;
@@ -26,59 +27,62 @@
   font-size: $font-size-xl;
   margin-bottom: 25px;
 }
+
 .drop-menu-button__wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  order: 3;
 }
+
 .drop-menu-button {
   box-sizing: content-box;
   width: 160px;
-  min-height: 50px;
+  //min-height: 50px;
   margin-bottom: 20px;
   background-color: inherit;
   border: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 17px 0px;
 
   &--accient-border {
     border: 2px solid #f7f606;
   }
+
+  &__login {
+    background-image: url(../img/icon/icon-user.svg);
+    background-repeat: no-repeat;
+    background-size: 17px 14px;
+    background-position: 32px 17px;
+  }
+
 }
 
 //  DESKTOP
 @media (min-width: $desktop) {
-  // .menu__wrapper {
-  //   display: flex;
-  //   flex-direction: row-reverse;
-  // }
-  //.drop-menu {
-  //  display: flex;
-  //  flex-direction: row;
-  //  position: static;
-  //  background-color: inherit;
-  //}
-  //
 
   .menu__wrapper {
     width: calc(100% - 175px);
     display: flex;
   }
+
   .drop-menu__link {
     text-decoration: none;
     color: $white;
     font-family: $secondary-regular;
-    font-size: $font-size-s;
+    font-size: 15px;
     margin: 0;
   }
 
   .drop-menu__list {
     display: flex;
+    order: 2;
   }
 
   .drop-menu-button {
     box-sizing: content-box;
     min-width: 134px;
-    min-height: 40px;
+    //min-height: 40px;
   }
 
   .drop-menu {
@@ -98,8 +102,17 @@
   }
 
   .drop-menu-button {
-    min-width: auto;
     margin-bottom: 0;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 164px;
+
+    &__login {
+      max-width: 134px;
+      background-position: 20px 11px;
+      background-size: 11px 14px;
+    }
+
   }
 
   .drop-menu__list {
@@ -110,23 +123,34 @@
     justify-content: space-around;
   }
 
-  // .promo-app {
-  //   margin: 0;
-  //   padding: 0;
-  //   order: -1;
-  //   margin-right: auto;
-  //   margin-left: 55px;
-  // }
+}
 
-  // .promo-app__text-wrapper {
-  //   margin-bottom: 0;
-  // }
+@media (min-width: $desktop-full) {
 
-  // .promo-app__text-wrapper .phone-thumb .phone-thumb--white {
-  //   margin-bottom: 0;
-  // }
+  .menu__wrapper {
+    width: auto;
+    flex-grow: 1;
+  }
 
-  // .promo-app__text .promo-app__text--small .promo-app__text--white-text {
-  //   margin: 0px;
-  // }
+  .drop-menu__link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .drop-menu__list {
+    width: auto;
+  }
+
+  .drop-menu__link {
+    display: block;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .drop-menu-button__wrapper {
+    width: 317px;
+    justify-content: space-between;
+  }
+
 }

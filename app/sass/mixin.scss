@@ -1,0 +1,80 @@
+@mixin text-main($color) {
+  font-family: "Museo Sans Cyrl Regular";
+  font-size: 18px;
+  line-height: 26px;
+  color: $color;
+}
+
+@mixin author-heading-text($color) {
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__author-heading {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    font-family: $primary-medium;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color;
+    //color: $primary-text;
+  }
+
+  &__author-caption {
+    font-family: $secondary-regular-italic;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color;
+  }
+
+}
+
+@mixin title-text($color1, $color2) {
+
+  &__title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title-text {
+    display: inline-block;
+    margin-bottom: 29px;
+
+    font-family: $primary-regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color1;
+
+    &--big {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      color: $color2;
+    }
+
+  }
+
+  @media (min-width: $desktop-full) {
+
+    &__title-text {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 19px;
+
+      &--big {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 51px;
+      }
+
+    }
+
+  }
+
+}

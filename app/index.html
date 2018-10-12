@@ -24,7 +24,7 @@
             </div>
 
 
-            <!-- Выпадающее меню -->
+            <!-- DROPDOWN -->
             <div class="menu__wrapper">
                 <div class="drop-menu drop-menu--desktop drop-menu--bg">
 
@@ -34,7 +34,8 @@
                     </div>
 
                     <div class="drop-menu-button__wrapper">
-                        <a href="#" class="button drop-menu-button button__text button__text--white">Войти</a>
+                        <a href="#"
+                           class="button drop-menu-button drop-menu-button__login button__text button__text--white">Войти</a>
                         <a href="#"
                            class="button drop-menu-button drop-menu-button--accient-border button__text button__text--white">Хочу
                             помочь</a>
@@ -65,28 +66,22 @@
             </div>
         </nav>
 
-
-        <div class="section__desc section__desc--white-text">
-            <p class="section__text section__text-width section__text-width--header">Помогаем храмам, монастырям,
-                священникам и всем
-                православным христианам</p>
-            <p class="section__text section__text-width section__text--large section__text--large-header section__text--huge">
-                Правжизнь
-                это
-                Благотворительный
-                Фонд</p>
+        <div class="header__title">
+            <p class="header__title-text">Помогаем храмам, монастырям, священникам и всем православным христианам</p>
+            <b class="header__title-text header__title-text--big">Правжизнь это Благотворительный Фонд</b>
         </div>
 
+
         <form action="" class="donate-form">
-            <span class="form__text">Всего</span>
-            <span class="donate-form__input-caption">чтобы помочь!</span>
-            <div class="donate-input-wrapper">
-                <label for="donate-input"><span class="donate-input__thumb">р/месяц</span>
-                    <input class="donate-form__input" type="number" name="donate__form" id="donate-input" min="0"
-                           value="500">
-                </label>
+            <div class="donate-form__wrapper">
+                <span class="donate-form__text-title">Всего</span>
+                <span class="donate-form__text-title donate-form__text-title--desktop">чтобы помочь!</span>
+                <div class="donate-form__input-wrapper">
+                    <input class="donate-form__input" type="number" name="donate__form" id="" min="0" value="500">
+                    <span class="donate-form__input-thumb">р/месяц</span>
+                </div>
+                <button class="button button--yellow button__text button__text--black" type="submit">Помочь</button>
             </div>
-            <button class="button button--yellow button__text button__text--black" type="submit">Помочь</button>
         </form>
     </div>
 </header>
@@ -97,32 +92,39 @@
     <section class="feedback">
 
         <div class="container">
-            <div class="section__desc">
-                <p class="section__text section__text--grey">Полноценная христианская жизнь в информационном
+            <div class="feedback__title">
+                <p class="feedback__title-text">Полноценная христианская жизнь в информационном
                     обществе</p>
-                <p class="section__text section__text--large section__text-width section__text-width--feedback">
+                <p class="feedback__title-text feedback__title-text--big">
                     Используем
                     современные технологии на благо
                     Православной
                     Церкви</p>
             </div>
-        </div>
 
-        <div class="feedback__item">
-            <p class="feedback__lead-text text-main">
-                Воскресная школа онлайн, братство трезвости,
-                молитва по соглашению и другие проекты.
-                Узнайте, как мы решились послужить Господу Богу
-                с помощью Интернет-технологий
-            </p>
+            <div class="feedback__item">
+                <div class="feedback__item-wrapper">
+                    <p class="feedback__item-text">
+                        <i class="icon icon__quotes">"</i>
+                        Воскресная школа онлайн, братство трезвости,
+                        молитва по соглашению и другие проекты.
+                        Узнайте, как мы решились послужить Господу Богу
+                        с помощью Интернет-технологий
+                    </p>
 
-            <div class="feedback__img">
-                <a href="#" class="feedback__video-button"></a>
-            </div>
+                    <div class="feedback__img-wrapper">
+                        <div class="feedback__img">
+                            <a href="#" class="feedback__video-button">
+                                <i class="icon icon__play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="feedback__author">
-                <b class="feedback__author-heading">Александр Судаков</b>
-                <i class="feedback__author-caption">Основатель и директор БФ Правжизнь</i>
+                <div class="feedback__author">
+                    <b class="feedback__author-heading">Александр Судаков</b>
+                    <i class="feedback__author-caption">Основатель и директор БФ Правжизнь</i>
+                </div>
             </div>
         </div>
 
@@ -131,51 +133,53 @@
 
     <!--POD-->
     <section class="pod">
+        <div class="container">
 
-        <div class="section__desc">
-            <p class="section__text section__text-width section__text-width--pod section__text--grey">Нищего посылает к
-                тебе Бог (с) Иоанн Златоуст</p>
-            <p class="section__text section__text--large">История дня</p>
-        </div>
-
-        <div class="pod-item">
-
-            <div class="pod__quote pod__quote--thin">
-                <p class="pod__quote-lead">«Уже 190 детей из окрестных
-                    деревень ждут открытия
-                    воскресной школы»</p>
+            <div class="pod__title">
+                <p class="pod__title-text">Нищего посылает к тебе Бог (с) Иоанн Златоуст</p>
+                <p class="pod__title-text pod__title-text--big">История дня</p>
             </div>
 
-            <div class="pod__img"></div>
-            <div class="pod__quote">
-                <div class="container container--pod">
-                    <p class="pod__quote-text text-main">
-                        Здравствуйте, братья и сестры!<br>
-                        Просим посильной помощи отцу Владимиру (Дроздову)
-                        и его приходу, которым просто негде обучить желающих
-                        воцерковиться ребят!
-                        <a href="#" class="link pod__quote-link">Читать полностью</a>
-                    </p>
-                    <div class="pod__author">
-                        <b class="pod__author-heading">Отец Владимир</b>
-                        <i class="pod__author-caption">настоятель храма в д.Власовка</i>
+            <div class="pod__item">
+
+                <div class="pod__item-wrapper">
+                    <div class="pod-item__title">
+                        <p class="pod-item__title-text">«Уже 190 детей из окрестных деревень ждут открытия воскресной
+                            школы»</p>
                     </div>
 
-                    <form action="" class="donate-form donate-form--row">
-                        <label for="donate-input">
-                            <input class="donate-form__input donate-form__input--wide" type="number"
-                                   name="donate__form" id="donate-input"
-                                   min="0" value="500">
-                            <span class="donate-form__input-caption"></span>
-                        </label>
-                        <button class="button button--green button__text button__text--white" type="submit">Помочь
-                        </button>
-                    </form>
-
+                    <div class="pod__img-wrapper">
+                        <div class="pod__img"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
+                <p class="pod__quote-text">
+                    Здравствуйте, братья и сестры!<br>
+                    Просим посильной помощи отцу Владимиру (Дроздову)
+                    и его приходу, которым просто негде обучить желающих
+                    воцерковиться ребят!
+                    <a href="#" class="link pod__quote-link">Читать полностью</a>
+                </p>
+
+                <div class="pod__author">
+                    <b class="pod__author-heading">Отец Владимир</b>
+                    <i class="pod__author-caption">настоятель храма в д.Власовка</i>
+                </div>
+
+
+                <form action="" class="donate-form">
+                    <div class="donate-form__wrapper">
+                        <div class="donate-form__input-wrapper">
+                            <input class="donate-form__input" type="number" name="donate__form" id="" min="0" value="500">
+                            <span class="donate-form__input-thumb">р/месяц</span>
+                        </div>
+                        <button class="button button--green button__text button__text--white" type="submit">Помочь</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
     </section>
 
     <section class="programs">
