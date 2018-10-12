@@ -2681,3 +2681,15 @@ input[type="number"] {
     background-image: url("../img/icon/main_logo-green.svg"); }
   .logo__pz--blue {
     background-image: url("../img/icon/main_logo-blue.svg"); }
+
+.modal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
