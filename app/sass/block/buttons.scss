@@ -1,59 +1,89 @@
 .button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 365px;
+  min-height: 60px;
+  margin: 0 auto;
+
   text-decoration: none;
   text-align: center;
-  // margin: 0 auto;
-  padding: 22px 0px;
-  width: 100%;
-  //max-width: 240px;
-  //min-height: 60px;
-  border: none;
-  border-radius: 50px;
-  box-sizing: content-box;
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  line-height: $font-size-s;
 
-  &--big {
-    // margin-top: 25px;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    line-height: 20px;
-    width: 100%;
-    max-width: 273px;
-    min-height: 85px;
-    padding: 10px 40px 10px 40px;
-    border-radius: 43.5px;
-    box-sizing: border-box;
-    line-height: 20px;
-    position: relative;
+  border: none;
+  border-radius: 35px;
+  box-sizing: border-box;
+
+  &--black {
+    color: $primary-text;
   }
 
-  &--white-green {
+  &--white {
+    color: $white;
+    border: 2px solid $white;
+  }
+
+  &--red {
+    color: $yt-red;
+  }
+
+  &--big-white-green {
+    @include btn-big($white);
     color: #026837;
     border: 2px solid #026837;
-    background-color: #ffffff;
-    margin: 0 auto;
-    box-shadow: 0 10px 20px 0 rgba(2,104,55,0.10);
-    // bottom: -5px;
+    box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.10);
   }
 
-  &--white-blue {
+  &--big-white-blue {
+    @include btn-big($white);
     color: #1b1564;
     border: 2px solid #1b1564;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 60px;
-    box-shadow: 0 10px 20px 0 rgba(27,21,100,0.10);
+    box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.10);
   }
+
+  &--login {
+    color: $white;
+    border: 2px solid rgba(256, 256, 256, 0.25);
+
+    span {
+      display: inline-block;
+      padding-left: 21px;
+      margin-right: 21px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 11px;
+        height: 14px;
+        left: 0px;
+
+        background-image: url(../img/icon/icon-user.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+    }
+
+  }
+
+  &--border-ylw {
+    color: $white;
+    border: 2px solid #F7F606;
+  }
+
 }
 
 .button--yellow {
   background-image: linear-gradient(90deg, #f7f606 0%, #f7a406 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
-  //margin-bottom: 55px;
 }
 
 .button--green {
+  color: $white;
   background-image: linear-gradient(90deg, #02c7b5 0%, #029550 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
 }
@@ -64,49 +94,11 @@
 }
 
 .button--orange {
+  color: $white;
   background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
 }
 
 .button--red {
   background: #ea3518;
-}
-
-.button__text {
-  font-family: $secondary-regular;
-  font-size: $font-size-s;
-  line-height: $font-size-s;
-
-  &--black {
-    color: $primary-text;
-  }
-
-  &--white {
-    color: $white;
-  }
-
-  &--red {
-    color: $yt-red;
-  }
-}
-
-//DESKTOP
-@media (min-width: $desktop) {
-  .button {
-    &--big {
-      padding: 10px 40px 10px 40px;
-      max-width: 440px;
-      margin-top: 45px;
-
-      font-family: $secondary-regular;
-      font-size: $font-size-s;
-      line-height: 20px;
-      min-height: 60px;
-
-      width: 100%;
-      // max-width: 273px;
-      border-radius: 43.5px;
-      box-sizing: border-box;
-    }
-  }
 }

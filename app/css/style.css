@@ -505,6 +505,7 @@ input[type="number"] {
 
 @media (min-width: 1260px) {
   .container {
+    max-width: 1440px;
     padding: 0px 157px; }
     .container--wide {
       padding: 0 40px; } }
@@ -613,6 +614,9 @@ input[type="number"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
   z-index: 101; }
 
 .header-nav__logo {
@@ -708,6 +712,8 @@ input[type="number"] {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+  .donate-form__wrapper .button {
+    max-width: none; }
 
 .donate-form__input-wrapper {
   width: 100%;
@@ -1007,52 +1013,82 @@ input[type="number"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 365px;
+  min-height: 60px;
+  margin: 0 auto;
   text-decoration: none;
   text-align: center;
-  padding: 22px 0px;
-  width: 100%;
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
   border: none;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; }
-  .button--big {
-    font-family: "Museo Sans Cyrl Regular", sans-serif;
-    font-size: 16px;
+  -webkit-border-radius: 35px;
+          border-radius: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .button--black {
+    color: #212121; }
+  .button--white {
+    color: #FFF;
+    border: 2px solid #FFF; }
+  .button--red {
+    color: #EA3518; }
+  .button--big-white-green {
+    min-height: 87px;
+    max-width: 280px;
+    padding-left: 40px;
+    padding-right: 40px;
     line-height: 20px;
-    width: 100%;
-    max-width: 273px;
-    min-height: 85px;
-    padding: 10px 40px 10px 40px;
+    background-color: #FFF;
     -webkit-border-radius: 43.5px;
             border-radius: 43.5px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    line-height: 20px;
-    position: relative; }
-  .button--white-green {
     color: #026837;
     border: 2px solid #026837;
-    background-color: #ffffff;
-    margin: 0 auto;
     -webkit-box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.1);
             box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.1); }
-  .button--white-blue {
+  .button--big-white-blue {
+    min-height: 87px;
+    max-width: 280px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 20px;
+    background-color: #FFF;
+    -webkit-border-radius: 43.5px;
+            border-radius: 43.5px;
     color: #1b1564;
     border: 2px solid #1b1564;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 60px;
     -webkit-box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.1);
             box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.1); }
+  .button--login {
+    color: #FFF;
+    border: 2px solid rgba(255, 255, 255, 0.25); }
+    .button--login span {
+      display: inline-block;
+      padding-left: 21px;
+      margin-right: 21px;
+      position: relative; }
+      .button--login span::before {
+        position: absolute;
+        content: '';
+        width: 11px;
+        height: 14px;
+        left: 0px;
+        background-image: url(../img/icon/icon-user.svg);
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+                background-size: 100%; }
+  .button--border-ylw {
+    color: #FFF;
+    border: 2px solid #F7F606; }
 
 .button--yellow {
   background-image: -webkit-gradient(linear, left top, right top, from(#f7f606), to(#f7a406));
@@ -1063,6 +1099,7 @@ input[type="number"] {
           box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1); }
 
 .button--green {
+  color: #FFF;
   background-image: -webkit-gradient(linear, left top, right top, from(#02c7b5), to(#029550));
   background-image: -webkit-linear-gradient(left, #02c7b5 0%, #029550 100%);
   background-image: -o-linear-gradient(left, #02c7b5 0%, #029550 100%);
@@ -1079,6 +1116,7 @@ input[type="number"] {
           box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1); }
 
 .button--orange {
+  color: #FFF;
   background-image: -webkit-gradient(linear, left top, right top, from(#faa533), to(#c42f2e));
   background-image: -webkit-linear-gradient(left, #faa533 0%, #c42f2e 100%);
   background-image: -o-linear-gradient(left, #faa533 0%, #c42f2e 100%);
@@ -1088,32 +1126,6 @@ input[type="number"] {
 
 .button--red {
   background: #ea3518; }
-
-.button__text {
-  font-family: "Museo Sans Cyrl Regular", sans-serif;
-  font-size: 16px;
-  line-height: 16px; }
-  .button__text--black {
-    color: #212121; }
-  .button__text--white {
-    color: #FFF; }
-  .button__text--red {
-    color: #EA3518; }
-
-@media (min-width: 1024px) {
-  .button--big {
-    padding: 10px 40px 10px 40px;
-    max-width: 440px;
-    margin-top: 45px;
-    font-family: "Museo Sans Cyrl Regular", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    min-height: 60px;
-    width: 100%;
-    -webkit-border-radius: 43.5px;
-            border-radius: 43.5px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; } }
 
 .feedback {
   padding-top: 50px;
@@ -1810,7 +1822,6 @@ input[type="number"] {
 
 .yt__button {
   width: 160px;
-  height: 60px;
   background-color: rgba(33, 33, 33, 0.5); }
 
 .yt__button-thumb {
@@ -1838,7 +1849,6 @@ input[type="number"] {
 
 .yt__sub-button {
   width: 260px;
-  height: 60px;
   margin-bottom: 60px;
   background-color: #EA3518;
   display: -webkit-box;
@@ -2022,7 +2032,6 @@ input[type="number"] {
   width: 260px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  min-height: 60px;
   margin-bottom: 25px;
   margin: 0 auto;
   margin-bottom: 20px; }
@@ -2544,7 +2553,6 @@ input[type="number"] {
 
 .patron__button {
   width: 260px;
-  height: 60px;
   margin: 0 auto; }
 
 .patron__button-link {
@@ -2583,6 +2591,124 @@ input[type="number"] {
   .patron__button {
     width: 330px;
     margin: 0; } }
+
+.holydays {
+  padding-bottom: 65px;
+  background-color: #238F4B;
+  text-align: center; }
+  .holydays__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFF;
+    font-family: "Museo Cyrillic Regular", sans-serif; }
+    .holydays__title i {
+      font-style: normal;
+      font-family: "Museo Cyrillic Medium", sans-serif; }
+  .holydays__text {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 65px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFF;
+    font-family: "Museo Sans Cyrl Thin", sans-serif; }
+
+.holydays__item-wrapper {
+  position: relative;
+  padding-top: 65px;
+  margin-bottom: -webkit-calc(427px + 60px);
+  margin-bottom: calc(427px + 60px); }
+  .holydays__item-wrapper::before {
+    position: absolute;
+    content: '';
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    height: 100%;
+    left: -20px;
+    top: 0px;
+    background-image: url(../img/bg_green.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 1440px 700px;
+    background-size: 1440px 700px;
+    background-position: center 0; }
+
+.holydays__img {
+  position: absolute;
+  width: -webkit-calc(100% + 40px);
+  width: calc(100% + 40px);
+  height: 427px;
+  bottom: -427px;
+  left: -20px; }
+  .holydays__img .holydays__img-shadow {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 427px;
+    top: 0px;
+    left: 10px;
+    opacity: 0.2;
+    -webkit-box-shadow: 0px 28px 30px 0px #212121;
+            box-shadow: 0px 28px 30px 0px #212121;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto; }
+  .holydays__img img {
+    position: absolute;
+    width: 320px;
+    height: 427px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media (min-width: 1024px) {
+  .holydays {
+    padding-bottom: 100px;
+    text-align: left;
+    background-image: url(../img/bg_green.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 1440px 700px;
+    background-size: 1440px 700px;
+    background-position: center 0; }
+  .holydays__item {
+    padding-left: 45%; }
+    .holydays__item .button {
+      margin: 0;
+      margin-right: auto;
+      max-width: 266px; }
+  .holydays__item-wrapper {
+    padding-top: 100px;
+    margin-bottom: 0px; }
+    .holydays__item-wrapper::before {
+      display: none; }
+  .holydays__img {
+    width: 340px;
+    height: 453px;
+    bottom: 0px;
+    top: 80px;
+    left: -390px; } }
+
+@media (min-width: 1260px) {
+  .holydays {
+    padding-bottom: 162px; }
+    .holydays__title {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 50px; }
+    .holydays__text {
+      margin-bottom: 60px; }
+  .holydays__item-wrapper {
+    padding-top: 148px;
+    max-width: 504px; }
+  .holydays__item {
+    padding-left: 520px; }
+  .holydays__img {
+    top: 120px;
+    left: -460px; } }
 
 .shop {
   padding-top: 70px;
@@ -2898,6 +3024,11 @@ input[type="number"] {
             align-self: flex-end; }
 
 @media (min-width: 1024px) {
+  .promo-app {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
   .promo-app__logos {
     display: none; }
     .promo-app__logos--margin-left {
@@ -3001,27 +3132,18 @@ input[type="number"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-ordinal-group: 4;
-  -webkit-order: 3;
-      -ms-flex-order: 3;
-          order: 3; }
+  margin-bottom: 65px; }
+  .drop-menu-button__wrapper .button {
+    max-width: 163px;
+    margin-bottom: 20px; }
+  .drop-menu-button__wrapper .button:last-child {
+    margin-bottom: 0; }
 
 .drop-menu-button {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   width: 160px;
+  height: 50px;
   margin-bottom: 20px;
-  background-color: inherit;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  padding: 17px 0px; }
-  .drop-menu-button--accient-border {
-    border: 2px solid #f7f606; }
-  .drop-menu-button__login {
-    background-image: url(../img/icon/icon-user.svg);
-    background-repeat: no-repeat;
-    -webkit-background-size: 17px 14px;
-            background-size: 17px 14px;
-    background-position: 32px 17px; }
+  border: 2px solid rgba(255, 255, 255, 0.25); }
 
 @media (min-width: 1024px) {
   .menu__wrapper {
@@ -3070,10 +3192,22 @@ input[type="number"] {
             flex-direction: row;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; }
+            justify-content: space-around;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-bottom: 0; }
+    .drop-menu-button__wrapper .button {
+      font-size: 16px;
+      line-height: 16px;
+      min-height: auto;
+      height: 40px;
+      margin-bottom: 0; }
+      .drop-menu-button__wrapper .button--login {
+        max-width: 134px; }
   .drop-menu-button {
     margin-bottom: 0;
-    padding: 10px 0px;
     width: 100%;
     max-width: 164px; }
     .drop-menu-button__login {

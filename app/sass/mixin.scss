@@ -1,3 +1,15 @@
+@mixin btn-big($color) {
+  min-height: 87px;
+  max-width: 280px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  line-height: 20px;
+
+  background-color: $color;
+  border-radius: 43.5px;
+}
+
 @mixin text-main($color) {
   font-family: "Museo Sans Cyrl Regular";
   font-size: 18px;
