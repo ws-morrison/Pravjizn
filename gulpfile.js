@@ -17,6 +17,10 @@ gulp.task("sass", function() {
         gulp.src("app/sass/style.scss")
             // src('app/sass/**/*.scss') Берем источник
             .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+            .on('error', function (err) {
+                console.log(err.toString());
+                this.emit('end');
+            })
             .pipe(
                 autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], {
                     cascade: true
