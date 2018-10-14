@@ -1,8 +1,28 @@
 .modal {
   display: flex;
   position: fixed;
+  width: 91%;
 }
 
 .modal__col-1 {
   background-color: $grey-bg;
+
+  width: 39%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 39px;
+
+}
+
+.modal__col-2 {
+  width: 65%;
+  margin-left: 39px;
+
+  position: relative;
+}
+
+.modal__img {
+  width: 270px;
+  min-height: 359px;
 }

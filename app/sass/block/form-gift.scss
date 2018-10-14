@@ -1,4 +1,15 @@
+.form-gift {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .form-gift__slogan {
+  padding: 0;
+  margin: 0;
+
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 38px;
   font-family: $primary-regular;
   font-size: $font-size-desktop-s;
   line-height: 24px;
@@ -6,12 +17,24 @@
 }
 
 .form-gift__desc-title {
+  padding: 0;
+  margin: 0;
+
+  display: inline-block;
+  margin-top: 38px;
+  margin-bottom: 5px;
   font-family: $primary-regular;
   font-size: $font-size-desktop-s;
   color: $faded;
 }
 
 .form-gift__desc-text {
+  padding: 0;
+  margin: 0;
+
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 30px;
   font-family: $primary-regular;
   font-size: $font-size-desktop-xl;
   line-height: 45px;
@@ -20,6 +43,33 @@
 
 .form-gift__wrapper {
   display: flex;
+  justify-content: flex-start;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.gift-form__button {
+  width: 244px;
+  margin: 0;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.form-gift__label {
+  position: relative;
+}
+
+.form-gift__label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/e-mail_icon.svg");
+  background-repeat: no-repeat;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 25px;
+  margin-right: 12px;
 }
 
 .form-gift__input {
@@ -34,15 +84,23 @@
   border: 1px solid $grey-border;
   border-radius: 30px;
   width: 295px;
+  margin-right: 10px;
 }
 
 .form-gift__caption {
+  padding: 0;
+  margin: 0;
+
   font-family: $secondary-regular;
   font-size: $font-size-xs;
   color: $faded;
   line-height: 20px;
+  margin-bottom: 120px;
 }
 .form-gift__link {
+  padding: 0;
+  margin: 0;
+
   font-family: $secondary-regular;
   font-size: $font-size-xs;
   color: $accient-2;
