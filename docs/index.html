@@ -13,6 +13,7 @@
 <body>
   <header class="header header--bg">
     <div class="container container--wide">
+
       <nav class="header-nav">
         <div class="header__logo-wrapper">
           <span class="header-nav__logo"></span>
@@ -23,7 +24,7 @@
         </div>
 
 
-        <!-- Выпадающее меню -->
+        <!-- DROPDOWN -->
         <div class="menu__wrapper">
           <div class="drop-menu drop-menu--desktop drop-menu--bg">
 
@@ -33,9 +34,11 @@
             </div>
 
             <div class="drop-menu-button__wrapper">
-              <a href="#" class="button drop-menu-button button__text button__text--white">Войти</a>
-              <a href="#" class="button drop-menu-button drop-menu-button--accient-border button__text button__text--white">Хочу
-                помочь</a>
+              <a href="#" class="button button--login">
+                <i class="icon icon__login"></i>
+                <span>Войти</span>
+              </a>
+              <a href="#" class="button button--border-ylw">Хочу помочь</a>
             </div>
 
             <div class="promo-app promo-app--order">
@@ -63,141 +66,131 @@
         </div>
       </nav>
 
-
-      <div class="section__desc section__desc--white-text">
-        <p class="section__text section__text-width section__text-width--header">Помогаем храмам, монастырям,
-          священникам и всем
-          православным христианам</p>
-        <p class="section__text section__text-width section__text--large section__text--large-header section__text--huge">Правжизнь
-          это
-          Благотворительный
-          Фонд</p>
+      <div class="header__title">
+        <p class="header__title-text">Помогаем храмам, монастырям, священникам и всем православным христианам</p>
+        <b class="header__title-text header__title-text--big">Правжизнь это Благотворительный Фонд</b>
       </div>
 
+
       <form action="" class="donate-form">
-        <span class="form__text">Всего</span>
-        <span class="donate-form__input-caption">чтобы помочь!</span>
-        <div class="donate-input-wrapper">
-          <label for="donate-input"><span class="donate-input__thumb">р/месяц</span>
-            <input class="donate-form__input" type="number" name="donate__form" id="donate-input" min="0" value="500">
-          </label>
+        <div class="donate-form__wrapper">
+          <span class="donate-form__text-title">Всего</span>
+          <span class="donate-form__text-title donate-form__text-title--desktop">чтобы помочь!</span>
+          <div class="donate-form__input-wrapper">
+            <input class="donate-form__input" type="number" name="donate__form" id="" min="0" value="500">
+            <span class="donate-form__input-thumb">р/месяц</span>
+          </div>
+          <button class="button button--yellow" type="submit">Помочь</button>
         </div>
-        <button class="button button--yellow button__text button__text--black" type="submit">Помочь</button>
       </form>
     </div>
   </header>
 
   <main class="main">
+
+    <!--FEEDBACK-->
     <section class="feedback">
+
       <div class="container">
-        <div class="section__desc section__desc--feedback">
-          <p class="section__text section__text--grey">Полноценная христианская жизнь в информационном
+        <div class="feedback__title">
+          <p class="feedback__title-text">Полноценная христианская жизнь в информационном
             обществе</p>
-          <p class="section__text section__text--large section__text-width section__text-width--feedback">Используем
+          <p class="feedback__title-text feedback__title-text--big">
+            Используем
             современные технологии на благо
             Православной
             Церкви</p>
         </div>
-      </div>
 
-      <div class="feedback__item">
-        <div class="feedback__right-col">
-          <div class="feedback__lead">
-            <div class="feedback__container">
-              <p class="feedback__lead-text">
-                Воскресная школа онлайн, братство трезвости,
-                молитва по соглашению и другие проекты.
-                Узнайте, как мы решились послужить Господу Богу
-                с помощью Интернет-технологий
-              </p>
-            </div>
-          </div>
+        <div class="feedback__item">
+          <div class="feedback__item-wrapper">
+            <p class="feedback__item-text">
+              <i class="icon icon__quotes">"</i>
+              Воскресная школа онлайн, братство трезвости,
+              молитва по соглашению и другие проекты.
+              Узнайте, как мы решились послужить Господу Богу
+              с помощью Интернет-технологий
+            </p>
 
-          <div class="feedback__left-col">
-            <div class="feedback__img feedback__img--video">
-              <a href="#" class="feedback__video-button"></a>
+            <div class="feedback__img-wrapper">
+              <div class="feedback__img">
+                <a href="#" class="feedback__video-button">
+                  <i class="icon icon__play"></i>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="feedback__author">
-            <div class="feedback__container">
-              <p class="feedback__author-heading">Александр Судаков</p>
-              <p class="feedback__author-caption">Основатель и директор <br>
-                БФ Правжизнь</p>
-            </div>
+            <b class="feedback__author-heading">Александр Судаков</b>
+            <i class="feedback__author-caption">Основатель и директор БФ Правжизнь</i>
           </div>
         </div>
       </div>
 
     </section>
-    <div class="clear"></div>
 
+
+    <!--POD-->
     <section class="pod">
-      <div class="section__desc">
-        <p class="section__text section__text-width section__text-width--pod section__text--grey">Нищего посылает к
-          тебе Бог (с) Иоанн Златоуст</p>
-        <p class="section__text section__text--large">История дня</p>
-      </div>
+      <div class="container">
 
-      <div class="pod-item">
-
-        <div class="pod__quote pod__quote--thin">
-          <div class="container container--pod">
-            <p class="pod__quote-lead">«Уже 190 детей из окрестных
-              деревень ждут открытия
-              воскресной школы»</p>
-          </div>
+        <div class="pod__title">
+          <p class="pod__title-text">Нищего посылает к тебе Бог (с) Иоанн Златоуст</p>
+          <p class="pod__title-text pod__title-text--big">История дня</p>
         </div>
 
-        <div class="pod__img"></div>
-        <div class="pod__quote">
-          <div class="container container--pod">
-            <p class="pod__quote-text">
-              Здравствуйте, братья и сестры!<br>
-              Просим посильной помощи отцу Владимиру (Дроздову)
-              и его приходу, которым просто негде обучить желающих
-              воцерковиться ребят! <br> <a href="#" class="link pod__quote-link">Читать полностью</a>
-            </p>
-            <div class="pod__author">
-              <p class="pod__author-heading">Отец Владимир</p>
-              <p class="pod__author-caption">настоятель храма в д.Власовка</p>
+        <div class="pod__item">
 
-              <form action="" class="donate-form donate-form--row">
-                <label for="donate-input">
-                  <input class="donate-form__input donate-form__input--wide" type="number" name="donate__form" id="donate-input"
-                    min="0" value="500">
-                  <span class="donate-form__input-caption"></span>
-                </label>
-                <button class="button button--green button__text button__text--white" type="submit">Помочь</button>
-              </form>
+          <div class="pod__item-wrapper">
+            <div class="pod-item__title">
+              <p class="pod-item__title-text">«Уже 190 детей из окрестных деревень ждут открытия воскресной
+                школы»</p>
+            </div>
 
+            <div class="pod__img-wrapper">
+              <div class="pod__img"></div>
             </div>
           </div>
+
+          <p class="pod__quote-text">
+            Здравствуйте, братья и сестры!<br>
+            Просим посильной помощи отцу Владимиру (Дроздову)
+            и его приходу, которым просто негде обучить желающих
+            воцерковиться ребят!
+            <a href="#" class="link pod__quote-link">Читать полностью</a>
+          </p>
+
+          <div class="pod__author">
+            <b class="pod__author-heading">Отец Владимир</b>
+            <i class="pod__author-caption">настоятель храма в д.Власовка</i>
+          </div>
+
+
+          <form action="" class="donate-form">
+            <div class="donate-form__wrapper">
+              <div class="donate-form__input-wrapper">
+                <input class="donate-form__input" type="number" name="donate__form" id="" min="0" value="500">
+                <span class="donate-form__input-thumb">р/месяц</span>
+              </div>
+              <button class="button button--green" type="submit">Помочь</button>
+            </div>
+          </form>
+
         </div>
 
-        <!-- <form action="" class="donate-form donate-form--padding donate-form--row">
-          <label for="donate-input">
-            <input class="donate-form__input donate-form__input--wide" type="number" name="donate__form" id="donate-input"
-              min="0" value="500">
-            <span class="donate-form__input-caption"></span>
-          </label>
-          <button class="button button--green button__text button__text--white" type="submit">Помочь</button>
-        </form> -->
       </div>
-
     </section>
-    <div class="clear"></div>
 
     <section class="programs">
       <div class="container">
         <div class="section__desc">
-          <p class="section__text section__text-width section__text-width--programs section__text--large">Программы БФ
+          <p class="section__text section__text-width section__text-width--programs section__text--large">
+            Программы БФ
             Правжизнь,<br>
             которые откликаются в наших сердцах</p>
         </div>
       </div>
-
-
       <div class="programs__wrapper">
 
         <div class="program-item program-item--holies">
@@ -212,7 +205,7 @@
                 храмы и монастыри
               </p>
             </div>
-            <a href="#" class="button button--big button--white-green">Переходите на страницу проекта</a>
+            <a href="#" class="button button--big-white-green">Переходите на страницу проекта</a>
           </div>
         </div>
 
@@ -228,7 +221,7 @@
                 центры при храмах
               </p>
             </div>
-            <a href="#" class="button button--big button--white-blue">Узнайте больше о Братстве</a>
+            <a href="#" class="button button--big-white-blue">Узнайте больше о Братстве</a>
           </div>
         </div>
 
@@ -238,7 +231,8 @@
     <section class="app">
       <div class="container">
         <div class="section__desc">
-          <p class="section__text section__text-width section__text-width--app-caption section__text--grey">Мобильное
+          <p class="section__text section__text-width section__text-width--app-caption section__text--grey">
+            Мобильное
             приложение Правжизнь</p>
           <p class="section__text section__text-width section__text--large">Молитвослов, Календарь, Библия</p>
         </div>
@@ -257,12 +251,14 @@
                 <li class="app__item">Теперь точно не забудете о праздниках, именинах,
                   начале поста.
                 </li>
-                <li class="app__item">Полный канонический текст Евангелия на 80 языках.Православный молитвослов
+                <li class="app__item">Полный канонический текст Евангелия на 80 языках.Православный
+                  молитвослов
                   на 15 языках.
                 </li>
               </ul>
               <div class="app__desc">
-                <p class="app__text app__text--grey">Все, что нужно православному христианину, каждый день</p>
+                <p class="app__text app__text--grey">Все, что нужно православному христианину, каждый
+                  день</p>
                 <div class="app__desktop-wrapper">
                   <p class="app__text app__text--large">Скачать :</p>
                   <div class="app__logos">
@@ -281,7 +277,8 @@
     <section class="yt-channel section--secondary-bg">
       <div class="container container--yt">
         <div class="section__desc">
-          <p class="section__text section__text-width section__text-width--yt-channel section__text--grey">Получите
+          <p class="section__text section__text-width section__text-width--yt-channel section__text--grey">
+            Получите
             ответы на самые важные вопросы о
             жизни,
             православной вере и любви!</p>
@@ -296,7 +293,7 @@
               <p class="yt__text yt__text--grey">17 713 подписчиков</p>
             </div>
           </div>
-          <a href="" class="button yt__desc-button button__text--red">... Показать больше тем</a>
+          <a href="" class="button yt__desc-button">... Показать больше тем</a>
         </div>
         <div class="yt__items-wrapper">
 
@@ -340,7 +337,8 @@
         </div>
 
         <div class="section__desc section__desc--thumb-notif">
-          <p class="section__text section__text--desktop-small section__text-width section__text-width--yt section__text--grey section__text--thumb-notif">После
+          <p class="section__text section__text--desktop-small section__text-width section__text-width--yt section__text--grey section__text--thumb-notif">
+            После
             подписки не забудьте включить
             уведомления!</p>
         </div>
@@ -350,12 +348,10 @@
 
     <section class="services">
       <div class="container">
-
         <div class="section__desc">
           <p class="section__text section__text-width section__text-width--services section__text--large">Полезные
             сервисы на портале Правжизнь</p>
         </div>
-
         <div class="service-item">
           <div class="service-item__left-col">
             <span class="service-item__thumb service-item__thumb--lightblue"></span>
@@ -378,13 +374,12 @@
         </div>
 
 
-
         <div class="service-item service-item--reverse-row">
           <div class="service-item__left-col">
             <span class="service-item__thumb service-item__thumb--lightgreen"></span>
             <div class="service-title">
               <p class="service-title__heading">Правжизнь</p>
-              <p class="service-title__name">Платформа объявленных
+              <p class="service-title__name">Платформа
                 сборов</p>
             </div>
           </div>
@@ -396,13 +391,13 @@
                 и помощи православным храмам и монастырям</p>
             </div>
             <div class="service-item__links-wrapper">
-              <a href="#" class="button service-item__button button--green service-item__button-link">Выбрать храм и
+              <a href="#" class="button service-item__button button--green service-item__button-link">Выбрать
+                храм и
                 пожертвовать</a>
               <a href="#" class="link service-item__link">Подробнее о платформе</a>
             </div>
           </div>
         </div>
-
 
 
         <div class="service-item">
@@ -527,7 +522,7 @@
                   <p class="info-item__text">Изучайте основы православия бесплатно
                     из любой точки мира</p>
                 </div>
-                <a href="" class="button button--orange info-item__button button-text button__text button__text--white">Перейти
+                <a href="" class="button button--orange info-item__button button-text">Перейти
                   на
                   страницу сервиса</a>
               </div>
@@ -543,7 +538,8 @@
       <div class="container">
 
         <div class="section__desc">
-          <p class="section__text section__text-width section__text--large">Узнайте кто ваш Небесный Покровитель</p>
+          <p class="section__text section__text-width section__text--large">Узнайте кто ваш Небесный
+            Покровитель</p>
         </div>
 
         <div class="patron__wrapper">
@@ -584,32 +580,32 @@
       </div>
     </section>
 
-    <section class="holydays holydays--green-bg">
-      <div class="container container--holydays">
-        <div class="holydays__wrapper">
-          <div class="holydays__item">
-            <div class="holydays__desc holydays__desc--white-text">
-              <p class="holydays__text holydays__text--large">Сегодня <b class="holydays__text--bold">24
-                  августа</b><br>
-                — день Иоанна Крестителя</p>
-              <p class="holydays__text holydays__desc-text">Иоанн Креститель — действительно великий
-                святой.
-                Спаситель сказал о нем: «Из рожденных женами не
-                восставал (пророк) больший Иоанна Крестителя» .
-                Действительно: Иоанна Предтеча является и апостолом,
-                и пророком, и другом Христа, и мучеником!</p>
+
+    <!--HOLIDAYS-->
+    <section class="holydays">
+      <div class="container">
+
+        <div class="holydays__item">
+          <div class="holydays__item-wrapper">
+            <b class="holydays__title">Сегодня <i class="holydays__title-accent">24 августа</i> — день Иоанна
+              Крестителя</b>
+
+            <p class="holydays__text">
+              Иоанн Креститель — действительно великий святой.
+              Спаситель сказал о нем: «Из рожденных женами не
+              восставал (пророк) больший Иоанна Крестителя» .
+              Действительно: Иоанна Предтеча является и апостолом,
+              и пророком, и другом Христа, и мучеником!
+            </p>
+
+            <div class="holydays__img">
+              <div class="holydays__img-shadow"></div>
+              <img src="/img/holydays-1.png" alt="Иоан Креститель" width="340" height="440">
             </div>
 
-            <div class="holydays__img-wrapper">
-              <div class="shadow-wrapper">
-                <div class="holydays__img"></div>
-              </div>
-            </div>
-
-            <div class="button__wrapper">
-              <a href="#" class=" button holydays__button button--transparency holydays__button-link">Подробнее про
-                Святцы</a>
-            </div>
+          </div>
+          <div class="button__wrapper">
+            <a href="#" class="button button--white">Подробнее про Святцы</a>
           </div>
         </div>
 
@@ -620,10 +616,12 @@
       <div class="container">
         <div class="shop__logo"></div>
         <div class="section__desc">
-          <p class="section__text section__text-width section__text-width--shop-caption section__text--grey">Покупайте
+          <p class="section__text section__text-width section__text-width--shop-caption section__text--grey">
+            Покупайте
             товары по хорошей цене в нашем
             интернет-магазине!</p>
-          <p class="section__text section__text--shop section__text-width section__text-width--shop section__text--large">Поддержите
+          <p class="section__text section__text--shop section__text-width section__text-width--shop section__text--large">
+            Поддержите
             наш фонд и
             православных мастеров</p>
         </div>
@@ -668,15 +666,16 @@
     </section>
 
 
-    <section class="services">
+    <section class="services services--tall">
       <div class="container">
         <div class="section__desc">
-          <p class="section__text section__text-width section__text-width--services section__text--large">Священнослужителям
+          <p class="section__text section__text-width section__text-width--account section__text--large">
+            Священнослужителям
             в помощь
             современные технологии</p>
         </div>
         <div class="service-item service-item--reverse-row">
-          <div class="service-item__left-col">
+          <div class="service-item__left-col service-item__left-col--tall">
             <div class="account__image"></div>
             <span class="service-item__thumb service-item__thumb--account"></span>
             <div class="service-title">
@@ -686,7 +685,8 @@
           </div>
           <div class="service-item__right-col">
             <div class="service-item__text-wrapper">
-              <p class="service-item__heading service-item__heading--color-4 service-item__heading--account">Единый
+              <p class="service-item__heading service-item__heading--color-4 service-item__heading--account">
+                Единый
                 Личный Кабинет
                 священнослужителя
                 для проповеди</p>
@@ -716,85 +716,94 @@
   <footer class="footer footer--bg-color">
     <div class="desktop-footer-container">
 
-    <div class="footer__wrapper">
-      <div class="footer-item opened-item footer__col-1 footer-container">
-        <span class="footer-item__heading">Информация</span>
-        <!--show-->
-        <ul class="footer-list open-list">
-          <li class="footer-list__item"><a href="#" class="footer-list__link">О фонде</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Публичная оферта</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Защита персональных данных</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Согласие на обработку
-              персональных данных</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Пользовательское соглашение
-            </a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Безопасность платежей</a></li>
-          <li class="footer-list__item"><a href="#" class="footer-list__link">Помочь фонду</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-item opened-item footer__col-2 footer-container">
-        <span class="footer-item__heading">Наши проекты</span>
-
-
-        <div class="footer-list__wrapper">
+      <div class="footer__wrapper">
+        <div class="footer-item opened-item footer__col-1 footer-container">
+          <span class="footer-item__heading">Информация</span>
+          <!--show-->
           <ul class="footer-list open-list">
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Платформа объявленных сборов</a>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">О фонде</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Публичная оферта</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Защита персональных данных</a>
             </li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Интернет-магазин</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Восстановление Святынь</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Братство Трезвости</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Молитва по соглашению</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Заказ поминовений</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Воскресная школа онлайн</a></li>
-
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Святцы</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Катехизация</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Карта храмов</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Вопросы и ответы</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Православный мессенджер</a></li>
-            <li class="footer-list__item"><a href="#" class="footer-list__link">Единый Личный Кабинет
-                священнослужителя</a>
-            </li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Согласие на обработку
+                персональных данных</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Пользовательское соглашение
+              </a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Безопасность платежей</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Помочь фонду</a></li>
           </ul>
         </div>
 
-      </div>
-      <div class="footer-item footer__col-3">
-        <div class="props footer-container">
-          <p class="props__heading">Реквизиты</p>
-          <p class="props__text">Благотворительный фонд «Правжизнь» <br>
-            ОГРН 73445454523 ИНН 7726324509</p>
-        </div>
+        <div class="footer-item opened-item footer__col-2 footer-container">
+          <span class="footer-item__heading">Наши проекты</span>
 
-        <div class="social footer-container footer-container--padding-left">
-          <p class="social__heading">Подписывайтесь на нас <br>
-            в соцсетях:</p>
 
-          <ul class="social-list">
-            <li class="social-list__item social-list__item--vk"><a href="#" class="social-list__link social-list__link--vk"></a>
-            </li>
-            <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb"></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__link social-list__link--yt"></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__link social-list__link--tg"></a></li>
-          </ul>
-        </div>
+          <div class="footer-list__wrapper">
+            <ul class="footer-list open-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Платформа объявленных
+                  сборов</a>
+              </li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Интернет-магазин</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Восстановление Святынь</a>
+              </li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Братство Трезвости</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Молитва по соглашению</a>
+              </li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Заказ поминовений</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Воскресная школа онлайн</a>
+              </li>
 
-        <div class="promo-app promo-app--border footer-container footer-container--padding-left">
-          <p class="promo-app__heading">Скачайте официальное <br>
-            приложение 3 в 1</p>
-          <div class="promo-app__text-wrapper phone-thumb">
-            <p class="promo-app__text promo-app__text--small">Православный молитвослов <br>
-              + Библия + Календарь в 1 приложении <br>
-              от фонда «Правжизнь»</p>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Святцы</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Катехизация</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Карта храмов</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Вопросы и ответы</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Православный мессенджер</a>
+              </li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Единый Личный Кабинет
+                  священнослужителя</a>
+              </li>
+            </ul>
           </div>
 
-          <div class="promo-app__logos promo-app__logos--desktop">
-            <a href="#" class="promo-app__logos-link promo-app__logos-link--appstore"></a>
-            <a href="#" class="promo-app__logos-link promo-app__logos-link--playstore"></a>
+        </div>
+        <div class="footer-item footer__col-3">
+          <div class="props footer-container">
+            <p class="props__heading">Реквизиты</p>
+            <p class="props__text">Благотворительный фонд «Правжизнь» <br>
+              ОГРН 73445454523 ИНН 7726324509</p>
+          </div>
+
+          <div class="social footer-container footer-container--padding-left">
+            <p class="social__heading">Подписывайтесь на нас <br>
+              в соцсетях:</p>
+
+            <ul class="social-list">
+              <li class="social-list__item social-list__item--vk"><a href="#" class="social-list__link social-list__link--vk"></a>
+              </li>
+              <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb"></a>
+              </li>
+              <li class="social-list__item"><a href="#" class="social-list__link social-list__link--yt"></a>
+              </li>
+              <li class="social-list__item"><a href="#" class="social-list__link social-list__link--tg"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="promo-app promo-app--border footer-container footer-container--padding-left">
+            <p class="promo-app__heading">Скачайте официальное <br>
+              приложение 3 в 1</p>
+            <div class="promo-app__text-wrapper phone-thumb">
+              <p class="promo-app__text promo-app__text--small">Православный молитвослов <br>
+                + Библия + Календарь в 1 приложении <br>
+                от фонда «Правжизнь»</p>
+            </div>
+
+            <div class="promo-app__logos promo-app__logos--desktop">
+              <a href="#" class="promo-app__logos-link promo-app__logos-link--appstore"></a>
+              <a href="#" class="promo-app__logos-link promo-app__logos-link--playstore"></a>
+            </div>
           </div>
         </div>
-      </div>
 
 
       </div>
