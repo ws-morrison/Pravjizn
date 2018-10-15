@@ -39,10 +39,10 @@
   line-height: 26px;
   color: $primary-text;
 }
- .service-item__links-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.service-item__links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .service-item__caption {
   font-family: $secondary-regular;
@@ -53,11 +53,13 @@
 }
 .service-item__button {
   width: 260px;
+  // min-width: 260px;
   box-sizing: content-box;
   //min-height: 60px;
   margin-bottom: 25px;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .service-item__button-link {
@@ -132,7 +134,10 @@
 //DESKTOP
 @media (min-width: $desktop) {
   .services {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
+    &--tall {
+      padding-bottom: 70px;
+    }
   }
 
   .account__image {
@@ -142,8 +147,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    // margin-top: 50px;
+    // margin-bottom: 60px;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
     &--reverse-row {
       flex-direction: row-reverse;
     }
@@ -158,49 +166,53 @@
     color: $primary-text;
     margin-bottom: 15px;
   }
-.service-list__wrapper {
-  width: 420px;
-}
+  .service-list__wrapper {
+    width: 420px;
+  }
   .service-title__name {
     font-family: $primary-thin;
     font-size: $font-size-xl;
     margin: 0;
     color: #0f0f0f;
   }
-
-.service-item__button-link {
-  font-family: $secondary-regular;
-  font-size: 15px;
-  line-height: 16px;
-  text-decoration: none;
-  color: $white;
-  &--large {
-    font-size: $font-size-s;
+  .service-item__button {
+    width: 100%;
+    padding: 0;
   }
-}
+  .service-item__button-link {
+    font-family: $secondary-regular;
+    font-size: 15px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $white;
+    &--large {
+      font-size: $font-size-s;
+    }
+  }
 
   .service-item__thumb {
-  display: block;
-  width: 80px;
-  height: 80px;
-  &--lightblue {
-    background-image: url("../img/icon/main_logo-lightblue.svg");
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    &--lightblue {
+      background-image: url("../img/icon/main_logo-lightblue.svg");
+    }
+    &--lightgreen {
+      background-image: url("../img/icon/main_logo-lightgreen.svg");
+    }
+    &--orange {
+      background-image: url("../img/icon/main_logo-orange.svg");
+    }
+    &--account {
+      width: 137px;
+      height: 137px;
+      background-image: url("../img/orange_userpick.png");
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-bottom: 45px;
+    }
   }
-  &--lightgreen {
-    background-image: url("../img/icon/main_logo-lightgreen.svg");
-  }
-  &--orange {
-    background-image: url("../img/icon/main_logo-orange.svg");
-  }
-  &--account {
-    width: 137px;
-    height: 137px;
-    background-image: url("../img/orange_userpick.png");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    margin-bottom: 45px;
-  }
-}
   .service-item__left-col {
     width: 36%;
     padding-left: 20px;
@@ -211,6 +223,10 @@
     justify-content: center;
     align-items: center;
     border: 5px solid $service-item-border;
+    &--tall {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
   }
   .service-item__heading {
     text-align: left;
@@ -225,8 +241,8 @@
     text-align: left;
   }
   .service-item__caption {
-  text-align: left;
-}
+    text-align: left;
+  }
 
   .service-item__right-col {
     width: 50%;

@@ -934,6 +934,9 @@ input[type="number"] {
     .section__text-width--services {
       width: 45%;
       margin: 0 auto; }
+    .section__text-width--account {
+      width: 51%;
+      margin: 0 auto; }
     .section__text-width--large {
       width: 50%;
       margin: 0 auto; }
@@ -950,7 +953,7 @@ input[type="number"] {
       font-size: 16px;
       line-height: 18px; }
     .section__text--shop {
-      margin-bottom: 60px; }
+      margin-bottom: 70px; }
     .section__text--large {
       font-family: "Museo Cyrillic Medium", sans-serif;
       font-size: 35px;
@@ -1915,7 +1918,7 @@ input[type="number"] {
   .yt-channel {
     padding-top: 110px;
     padding-bottom: 120px;
-    margin-bottom: 120px; }
+    margin-bottom: 70px; }
   .yt__desc {
     width: 100%;
     display: -webkit-box;
@@ -1931,7 +1934,7 @@ input[type="number"] {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 20px;
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
   .yt__desc-button {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2066,7 +2069,8 @@ input[type="number"] {
           box-sizing: content-box;
   margin-bottom: 25px;
   margin: 0 auto;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding: 0; }
 
 .service-item__button-link {
   font-family: "Museo Sans Cyrl Regular", sans-serif;
@@ -2138,7 +2142,9 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .services {
-    padding-bottom: 120px; }
+    padding-bottom: 100px; }
+    .services--tall {
+      padding-bottom: 70px; }
   .account__image {
     display: none; }
   .service-item {
@@ -2154,8 +2160,8 @@ input[type="number"] {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 60px; }
+    margin-top: 80px;
+    margin-bottom: 20px; }
     .service-item--reverse-row {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
@@ -2177,6 +2183,9 @@ input[type="number"] {
     font-size: 24px;
     margin: 0;
     color: #0f0f0f; }
+  .service-item__button {
+    width: 100%;
+    padding: 0; }
   .service-item__button-link {
     font-family: "Museo Sans Cyrl Regular", sans-serif;
     font-size: 15px;
@@ -2188,7 +2197,8 @@ input[type="number"] {
   .service-item__thumb {
     display: block;
     width: 80px;
-    height: 80px; }
+    height: 80px;
+    margin-bottom: 15px; }
     .service-item__thumb--lightblue {
       background-image: url("../img/icon/main_logo-lightblue.svg"); }
     .service-item__thumb--lightgreen {
@@ -2225,6 +2235,9 @@ input[type="number"] {
         -ms-flex-align: center;
             align-items: center;
     border: 5px solid rgba(207, 204, 185, 0.2); }
+    .service-item__left-col--tall {
+      padding-top: 60px;
+      padding-bottom: 80px; }
   .service-item__heading {
     text-align: left;
     font-size: 24px; }
@@ -2376,8 +2389,8 @@ input[type="number"] {
   .info-desktop {
     display: block;
     background-color: #f7f7f7;
-    padding-top: 120px;
-    padding-bottom: 120px; }
+    padding-top: 110px;
+    padding-bottom: 70px; }
   .info-desktop__wrapper {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -2393,7 +2406,8 @@ input[type="number"] {
             justify-content: space-around; }
   .info-desktop__left_col {
     width: 320px;
-    position: relative; }
+    position: relative;
+    margin-right: 25px; }
   .info-desktop__left_col::before {
     content: "";
     width: 2px;
@@ -2596,8 +2610,8 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .patron {
-    padding-top: 120px;
-    padding-bottom: 120px; }
+    padding-top: 110px;
+    padding-bottom: 90px; }
   .patron__wrapper {
     margin: 0 auto;
     display: -webkit-box;
@@ -2612,7 +2626,7 @@ input[type="number"] {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-top: 75px; }
+    margin-top: 65px; }
   .patron-form__wrapper {
     margin-left: 20px; }
   .patron__img {
@@ -2707,7 +2721,8 @@ input[type="number"] {
     background-size: 1440px 700px;
     background-position: center 0; }
   .holydays__item {
-    padding-left: 45%; }
+    padding-left: 45%;
+    margin-bottom: 62px; }
     .holydays__item .button {
       margin: 0;
       margin-right: auto;
@@ -2726,7 +2741,7 @@ input[type="number"] {
 
 @media (min-width: 1260px) {
   .holydays {
-    padding-bottom: 162px; }
+    padding-bottom: 85px; }
     .holydays__title {
       font-size: 35px;
       line-height: 45px;
@@ -2751,7 +2766,7 @@ input[type="number"] {
   width: 60px;
   height: 60px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-image: url("../img/icon/main_logo-red-medium.svg"); }
 
 .shop-desc__text {
@@ -2778,11 +2793,12 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .shop {
+    padding-top: 90px;
     padding-bottom: 110px;
-    margin-bottom: 110px; }
+    margin-bottom: 60px; }
   .shop-desc__text {
-    margin-top: 60px;
-    margin-bottom: 40px; } }
+    margin-top: 30px;
+    margin-bottom: 36px; } }
 
 .footer {
   padding-top: 40px;
@@ -2924,7 +2940,7 @@ input[type="number"] {
 @media (min-width: 1024px) {
   .footer {
     padding-top: 120px;
-    padding-bottom: 80px; }
+    padding-bottom: 65px; }
   .footer-item {
     width: 100%; }
   .footer-item__heading {

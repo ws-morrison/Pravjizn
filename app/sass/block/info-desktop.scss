@@ -7,8 +7,8 @@
   .info-desktop {
     display: block;
     background-color: $primary-bg;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 110px;
+    padding-bottom: 70px;
   }
   .info-desktop__wrapper {
     padding-top: 80px;
@@ -20,6 +20,7 @@
   .info-desktop__left_col {
     width: 320px;
     position: relative;
+    margin-right: 25px;
   }
   .info-desktop__left_col::before {
     content: "";

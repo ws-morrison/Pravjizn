@@ -4,11 +4,9 @@
   &--white-text {
     color: $white;
   }
-
 }
 
 .section__text-width {
-
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -142,6 +140,10 @@
       width: 45%;
       margin: 0 auto;
     }
+    &--account {
+      width: 51%;
+      margin: 0 auto;
+    }
     &--large {
       width: 50%;
       margin: 0 auto;
@@ -162,7 +164,7 @@
       line-height: 18px;
     }
     &--shop {
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
     &--large {
       font-family: $primary-medium;
