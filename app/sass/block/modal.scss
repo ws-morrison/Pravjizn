@@ -2,8 +2,14 @@
   display: flex;
   position: fixed;
   top: 100px;
-  max-width: 1440px;
-  width: 1358px;
+  max-width: 1358px;
+  width: 95%;
+
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: #ffffff;
   z-index: 103;
   box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
@@ -12,17 +18,18 @@
 .modal__col-1 {
   background-color: $grey-bg;
 
-  width: 39%;
+  width: 37%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 39px;
+
+
+  padding: 50px 20px 50px 20px;
 }
 
 .modal__col-2 {
-  width: 65%;
-  margin-left: 39px;
-
+  width: 63%;
+  padding: 70px 20px 70px 20px;
   position: relative;
 }
 

@@ -3341,8 +3341,12 @@ input[type="number"] {
   display: flex;
   position: fixed;
   top: 100px;
-  max-width: 1440px;
-  width: 1360px;
+  max-width: 1358px;
+  width: 95%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
   z-index: 103;
   -webkit-box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
@@ -3350,7 +3354,7 @@ input[type="number"] {
 
 .modal__col-1 {
   background-color: #FAFAF9;
-  width: 39%;
+  width: 37%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3363,11 +3367,11 @@ input[type="number"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 39px; }
+  padding: 50px 20px 50px 20px; }
 
 .modal__col-2 {
-  width: 65%;
-  margin-left: 39px;
+  width: 63%;
+  padding: 70px 20px 70px 20px;
   position: relative; }
 
 .modal__img {
@@ -3386,14 +3390,15 @@ input[type="number"] {
           flex-direction: column;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  padding-left: 60px; }
 
 .form-gift__slogan {
   padding: 0;
   margin: 0;
+  padding-top: 10px;
+  margin-bottom: 76px;
   display: block;
-  margin-top: 60px;
-  margin-bottom: 38px;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -3402,9 +3407,8 @@ input[type="number"] {
 .form-gift__desc-title {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   display: inline-block;
-  margin-top: 38px;
-  margin-bottom: 5px;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 20px;
   color: #9B9B9B; }
@@ -3412,9 +3416,8 @@ input[type="number"] {
 .form-gift__desc-text {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 30px;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 35px;
   line-height: 45px;
@@ -3425,10 +3428,13 @@ input[type="number"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 660px;
   margin-top: 30px;
   margin-bottom: 30px; }
 
@@ -3465,17 +3471,15 @@ input[type="number"] {
   border: 1px solid #CCCCCC;
   -webkit-border-radius: 30px;
           border-radius: 30px;
-  width: 295px;
-  margin-right: 10px; }
+  width: 295px; }
 
-.form-gift__caption {
+.form-gift__caption-text {
   padding: 0;
   margin: 0;
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 13px;
   color: #9B9B9B;
-  line-height: 20px;
-  margin-bottom: 120px; }
+  line-height: 20px; }
 
 .form-gift__link {
   padding: 0;

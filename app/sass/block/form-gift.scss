@@ -2,14 +2,17 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  padding-left: 60px;
 }
+
 .form-gift__slogan {
   padding: 0;
   margin: 0;
 
+  padding-top: 10px;
+  margin-bottom: 76px;
   display: block;
-  margin-top: 60px;
-  margin-bottom: 38px;
   font-family: $primary-regular;
   font-size: $font-size-desktop-s;
   line-height: 24px;
@@ -20,9 +23,8 @@
   padding: 0;
   margin: 0;
 
+  margin-bottom: 10px;
   display: inline-block;
-  margin-top: 38px;
-  margin-bottom: 5px;
   font-family: $primary-regular;
   font-size: $font-size-desktop-s;
   color: $faded;
@@ -32,9 +34,8 @@
   padding: 0;
   margin: 0;
 
+  margin-bottom: 10px;
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 30px;
   font-family: $primary-regular;
   font-size: $font-size-desktop-xl;
   line-height: 45px;
@@ -43,8 +44,10 @@
 
 .form-gift__wrapper {
   display: flex;
-  justify-content: flex-start;
-
+  // justify-content: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 660px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -84,19 +87,27 @@
   border: 1px solid $grey-border;
   border-radius: 30px;
   width: 295px;
-  margin-right: 10px;
 }
 
 .form-gift__caption {
+  // padding: 0;
+  // margin: 0;
+
+  // font-family: $secondary-regular;
+  // font-size: $font-size-xs;
+  // color: $faded;
+  // line-height: 20px;
+}
+
+.form-gift__caption-text {
   padding: 0;
   margin: 0;
-
   font-family: $secondary-regular;
   font-size: $font-size-xs;
   color: $faded;
   line-height: 20px;
-  margin-bottom: 120px;
 }
+
 .form-gift__link {
   padding: 0;
   margin: 0;
