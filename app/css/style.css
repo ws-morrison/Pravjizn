@@ -1053,8 +1053,9 @@ input[type="number"] {
   .button--big-white-green {
     min-height: 87px;
     max-width: 280px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    top: 30px;
     line-height: 20px;
     background-color: #FFF;
     -webkit-border-radius: 43.5px;
@@ -1066,8 +1067,9 @@ input[type="number"] {
   .button--big-white-blue {
     min-height: 87px;
     max-width: 280px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    top: 30px;
     line-height: 20px;
     background-color: #FFF;
     -webkit-border-radius: 43.5px;
@@ -1146,6 +1148,13 @@ input[type="number"] {
   position: absolute;
   right: -100px;
   margin-top: 30px; }
+
+@media (min-width: 1260px) {
+  .button--big-white-green, .button--big-white-blue {
+    min-height: 60px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 0 40px 0 40px; } }
 
 .feedback {
   padding-top: 50px;
@@ -1683,7 +1692,8 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .app {
-    margin-bottom: 120px; }
+    margin-top: 35px;
+    margin-bottom: 75px; }
   .app__wrapper-list {
     width: 480px;
     margin-top: 50px; }
@@ -1903,7 +1913,7 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   .yt-channel {
-    padding-top: 120px;
+    padding-top: 110px;
     padding-bottom: 120px;
     margin-bottom: 120px; }
   .yt__desc {

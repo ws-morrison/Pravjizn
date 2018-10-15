@@ -11,18 +11,18 @@
   box-sizing: content-box;
 
   &--big {
-    // margin-top: 25px;
-    font-family: $secondary-regular;
-    font-size: $font-size-s;
-    line-height: 20px;
-    width: 100%;
-    max-width: 273px;
-    //min-height: 85px;
-    padding: 10px 40px 10px 40px;
-    border-radius: 43.5px;
-    box-sizing: border-box;
-    line-height: 20px;
-    position: relative;
+    // // margin-top: 25px;
+    // font-family: $secondary-regular;
+    // font-size: $font-size-s;
+    // line-height: 20px;
+    // width: 100%;
+    // max-width: 273px;
+    // //min-height: 85px;
+    // padding: 10px 40px 10px 40px;
+    // border-radius: 43.5px;
+    // box-sizing: border-box;
+    // line-height: 20px;
+    // position: relative;
   }
 
   &--white-green {
@@ -91,19 +91,19 @@
 @media (min-width: $desktop) {
   .button {
     &--big {
-      padding: 10px 40px 10px 40px;
-      max-width: 440px;
-      margin-top: 45px;
+      // padding: 10px 40px 10px 40px;
+      // max-width: 440px;
+      // margin-top: 45px;
 
-      font-family: $secondary-regular;
-      font-size: $font-size-s;
-      line-height: 20px;
-      min-height: 60px;
+      // font-family: $secondary-regular;
+      // font-size: $font-size-s;
+      // line-height: 20px;
+      // min-height: 60px;
 
-      width: 100%;
-      // max-width: 273px;
-      border-radius: 43.5px;
-      box-sizing: border-box;
+      // width: 100%;
+      // // max-width: 273px;
+      // border-radius: 43.5px;
+      // box-sizing: border-box;
     }
   }
 }

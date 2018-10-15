@@ -1,9 +1,12 @@
 @mixin btn-big($color) {
   min-height: 87px;
   max-width: 280px;
-  padding-left: 40px;
-  padding-right: 40px;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  padding: 10px 40px 10px 40px;
+  position: relative;
 
+  top: 30px;
   line-height: 20px;
 
   background-color: $color;
@@ -18,7 +21,6 @@
 }
 
 @mixin author-heading-text($color) {
-
   &__author {
     display: flex;
     flex-direction: column;
@@ -42,11 +44,9 @@
     line-height: 26px;
     color: $color;
   }
-
 }
 
 @mixin title-text($color1, $color2) {
-
   &__title {
     text-align: center;
     display: flex;
@@ -69,11 +69,9 @@
       margin-bottom: 31px;
       color: $color2;
     }
-
   }
 
   @media (min-width: $desktop-full) {
-
     &__title-text {
       font-size: 20px;
       line-height: 30px;
@@ -84,9 +82,6 @@
         line-height: 50px;
         margin-bottom: 51px;
       }
-
     }
-
   }
-
 }
