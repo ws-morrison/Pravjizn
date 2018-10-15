@@ -2,12 +2,11 @@
   display: flex;
   position: fixed;
   top: 100px;
-  width: 1321px;
-  // max-width: 1321px;
-  // width: 91%;
+  max-width: 1440px;
+  width: 1358px;
   background-color: #ffffff;
   z-index: 103;
-  box-shadow: 0 16px 31px 0 rgba(0,0,0,0.50);
+  box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
 }
 
 .modal__col-1 {
@@ -18,7 +17,6 @@
   justify-content: center;
   align-items: center;
   margin-right: 39px;
-
 }
 
 .modal__col-2 {

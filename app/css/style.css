@@ -3341,7 +3341,8 @@ input[type="number"] {
   display: flex;
   position: fixed;
   top: 100px;
-  width: 1321px;
+  max-width: 1440px;
+  width: 1360px;
   background-color: #ffffff;
   z-index: 103;
   -webkit-box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
