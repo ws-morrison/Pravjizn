@@ -3431,10 +3431,7 @@ input[type="number"] {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  width: 660px;
+  width: 90%;
   margin-top: 30px;
   margin-bottom: 30px; }
 
