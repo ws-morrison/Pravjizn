@@ -65,7 +65,8 @@ input[type="number"] {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 102;
+  z-index: 101;
+  background-color: #00000071;
 }
 
 @media (min-width: $desktop) {

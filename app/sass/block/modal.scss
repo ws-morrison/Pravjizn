@@ -1,7 +1,12 @@
 .modal {
   display: flex;
   position: fixed;
+  top: 100px;
+  max-width: 1321px;
   width: 91%;
+  background-color: #ffffff;
+  z-index: 103;
+  box-shadow: 0 16px 31px 0 rgba(0,0,0,0.50);
 }
 
 .modal__col-1 {

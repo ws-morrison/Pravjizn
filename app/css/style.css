@@ -490,7 +490,8 @@ input[type="number"] {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 102; }
+  z-index: 101;
+  background-color: #00000071; }
 
 @media (min-width: 1024px) {
   section {
@@ -1149,7 +1150,7 @@ input[type="number"] {
   background-color: inherit;
   background-repeat: no-repeat;
   position: absolute;
-  right: -100px;
+  right: 30px;
   margin-top: 30px; }
 
 @media (min-width: 1260px) {
@@ -3339,7 +3340,13 @@ input[type="number"] {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  width: 91%; }
+  top: 100px;
+  max-width: 1321px;
+  width: 91%;
+  background-color: #ffffff;
+  z-index: 103;
+  -webkit-box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5); }
 
 .modal__col-1 {
   background-color: #FAFAF9;
