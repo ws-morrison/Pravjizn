@@ -18,23 +18,23 @@
 
 .modal__col-1 {
   background-color: $grey-bg;
-
   // width: 37%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 40px 10px 20px;
 }
 
 .modal__col-2 {
-  width: 100%;
-  padding-bottom: 30px;
+  // width: 100%;
+  padding: 20px 40px 30px 20px;
+  // padding-bottom: 30px;
 }
 
-  .modal__img {
-    width: 50%;
-    min-height: auto;
-  }
+.modal__img {
+  width: 50%;
+  min-height: auto;
+}
 
 // DESKTOP
 @media (min-width: $desktop) {
