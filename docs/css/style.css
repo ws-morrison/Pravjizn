@@ -2788,11 +2788,25 @@ input:focus {
     z-index: 2;
     cursor: pointer; }
 
-.patron-form__input--date-mob {
-  position: relative;
-  -moz-appearance: none;
-       appearance: none;
-  -webkit-appearance: none; }
+.patron-form__input--date-mobile {
+  position: relative; }
+  .patron-form__input--date-mobile::-webkit-datetime-edit {
+    padding: 1em; }
+  .patron-form__input--date-mobile::-webkit-datetime-edit-fields-wrapper {
+    background: silver; }
+  .patron-form__input--date-mobile::-webkit-datetime-edit-text {
+    color: red;
+    padding: 0 0.3em; }
+  .patron-form__input--date-mobile::-webkit-datetime-edit-month-field {
+    color: blue; }
+  .patron-form__input--date-mobile::-webkit-datetime-edit-day-field {
+    color: green; }
+  .patron-form__input--date-mobile::-webkit-datetime-edit-year-field {
+    color: purple; }
+  .patron-form__input--date-mobile::-webkit-inner-spin-button {
+    display: none; }
+  .patron-form__input--date-mobile::-webkit-calendar-picker-indicator {
+    background: orange; }
 
 .patron__button {
   width: 260px;
