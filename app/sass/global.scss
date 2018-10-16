@@ -41,6 +41,15 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/* Smooth outline with box-shadow: */
+// input[type="text"]:focus,
+// input[type="number"]:focus,
+// input[type="email"]:focus {
+//   outline: none;
+//   box-shadow: 0 0 3px 1px $accient;
+// }
+
+
 .container {
   margin: 0 auto;
   padding: 0 20px 0 20px;
@@ -110,7 +119,6 @@ input[type="number"] {
 }
 
 @media (min-width: $desktop-full) {
-
   .container {
     max-width: 1440px;
     padding: 0px 157px;
@@ -118,9 +126,7 @@ input[type="number"] {
     &--wide {
       padding: 0 40px;
     }
-
   }
-
 }
 
 /////////
