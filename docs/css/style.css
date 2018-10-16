@@ -547,6 +547,12 @@ input:focus {
     -webkit-background-size: 17px 21px;
     background-size: 17px 21px;
     background-position: center; }
+  .icon__calendar {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/calendar_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
 
 .datepicker-container {
   background-color: #fff;
@@ -2772,16 +2778,15 @@ input:focus {
   .patron-form__input--email {
     padding-left: 30px; }
 
-.patron-form__label--calendar-thumb::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/calendar_icon.svg");
-  background-repeat: no-repeat;
-  z-index: 2;
-  top: 48px;
-  left: 20px; }
+.patron-form__input-wrapper {
+  position: relative; }
+  .patron-form__input-wrapper .icon {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    padding: 20px;
+    z-index: 2;
+    cursor: pointer; }
 
 .patron__button {
   width: 260px;
