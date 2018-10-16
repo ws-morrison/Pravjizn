@@ -1179,7 +1179,11 @@ input[type="number"] {
   background-repeat: no-repeat;
   position: absolute;
   right: 30px;
-  margin-top: 30px; }
+  margin-top: -30px; }
+
+@media (min-width: 1024px) {
+  .button__close-modal {
+    margin-top: 30px; } }
 
 @media (min-width: 1260px) {
   .button--big-white-green, .button--big-white-blue {
@@ -3419,7 +3423,7 @@ input[type="number"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px 0 20px; }
+  padding: 40px 20px 40px 20px; }
 
 .modal__col-2 {
   width: 100%;
@@ -3498,7 +3502,7 @@ input[type="number"] {
   width: 90%;
   padding: 0;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 20px;
   margin-bottom: 40px;
   display: block;
   font-family: "Museo Cyrillic Regular", sans-serif;

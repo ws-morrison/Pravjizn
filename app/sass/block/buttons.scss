@@ -128,9 +128,13 @@
   background-repeat: no-repeat;
   position: absolute;
   right: 30px;
-  margin-top: 30px;
+  margin-top: -30px;
 }
-
+@media (min-width: $desktop) {
+  .button__close-modal {
+    margin-top: 30px;
+  }
+}
 @media (min-width: $desktop-full) {
   // NEW
   .button {
