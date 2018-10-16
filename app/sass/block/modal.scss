@@ -2,7 +2,7 @@
   display: flex;
   position: fixed;
   flex-direction: column;
-  top: 100px;
+  top: 30px;
   max-width: 1358px;
   width: 100%;
 
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-   padding: 40px 20px 40px 20px;
+  padding: 20px 20px 10px 20px;
 }
 
 .modal__col-2 {
@@ -31,10 +31,10 @@
   padding-bottom: 30px;
 }
 
-.modal__img {
-  width: 270px;
-  min-height: 359px;
-}
+  .modal__img {
+    width: 50%;
+    min-height: auto;
+  }
 
 // DESKTOP
 @media (min-width: $desktop) {

@@ -10,10 +10,9 @@
   padding: 0;
   margin: 0 auto;
   padding-top: 20px;
-  margin-bottom: 40px;
   display: block;
   font-family: $primary-regular;
-  font-size: $font-size-desktop-s;
+  font-size: $font-size-ms;
   line-height: 24px;
   color: $accient-2;
 }
@@ -29,7 +28,7 @@
   margin-bottom: 10px;
   display: inline-block;
   font-family: $primary-regular;
-  font-size: $font-size-s;
+  font-size: $font-size-ms;
   color: $faded;
 }
 
@@ -40,8 +39,8 @@
   margin-bottom: 10px;
   display: inline-block;
   font-family: $primary-regular;
-  font-size: $font-size-xl;
-  line-height: 45px;
+  font-size: $font-size-m;
+  line-height: 20px;
   color: $primary-text;
 }
 
@@ -50,10 +49,10 @@
   justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .gift-form__button {
