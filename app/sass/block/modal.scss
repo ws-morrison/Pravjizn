@@ -37,6 +37,7 @@
 
 .modal__img {
   width: 50%;
+  max-width: 268px;
   min-height: auto;
 }
 
@@ -57,7 +58,7 @@
   }
 
   .modal__img {
-    width: 50%;
+    // width: 50%;
     min-height: auto;
   }
 }
@@ -78,7 +79,7 @@
     padding-left: 50px;
   }
   .modal__img {
-    width: 30%;
+    // width: 30%;
     min-height: auto;
   }
 }
