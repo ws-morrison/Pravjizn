@@ -1179,7 +1179,7 @@ input[type="number"] {
   background-repeat: no-repeat;
   position: absolute;
   right: 30px;
-  margin-top: -30px; }
+  margin-top: 10px; }
 
 @media (min-width: 1024px) {
   .button__close-modal {
