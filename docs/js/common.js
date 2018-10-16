@@ -79,13 +79,13 @@ $(document).ready(function () {
     //Datepicker https://fengyuanchen.github.io/datepicker/
     // $(window).load(function () {
     //     if ($(window).width() >= 1024) {
-            $('.jsDatePicker').datepicker({
-                language: 'ru-RU',
-                format: 'dd.mm.yyyy',
-                date: new Date(1980, 1, 1),
-                trigger: $('.jsCalendarBtn'),
-            });
-        // }
+    $('.jsDatePicker').datepicker({
+        language: 'ru-RU',
+        format: 'dd.mm.yyyy',
+        date: new Date(1980, 1, 1),
+        trigger: $('.jsCalendarBtn'),
+    });
+    // }
     // });
 
 });
