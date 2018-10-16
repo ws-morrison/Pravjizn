@@ -58,10 +58,6 @@
   }
 }
 
-//.patron-form__input--date-desktop {
-//  display: none;
-//}
-
 .patron-form__input-wrapper {
   position: relative;
 
@@ -74,6 +70,12 @@
     cursor: pointer;
   }
 
+}
+
+.patron-form__input--date-mob {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .patron__button {
@@ -96,14 +98,6 @@
     padding-top: 110px;
     padding-bottom: 90px;
   }
-
-  //.patron-form__input--date-desktop {
-  //  display: block;
-  //}
-  //
-  //.patron-form__input--date-mobile {
-  //  display: none;
-  //}
 
   .patron__wrapper {
     margin: 0 auto;
