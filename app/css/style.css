@@ -493,6 +493,13 @@ input[type="number"] {
   z-index: 101;
   background-color: #00000071; }
 
+/* Smooth outline with box-shadow: */
+input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 30px 0px #F7A406;
+          box-shadow: 0 0 30px 0px #F7A406; }
+
+/* Hard "outline" with box-shadow: */
 @media (min-width: 1024px) {
   section {
     max-width: 1560px;
@@ -733,6 +740,7 @@ input[type="number"] {
 .donate-form__input {
   width: 100%;
   padding: 8px 24px 2px 24px;
+  padding-right: 90px;
   max-width: 400px;
   border: none;
   border: 1px solid #cccccc;
@@ -743,6 +751,18 @@ input[type="number"] {
   color: #FF482F;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .donate-form__input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(255, 72, 47, 0.5); }
+  .donate-form__input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 72, 47, 0.5); }
+  .donate-form__input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 72, 47, 0.5); }
+  .donate-form__input:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 72, 47, 0.5); }
 
 .donate-form__input-thumb {
   position: absolute;

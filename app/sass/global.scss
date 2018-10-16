@@ -81,6 +81,17 @@ input[type="number"] {
   background-color: #00000071;
 }
 
+/* Smooth outline with box-shadow: */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 30px 0px $outline-orange;
+}
+
+/* Hard "outline" with box-shadow: */
+//input:focus {
+//  box-shadow: 0 0 0 2pt red;
+//}
+
 @media (min-width: $desktop) {
   section {
     max-width: 1560px;
