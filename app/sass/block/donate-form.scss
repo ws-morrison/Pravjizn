@@ -19,7 +19,6 @@
   &--desktop {
     display: none;
   }
-
 }
 
 .donate-form__wrapper {
@@ -31,7 +30,6 @@
   .button {
     max-width: none;
   }
-
 }
 
 .donate-form__input-wrapper {
@@ -50,7 +48,6 @@
   border: 1px solid #cccccc;
   border-radius: 100px;
 
-
   font-family: $primary-regular;
   font-size: 40px;
   color: $accient;
@@ -60,7 +57,7 @@
 .donate-form__input-thumb {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
 
   right: 17px;
   top: 0px;
@@ -79,7 +76,6 @@
 
 // DESKTOP
 @media (min-width: $desktop) {
-
   .donate-form__wrapper {
     max-width: 240px;
   }
@@ -96,11 +92,23 @@
       width: 290px;
       margin: 0;
       margin-right: 10px;
+      outline: none;
     }
   }
-  // .donate-form__input--accient::placeholder {
-  //   color: $accient;
-  // }
+
+  input[type="text"].donate-form__input--border-yellow:focus,
+  input[type="number"].donate-form__input--border-yellow:focus,
+  input[type="email"].donate-form__input--border-yellow:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #ffb149;
+  }
+
+  input[type="text"].donate-form__input--border-orange:focus,
+  input[type="number"].donate-form__input--border-orange:focus,
+  input[type="email"].donate-form__input--border-orange:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #ff482f;
+  }
 
   .donate-form {
     align-self: flex-start;
@@ -130,7 +138,6 @@
 }
 
 @media (min-width: $desktop-full) {
-
   .donate-form__wrapper {
     position: relative;
   }
@@ -148,7 +155,5 @@
       right: -130px;
       max-width: 115px;
     }
-
   }
-
 }

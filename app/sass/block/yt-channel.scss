@@ -35,7 +35,7 @@
   }
   &--grey {
     color: $faded;
-     line-height: 18px;
+    line-height: 18px;
   }
 }
 .yt__desc-inner {
@@ -140,10 +140,10 @@
 // DESKTOP
 @media (min-width: 1024px) {
   .yt-channel {
-  padding-top: 110px;
-  padding-bottom: 120px;
-  margin-bottom: 70px;
-}
+    padding-top: 110px;
+    padding-bottom: 120px;
+    margin-bottom: 70px;
+  }
   .yt__desc {
     width: 100%;
     display: flex;
@@ -160,6 +160,16 @@
     border: 2px solid rgba(33, 33, 33, 0.2);
     color: $yt-red;
     margin: 0px;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #ff482f;
+      color: #ff482f;
+    }
+    &:active {
+      border: 2px solid #d13d24;
+      color: #d13d24;
+    }
   }
 
   .yt__sub-button-inner {
@@ -175,10 +185,10 @@
     align-items: center;
   }
   .yt__sub-button-text {
-  text-align: center;
-  display: block;
-  font-size: $font-size-s;
-}
+    text-align: center;
+    display: block;
+    font-size: $font-size-s;
+  }
   .yt__button-text {
     display: block;
     padding-right: 30px;
@@ -197,5 +207,13 @@
   }
   .yt__sub-button {
     width: 365px;
+
+    &:hover,
+    &:focus {
+      background-color: #ff482f;
+    }
+    &:active {
+      background-color: #d13d24;
+    }
   }
 }
