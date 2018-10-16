@@ -22,4 +22,12 @@
     background-position: center;
   }
 
+  &__calendar {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/calendar_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }

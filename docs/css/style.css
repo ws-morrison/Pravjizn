@@ -457,6 +457,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; }
 
+/* Smooth outline with box-shadow: */
 .container {
   margin: 0 auto;
   padding: 0 20px 0 20px;
@@ -490,8 +491,16 @@ input[type="number"] {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 102; }
+  z-index: 101;
+  background-color: #00000071; }
 
+/* Smooth outline with box-shadow: */
+input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 30px 0px #F7A406;
+          box-shadow: 0 0 30px 0px #F7A406; }
+
+/* Hard "outline" with box-shadow: */
 @media (min-width: 1024px) {
   section {
     max-width: 1560px;
@@ -538,6 +547,123 @@ input[type="number"] {
     -webkit-background-size: 17px 21px;
     background-size: 17px 21px;
     background-position: center; }
+
+.datepicker-container {
+  background-color: #fff;
+  direction: ltr;
+  font-size: 12px;
+  left: 0;
+  line-height: 30px;
+  position: fixed;
+  top: 0;
+  -ms-touch-action: none;
+      touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 210px;
+  z-index: -1;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+  .datepicker-container::before, .datepicker-container::after {
+    border: 5px solid transparent;
+    content: " ";
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0; }
+
+.datepicker-dropdown {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 3px 6px #ccc;
+          box-shadow: 0 3px 6px #ccc;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: absolute;
+  z-index: 1; }
+
+.datepicker-inline {
+  position: static; }
+
+.datepicker-top-left, .datepicker-top-right {
+  border-top-color: #39f; }
+  .datepicker-top-left::before, .datepicker-top-left::after, .datepicker-top-right::before, .datepicker-top-right::after {
+    border-top: 0;
+    left: 10px;
+    top: -5px; }
+  .datepicker-top-left::before, .datepicker-top-right::before {
+    border-bottom-color: #39f; }
+  .datepicker-top-left::after, .datepicker-top-right::after {
+    border-bottom-color: #fff;
+    top: -4px; }
+
+.datepicker-bottom-left, .datepicker-bottom-right {
+  border-bottom-color: #39f; }
+  .datepicker-bottom-left::before, .datepicker-bottom-left::after, .datepicker-bottom-right::before, .datepicker-bottom-right::after {
+    border-bottom: 0;
+    bottom: -5px;
+    left: 10px; }
+  .datepicker-bottom-left::before, .datepicker-bottom-right::before {
+    border-top-color: #39f; }
+  .datepicker-bottom-left::after, .datepicker-bottom-right::after {
+    border-top-color: #fff;
+    bottom: -4px; }
+
+.datepicker-top-right::before, .datepicker-top-right::after, .datepicker-bottom-right::before, .datepicker-bottom-right::after {
+  left: auto;
+  right: 10px; }
+
+.datepicker-panel > ul {
+  margin: 0;
+  padding: 0;
+  width: 102%; }
+  .datepicker-panel > ul::before, .datepicker-panel > ul::after {
+    content: " ";
+    display: table; }
+  .datepicker-panel > ul::after {
+    clear: both; }
+  .datepicker-panel > ul > li {
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 30px; }
+    .datepicker-panel > ul > li:hover {
+      background-color: #e5f2ff; }
+    .datepicker-panel > ul > li.muted, .datepicker-panel > ul > li.muted:hover {
+      color: #999; }
+    .datepicker-panel > ul > li.highlighted {
+      background-color: #e5f2ff; }
+      .datepicker-panel > ul > li.highlighted:hover {
+        background-color: #cce5ff; }
+    .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+      color: #39f; }
+    .datepicker-panel > ul > li.disabled, .datepicker-panel > ul > li.disabled:hover {
+      background-color: #fff;
+      color: #ccc;
+      cursor: default; }
+      .datepicker-panel > ul > li.disabled.highlighted, .datepicker-panel > ul > li.disabled:hover.highlighted {
+        background-color: #e5f2ff; }
+    .datepicker-panel > ul > li[data-view="years prev"], .datepicker-panel > ul > li[data-view="year prev"], .datepicker-panel > ul > li[data-view="month prev"], .datepicker-panel > ul > li[data-view="years next"], .datepicker-panel > ul > li[data-view="year next"], .datepicker-panel > ul > li[data-view="month next"], .datepicker-panel > ul > li[data-view="next"] {
+      font-size: 18px; }
+    .datepicker-panel > ul > li[data-view="years current"], .datepicker-panel > ul > li[data-view="year current"], .datepicker-panel > ul > li[data-view="month current"] {
+      width: 150px; }
+  .datepicker-panel > ul[data-view="years"] > li, .datepicker-panel > ul[data-view="months"] > li {
+    height: 52.5px;
+    line-height: 52.5px;
+    width: 52.5px; }
+  .datepicker-panel > ul[data-view="week"] > li,
+  .datepicker-panel > ul[data-view="week"] > li:hover {
+    background-color: #fff;
+    cursor: default; }
+
+.datepicker-hide {
+  display: none; }
 
 .header {
   width: 100%;
@@ -732,6 +858,7 @@ input[type="number"] {
 .donate-form__input {
   width: 100%;
   padding: 8px 24px 2px 24px;
+  padding-right: 90px;
   max-width: 400px;
   border: none;
   border: 1px solid #cccccc;
@@ -742,6 +869,18 @@ input[type="number"] {
   color: #FF482F;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .donate-form__input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ff482f; }
+  .donate-form__input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ff482f; }
+  .donate-form__input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ff482f; }
+  .donate-form__input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ff482f; }
 
 .donate-form__input-thumb {
   position: absolute;
@@ -1091,7 +1230,7 @@ input[type="number"] {
       position: relative; }
       .button--login span::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 11px;
         height: 14px;
         left: 0px;
@@ -1101,7 +1240,7 @@ input[type="number"] {
                 background-size: 100%; }
   .button--border-ylw {
     color: #FFF;
-    border: 2px solid #F7F606; }
+    border: 2px solid #f7f606; }
 
 .button--yellow {
   background-image: -webkit-gradient(linear, left top, right top, from(#f7f606), to(#f7a406));
@@ -1137,6 +1276,33 @@ input[type="number"] {
   -webkit-box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
           box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1); }
 
+.button--purple {
+  color: #FFF;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c65ada), to(#7547b5));
+  background-image: -webkit-linear-gradient(left, #c65ada 0%, #7547b5 100%);
+  background-image: -o-linear-gradient(left, #c65ada 0%, #7547b5 100%);
+  background-image: linear-gradient(90deg, #c65ada 0%, #7547b5 100%);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+          box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1); }
+
+.button--light-green {
+  color: #FFF;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5bdbc7), to(#40a854));
+  background-image: -webkit-linear-gradient(left, #5bdbc7 0%, #40a854 100%);
+  background-image: -o-linear-gradient(left, #5bdbc7 0%, #40a854 100%);
+  background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+          box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1); }
+
+.button--dark-blue {
+  color: #FFF;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0085ef), to(#00a7a7));
+  background-image: -webkit-linear-gradient(left, #0085ef 0%, #00a7a7 100%);
+  background-image: -o-linear-gradient(left, #0085ef 0%, #00a7a7 100%);
+  background-image: linear-gradient(90deg, #0085ef 0%, #00a7a7 100%);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+          box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1); }
+
 .button--red {
   background: #ea3518; }
 
@@ -1149,7 +1315,7 @@ input[type="number"] {
   background-color: inherit;
   background-repeat: no-repeat;
   position: absolute;
-  right: -100px;
+  right: 30px;
   margin-top: 30px; }
 
 @media (min-width: 1260px) {
@@ -2432,10 +2598,30 @@ input[type="number"] {
     width: 50%;
     min-height: 100%;
     padding: 5px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#faa533), to(#c42f2e));
-    background-image: -webkit-linear-gradient(left, #faa533 0%, #c42f2e 100%);
-    background-image: -o-linear-gradient(left, #faa533 0%, #c42f2e 100%);
-    background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%); }
+    background-image: -webkit-gradient(linear, left top, right top, from(#dfdfdf), to(#838383));
+    background-image: -webkit-linear-gradient(left, #dfdfdf 0%, #838383 100%);
+    background-image: -o-linear-gradient(left, #dfdfdf 0%, #838383 100%);
+    background-image: linear-gradient(90deg, #dfdfdf 0%, #838383 100%); }
+    .gradient-background--color-1 {
+      background-image: -webkit-gradient(linear, left top, right top, from(#faa533), to(#c42f2e));
+      background-image: -webkit-linear-gradient(left, #faa533 0%, #c42f2e 100%);
+      background-image: -o-linear-gradient(left, #faa533 0%, #c42f2e 100%);
+      background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%); }
+    .gradient-background--color-2 {
+      background-image: -webkit-gradient(linear, left top, right top, from(#c65ada), to(#7547b5));
+      background-image: -webkit-linear-gradient(left, #c65ada 0%, #7547b5 100%);
+      background-image: -o-linear-gradient(left, #c65ada 0%, #7547b5 100%);
+      background-image: linear-gradient(90deg, #c65ada 0%, #7547b5 100%); }
+    .gradient-background--color-3 {
+      background-image: -webkit-gradient(linear, left top, right top, from(#00c3af), to(#00954f));
+      background-image: -webkit-linear-gradient(left, #00c3af 0%, #00954f 100%);
+      background-image: -o-linear-gradient(left, #00c3af 0%, #00954f 100%);
+      background-image: linear-gradient(90deg, #00c3af 0%, #00954f 100%); }
+    .gradient-background--color-4 {
+      background-image: -webkit-gradient(linear, left top, right top, from(#5bdbc7), to(#40a854));
+      background-image: -webkit-linear-gradient(left, #5bdbc7 0%, #40a854 100%);
+      background-image: -o-linear-gradient(left, #5bdbc7 0%, #40a854 100%);
+      background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%); }
   .info-item {
     padding: 20px; }
   .info-desktop__right_col {
@@ -3339,11 +3525,21 @@ input[type="number"] {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  width: 91%; }
+  top: 100px;
+  max-width: 1358px;
+  width: 95%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  z-index: 103;
+  -webkit-box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5); }
 
 .modal__col-1 {
   background-color: #FAFAF9;
-  width: 39%;
+  width: 37%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3356,11 +3552,11 @@ input[type="number"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 39px; }
+  padding: 50px 20px 50px 20px; }
 
 .modal__col-2 {
-  width: 65%;
-  margin-left: 39px;
+  width: 63%;
+  padding: 70px 20px 70px 20px;
   position: relative; }
 
 .modal__img {
@@ -3379,14 +3575,15 @@ input[type="number"] {
           flex-direction: column;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  padding-left: 60px; }
 
 .form-gift__slogan {
   padding: 0;
   margin: 0;
+  padding-top: 10px;
+  margin-bottom: 76px;
   display: block;
-  margin-top: 60px;
-  margin-bottom: 38px;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -3395,9 +3592,8 @@ input[type="number"] {
 .form-gift__desc-title {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   display: inline-block;
-  margin-top: 38px;
-  margin-bottom: 5px;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 20px;
   color: #9B9B9B; }
@@ -3405,9 +3601,8 @@ input[type="number"] {
 .form-gift__desc-text {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 30px;
   font-family: "Museo Cyrillic Regular", sans-serif;
   font-size: 35px;
   line-height: 45px;
@@ -3418,10 +3613,10 @@ input[type="number"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 90%;
   margin-top: 30px;
   margin-bottom: 30px; }
 
@@ -3458,17 +3653,15 @@ input[type="number"] {
   border: 1px solid #CCCCCC;
   -webkit-border-radius: 30px;
           border-radius: 30px;
-  width: 295px;
-  margin-right: 10px; }
+  width: 295px; }
 
-.form-gift__caption {
+.form-gift__caption-text {
   padding: 0;
   margin: 0;
   font-family: "Museo Sans Cyrl Regular", sans-serif;
   font-size: 13px;
   color: #9B9B9B;
-  line-height: 20px;
-  margin-bottom: 120px; }
+  line-height: 20px; }
 
 .form-gift__link {
   padding: 0;
