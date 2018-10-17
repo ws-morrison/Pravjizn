@@ -67,4 +67,13 @@ $(document).ready(function() {
     });
   };
   onInfoServices();
+
+
+// Anchor
+  $("#app-anchor").click(function () {
+    $('html, body').animate({
+      scrollTop: $(".app").offset().top
+    }, 2000);
+  });
+
 });

@@ -3227,6 +3227,9 @@ input[type="email"].patron-form__input:focus {
           align-items: center; }
   .promo-app__logos--margin-bottom {
     margin-bottom: 30px; }
+  .promo-app__logos--header {
+    margin: 0;
+    padding-left: 20px; }
 
 .promo-app__logos-link {
   display: block;
