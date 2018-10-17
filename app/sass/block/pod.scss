@@ -100,8 +100,9 @@
       width: 100%;
       flex-wrap: nowrap;
 
-      &--row {
-        flex-direction: row;
+      &--modal-row {
+        width: 482px;
+        flex-wrap: nowrap;
       }
     }
 

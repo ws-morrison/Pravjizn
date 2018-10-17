@@ -729,6 +729,10 @@ a:focus {
           flex-wrap: wrap; }
   .donate-form__wrapper .button {
     max-width: none; }
+    .donate-form__wrapper .button--modal-form {
+      max-width: 182px;
+      width: 100%;
+      height: 60px; }
 
 .donate-form__input-wrapper {
   width: 100%;
@@ -749,6 +753,8 @@ a:focus {
   color: #FF482F;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .donate-form__input--modal {
+    width: 290px; }
 
 .donate-form__input-thumb {
   position: absolute;
@@ -769,6 +775,12 @@ a:focus {
 @media (min-width: 1024px) {
   .donate-form__wrapper {
     max-width: 240px; }
+    .donate-form__wrapper--modal-row {
+      max-width: 486px;
+      width: 100%;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; }
   .form__text {
     display: block;
     position: relative;
@@ -1618,12 +1630,11 @@ a:focus {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap; }
-      .pod .donate-form__wrapper--row {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row; }
+      .pod .donate-form__wrapper--modal-row {
+        width: 482px;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; }
     .pod .donate-form__input-wrapper {
       max-width: 290px;
       margin-bottom: 0;
@@ -4081,7 +4092,11 @@ input[type="email"].patron-form__input:focus {
   margin-bottom: 115px; }
 
 .gallery__item {
+  width: 365px;
+  height: auto;
   padding: 7px; }
+  .gallery__item--big {
+    width: 545px; }
 
 .gallery__form-item {
   padding-top: 110px;
@@ -4166,4 +4181,6 @@ input[type="email"].patron-form__input:focus {
   line-height: 26px; }
 
 .report-list__img {
+  width: 821px;
+  height: auto;
   margin-bottom: 70px; }
