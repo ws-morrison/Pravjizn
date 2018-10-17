@@ -19,6 +19,11 @@
     &--big {
       margin-bottom: 0;
     }
+    &--big-modal {
+      font-size: $font-size-desktop-xl;
+      color: $primary-text;
+      line-height: 45px;
+    }
 
   }
 
@@ -94,6 +99,10 @@
       max-width: 100%;
       width: 100%;
       flex-wrap: nowrap;
+
+      &--row {
+        flex-direction: row;
+      }
     }
 
     .donate-form__input-wrapper {

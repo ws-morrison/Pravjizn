@@ -1,6 +1,6 @@
 .modal {
   display: flex;
-  position: fixed;
+  // position: fixed;
   flex-direction: column;
   top: 20px;
   max-width: 1358px;
@@ -39,6 +39,59 @@
   width: 50%;
   max-width: 268px;
   min-height: auto;
+}
+
+.modal__row-1 {
+  padding-left: 97px;
+  padding-right: 97px;
+  padding-top: 165px;
+  padding-bottom: 40px;
+}
+
+.modal__row-2 {
+  padding-left: 70px;
+  padding-right: 70px;
+  // padding-bottom: 40px;
+}
+
+.modal__row-3 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-top: 98px;
+  padding-bottom: 78px;
+  margin-bottom: 120px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  background-color: $secondary-bg;
+}
+
+.modal__row-4 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-bottom: 120px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.modal__row-5 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-top: 93px;
+  margin-bottom: 120px;
+}
+
+.modal__row-6 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-bottom: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // 500
@@ -87,7 +140,7 @@
 @media (min-width: $desktop) {
   .modal {
     display: flex;
-    position: fixed;
+    // position: fixed;
     flex-direction: row;
     top: 100px;
     max-width: 1358px;
@@ -101,6 +154,10 @@
     background-color: #ffffff;
     z-index: 103;
     box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
+
+    &--column {
+      flex-direction: column;
+    }
   }
 
   .modal__col-1 {
@@ -123,5 +180,12 @@
   .modal__img {
     width: 270px;
     min-height: 359px;
+  }
+
+  .modal__container {
+    padding-top: 120px;
+    padding-right: 98px;
+    padding-bottom: 100px;
+    padding-left: 98px;
   }
 }

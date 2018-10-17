@@ -824,6 +824,13 @@ a:focus {
           -ms-flex-direction: row;
               flex-direction: row;
       margin-top: 50px; }
+  .donate-form__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    color: #212121;
+    line-height: 24px; }
   .donate-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -847,6 +854,13 @@ a:focus {
 @media (min-width: 1260px) {
   .donate-form__wrapper {
     position: relative; }
+    .donate-form__wrapper--row {
+      width: 482px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
   .donate-form__text-title {
     position: absolute;
     left: -61px;
@@ -950,6 +964,7 @@ a:focus {
       top: 0px;
       right: 50px;
       background-image: url("../img/icon/notification_icon.svg");
+      background-image: url("../img/icon/notification_lines.svg");
       background-repeat: no-repeat; }
     .section__text-width--services {
       width: 45%;
@@ -1537,6 +1552,10 @@ a:focus {
     margin-top: 0; }
     .pod__title-text--big {
       margin-bottom: 0; }
+    .pod__title-text--big-modal {
+      font-size: 35px;
+      color: #212121;
+      line-height: 45px; }
   .pod__author {
     margin-bottom: 40px; }
   .pod__author-heading {
@@ -1599,6 +1618,12 @@ a:focus {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap; }
+      .pod .donate-form__wrapper--row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row; }
     .pod .donate-form__input-wrapper {
       max-width: 290px;
       margin-bottom: 0;
@@ -3521,7 +3546,6 @@ input[type="email"].patron-form__input:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3569,6 +3593,72 @@ input[type="email"].patron-form__input:focus {
   max-width: 268px;
   min-height: auto; }
 
+.modal__row-1 {
+  padding-left: 97px;
+  padding-right: 97px;
+  padding-top: 165px;
+  padding-bottom: 40px; }
+
+.modal__row-2 {
+  padding-left: 70px;
+  padding-right: 70px; }
+
+.modal__row-3 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-top: 98px;
+  padding-bottom: 78px;
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background-color: #FAF7DF; }
+
+.modal__row-4 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.modal__row-5 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-top: 93px;
+  margin-bottom: 120px; }
+
+.modal__row-6 {
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-bottom: 146px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 @media (min-width: 500px) {
   .modal__col-1 {
     padding-top: 10px;
@@ -3603,7 +3693,6 @@ input[type="email"].patron-form__input:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    position: fixed;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -3620,6 +3709,12 @@ input[type="email"].patron-form__input:focus {
     z-index: 103;
     -webkit-box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5); }
+    .modal--column {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .modal__col-1 {
     background-color: #FAFAF9;
     width: 37%;
@@ -3642,7 +3737,12 @@ input[type="email"].patron-form__input:focus {
     position: relative; }
   .modal__img {
     width: 270px;
-    min-height: 359px; } }
+    min-height: 359px; }
+  .modal__container {
+    padding-top: 120px;
+    padding-right: 98px;
+    padding-bottom: 100px;
+    padding-left: 98px; } }
 
 .form-gift {
   display: -webkit-box;
@@ -3877,3 +3977,193 @@ input[type="email"].patron-form__input:focus {
     font-size: 13px;
     color: #F65500;
     line-height: 20px; } }
+
+.gallery {
+  overflow: hidden; }
+  .gallery__author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .gallery__author-heading {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #212121; }
+  .gallery__author-caption {
+    font-family: "MuseoSansCyrl-500It", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121; }
+  .gallery__title {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .gallery__title-text {
+    display: inline-block;
+    margin-bottom: 29px;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9B9B9B; }
+    .gallery__title-text--big {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      color: #212121; }
+  @media (min-width: 1260px) {
+    .gallery__title-text {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 19px; }
+      .gallery__title-text--big {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 51px; } }
+  .gallery__content-text {
+    margin: 0;
+    padding: 0; }
+  .gallery__title {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px; }
+  .gallery__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0; }
+    .gallery__title-text--big {
+      margin-bottom: 0; }
+    .gallery__title-text--big-modal {
+      font-size: 35px;
+      color: #212121;
+      line-height: 45px; }
+
+.gallery__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 115px; }
+
+.gallery__item {
+  padding: 7px; }
+
+.gallery__form-item {
+  padding-top: 110px;
+  padding-bottom: 120px; }
+
+.gallery__content-text {
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 18px;
+  color: #212121;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 120px; }
+
+.gallery__form-wrapper {
+  background-color: #FFF;
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.gallery__form-wrapper::before {
+  content: "";
+  width: 80px;
+  min-height: 80px;
+  position: absolute;
+  display: block;
+  top: -40px;
+  left: 40px;
+  background-image: url("../img/icon/main_logo-green.svg");
+  background-repeat: no-repeat; }
+
+.report {
+  background-color: #fafaf9; }
+
+.report-list {
+  list-style: none; }
+
+.report-list__item:not(:last-child) {
+  border-bottom: 1px solid #E2E2D9; }
+
+.report-list__item-inner {
+  padding-left: 65px;
+  padding-right: 65px; }
+
+.report-list__title {
+  display: inline-block;
+  margin: 0;
+  font-family: "Museo Cyrillic Medium", sans-serif;
+  font-size: 24px;
+  color: #212121;
+  line-height: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.report-list__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Museo Sans Cyrl Regular", sans-serif;
+  font-size: 18px;
+  color: #212121;
+  line-height: 26px; }
+
+.report-list__img {
+  margin-bottom: 70px; }

@@ -127,6 +127,15 @@
     }
   }
 
+  .donate-form__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: $primary-medium;
+    font-size: $font-size-desktop-m;
+    color: $primary-text;
+    line-height: 24px;
+  }
+
   .donate-wrapper {
     display: flex;
     width: 480px;
@@ -140,6 +149,12 @@
 @media (min-width: $desktop-full) {
   .donate-form__wrapper {
     position: relative;
+
+    &--row {
+      width: 482px;
+      flex-direction: row;
+
+    }
   }
 
   .donate-form__text-title {
