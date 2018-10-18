@@ -1009,7 +1009,6 @@ a:focus {
       top: 0px;
       right: 50px;
       background-image: url("../img/icon/notification_icon.svg");
-      background-image: url("../img/icon/notification_lines.svg");
       background-repeat: no-repeat; }
     .section__text-width--services {
       width: 45%;
@@ -1023,6 +1022,44 @@ a:focus {
     .section__text-width--feedback {
       width: 60%;
       margin: 0 auto; }
+  .section__text-width--yt:active::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: -2.5px;
+    right: 46.5px;
+    background-image: url("../img/icon/notification_lines.svg");
+    background-repeat: no-repeat; }
+  @-webkit-keyframes ripple {
+    0% {
+      -webkit-transform: scale(0, 0);
+              transform: scale(0, 0);
+      opacity: 1; }
+    20% {
+      -webkit-transform: scale(25, 25);
+              transform: scale(25, 25);
+      opacity: 1; }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(40, 40);
+              transform: scale(40, 40); } }
+  @keyframes ripple {
+    0% {
+      -webkit-transform: scale(0, 0);
+              transform: scale(0, 0);
+      opacity: 1; }
+    20% {
+      -webkit-transform: scale(25, 25);
+              transform: scale(25, 25);
+      opacity: 1; }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(40, 40);
+              transform: scale(40, 40); } }
+  .section__text-width--yt:active::after {
+    -webkit-animation: ripple 1s ease-out;
+            animation: ripple 1s ease-out; }
   .section__text {
     font-family: "Museo Cyrillic Regular", sans-serif;
     font-size: 20px;
@@ -3611,8 +3648,7 @@ input[type="email"].patron-form__input:focus {
   -webkit-box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5); }
   .modal--overflow {
-    overflow: scroll;
-    height: 100%; }
+    position: absolute; }
 
 .modal__col-1 {
   background-color: #FAFAF9;

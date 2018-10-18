@@ -14,8 +14,9 @@
   z-index: 103;
   box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
   &--overflow {
-    overflow: scroll;
-    height: 100%;
+    position: absolute;
+    // overflow: scroll;
+    // height: 100%;
   }
 }
 
