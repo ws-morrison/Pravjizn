@@ -527,7 +527,7 @@ a:focus {
 
 .icon {
   display: block;
-  content: ''; }
+  content: ""; }
   .icon__quotes {
     width: 37px;
     height: 100px;
@@ -545,6 +545,10 @@ a:focus {
     -webkit-background-size: 17px 21px;
     background-size: 17px 21px;
     background-position: center; }
+  .icon__play--modal:hover, .icon__play--modal:active {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .header {
   width: 100%;
@@ -771,6 +775,8 @@ a:focus {
   font-size: 16px;
   line-height: 16px;
   color: #9B9B9B; }
+  .donate-form__input-thumb--modal-form {
+    margin-right: 10px; }
 
 @media (min-width: 1024px) {
   .donate-form__wrapper {
@@ -1287,7 +1293,7 @@ a:focus {
     background-color: #e7533c; }
   .button--red:active {
     background-image: none;
-    background-color: #C42F2E; }
+    background-color: #c42f2e; }
 
 .button__close-modal {
   display: block;
@@ -2015,6 +2021,7 @@ a:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   background-repeat: no-repeat; }
   .yt__video-preview--1 {
     background-image: url("../img/youtube_preview_1.png"); }
@@ -4094,7 +4101,8 @@ input[type="email"].patron-form__input:focus {
 .gallery__item {
   width: 365px;
   height: auto;
-  padding: 7px; }
+  padding: 7px;
+  position: relative; }
   .gallery__item--big {
     width: 545px; }
 

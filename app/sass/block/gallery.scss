@@ -42,10 +42,13 @@
   height: auto;
   padding: 7px;
 
+  position: relative;
+
   &--big {
     width: 545px;
   }
 }
+
 .gallery__form-item {
   padding-top: 110px;
   padding-bottom: 120px;
