@@ -3653,6 +3653,7 @@ input[type="email"].patron-form__input:focus {
 .modal__row-2 {
   padding-left: 70px;
   padding-right: 70px;
+  padding-top: 70px;
   padding-bottom: 40px; }
 
 .modal__row-3 {
@@ -4074,7 +4075,7 @@ input[type="email"].patron-form__input:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px; }
+  margin-bottom: 70px; }
 
 .gallery__title-text {
   display: inline-block;
