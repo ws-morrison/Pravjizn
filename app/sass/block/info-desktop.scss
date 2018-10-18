@@ -52,6 +52,9 @@
     &--color-4 {
       background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%);
     }
+    &--center-align {
+      margin: 0 auto;
+    }
   }
 
   .info-item {

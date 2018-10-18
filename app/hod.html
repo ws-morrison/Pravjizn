@@ -11,9 +11,8 @@
 
 <body>
 
-
-  <div class="modal modal--column">
-    <!-- <button class="button__close-modal"></button> -->
+  <div class="modal modal--overflow modal--column">
+    <button class="button__close-modal"></button>
 
     <div class="modal__row-1">
       <div class="pod__title">
@@ -41,12 +40,12 @@
           <b class="pod__author-heading">Отец Владимир</b>
           <i class="pod__author-caption">настоятель храма в д.Власовка</i>
         </div>
-        <form action="" class="donate-form">
-          <div class="donate-form__wrapper">
-            <div class="donate-form__input-wrapper donate-form__wrapper--modal-row">
+        <form action="" class="donate-form donate-form--modal">
+          <div class="donate-form__wrapper donate-form__wrapper--modal-row">
+            <div class="donate-form__input-wrapper">
               <input class="donate-form__input donate-form__input--modal donate-form__input--accient donate-form__input--border-orange"
                 type="number" name="donate__form" id="" min="0" value="500">
-              <span class="donate-form__input-thumb">р/месяц</span>
+              <span class="donate-form__input-thumb donate-form__input-thumb--modal-form">р/месяц</span>
             </div>
             <button class="button button--modal-form button--green" type="submit">Помочь</button>
           </div>
@@ -72,27 +71,14 @@
     </div>
 
     <div class="modal__row-3">
-      <div class="yt__video-item">
-        <div class="yt__video-preview yt__video-preview--thumb yt__video-preview--1">
-          <a href="#" class="button button--video">
-            <i class="icon icon__play icon__play--modal"></i>
-          </a>
+      <div class="gallery__wrapper">
+        <div class="gallery__video-item"><img src="./img/youtube_preview_1.png" alt="" class="gallery__video-img">
         </div>
-        <div class="yt__item-caption-wrapper">
+
+        <div class="gallery__video-item"><img src="./img/youtube_preview_2.png" alt="" class="gallery__video-img">
         </div>
-      </div>
-      <div class="yt__video-item">
-        <div class="yt__video-preview yt__video-preview--thumb yt__video-preview--2">
-          <a href="#" class="button button--video">
-            <i class="icon icon__play icon__play--modal"></i>
-          </a>
-        </div>
-      </div>
-      <div class="yt__video-item">
-        <div class="yt__video-preview yt__video-preview--thumb yt__video-preview--3">
-          <a href="#" class="button button--video">
-            <i class="icon icon__play icon__play--modal"></i>
-          </a>
+
+        <div class="gallery__video-item"><img src="./img/youtube_preview_3.png" alt="" class="gallery__video-img">
         </div>
       </div>
     </div>
@@ -114,7 +100,7 @@
           Большая просьба помочь батюшке Владимиру и его идее! За всех благодетелей батюшка будет молиться!!</p>
       </div>
 
-      <div class="gradient-background gradient-background--color-3">
+      <div class="gradient-background gradient-background--color-3 gradient-background--center-align">
         <div class="gallery__form-wrapper">
           <div class="gallery__form-item">
             <form action="" class="donate-form">
@@ -137,20 +123,28 @@
     <div class="modal__row-5 report">
       <ul class="report-list">
         <li class="report-list__item">
-          <span class="report-list__title">Отчет от 23 апреля</span>
+
+          <span class="report-list__title">
+            <i class="icon__list"></i>
+            Отчет от 23 апреля</span>
           <div class="report-list__item-inner">
             <p class="report-list__text">Спасибо всем волонтерам, которые откликнулись на призыв о помощи</p>
-            <img src="./img/old_church_video.png" alt="" class="report-list__img">
+            <div class="report-list__img-wrapper">
+              <img src="./img/old_church_video.png" alt="" class="report-list__img">
+            </div>
           </div>
         </li>
 
         <li class="report-list__item">
-          <span class="report-list__title">Отчет от 12 мая</span>
+          <span class="report-list__title">
+            <i class="icon__list"></i>
+            Отчет от 12 мая</span>
 
         </li>
 
         <li class="report-list__item">
-          <span class="report-list__title">Отчет от 23 мая</span>
+          <span class="report-list__title"><i class="icon__list"></i>
+            Отчет от 23 мая</span>
 
         </li>
 
@@ -158,7 +152,7 @@
     </div>
 
     <div class="modal__row-6">
-      <div class="gradient-background gradient-background--color-3">
+      <div class="gradient-background gradient-background--color-3 gradient-background--center-align">
         <div class="gallery__form-wrapper">
           <div class="gallery__form-item">
             <form action="" class="donate-form">
@@ -176,8 +170,8 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <!-- <div class="modal-overlay"></div> -->
 </body>
 

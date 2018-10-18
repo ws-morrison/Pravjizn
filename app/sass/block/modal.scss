@@ -1,11 +1,10 @@
 .modal {
   display: flex;
-  // position: fixed;
   flex-direction: column;
   top: 20px;
   max-width: 1358px;
   width: 95%;
-
+  position: fixed;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -14,6 +13,10 @@
   background-color: #ffffff;
   z-index: 103;
   box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
+  &--overflow {
+    overflow: scroll;
+    height: 100%;
+  }
 }
 
 .modal__col-1 {
@@ -51,19 +54,20 @@
 .modal__row-2 {
   padding-left: 70px;
   padding-right: 70px;
-  // padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .modal__row-3 {
   padding-left: 98px;
   padding-right: 98px;
   padding-top: 98px;
-  padding-bottom: 78px;
+  // padding-bottom: 78px;
   margin-bottom: 120px;
 
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
 
   background-color: $secondary-bg;
 }
@@ -73,25 +77,26 @@
   padding-right: 98px;
   padding-bottom: 120px;
 
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  // display: flex;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
 }
 
 .modal__row-5 {
   padding-left: 98px;
   padding-right: 98px;
   padding-top: 93px;
-  margin-bottom: 120px;
+  // margin-bottom: 120px;
 }
 
 .modal__row-6 {
   padding-left: 98px;
   padding-right: 98px;
+  padding-top: 120px;
   padding-bottom: 146px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 
 // 500

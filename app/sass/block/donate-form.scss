@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
+
+  &--modal {
+    padding: 0;
+  }
 }
 
 .donate-form__text-title {
@@ -60,6 +64,9 @@
 
   &--modal {
     width: 290px;
+  }
+  &--modal-form {
+    margin-right: 10px;
   }
 }
 

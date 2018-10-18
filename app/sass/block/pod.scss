@@ -24,7 +24,6 @@
       color: $primary-text;
       line-height: 45px;
     }
-
   }
 
   &__author {
@@ -34,7 +33,6 @@
   &__author-heading {
     margin-bottom: 5px;
   }
-
 }
 
 .pod__item {
@@ -87,7 +85,6 @@
 }
 
 @media (min-width: $desktop) {
-
   .pod {
     padding-bottom: 180px;
 
@@ -116,7 +113,6 @@
       height: auto;
       max-width: 192px;
     }
-
   }
 
   .pod__item {
@@ -142,18 +138,15 @@
     height: 100%;
     background-size: 100%;
   }
-
 }
 
 @media (min-width: $desktop-full) {
-
   .pod {
     padding-bottom: 204px;
 
     &__title-text--big {
       margin-bottom: 75px;
     }
-
   }
 
   .pod__item {
@@ -172,5 +165,4 @@
   .pod__author {
     margin-bottom: 50px;
   }
-
 }
