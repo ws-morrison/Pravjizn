@@ -46,25 +46,25 @@
 }
 
 .modal__row-1 {
-  padding-left: 97px;
-  padding-right: 97px;
-  padding-top: 165px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 65px;
   padding-bottom: 40px;
 }
 
 .modal__row-2 {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .modal__row-3 {
-  padding-left: 98px;
-  padding-right: 98px;
-  padding-top: 98px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 38px;
   // padding-bottom: 78px;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 
   // display: flex;
   // flex-direction: row;
@@ -75,9 +75,9 @@
 }
 
 .modal__row-4 {
-  padding-left: 98px;
-  padding-right: 98px;
-  padding-bottom: 120px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 60px;
 
   // display: flex;
   // justify-content: space-around;
@@ -85,17 +85,17 @@
 }
 
 .modal__row-5 {
-  padding-left: 98px;
-  padding-right: 98px;
-  padding-top: 93px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 38px;
   // margin-bottom: 120px;
 }
 
 .modal__row-6 {
-  padding-left: 98px;
-  padding-right: 98px;
-  padding-top: 120px;
-  padding-bottom: 146px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -189,10 +189,59 @@
     min-height: 359px;
   }
 
-  .modal__container {
-    padding-top: 120px;
-    padding-right: 98px;
-    padding-bottom: 100px;
+  .modal__row-1 {
+    padding-left: 97px;
+    padding-right: 97px;
+    padding-top: 165px;
+    padding-bottom: 40px;
+  }
+
+  .modal__row-2 {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .modal__row-3 {
     padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 98px;
+    // padding-bottom: 78px;
+    margin-bottom: 120px;
+
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+
+    background-color: $secondary-bg;
+  }
+
+  .modal__row-4 {
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-bottom: 120px;
+
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+  }
+
+  .modal__row-5 {
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 93px;
+    // margin-bottom: 120px;
+  }
+
+  .modal__row-6 {
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 120px;
+    padding-bottom: 146px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
 }

@@ -21,9 +21,9 @@
       margin-bottom: 0;
     }
     &--big-modal {
-      font-size: $font-size-desktop-xl;
+      font-size: $font-size-xl;
       color: $primary-text;
-      line-height: 45px;
+       line-height: 35px;
     }
   }
 }
@@ -32,9 +32,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 115px;
+  margin-bottom: 40px;
   &--big {
-    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
@@ -49,6 +49,7 @@
     width: 545px;
   }
 }
+
 .gallery__video-item {
   padding: 7px;
   position: relative;
@@ -72,8 +73,8 @@
   }
 }
 .gallery__form-item {
-  padding-top: 110px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .gallery__content-text {
   font-family: $secondary-regular;
@@ -83,10 +84,10 @@
 
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .gallery__form-wrapper {
@@ -108,4 +109,64 @@
   left: 40px;
   background-image: url("../img/icon/main_logo-green.svg");
   background-repeat: no-repeat;
+}
+
+// DESKTOP
+@media (min-width: $desktop) {
+  .gallery {
+    &__content-text {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__title {
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+    &__title-text {
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-top: 0;
+
+      &--big {
+        margin-bottom: 0;
+      }
+      &--big-modal {
+        font-size: $font-size-desktop-xl;
+        color: $primary-text;
+        line-height: 45px;
+      }
+    }
+  }
+
+.gallery__form-item {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+  .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 115px;
+    &--big {
+      flex-direction: row;
+    }
+  }
+
+  .gallery__content-text {
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    color: #212121;
+    line-height: 26px;
+
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+
+    margin-bottom: 120px;
+  }
 }
