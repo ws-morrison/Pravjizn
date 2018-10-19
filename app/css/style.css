@@ -1373,6 +1373,7 @@ a:focus {
     background-color: #029550; }
 
 .button--blue {
+  color: #FFF;
   background-image: -webkit-gradient(linear, left top, right top, from(#2fb9aa), to(#4794ef));
   background-image: -webkit-linear-gradient(left, #2fb9aa 0%, #4794ef 100%);
   background-image: -o-linear-gradient(left, #2fb9aa 0%, #4794ef 100%);
@@ -3043,6 +3044,9 @@ input[type="email"].patron-form__input:focus {
           box-shadow: 0 0 1px 1px #212121;
   color: #212121; }
 
+input[value].patron-form__input {
+  color: #212121; }
+
 .patron-form__label--calendar-thumb::before {
   content: "";
   position: absolute;
@@ -4110,6 +4114,25 @@ input[type="email"].patron-form__input:focus {
   font-size: 13px;
   color: #F65500;
   line-height: 20px; }
+
+input[type="text"].form-gift__input:hover,
+input[type="number"].form-gift__input:hover,
+input[type="email"].form-gift__input:hover {
+  outline: none;
+  opacity: 0.5;
+  -webkit-box-shadow: 0 0 1px 1px #212121;
+          box-shadow: 0 0 1px 1px #212121; }
+
+input[type="text"].form-gift__input:focus,
+input[type="number"].form-gift__input:focus,
+input[type="email"].form-gift__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 1px 1px #212121;
+          box-shadow: 0 0 1px 1px #212121;
+  color: #212121; }
+
+input[value].form-gift__input {
+  color: #212121; }
 
 @media (min-width: 1024px) {
   .form-gift {

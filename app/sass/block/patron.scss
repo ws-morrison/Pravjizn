@@ -68,6 +68,10 @@ input[type="email"].patron-form__input:focus {
   color: #212121;
 }
 
+input[value].patron-form__input {
+  color: $primary-text;
+}
+
 .patron-form__label--calendar-thumb::before {
   content: "";
   position: absolute;

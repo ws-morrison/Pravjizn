@@ -562,20 +562,24 @@
               <div class="patron-form__input-wrapper">
                 <label class="patron-form__label" for="patron-form_name">Ваше имя
                   <input id="patron-form_name" type="text" class="patron-form__input patron-form__input--name"
-                    placeholder="Имя, данное при крещении"></label>
+                    placeholder="Имя, данное при крещении" onfocus="this.placeholder=''" onblur="this.placeholder='Имя, данное при крещении'" value=""></label>
               </div>
 
               <div class="patron-form__input-wrapper">
                 <label class="patron-form__label patron-form__label--calendar-thumb" for="patron-form_date">Выберите
                   дату
                   вашего рождения
-                  <input id="patron-form_date" type="text" class="patron-form__input patron-form__input--date" value="1980-01-01"></label>
+                  <input id="patron-form_date" type="text" class="patron-form__input patron-form__input--date" placeholder="1980-01-01"
+                  onfocus="this.placeholder=''" onblur="this.placeholder='1980-01-01'" value=""
+                  ></label>
               </div>
 
               <div class="patron-form__input-wrapper">
                 <label class="patron-form__label" for="patron-form_email">Введите свой e-mail
                   <input id="patron-form_email" type="email" class="patron-form__input patron-form__input--email"
-                    placeholder="vladimir@yandex.ru"></label>
+                    placeholder="vladimir@yandex.ru"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='vladimir@yandex.ru'" value=""
+                    ></label>
               </div>
               <button type="submit" class="button patron__button button--green">
                 <a href="#" class="patron__button-link">Перейти на страницу поминовений</a>
@@ -849,9 +853,11 @@
         <div class="form-gift__wrapper">
           <label class="form-gift__label">
             <input class="form-gift__input form-gift__input--wide" type="email" name="gift__form" id="form-gift-input"
-              placeholder="На какой E-mail отправить книгу?">
+              placeholder="На какой E-mail отправить книгу?"
+            onfocus="this.placeholder=''" onblur="this.placeholder='На какой E-mail отправить книгу?'" value=""
+              >
           </label>
-          <button class="gift-form__button button button--blue button--white" type="submit">Получить книгу (1.4Mb)</button>
+          <button class="gift-form__button button button--blue service-item__button-link" type="submit">Получить книгу (1.4Mb)</button>
         </div>
 
         <div class="form-gift__caption">
@@ -902,7 +908,7 @@
           <div class="donate-form__wrapper donate-form__wrapper--modal-row">
             <div class="donate-form__input-wrapper">
               <input class="donate-form__input donate-form__input--modal donate-form__input--accient donate-form__input--border-orange"
-                type="number" name="donate__form" id="" min="0" value="500">
+                type="number" name="donate__form" id="" min="0" value="500" onfocus="this.value=''" onblur="this.value='500'">
               <span class="donate-form__input-thumb donate-form__input-thumb--modal-form">р/месяц</span>
             </div>
             <button class="button button--modal-form button--green" type="submit">Помочь</button>

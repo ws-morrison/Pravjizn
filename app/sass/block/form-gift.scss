@@ -104,6 +104,25 @@
   line-height: 20px;
 }
 
+input[type="text"].form-gift__input:hover,
+input[type="number"].form-gift__input:hover,
+input[type="email"].form-gift__input:hover {
+  outline: none;
+  opacity: 0.5;
+  box-shadow: 0 0 1px 1px #212121;
+}
+
+input[type="text"].form-gift__input:focus,
+input[type="number"].form-gift__input:focus,
+input[type="email"].form-gift__input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #212121;
+  color: #212121;
+}
+input[value].form-gift__input {
+  color: $primary-text;
+}
+
 // DESKTOP
 @media (min-width: $desktop) {
   .form-gift {
