@@ -576,11 +576,11 @@ a:focus {
 
 .icon__list {
   content: "";
-  width: 53px;
-  height: 53px;
-  display: inline-block;
-  -webkit-border-radius: 100px;
-          border-radius: 100px;
+  width: 32px;
+  height: 32px;
+  display: block;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#faa533), to(#c42f2e));
   background-image: -webkit-linear-gradient(left, #faa533 0%, #c42f2e 100%);
   background-image: -o-linear-gradient(left, #faa533 0%, #c42f2e 100%);
@@ -590,12 +590,13 @@ a:focus {
   .icon__list::before {
     content: "";
     position: absolute;
+    display: block;
     width: 10px;
     height: 8px;
     background-image: url("../img/mini_arrow_white_down.svg");
     background-repeat: no-repeat;
-    top: 45%;
-    left: 40%; }
+    top: 40%;
+    left: 34%; }
 
 .icon__bell-bg {
   display: block;
@@ -648,7 +649,29 @@ a:focus {
   .icon__bell-bg:active {
     background-color: #83818157;
     -webkit-animation: ripple 0.15s ease;
-            animation: ripple 0.15s ease; } }
+            animation: ripple 0.15s ease; }
+  .icon__list {
+    content: "";
+    width: 53px;
+    height: 53px;
+    display: block;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#faa533), to(#c42f2e));
+    background-image: -webkit-linear-gradient(left, #faa533 0%, #c42f2e 100%);
+    background-image: -o-linear-gradient(left, #faa533 0%, #c42f2e 100%);
+    background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
+    margin-right: 30px;
+    position: relative; }
+    .icon__list::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 8px;
+      background-image: url("../img/mini_arrow_white_down.svg");
+      background-repeat: no-repeat;
+      top: 45%;
+      left: 40%; } }
 
 .header {
   width: 100%;
@@ -1736,11 +1759,12 @@ a:focus {
   width: 468px;
   height: 384px;
   bottom: 0px;
-  left: -90px;
+  left: -65px;
   right: 0px;
   margin-left: auto;
   margin-right: auto; }
   .pod__img-wrapper--modal {
+    width: 320px;
     height: 285px; }
 
 .pod__img {
@@ -1771,6 +1795,20 @@ a:focus {
   line-height: 26px;
   color: #7C872F;
   font-family: "Museo Sans Cyrl Regular", sans-serif; }
+
+@media (min-width: 500px) {
+  .pod__img-wrapper {
+    position: absolute;
+    width: 468px;
+    height: 384px;
+    bottom: 0px;
+    left: -90px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto; }
+    .pod__img-wrapper--modal {
+      width: 480px;
+      height: 285px; } }
 
 @media (min-width: 1024px) {
   .pod {
@@ -1807,6 +1845,7 @@ a:focus {
     left: 460px;
     top: 0px; }
     .pod__img-wrapper--modal {
+      width: 586px;
       left: 81%; }
   .pod__img {
     width: 100%;
@@ -1830,18 +1869,6 @@ a:focus {
     left: 500px; }
   .pod__author {
     margin-bottom: 50px; } }
-
-@media (min-width: 1440px) {
-  .pod__img-wrapper {
-    width: 650px;
-    height: 533px;
-    left: 460px;
-    top: 0px; }
-  .pod__img {
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%; } }
 
 .program-item {
   max-width: 1440px;
@@ -3848,7 +3875,8 @@ input[type="email"].patron-form__input:focus {
 .modal__row-5 {
   padding-left: 18px;
   padding-right: 18px;
-  padding-top: 38px; }
+  padding-top: 38px;
+  margin-bottom: 40px; }
 
 .modal__row-6 {
   padding-left: 18px;
@@ -4478,7 +4506,7 @@ input[type="email"].patron-form__input:focus {
           align-items: center;
   margin: 0;
   font-family: "Museo Cyrillic Medium", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #212121;
   line-height: 24px;
   padding-top: 30px;
@@ -4517,6 +4545,22 @@ input[type="email"].patron-form__input:focus {
   margin-bottom: 70px; }
 
 @media (min-width: 1024px) {
+  .report-list__title {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    color: #212121;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
   .report-list__item-inner {
     padding-left: 65px;
     padding-right: 65px; }

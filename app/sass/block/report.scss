@@ -16,7 +16,7 @@
   align-items: center;
   margin: 0;
   font-family: $primary-medium;
-  font-size: $font-size-desktop-m;
+  font-size: $font-size-l;
   color: $primary-text;
   line-height: 24px;
   padding-top: 30px;
@@ -61,6 +61,18 @@
 
 // DESKTOP
 @media (min-width: $desktop) {
+  .report-list__title {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  font-family: $primary-medium;
+  font-size: $font-size-desktop-m;
+  color: $primary-text;
+  line-height: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
   .report-list__item-inner {
     padding-left: 65px;
     padding-right: 65px;
