@@ -10,12 +10,6 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  &--yt {
-    width: 260px;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 60px;
-  }
 
   &--app-caption {
     width: 75%;
@@ -31,16 +25,17 @@
     width: 90%;
     margin: 0 auto;
   }
-  &--yt::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 20px;
-    top: -25px;
-    right: 122px;
-    background-image: url("../img/icon/notification_icon.svg");
-    background-repeat: no-repeat;
-  }
+  // &--yt::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 16px;
+  //   height: 20px;
+  //   top: -25px;
+  //   right: 122px;
+  //   background-image: url("../img/icon/notification_icon.svg");
+  //   background-repeat: no-repeat;
+  //   z-index: 101;
+  // }
   &--pod {
     width: 80%;
     margin: 0 auto;
@@ -82,26 +77,43 @@
 .section--secondary-bg {
   background-color: $secondary-bg;
 }
-// .section__text-width {
-//   display: block;
-//   margin: 0 auto;
-//   width: 100%;
-//   &--yt::before {
-//     content: "";
-//     position: absolute;
-//     width: 16px;
-//     height: 20px;
-//     top: -25px;
-//     right: 122px;
-//     background-image: url("../img/icon/notification_icon.svg");
-//     background-repeat: no-repeat;
-//   }
-//   &--pod {
-//     width: 80%;
-//     margin: 0 auto;
-//     margin-bottom: 15px;
-//   }
-// }
+.section__text-width {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  &--yt {
+    width: 260px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 60px;
+  }
+  // &--yt::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 16px;
+  //   height: 20px;
+  //   top: -25px;
+  //   right: 122px;
+  //   background-image: url("../img/icon/notification_icon.svg");
+  //   background-repeat: no-repeat;
+  // }
+  &--pod {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  // .section__text-width--yt:active::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 23px;
+  //   height: 23px;
+  //   top: -25px;
+  //   right: 122px;
+  //   background-image: url("../img/icon/notification_lines.svg");
+  //   background-repeat: no-repeat;
+  // }
+}
 
 // DESKTOP
 @media (min-width: $desktop) {
@@ -126,16 +138,16 @@
       position: relative;
       margin-top: 20px;
     }
-    &--yt::before {
-      content: "";
-      position: absolute;
-      width: 16px;
-      height: 20px;
-      top: 0px;
-      right: 50px;
-      background-image: url("../img/icon/notification_icon.svg");
-      background-repeat: no-repeat;
-    }
+    // &--yt::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 16px;
+    //   height: 20px;
+    //   top: 0px;
+    //   right: 50px;
+    //   background-image: url("../img/icon/notification_icon.svg");
+    //   background-repeat: no-repeat;
+    // }
     &--services {
       width: 45%;
       margin: 0 auto;
@@ -154,37 +166,16 @@
     }
   }
 
-  .section__text-width--yt:active::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    top: -2.5px;
-    right: 46.5px;
-    background-image: url("../img/icon/notification_lines.svg");
-    background-repeat: no-repeat;
-  }
-  // ////
-  @keyframes ripple {
-    0% {
-      transform: scale(0, 0);
-      opacity: 1;
-    }
-    20% {
-      transform: scale(25, 25);
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: scale(40, 40);
-    }
-  }
-
-  .section__text-width--yt:active::after {
-    animation: ripple 1s ease-out;
-  }
-
-  // ////
+  // .section__text-width--yt:active::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 23px;
+  //   height: 23px;
+  //   top: -2.5px;
+  //   right: 46.5px;
+  //   background-image: url("../img/icon/notification_lines.svg");
+  //   background-repeat: no-repeat;
+  // }
 
   .section__text {
     font-family: $primary-regular;

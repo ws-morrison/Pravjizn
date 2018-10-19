@@ -110,10 +110,10 @@
 .yt__sub-button {
   width: 260px;
   //height: 60px;
-  margin-bottom: 60px;
   background-color: $yt-red;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 60px;
   align-items: center;
   line-height: 16px;
 }
@@ -217,6 +217,7 @@
 
   .yt__sub-button {
     width: 365px;
+    margin-bottom: 0;
 
     &:hover,
     &:focus {
