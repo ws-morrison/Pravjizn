@@ -2750,7 +2750,6 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  min-height: 100%;
   padding: 5px;
   background-image: -webkit-gradient(linear, left top, right top, from(#dfdfdf), to(#838383));
   background-image: -webkit-linear-gradient(left, #dfdfdf 0%, #838383 100%);
@@ -2824,7 +2823,6 @@ a:focus {
         -ms-flex-align: center;
             align-items: center;
     width: 64%;
-    min-height: 100%;
     padding: 5px;
     background-image: -webkit-gradient(linear, left top, right top, from(#dfdfdf), to(#838383));
     background-image: -webkit-linear-gradient(left, #dfdfdf 0%, #838383 100%);
