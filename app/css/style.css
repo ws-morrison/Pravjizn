@@ -479,7 +479,13 @@ a:focus {
   transition: all 0.3s ease-in-out; }
 
 .hidden {
-  display: none; }
+  max-width: 0;
+  max-height: 0;
+  overflow: auto;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 .clear {
   clear: both; }
@@ -524,6 +530,15 @@ a:focus {
     padding: 0px 157px; }
     .container--wide {
       padding: 0 40px; } }
+
+.showBookModal {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px;
+  color: #FF482F;
+  font-family: "Museo Sans Cyrl Regular", sans-serif; }
 
 @-webkit-keyframes ripple {
   0% {

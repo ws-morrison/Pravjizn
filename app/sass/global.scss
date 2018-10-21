@@ -52,7 +52,12 @@ a:focus {
 }
 
 .hidden {
-  display: none;
+  // display: none;
+  max-width: 0;
+  max-height: 0;
+  overflow: auto;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .clear {
@@ -116,11 +121,12 @@ a:focus {
   }
 }
 
-/////////
-// @media (min-width: 2560px) {
-//    .container {
-//     &--wide {
-//       padding: 0 620px;
-//     }
-//   }
-// }
+.showBookModal {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px;
+  color: $accient;
+  font-family: $secondary-regular;
+}
