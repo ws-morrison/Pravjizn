@@ -52,6 +52,26 @@
   }
 }
 
+input[type="text"].patron-form__input:hover,
+input[type="number"].patron-form__input:hover,
+input[type="email"].patron-form__input:hover {
+  outline: none;
+  opacity: 0.5;
+  box-shadow: 0 0 1px 1px #212121;
+}
+
+input[type="text"].patron-form__input:focus,
+input[type="number"].patron-form__input:focus,
+input[type="email"].patron-form__input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #212121;
+  color: #212121;
+}
+
+input[value].patron-form__input {
+  color: $primary-text;
+}
+
 .patron-form__label--calendar-thumb::before {
   content: "";
   position: absolute;
