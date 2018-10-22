@@ -2,27 +2,22 @@
   padding-top: 65px;
   padding-bottom: 80px;
 }
-
 .patron__img-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-
 .patron__img {
   width: 260px;
   height: 340px;
 }
-
 .patron-form__wrapper {
   display: flex;
   justify-content: center;
 }
-
 .patron-form {
   margin-top: 20px;
 }
-
 .patron-form__label {
   font-family: $secondary-regular;
   font-size: $font-size-s;
@@ -30,7 +25,6 @@
   color: $primary-text;
   position: relative;
 }
-
 .patron-form__input {
   display: block;
   box-sizing: border-box;
@@ -58,22 +52,36 @@
   }
 }
 
-//.patron-form__input--date-desktop {
-//  display: none;
-//}
+input[type="text"].patron-form__input:hover,
+input[type="number"].patron-form__input:hover,
+input[type="email"].patron-form__input:hover {
+  outline: none;
+  opacity: 0.5;
+  box-shadow: 0 0 1px 1px #212121;
+}
 
-.patron-form__input-wrapper {
-  position: relative;
+input[type="text"].patron-form__input:focus,
+input[type="number"].patron-form__input:focus,
+input[type="email"].patron-form__input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #212121;
+  color: #212121;
+}
 
-  .icon {
-    position: absolute;
-    top: 36px;
-    left: 0px;
-    padding: 20px;
-    z-index: 2;
-    cursor: pointer;
-  }
+input[value].patron-form__input {
+  color: $primary-text;
+}
 
+.patron-form__label--calendar-thumb::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/calendar_icon.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+  top: 48px;
+  left: 20px;
 }
 
 .patron__button {
@@ -96,15 +104,6 @@
     padding-top: 110px;
     padding-bottom: 90px;
   }
-
-  //.patron-form__input--date-desktop {
-  //  display: block;
-  //}
-  //
-  //.patron-form__input--date-mobile {
-  //  display: none;
-  //}
-
   .patron__wrapper {
     margin: 0 auto;
     display: flex;
@@ -130,5 +129,4 @@
     width: 330px;
     margin: 0;
   }
-
 }

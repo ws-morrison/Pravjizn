@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Правжизнь - Благотворительный Фонд</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,6 +22,7 @@
                     <span class="header-nav__title-caption">Дорога к Храму</span>
                 </div>
             </div>
+
 
             <!-- DROPDOWN -->
             <div class="menu__wrapper">
@@ -47,6 +48,10 @@
                                 <br>
                                 + Библия + Календарь в 1 приложении <br>
                                 от фонда «Правжизнь»</p>
+                            <div class="promo-app__logos promo-app__logos--desktop promo-app__logos--header">
+                                <a href="#" class="promo-app__logos-link promo-app__logos-link--appstore-white"></a>
+                                <a href="#" class="promo-app__logos-link promo-app__logos-link--playstore-white"></a>
+                            </div>
                         </div>
                         <div class="promo-app__logos promo-app__logos--margin-bottom">
                             <a href="#" class="promo-app__logos-link promo-app__logos-link--appstore-white"></a>
@@ -76,14 +81,10 @@
                 <span class="donate-form__text-title">Всего</span>
                 <span class="donate-form__text-title donate-form__text-title--desktop">чтобы помочь!</span>
                 <div class="donate-form__input-wrapper">
-                    <input class="donate-form__input"
-                           type="number" name="donate__form"
-                           id=""
-                           min="0"
-                           placeholder=""
-                           value="500"
-                           onfocus="this.value=''"
-                    >
+                    <input class="donate-form__input donate-form__input--accient donate-form__input--border-yellow"
+                           type="number"
+                           name="donate__form" id="" min="0" value="500" onfocus="this.value=''"
+                           onblur="this.value='500'">
                     <span class="donate-form__input-thumb">р/месяц</span>
                 </div>
                 <button class="button button--yellow" type="submit">Помочь</button>
@@ -164,7 +165,7 @@
                     Просим посильной помощи отцу Владимиру (Дроздову)
                     и его приходу, которым просто негде обучить желающих
                     воцерковиться ребят!
-                    <a href="#" class="link pod__quote-link">Читать полностью</a>
+                    <a href="#" class="link pod__quote-link jsShowHistory">Читать полностью</a>
                 </p>
 
                 <div class="pod__author">
@@ -176,8 +177,10 @@
                 <form action="" class="donate-form">
                     <div class="donate-form__wrapper">
                         <div class="donate-form__input-wrapper">
-                            <input class="donate-form__input donate-form__input--accient" type="number"
-                                   name="donate__form" id="" min="0" placeholder="" value="500" onfocus="this.value=''">
+                            <input class="donate-form__input donate-form__input--accient donate-form__input--border-orange"
+                                   type="number"
+                                   name="donate__form" id="" min="0" value="500" onfocus="this.value=''"
+                                   onblur="this.value='500'">
                             <span class="donate-form__input-thumb">р/месяц</span>
                         </div>
                         <button class="button button--green" type="submit">Помочь</button>
@@ -281,8 +284,8 @@
         </div>
     </section>
 
-    <section class="yt-channel section--secondary-bg">
-        <div class="container container--yt">
+    <section class="channel section--secondary-bg">
+        <div class="container">
             <div class="section__desc">
                 <p class="section__text section__text-width section__text-width--yt-channel section__text--grey">
                     Получите
@@ -292,62 +295,60 @@
                 <p class="section__text section__text-width section__text--large">Youtube-канал Правжизнь ТВ</p>
             </div>
 
-            <div class="yt__desc">
-                <div class="yt__desc-inner">
-                    <div class="yt__desc-img"></div>
-                    <div class="yt__desc-text">
-                        <p class="yt__text yt__text--large">Правжизнь ТВ</p>
-                        <p class="yt__text yt__text--grey">17 713 подписчиков</p>
+            <div class="channel__desc">
+                <div class="channel__desc-inner">
+                    <div class="channel__desc-img"></div>
+                    <div class="channel__desc-text">
+                        <p class="channel__text channel__text--large">Правжизнь ТВ</p>
+                        <p class="channel__text channel__text--grey">17 713 подписчиков</p>
                     </div>
                 </div>
-                <a href="" class="button yt__desc-button">... Показать больше тем</a>
+                <a href="" class="button channel__desc-button">... Показать больше тем</a>
             </div>
-            <div class="yt__items-wrapper">
+            <div class="channel__items-wrapper">
 
-                <div class="yt__video-item">
-                    <div class="yt__video-preview yt__video-preview--1">
-                        <a href="#" class="button yt__button">
-                            <span class="yt__button-thumb"></span><span class="yt__button-text">Возпроизвести Все</span>
+                <div class="channel__video-item">
+                    <div class="channel__video-preview channel__video-preview--1">
+                        <a href="#" class="button channel__button">
+                            <span class="channel__button-thumb"></span><span class="channel__button-text">Возпроизвести Все</span>
                         </a>
                     </div>
-                    <div class="yt__item-caption-wrapper">
-                        <span class="yt__item-caption">Почему Православие единственно верная религия?</span>
+                    <div class="channel__item-caption-wrapper">
+                        <span class="channel__item-caption">Почему Православие единственно верная религия?</span>
                     </div>
                 </div>
 
-                <div class="yt__video-item">
-                    <div class="yt__video-preview yt__video-preview--2">
-                        <a href="#" class="button yt__button">
-                            <span class="yt__button-thumb"></span><span class="yt__button-text">Возпроизвести Все</span>
+                <div class="channel__video-item">
+                    <div class="channel__video-preview channel__video-preview--2">
+                        <a href="#" class="button channel__button">
+                            <span class="channel__button-thumb"></span><span class="channel__button-text">Возпроизвести Все</span>
                         </a>
                     </div>
-                    <span class="yt__item-caption">Основы Православия</span>
+                    <span class="channel__item-caption">Основы Православия</span>
                 </div>
 
-                <div class="yt__video-item">
-                    <div class="yt__video-preview yt__video-preview--3">
-                        <a href="#" class="button yt__button">
-                            <span class="yt__button-thumb"></span><span class="yt__button-text">Возпроизвести Все</span>
+                <div class="channel__video-item">
+                    <div class="channel__video-preview channel__video-preview--3">
+                        <a href="#" class="button channel__button">
+                            <span class="channel__button-thumb"></span><span class="channel__button-text">Возпроизвести Все</span>
                         </a>
                     </div>
-                    <span class="yt__item-caption">Ветхий завет</span>
+                    <span class="channel__item-caption">Ветхий завет</span>
                 </div>
             </div>
 
-            <div class="button__wrapper">
-                <a href="#" class="button yt__sub-button">
-                    <span class="yt__sub-button-thumb"></span>
-                    <span class="yt__sub-button-inner">
-              <span class="yt__sub-button-text">Подписаться на youtube канал</span>
-            </span>
+            <div class="channel__subscribe-btn button__wrapper">
+                <a href="#" class="button channel__sub-button jsChannelSubscribe">
+                    <span class="channel__sub-button-thumb"></span>
+                    <div class="channel__sub-button-inner">
+                        <span class="channel__sub-button-text">Подписаться на youtube канал</span>
+                    </div>
                 </a>
             </div>
 
-            <div class="section__desc section__desc--thumb-notif">
-                <p class="section__text section__text--desktop-small section__text-width section__text-width--yt section__text--grey section__text--thumb-notif">
-                    После
-                    подписки не забудьте включить
-                    уведомления!</p>
+            <div class="channel__subscribe-text">
+                <i class="icon icon__bell jsIconBell"></i>
+                <span>После подписки не забудьте включить уведомления!</span>
             </div>
 
         </div>
@@ -444,9 +445,9 @@
         </div>
 
         <div class="info-services__list">
-            <div class="info-services__wrapper">
+            <div class="info-services__wrapper jsInfoBtn">
                 <p class="info-services__title info-services__title--container">Воскресная школа</p>
-                <div class="info-service-item">
+                <div class="info-service-item visually-hidden">
                     <span class="info-service-item__thumb info-service-item__thumb--orange"></span>
                     <p class="info-service-item__desc">Православное образование для детей и взрослых онлайн</p>
                     <p class="info-service-item__desc">Изучайте основы православия бесплатно из любой точки мира</p>
@@ -455,9 +456,9 @@
                 </div>
             </div>
 
-            <div class="info-services__wrapper">
+            <div class="info-services__wrapper jsInfoBtn">
                 <p class="info-services__title info-services__title--container">Катехизация</p>
-                <div class="info-service-item">
+                <div class="info-service-item visually-hidden">
                     <span class="info-service-item__thumb info-service-item__thumb--orange"></span>
                     <p class="info-service-item__desc">Православное образование для детей и взрослых онлайн</p>
                     <p class="info-service-item__desc">Изучайте основы православия бесплатно из любой точки мира</p>
@@ -466,9 +467,9 @@
                 </div>
             </div>
 
-            <div class="info-services__wrapper">
+            <div class="info-services__wrapper jsInfoBtn">
                 <p class="info-services__title info-services__title--container">Карта православных храмов</p>
-                <div class="info-service-item">
+                <div class="info-service-item visually-hidden">
                     <span class="info-service-item__thumb info-service-item__thumb--orange"></span>
                     <p class="info-service-item__desc">Православное образование для детей и взрослых онлайн</p>
                     <p class="info-service-item__desc">Изучайте основы православия бесплатно из любой точки мира</p>
@@ -477,9 +478,9 @@
                 </div>
             </div>
 
-            <div class="info-services__wrapper">
+            <div class="info-services__wrapper jsInfoBtn">
                 <p class="info-services__title info-services__title--container">Вопросы и ответы</p>
-                <div class="info-service-item">
+                <div class="info-service-item visually-hidden">
                     <span class="info-service-item__thumb info-service-item__thumb--orange"></span>
                     <p class="info-service-item__desc">Православное образование для детей и взрослых онлайн</p>
                     <p class="info-service-item__desc">Изучайте основы православия бесплатно из любой точки мира</p>
@@ -488,9 +489,9 @@
                 </div>
             </div>
 
-            <div class="info-services__wrapper">
+            <div class="info-services__wrapper jsInfoBtn">
                 <p class="info-services__title info-services__title--container">Православный мессенджер</p>
-                <div class="info-service-item">
+                <div class="info-service-item visually-hidden">
                     <span class="info-service-item__thumb info-service-item__thumb--orange"></span>
                     <p class="info-service-item__desc">Православное образование для детей и взрослых онлайн</p>
                     <p class="info-service-item__desc">Изучайте основы православия бесплатно из любой точки мира</p>
@@ -513,30 +514,76 @@
             <div class="info-desktop__wrapper">
                 <div class="info-desktop__left_col">
                     <ul class="info-desktop__list">
-                        <li class="info-desktop__item info-desktop__item--active">Воскресная школа</li>
-                        <li class="info-desktop__item">Катехизация</li>
-                        <li class="info-desktop__item">Карта православных храмов</li>
-                        <li class="info-desktop__item">Вопросы и ответы</li>
-                        <li class="info-desktop__item">Православный мессенджер</li>
+                        <li class="info-desktop__item active" data-info="school">Воскресная школа</li>
+                        <li class="info-desktop__item" data-info="catech">Катехизация</li>
+                        <li class="info-desktop__item" data-info="map">Карта православных храмов</li>
+                        <li class="info-desktop__item" data-info="faq">Вопросы и ответы</li>
+                        <li class="info-desktop__item" data-info="messenger">Православный мессенджер</li>
                     </ul>
                 </div>
 
-                <div class="gradient-background gradient-background--color-1">
-                    <!--Цвета рамки-->
-                    <!--color-2-->
-                    <!--color-3-->
-                    <!--color-4-->
-
+                <div class="info-desktop__right-outer info-desktop__right-outer--color-purple active"
+                     data-info="school">
                     <div class="info-desktop__right_col">
                         <div class="info-item">
                             <div class="info-item__desc">
-                                <p class="info-item__text">Православное образование для детей</p>
-                                <p class="info-item__text">Изучайте основы православия бесплатно
-                                    из любой точки мира</p>
+                                <p class="info-item__text">Православное образование для детей и взрослых онлайн</p>
+                                <p class="info-item__text">Изучайте основы православия бесплатно из любой точки мира</p>
                             </div>
-                            <a href="" class="button button--orange info-item__button button-text">Перейти
-                                на
-                                страницу сервиса</a>
+                            <a href="" class="button button--orange info-item__button">Перейти на страницу сервиса</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-desktop__right-outer info-desktop__right-outer--color-orange" data-info="catech">
+                    <div class="info-desktop__right_col">
+                        <div class="info-item">
+                            <div class="info-item__desc">
+                                <p class="info-item__text">Огласительные беседы онлайн — обучение для допуска к
+                                    Церковным Таинствам</p>
+                                <p class="info-item__text">Записывайтесь на вебинары и получите официальный церковный
+                                    документ</p>
+                            </div>
+                            <a href="" class="button button--orange info-item__button">Перейти на страницу сервиса</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-desktop__right-outer info-desktop__right-outer--color-green-deep" data-info="map">
+                    <div class="info-desktop__right_col">
+                        <div class="info-item">
+                            <div class="info-item__desc">
+                                <p class="info-item__text">Подробная карта православных храмов мира</p>
+                                <p class="info-item__text">Следите за новостями вашего храма и общайтесь с
+                                    прихожанами</p>
+                            </div>
+                            <a href="" class="button button--orange info-item__button">Перейти на страницу сервиса</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-desktop__right-outer info-desktop__right-outer--color-green" data-info="faq">
+                    <div class="info-desktop__right_col">
+                        <div class="info-item">
+                            <div class="info-item__desc">
+                                <p class="info-item__text">Ответы духовных лиц на житейские и духовные вопросы в личной
+                                    переписке и общей ленте</p>
+                                <p class="info-item__text">Задавайте вопросы о жизни и вере</p>
+                            </div>
+                            <a href="" class="button button--orange info-item__button">Перейти на страницу сервиса</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-desktop__right-outer info-desktop__right-outer--color-blue" data-info="messenger">
+                    <div class="info-desktop__right_col">
+                        <div class="info-item">
+                            <div class="info-item__desc">
+                                <p class="info-item__text">Удобный мессенджер для православных верующих</p>
+                                <p class="info-item__text">Общайтесь с другими прихожанами, просите молитвенную помощь,
+                                    организуйте мероприятия</p>
+                            </div>
+                            <a href="" class="button button--orange info-item__button">Перейти на страницу сервиса</a>
                         </div>
                     </div>
                 </div>
@@ -566,50 +613,30 @@
                     <form action="" class="patron-form">
                         <div class="patron-form__input-wrapper">
                             <label class="patron-form__label" for="patron-form_name">Ваше имя
-                                <input
-                                        id="patron-form_name"
-                                        type="text"
-                                        class="patron-form__input patron-form__input--name"
-                                        placeholder="Имя, данное при крещении"
-                                        onfocus="this.placeholder=''"
-                                        onblur="this.placeholder = 'Имя, данное при крещении'"
-                                        required
-                                >
-                            </label>
+                                <input id="patron-form_name" type="text"
+                                       class="patron-form__input patron-form__input--name"
+                                       placeholder="Имя, данное при крещении" onfocus="this.placeholder=''"
+                                       onblur="this.placeholder='Имя, данное при крещении'"
+                                       value=""></label>
                         </div>
 
                         <div class="patron-form__input-wrapper">
-                            <div class="icon icon__calendar jsCalendarBtn"></div>
-                            <label class="patron-form__label patron-form__label--calendar-thumb">Выберите дату вашего
-                                рождения
-                                <input type="text"
-                                       class="jsDatePicker patron-form__input patron-form__input--date patron-form__input--date-desktop"
-                                       placeholder="01.01.1980"
-                                       onfocus="this.placeholder=''"
-                                       onblur="this.placeholder = '01.01.1980'"
-                                       required
-                                >
-                                <!--<input type="date"-->
-                                       <!--class="patron-form__input patron-form__input&#45;&#45;date patron-form__input&#45;&#45;date-mobile"-->
-                                       <!--placeholder="01.01.1980"-->
-                                       <!--value="01.01.1980"-->
-                                       <!--required-->
-                                <!--&gt;-->
-                            </label>
+                            <label class="patron-form__label patron-form__label--calendar-thumb" for="patron-form_date">Выберите
+                                дату
+                                вашего рождения
+                                <input id="patron-form_date" type="text"
+                                       class="patron-form__input patron-form__input--date"
+                                       placeholder="1980-01-01" onfocus="this.placeholder=''"
+                                       onblur="this.placeholder='1980-01-01'" value=""></label>
                         </div>
 
                         <div class="patron-form__input-wrapper">
                             <label class="patron-form__label" for="patron-form_email">Введите свой e-mail
-                                <input
-                                        id="patron-form_email"
-                                        type="email"
-                                        class="patron-form__input patron-form__input--email"
-                                        placeholder="vladimir@yandex.ru"
-                                        onfocus="this.placeholder=''"
-                                        onblur="this.placeholder = 'vladimir@yandex.ru'"
-                                        required
-                                >
-                            </label>
+                                <input id="patron-form_email" type="email"
+                                       class="patron-form__input patron-form__input--email"
+                                       placeholder="vladimir@yandex.ru" onfocus="this.placeholder=''"
+                                       onblur="this.placeholder='vladimir@yandex.ru'"
+                                       value=""></label>
                         </div>
                         <button type="submit" class="button patron__button button--green">
                             <a href="#" class="patron__button-link">Перейти на страницу поминовений</a>
@@ -641,7 +668,7 @@
 
                     <div class="holydays__img">
                         <div class="holydays__img-shadow"></div>
-                        <img src="/img/holydays-1.png" alt="Иоан Креститель" width="340" height="440">
+                        <img src="./img/holydays-1.png" alt="Иоан Креститель" width="340" height="440">
                     </div>
 
                 </div>
@@ -868,53 +895,229 @@
         </div>
 </footer>
 
-<!-- Modal -->
+<a href="#" class="jsModalExitBtn" style="display: block; padding: 20px;">Эта кнопка отображает модальное которое будет появляться при покидании сайта</a>
 
-<!--<div class="modal">-->
+<!-- <footer class="footer footer--bg-color">
+  <div class="container desktop-footer-container">
 
-<!--&lt;!&ndash; close &ndash;&gt;-->
-<!--<button class="button__close-modal"></button>-->
-<!--&lt;!&ndash;  &ndash;&gt;-->
+    <p class="showBookModal">Модальное окно "Получить книгу"</p>
 
-<!--<div class="modal__col-1">-->
-<!--<img class="modal__img" src="./img/book.png" alt="" width="270px" height="359px">-->
-<!--</div>-->
+  </div>
+</footer> -->
 
-<!--<div class="modal__col-2">-->
-<!--<form action="" class="form-gift form-gift&#45;&#45;row">-->
-<!--<span class="form-gift__slogan">Не спешите уходить!...</span>-->
-<!--<p class="form-gift__desc-title">Получите полезную мини-книгу</p>-->
-<!--<p class="form-gift__desc-text">«5 способов участвовать в благотворительности без-->
-<!--денег»</p>-->
-<!--<div class="form-gift__wrapper">-->
-<!--<label class="form-gift__label">-->
-<!--<input class="form-gift__input form-gift__input&#45;&#45;wide" type="email" name="gift__form" id="form-gift-input"-->
-<!--placeholder="На какой E-mail отправить книгу?">-->
-<!--</label>-->
-<!--<button class="gift-form__button button button&#45;&#45;blue button&#45;&#45;white" type="submit">Получить книгу (1.4Mb)</button>-->
-<!--</div>-->
 
-<!--<div class="form-gift__caption">-->
-<!--<p class="form-gift__caption-text">Нажимая на кнопку, я соглашаюсь с условиями</p>-->
-<!--<p class="form-gift__caption-text"><a href="" class="form-gift__link">политики конфиденциальности</a> и <a-->
-<!--href="" class="form-gift__link">договором-->
-<!--оферты</a></p>-->
-<!--</div>-->
-<!--</form>-->
+<div class="modal modal__book jsModalExit">
+    <a href="#" class="modal__close-btn jsModalCloseBtn">Close</a>
+    <div class="modal__col-1">
+        <img class="modal__img" src="./img/book.png" alt="" width="268px">
+    </div>
 
-<!--</div>-->
+    <div class="modal__col-2">
+        <form action="" class="form-gift form-gift--row">
+            <span class="form-gift__slogan">Не спешите уходить!...</span>
+            <div class="form-gift__desc-wrapper">
+                <p class="form-gift__desc-title">Получите полезную мини-книгу</p>
+                <p class="form-gift__desc-text">«5 способов участвовать в благотворительности без
+                    денег»</p>
+            </div>
+            <div class="form-gift__wrapper">
+                <label class="form-gift__label">
+                    <input class="form-gift__input form-gift__input--wide" type="email" name="gift__form"
+                           id="form-gift-input"
+                           placeholder="На какой E-mail отправить книгу?" onfocus="this.placeholder=''"
+                           onblur="this.placeholder='На какой E-mail отправить книгу?'"
+                           value="">
+                </label>
+                <button class="gift-form__button button button--blue service-item__button-link" type="submit">Получить
+                    книгу
+                    (1.4Mb)
+                </button>
+            </div>
 
-<!--</div>-->
+            <div class="form-gift__caption">
+                <p class="form-gift__caption-text">Нажимая на кнопку, я соглашаюсь с условиями</p>
+                <p class="form-gift__caption-text"><a href="" class="form-gift__link">политики конфиденциальности</a> и
+                    <a
+                            href="" class="form-gift__link">договором
+                        оферты</a></p>
+            </div>
+        </form>
 
-<!--<div class="modal-overlay"></div>-->
+    </div>
 
-<!--  -->
+</div>
 
+
+<div class="modal modal--overflow modal--column modal__history">
+    <a href="#" class="modal__close-btn jsModalCloseBtn">Close</a>
+    <div class="modal__row-1">
+        <div class="pod__title">
+            <p class="pod__title-text">Просим посильной помощи отцу Владимиру.</p>
+            <p class="pod__title-text pod__title-text--big-modal">Восстановление храма и воскресной школы в
+                д.Власовка</p>
+        </div>
+        <div class="pod__item">
+            <div class="pod__item-wrapper pod__item-wrapper--modal">
+                <div class="pod-item__title">
+                    <p class="pod-item__title-text">«Уже 190 детей из окрестных деревень ждут открытия воскресной
+                        школы»</p>
+                </div>
+                <div class="pod__img-wrapper pod__img-wrapper--modal">
+                    <div class="pod__img pod__img--modal"></div>
+                </div>
+            </div>
+            <p class="pod__quote-text">
+                Здравствуйте, братья и сестры!<br>
+                Просим посильной помощи отцу Владимиру (Дроздову)
+                и его приходу, которым просто негде обучить желающих
+                воцерковиться ребят!
+                <a href="#" class="link pod__quote-link">Читать полностью</a>
+            </p>
+            <div class="pod__author">
+                <b class="pod__author-heading">Отец Владимир</b>
+                <i class="pod__author-caption">настоятель храма в д.Власовка</i>
+            </div>
+            <form action="" class="donate-form donate-form--modal">
+                <div class="donate-form__wrapper donate-form__wrapper--modal-row">
+                    <div class="donate-form__input-wrapper">
+                        <input class="donate-form__input donate-form__input--modal donate-form__input--accient donate-form__input--border-orange"
+                               type="number" name="donate__form" id="" min="0" value="500" onfocus="this.value=''"
+                               onblur="this.value='500'">
+                        <span class="donate-form__input-thumb donate-form__input-thumb--modal-form">р/месяц</span>
+                    </div>
+                    <button class="button button--modal-form button--green" type="submit">Помочь</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal__row-2 gallery">
+        <div class="gallery__title">
+            <p class="gallery__title-text gallery__title-text--big-modal">Вот как выглядит храм и школа сейчас</p>
+        </div>
+        <div class="gallery__wrapper">
+            <img src="./img/church_small_case_1.png" alt="" class="gallery__item">
+            <img src="./img/church_small_case_2.png" alt="" class="gallery__item">
+            <img src="./img/church_small_case_3.png" alt="" class="gallery__item">
+            <img src="./img/church_small_case_4.png" alt="" class="gallery__item">
+            <img src="./img/church_small_case_5.png" alt="" class="gallery__item">
+            <img src="./img/church_small_case_6.png" alt="" class="gallery__item">
+        </div>
+        <p class="gallery__content-text">Здание воскресной школы брусовое, 1974 года постройки. Строилось и
+            использовалось первоначально как магазин. В 1999
+            году передано в собственность прихода праведного Симеона Верхотурского г.п. Приобье.</p>
+    </div>
+
+    <div class="modal__row-3">
+        <div class="gallery__wrapper">
+            <div class="gallery__video-item"><img src="./img/youtube_preview_1.png" alt="" class="gallery__video-img">
+            </div>
+
+            <div class="gallery__video-item"><img src="./img/youtube_preview_2.png" alt="" class="gallery__video-img">
+            </div>
+
+            <div class="gallery__video-item"><img src="./img/youtube_preview_3.png" alt="" class="gallery__video-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__row-4 gallery gallery--big">
+        <p class="gallery__content-text">В настоящее время в воскресной школе обучается до 40 детей. Население поселка
+            составляет 7500 чел. В этом же здании
+            расположены библиотека, трапезная, пункт социальной помощи. Приобье. До 2010 года здесь совершались
+            богослужения. С
+            2010 года после перехода в новый храм, здание полностью передано под Воскресную школу.</p>
+
+        <div class="gallery__wrapper gallery__wrapper--big">
+            <img src="./img/cerkov_1.png" alt="" class="gallery__item gallery__item--big">
+            <img src="./img/cerkov_2.png" alt="" class="gallery__item gallery__item--big">
+        </div>
+
+        <div class="gallery__title">
+            <p class="gallery__title-text gallery__title-text--big-modal">Отец Владимир - настоящий русский батюшка!
+                Большая просьба помочь батюшке Владимиру и его идее! За всех благодетелей батюшка будет молиться!!</p>
+        </div>
+
+        <div class="gradient-background gradient-background--color-3 gradient-background--center-align">
+            <div class="gallery__form-wrapper">
+                <div class="gallery__form-item">
+                    <form action="" class="donate-form">
+                        <p class="donate-form__title">Помочь храму в дер.Власовка</p>
+                        <div class="donate-form__wrapper donate-form__wrapper--modal-row">
+                            <div class="donate-form__input-wrapper">
+                                <input class="donate-form__input donate-form__input--modal donate-form__input--accient donate-form__input--border-orange"
+                                       type="number" name="donate__form" id="" min="0" value="500"
+                                       onfocus="this.value=''" onblur="this.value='500'">
+                                <span class="donate-form__input-thumb donate-form__input-thumb--modal-form">р/месяц</span>
+                            </div>
+                            <button class="button button--modal-form button--green" type="submit">Помочь</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal__row-5 report">
+        <ul class="report-list">
+            <li class="report-list__item">
+
+          <span class="report-list__title">
+            <i class="icon__list"></i>
+            Отчет от 23 апреля</span>
+                <div class="report-list__item-inner">
+                    <p class="report-list__text">Спасибо всем волонтерам, которые откликнулись на призыв о помощи</p>
+                    <div class="report-list__img-wrapper">
+                        <img src="./img/old_church_video.png" alt="" class="report-list__img">
+                    </div>
+                </div>
+            </li>
+
+            <li class="report-list__item">
+          <span class="report-list__title">
+            <i class="icon__list"></i>
+            Отчет от 12 мая</span>
+            </li>
+
+            <li class="report-list__item">
+          <span class="report-list__title"><i class="icon__list"></i>
+            Отчет от 23 мая</span>
+
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="modal__row-6">
+        <div class="gradient-background gradient-background--color-3 gradient-background--center-align">
+            <div class="gallery__form-wrapper">
+                <div class="gallery__form-item">
+                    <form action="" class="donate-form">
+                        <p class="donate-form__title">Помочь храму в дер.Власовка</p>
+                        <div class="donate-form__wrapper donate-form__wrapper--modal-row">
+                            <div class="donate-form__input-wrapper">
+                                <input class="donate-form__input donate-form__input--modal donate-form__input--accient donate-form__input--border-orange"
+                                       type="number" name="donate__form" id="" min="0" value="500"
+                                       onfocus="this.value=''" onblur="this.value='500'">
+                                <span class="donate-form__input-thumb donate-form__input-thumb--modal-form">р/месяц</span>
+                            </div>
+                            <button class="button button--modal-form button--green" type="submit">Помочь</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-overlay visually-hidden"></div>
 
 <script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
 <!-- <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script> -->
 <script src="js/pz-carousel.js"></script>
+<script src="js/common.js"></script>
 </body>
 
 </html>

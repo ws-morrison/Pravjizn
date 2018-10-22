@@ -1,0 +1,87 @@
+.report {
+  background-color: #fafaf9;
+}
+.report-list {
+  list-style: none;
+}
+.report-list__item:not(:last-child) {
+  border-bottom: 1px solid #e2e2d9;
+}
+.report-list__item-inner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.report-list__title {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  font-family: $primary-medium;
+  font-size: $font-size-l;
+  color: $primary-text;
+  line-height: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.report-list__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $secondary-regular;
+  font-size: $font-size-m;
+  color: #212121;
+  line-height: 26px;
+}
+
+.report-list__img-wrapper {
+  position: relative;
+  max-width: 821px;
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(../img/icon/play_orange.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 17px 21px;
+    background-size: 17px 21px;
+    background-position: center;
+    top: 20%;
+    left: 37%;
+  }
+}
+.report-list__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+}
+
+// DESKTOP
+@media (min-width: $desktop) {
+  .report-list__title {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  font-family: $primary-medium;
+  font-size: $font-size-desktop-m;
+  color: $primary-text;
+  line-height: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+  .report-list__item-inner {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .report-list__img-wrapper {
+    &::before {
+      top: 36%;
+      left: 45%;
+    }
+  }
+}
