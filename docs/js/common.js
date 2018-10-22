@@ -94,8 +94,22 @@ $(document).ready(function() {
   });
 
   // Show Book modal
-  $.exitIntent("enable");
-  $(document).bind("exitintent", function() {
+  // $.exitIntent("enable");
+  // $(document).bind("exitintent", function() {
+  //   $(".modal__book").removeClass("visually-hidden");
+  // });
+
+  $(".showBookModal").click(function() {
     $(".modal__book").removeClass("visually-hidden");
+    $(".modal-overlay").removeClass("visually-hidden");
+  });
+
+  $(".button__close-modal").click(function() {
+    $(".modal__book").addClass("visually-hidden");
+    $(".modal-overlay").addClass("visually-hidden");
+  });
+  $(".modal-overlay").click(function() {
+    $(".modal__book").toggleClass("visually-hidden");
+    $(".modal-overlay").toggleClass("visually-hidden");
   });
 });
