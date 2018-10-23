@@ -1,6 +1,9 @@
 .promo-app {
   padding-top: 30px;
 }
+  .promo-app--right {
+    display: none;
+  }
 
 .promo-app__heading {
   font-family: $primary-medium;
@@ -113,6 +116,10 @@
     order: 1;
     margin-right: auto;
     margin-left: 40px;
+  }
+  .promo-app--right {
+    display: block;
+    margin-right: unset;
   }
 
   .promo-app__text-wrapper {

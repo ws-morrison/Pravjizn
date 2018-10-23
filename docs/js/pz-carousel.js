@@ -9,13 +9,30 @@ $(document).ready(function() {
     responsiveBaseWidth: ".shop-carousel__item",
     responsive: {
       320: {
-        items: 1,
-        // nav: true
+        items: 1
       },
       768: {
-        items: 4,
-        // nav: true
+        items: 4
       }
-    },
+    }
+  });
+
+  $(".history-slider").owlCarousel({
+    // items: 1,
+    loop: true,
+    nav: false,
+    dots: true,
+    margin: 15,
+    responsiveBaseWidth: "history-slider__item",
+    responsive: {
+      320: {
+        items: 1,
+        dots: true
+      },
+      768: {
+        items: 3,
+        dots: false
+      }
+    }
   });
 });

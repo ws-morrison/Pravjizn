@@ -69,6 +69,15 @@
       margin-bottom: 31px;
       color: $color2;
     }
+    &--yellow {
+      color: $yellow-text;
+    }
+    &--narrow {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      font-family: $primary-thin;
+    }
   }
 
   @media (min-width: $desktop-full) {
@@ -78,6 +87,13 @@
       margin-bottom: 19px;
 
       &--big {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 51px;
+      }
+      &--narrow {
+        font-family: $primary-thin;
+        width: 50%;
         font-size: 45px;
         line-height: 50px;
         margin-bottom: 51px;

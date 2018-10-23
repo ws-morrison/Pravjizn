@@ -8,9 +8,18 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  &--sober-bg {
+    background-image: url("../img/bratstvo_main_big.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1240px;
+    margin-bottom: 50px;
+
+    //
+    background-color: #4d80a9;
+  }
 
   @include title-text($white, $white);
-
 }
 
 .header__title {
@@ -58,9 +67,23 @@
   text-transform: lowercase;
 }
 
+.header__slider {
+  &-item {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &-text {
+    font-family: $primary-regular;
+    color: $white;
+    font-size: $font-size-s;
+    text-align: center;
+    line-height: 20px;
+  }
+}
+
 // DESKTOP
 @media (min-width: $desktop) {
-
   .header {
     background-repeat: no-repeat;
     background-position: center 0;
@@ -70,11 +93,14 @@
       background-image: url("../img/main_bg.png");
       background-size: 1440px 648px;
     }
-
   }
 
   .header__title-text {
     max-width: 521px;
+    // &--narrow {
+    //   font-family: $primary-thin;
+    //   width: 50%;
+    // }
   }
 
   .header-nav {
@@ -82,11 +108,32 @@
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 90px;
+    &--space-between {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .header__slider {
+    &-item {
+      display: block;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    &-text {
+      font-family: $primary-regular;
+      color: $white;
+      font-size: $font-size-desktop-s;
+      text-align: center;
+      line-height: 30px;
+      &--bold {
+        font-family: $primary-bold;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-full) {
-
   .header {
     padding-bottom: 111px;
     min-height: 648px;
@@ -99,13 +146,19 @@
     &--big {
       max-width: 100%;
     }
-
+    // &--narrow {
+    //   font-family: $primary-thin;
+    //   width: 50%;
+    // }
   }
 
   .header-nav {
     width: 100%;
     justify-content: flex-start;
     margin-bottom: 125px;
+    &--space-between {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-
 }

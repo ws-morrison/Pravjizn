@@ -33,6 +33,14 @@
   &__author-heading {
     margin-bottom: 5px;
   }
+
+  &--grey-bg {
+    padding-top: 50px;
+    background-color: rgba(236, 236, 229, 0.23);
+  }
+  &__greeting-text {
+    display: block;
+  }
 }
 
 .pod__item {
@@ -59,13 +67,18 @@
   width: 468px;
   height: 384px;
   bottom: 0px;
-  left: -65px;
+  left: -35%;
+  // left: -65px;
   right: 0px;
   margin-left: auto;
   margin-right: auto;
   &--modal {
     width: 320px;
     height: 285px;
+  }
+  &--sober {
+    bottom: -20px;
+    left: -95px;
   }
 }
 
@@ -83,6 +96,12 @@
     left: -10px;
     position: relative;
   }
+  &--sober {
+    width: 280px;
+    background-image: url("../img/woman_sad.png");
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
 }
 
 .pod__quote-text {
@@ -96,6 +115,18 @@
   line-height: 26px;
   color: $link-color;
   font-family: $secondary-regular;
+}
+
+//
+.history-slider {
+  margin-bottom: 90px;
+}
+.history-slider__caption {
+  font-family: $secondary-regular;
+}
+
+.history-slider__img {
+  margin-bottom: 15px;
 }
 
 @media (min-width: 500px) {
@@ -114,6 +145,19 @@
     }
   }
 }
+
+@media (min-width: $tablet) {
+  .pod__img {
+    &--sober {
+      width: 380px;
+      // background-image: url("../../img/woman_sad.png");
+      background-size: 380px;
+      background-repeat: no-repeat;
+      // margin-bottom: 30px;
+    }
+  }
+}
+
 @media (min-width: $desktop) {
   .pod {
     padding-bottom: 180px;
@@ -143,6 +187,10 @@
       height: auto;
       max-width: 192px;
     }
+    &--grey-bg {
+      padding-top: 120px;
+      background-color: rgba(236, 236, 229, 0.23);
+    }
   }
 
   .pod__item {
@@ -150,7 +198,9 @@
     margin: unset;
     margin-right: auto;
   }
-
+  .pod-item__title {
+    padding-top: 50px;
+  }
   .pod__item-wrapper {
     padding-bottom: 0;
   }
@@ -165,6 +215,10 @@
       width: 586px;
       left: 81%;
     }
+    &--sober {
+      width: 460px;
+      left: 500px;
+    }
   }
 
   .pod__img {
@@ -174,6 +228,18 @@
     &--modal {
       width: 75%;
     }
+    &--sober {
+      width: 460px;
+    }
+  }
+
+  .pod__quote-text {
+    &--narrow {
+      width: 77%;
+    }
+  }
+  .history-slider {
+    padding-top: 120px;
   }
 }
 
@@ -189,14 +255,20 @@
   .pod__item {
     max-width: 510px;
   }
-
+  .pod-item__title {
+    padding-top: 70px;
+  }
   .pod-item__title-text {
     margin-top: 0;
     margin-bottom: 40px;
+    width: 92%;
   }
 
   .pod__img-wrapper {
     left: 500px;
+    &--sober {
+      left: 600px;
+    }
   }
 
   .pod__author {
