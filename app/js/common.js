@@ -187,7 +187,7 @@ $(document).ready(function () {
             $('.jsTitle').html(currentTitle);
             setTimeout(function() {
                 $('.jsTitle').fadeTo( 1000, 0 )
-            }, 4000);
+            }, 5000);
 
             if (i <= titles.length) {
                 i++;
