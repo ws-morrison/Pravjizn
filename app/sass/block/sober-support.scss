@@ -1,0 +1,55 @@
+.sober-support {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  // overflow: hidden;
+
+  @include author-heading-text($primary-text);
+
+  @include title-text($faded, $primary-text);
+
+  &__title {
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+    &--big {
+      margin-bottom: 0;
+    }
+  }
+  &__lead {
+    font-family: $primary-thin;
+    font-size: $font-size-xl;
+    color: $primary-text;
+    line-height: 35px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .sober-support {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__title--big {
+      margin-bottom: 75px;
+    }
+    &__lead-wrapper {
+      margin: 0 auto;
+      width: 65%;
+    }
+    &__lead {
+      font-size: $font-size-2xl;
+      line-height: 40px;
+      margin-top: 65px;
+    }
+  }
+}

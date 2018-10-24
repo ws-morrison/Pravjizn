@@ -1,0 +1,106 @@
+.sober-webinar {
+  padding-top: 50px;
+  padding-bottom: 37px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include author-heading-text($primary-text);
+
+  @include title-text($faded, $primary-text);
+
+  &__title {
+    align-items: center;
+    margin-bottom: 65px;
+  }
+
+  &__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+    &--big {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    line-height: 26px;
+    color: $primary-text;
+    margin: 0;
+  }
+
+  &__input {
+    display: block;
+    margin: 0;
+    max-width: 460px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    line-height: 26px;
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    color: $faded;
+  }
+
+  &--bg {
+    background-color: $secondary-bg;
+  }
+  &__checkbox-label {
+    font-family: $secondary-regular;
+    font-size: $font-size-xs;
+    color: $faded;
+    line-height: 15px;
+    &--accient {
+      text-decoration: none;
+      color: $accient;
+    }
+  }
+}
+
+input[type="checkbox"].sober-webinar__checkbox:not(:checked)  {
+  width: 30px;
+  height: 30px;
+}
+
+
+input[type="checkbox"].sober-webinar__checkbox:checked  {
+  width: 30px;
+  height: 30px;
+}
+
+
+input[type="text"].sober-webinar__input:hover,
+input[type="number"].sober-webinar__input:hover,
+input[type="email"].sober-webinar__input:hover {
+  outline: none;
+  opacity: 0.5;
+  box-shadow: 0 0 1px 1px #212121;
+}
+
+input[type="text"].sober-webinar__input:focus,
+input[type="number"].sober-webinar__input:focus,
+input[type="email"].sober-webinar__input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #212121;
+  color: #212121;
+}
+
+input[value].sober-webinar__input {
+  color: $primary-text;
+}
+
+@media (min-width: $desktop) {
+  .sober-webinar {
+    padding-top: 120px;
+    padding-bottom: 170px;
+
+    &__title--big {
+      margin-bottom: 65px;
+    }
+  }
+}

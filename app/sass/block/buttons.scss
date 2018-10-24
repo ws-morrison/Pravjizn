@@ -113,6 +113,23 @@
       background-color: $button-solid-orange;
     }
   }
+
+  &--vk {
+    color: $vk;
+    border: 2px solid $vk;
+    background-color: inherit;
+    // position: relative;
+    // &::before {
+    //   position: absolute;
+    //   display: block;
+    //   content: "";
+    //   width: 20px;
+    //   height: 12px;
+    //   background-image: url(../img/icon/vk_login.svg);
+    //   background-repeat: no-repeat;
+    //   left: 40px;
+    // }
+  }
 }
 
 .button--yellow {

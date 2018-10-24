@@ -27,6 +27,13 @@
     font-size: 100px;
     line-height: 100px;
   }
+  &__login-vk {
+    width: 20px;
+    height: 12px;
+    background-image: url(../img/icon/vk_login.svg);
+    background-repeat: no-repeat;
+    margin-right: 15px;
+  }
 
   &__play {
     width: 80px;

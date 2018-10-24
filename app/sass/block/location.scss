@@ -1,0 +1,39 @@
+.location {
+  padding-top: 50px;
+  // padding-bottom: 50px;
+
+  @include author-heading-text($primary-text);
+
+  @include title-text($faded, $primary-text);
+
+  &__title {
+    align-items: center;
+    margin-bottom: 65px;
+  }
+
+  &__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+    &--big {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .location {
+    padding-top: 125px;
+    &__title--big {
+      margin-bottom: 65px;
+    }
+    &__map {
+      width: 78%;
+      margin: 0 auto;
+
+      // Временно
+      max-width: 1025px;
+    }
+  }
+}

@@ -53,4 +53,31 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(".sober-support__slider").owlCarousel({
+    // items: 1,
+    loop: true,
+    nav: false,
+    dots: true,
+    margin: 35,
+    responsiveBaseWidth: "sober-support__item",
+    responsive: {
+      320: {
+        items: 1,
+        dots: true,
+      },
+      768: {
+        items: 2
+      },
+      1024: {
+        items: 2
+      },
+      1260: {
+        items: 2
+      },
+      1440: {
+        items: 2
+      }
+    }
+  });
 });
