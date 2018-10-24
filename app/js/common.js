@@ -146,7 +146,7 @@ $(document).ready(function () {
         modalClose();
     });
 
-    $('.jsModalCloseBtn').on('click', function(e) {
+    $('.jsModalCloseBtn').on('click', function (e) {
         e.preventDefault();
         modalClose();
     });
@@ -162,5 +162,43 @@ $(document).ready(function () {
         $('.modal-overlay').addClass('visually-hidden');
     }
 
+    function toSwitchTitle() {
+
+    }
+
+    //title rotation
+    function titleRotation() {
+
+        var titles = [
+            'Благотворительный Фонд',
+            'Воскресная школа онлайн',
+            'Единый личный кабинет священнослужителя',
+            'Интернет-магазин',
+            'Миссионерский YouTube канал',
+            'Моб. Приложения Православный Календарь и Мессенджер'
+        ];
+
+        var i = 1;
+
+        setInterval(function () {
+            var currentTitle = titles[i];
+
+            $('.jsTitle').fadeTo( 1000, 1 );
+            $('.jsTitle').html(currentTitle);
+            setTimeout(function() {
+                $('.jsTitle').fadeTo( 1000, 0 )
+            }, 4000);
+
+            if (i <= titles.length) {
+                i++;
+            } else {
+                i = 0;
+            }
+            
+        }, 6000);
+
+    }
+
+    titleRotation();
 
 });

@@ -547,30 +547,6 @@ input:focus {
   color: #FF482F;
   font-family: "Museo Sans Cyrl Regular", sans-serif; }
 
-@-webkit-keyframes ripple {
-  0% {
-    opacity: 0; }
-  25% {
-    opacity: 0.25; }
-  50% {
-    opacity: 0.5; }
-  75% {
-    opacity: 0.75; }
-  100% {
-    opacity: 1; } }
-
-@keyframes ripple {
-  0% {
-    opacity: 0; }
-  25% {
-    opacity: 0.25; }
-  50% {
-    opacity: 0.5; }
-  75% {
-    opacity: 0.75; }
-  100% {
-    opacity: 1; } }
-
 .icon {
   display: block;
   content: ""; }
@@ -1023,6 +999,17 @@ input:focus {
   font-size: 16px;
   color: #FFF;
   text-transform: lowercase; }
+
+.header__title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 @media (min-width: 1024px) {
   .header {
