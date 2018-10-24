@@ -79,6 +79,8 @@
     font-size: $font-size-s;
     text-align: center;
     line-height: 20px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -111,6 +113,9 @@
     &--space-between {
       display: flex;
       justify-content: space-between;
+    }
+    &--small {
+      margin-bottom: 15px;
     }
   }
 
@@ -159,6 +164,9 @@
     &--space-between {
       display: flex;
       justify-content: space-between;
+    }
+    &--small {
+      margin-bottom: 15px;
     }
   }
 }

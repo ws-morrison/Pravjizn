@@ -71,12 +71,14 @@
     }
     &--yellow {
       color: $yellow-text;
+      margin-bottom: 0;
     }
     &--narrow {
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 31px;
       font-family: $primary-thin;
+      margin-bottom: 30px;
     }
   }
 
@@ -96,7 +98,10 @@
         width: 50%;
         font-size: 45px;
         line-height: 50px;
-        margin-bottom: 51px;
+        // margin-bottom: 51px;
+      }
+      &--yellow {
+        margin-bottom: 0;
       }
     }
   }

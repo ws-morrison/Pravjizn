@@ -733,12 +733,14 @@ a:focus {
       margin-bottom: 31px;
       color: #FFF; }
     .header__title-text--yellow {
-      color: #F7F606; }
+      color: #F7F606;
+      margin-bottom: 0; }
     .header__title-text--narrow {
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 31px;
-      font-family: "Museo Cyrillic Thin", sans-serif; }
+      font-family: "Museo Cyrillic Thin", sans-serif;
+      margin-bottom: 30px; }
   @media (min-width: 1260px) {
     .header__title-text {
       font-size: 20px;
@@ -752,8 +754,9 @@ a:focus {
         font-family: "Museo Cyrillic Thin", sans-serif;
         width: 50%;
         font-size: 45px;
-        line-height: 50px;
-        margin-bottom: 51px; } }
+        line-height: 50px; }
+      .header__title-text--yellow {
+        margin-bottom: 0; } }
 
 .header__title {
   display: -webkit-box;
@@ -827,7 +830,9 @@ a:focus {
   color: #FFF;
   font-size: 16px;
   text-align: center;
-  line-height: 20px; }
+  line-height: 20px;
+  padding: 0;
+  margin: 0; }
 
 @media (min-width: 1024px) {
   .header {
@@ -855,6 +860,8 @@ a:focus {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+    .header-nav--small {
+      margin-bottom: 15px; }
   .header__slider-item {
     display: block;
     padding-left: 80px;
@@ -892,7 +899,9 @@ a:focus {
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between; }
+    .header-nav--small {
+      margin-bottom: 15px; } }
 
 .donate-form {
   margin: 0;
@@ -912,6 +921,8 @@ a:focus {
           box-sizing: border-box; }
   .donate-form--modal {
     padding: 0; }
+  .donate-form--top {
+    margin-top: 30px; }
 
 .donate-form__text-title {
   display: inline-block;
@@ -1054,6 +1065,8 @@ a:focus {
           -ms-flex-direction: row;
               flex-direction: row;
       margin-top: 50px; }
+    .donate-form--top {
+      margin-top: 76px; }
   .donate-form__title {
     margin: 0;
     margin-bottom: 50px;
@@ -1616,12 +1629,14 @@ a:focus {
       margin-bottom: 31px;
       color: #212121; }
     .feedback__title-text--yellow {
-      color: #F7F606; }
+      color: #F7F606;
+      margin-bottom: 0; }
     .feedback__title-text--narrow {
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 31px;
-      font-family: "Museo Cyrillic Thin", sans-serif; }
+      font-family: "Museo Cyrillic Thin", sans-serif;
+      margin-bottom: 30px; }
   @media (min-width: 1260px) {
     .feedback__title-text {
       font-size: 20px;
@@ -1635,8 +1650,9 @@ a:focus {
         font-family: "Museo Cyrillic Thin", sans-serif;
         width: 50%;
         font-size: 45px;
-        line-height: 50px;
-        margin-bottom: 51px; } }
+        line-height: 50px; }
+      .feedback__title-text--yellow {
+        margin-bottom: 0; } }
 
 .feedback__title {
   max-width: 500px;
@@ -1831,12 +1847,14 @@ a:focus {
       margin-bottom: 31px;
       color: #212121; }
     .pod__title-text--yellow {
-      color: #F7F606; }
+      color: #F7F606;
+      margin-bottom: 0; }
     .pod__title-text--narrow {
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 31px;
-      font-family: "Museo Cyrillic Thin", sans-serif; }
+      font-family: "Museo Cyrillic Thin", sans-serif;
+      margin-bottom: 30px; }
   @media (min-width: 1260px) {
     .pod__title-text {
       font-size: 20px;
@@ -1850,8 +1868,9 @@ a:focus {
         font-family: "Museo Cyrillic Thin", sans-serif;
         width: 50%;
         font-size: 45px;
-        line-height: 50px;
-        margin-bottom: 51px; } }
+        line-height: 50px; }
+      .pod__title-text--yellow {
+        margin-bottom: 0; } }
   .pod__title {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -4513,12 +4532,14 @@ input[value].form-gift__input {
     margin-bottom: 31px;
     color: #212121; }
   .gallery__title-text--yellow {
-    color: #F7F606; }
+    color: #F7F606;
+    margin-bottom: 0; }
   .gallery__title-text--narrow {
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 31px;
-    font-family: "Museo Cyrillic Thin", sans-serif; }
+    font-family: "Museo Cyrillic Thin", sans-serif;
+    margin-bottom: 30px; }
 
 @media (min-width: 1260px) {
   .gallery__title-text {
@@ -4533,8 +4554,9 @@ input[value].form-gift__input {
       font-family: "Museo Cyrillic Thin", sans-serif;
       width: 50%;
       font-size: 45px;
-      line-height: 50px;
-      margin-bottom: 51px; } }
+      line-height: 50px; }
+    .gallery__title-text--yellow {
+      margin-bottom: 0; } }
 
 .gallery__content-text {
   margin: 0;
