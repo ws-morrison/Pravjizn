@@ -24,6 +24,14 @@
   &--white {
     color: $white;
     border: 2px solid $white;
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #238f4b;
+    }
+    &:active {
+      opacity: 0.8;
+    }
   }
 
   &--red {
@@ -35,6 +43,11 @@
     color: #026837;
     border: 2px solid #026837;
     box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.1);
+    &:hover,
+    &:focus {
+      color: #02c7b5;
+      border: 2px solid #02c7b5;
+    }
   }
 
   &--big-white-blue {
@@ -42,11 +55,28 @@
     color: #1b1564;
     border: 2px solid #1b1564;
     box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.1);
+    &:hover,
+    &:focus {
+      color: #5b71a6;
+      border: 2px solid #5b71a6;
+    }
   }
 
   &--login {
     color: $white;
     border: 2px solid rgba(256, 256, 256, 0.25);
+
+    &:hover,
+    &:focus {
+      color: $primary-text;
+      border: 2px solid $button-yellow;
+      background-color: $button-yellow;
+    }
+    &:active {
+      color: $primary-text;
+      border: 2px solid $button-solid-orange;
+      background-color: $button-solid-orange;
+    }
 
     span {
       display: inline-block;
@@ -71,66 +101,156 @@
   &--border-ylw {
     color: $white;
     border: 2px solid #f7f606;
+    &:hover,
+    &:focus {
+      color: $primary-text;
+      border: 2px solid $button-yellow;
+      background-color: $button-yellow;
+    }
+    &:active {
+      color: $primary-text;
+      border: 2px solid $button-solid-orange;
+      background-color: $button-solid-orange;
+    }
   }
 }
 
 .button--yellow {
   background-image: linear-gradient(90deg, #f7f606 0%, #f7a406 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #f7f606;
+  }
+  &:active {
+    background-image: none;
+    background-color: #f7a406;
+  }
 }
 
 .button--green {
   color: $white;
   background-image: linear-gradient(90deg, #02c7b5 0%, #029550 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #02c7b5;
+  }
+  &:active {
+    background-image: none;
+    background-color: #029550;
+  }
 }
 
 .button--blue {
+  color: $white;
   background-image: linear-gradient(90deg, #2fb9aa 0%, #4794ef 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #2fb9aa;
+  }
+  &:active {
+    background-image: none;
+    background-color: #4794ef;
+  }
 }
 
 .button--orange {
   color: $white;
   background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #faa533;
+  }
+  &:active {
+    background-image: none;
+    background-color: #c42f2e;
+  }
 }
 .button--purple {
   color: $white;
   background-image: linear-gradient(90deg, #c65ada 0%, #7547b5 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #c65ada;
+  }
+  &:active {
+    background-image: none;
+    background-color: #7547b5;
+  }
 }
 
 .button--light-green {
   color: $white;
   background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #5bdbc7;
+  }
+  &:active {
+    background-image: none;
+    background-color: #40a854;
+  }
 }
 
 .button--dark-blue {
   color: $white;
   background-image: linear-gradient(90deg, #0085ef 0%, #00a7a7 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #0085ef;
+  }
+  &:active {
+    background-image: none;
+    background-color: #00a7a7;
+  }
 }
 
 .button--red {
   background: #ea3518;
+
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: #e7533c;
+  }
+  &:active {
+    background-image: none;
+    background-color: #c42f2e;
+  }
 }
 
 // Modal Close Button
 .button__close-modal {
-  display: block;
-  width: 16px;
-  height: 16px;
-  border: none;
-  background-image: url("../../img/closer_icon.svg");
-  background-color: inherit;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 30px;
-  margin-top: 30px;
+  //display: block;
+  //border: none;
+  //width: 16px;
+  //height: 16px;
+  //background-image: url("../../img/closer_icon.svg");
+  //background-color: transparent;
+  //background-repeat: no-repeat;
+  //position: absolute;
+  //right: 15px;
+  //margin-top: 15px;
 }
-
+@media (min-width: $desktop) {
+  .button__close-modal {
+    //right: 30px;
+    //margin-top: 30px;
+  }
+}
 @media (min-width: $desktop-full) {
   // NEW
   .button {

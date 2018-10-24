@@ -1,63 +1,73 @@
-.yt-channel {
+.channel {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 81px;
   margin-bottom: 65px;
 }
-.yt__desc {
+
+.channel__desc {
   width: 270px;
   margin: 0 auto;
   display: flex;
-  // flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 50px;
 }
-.yt__desc-button {
+
+.channel__desc-button {
   display: none;
 }
-.yt__desc-img {
+
+.channel__desc-img {
   width: 60px;
   height: 60px;
   background-image: url("../img/logo_youtube.png");
   background-repeat: no-repeat;
 }
-.yt__text {
+
+.channel__text {
   font-family: $secondary-regular;
   font-size: $font-size-s;
   line-height: 20px;
   margin: 0;
+
   &--large {
     font-family: $primary-regular;
     font-size: $font-size-l;
     margin: 0;
     margin-bottom: 5px;
   }
+
   &--grey {
     color: $faded;
-     line-height: 18px;
+    line-height: 18px;
   }
+
 }
-.yt__desc-inner {
+
+.channel__desc-inner {
   width: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.yt__items-wrapper {
+
+.channel__items-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.yt__video-preview {
+.channel__video-preview {
   width: 260px;
   height: 230px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 
   background-repeat: no-repeat;
   &--1 {
@@ -70,17 +80,14 @@
     background-image: url("../img/youtube_preview_3.png");
   }
 }
-.yt__button {
+
+.channel__button {
   width: 160px;
-  //height: 60px;
   background-color: rgba(33, 33, 33, 0.5);
-  // opacity: 0.8;
 }
 
-.yt__button-thumb {
+.channel__button-thumb {
   display: block;
-  // content: "►";
-  // color: $white;
   margin: 0 auto;
   width: 12px;
   height: 15px;
@@ -88,14 +95,14 @@
   background-repeat: no-repeat;
 }
 
-.yt__button-text {
+.channel__button-text {
   display: none;
   font-family: $secondary-regular;
   font-size: $font-size-s;
   color: $white;
 }
 
-.yt__item-caption {
+.channel__item-caption {
   display: block;
   max-width: 260px;
   font-family: $secondary-regular;
@@ -105,18 +112,17 @@
   margin-bottom: 30px;
 }
 
-.yt__sub-button {
+.channel__sub-button {
   width: 260px;
-  //height: 60px;
-  margin-bottom: 60px;
   background-color: $yt-red;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 31px;
   align-items: center;
   line-height: 16px;
 }
 
-.yt__sub-button-thumb {
+.channel__sub-button-thumb {
   display: block;
   margin-right: 20px;
   width: 24px;
@@ -124,12 +130,13 @@
   background-image: url("../img/youtube_icon.png");
   background-repeat: no-repeat;
 }
-.yt__sub-button-inner {
+
+.channel__sub-button-inner {
   display: block;
   width: 160px;
 }
 
-.yt__sub-button-text {
+.channel__sub-button-text {
   text-align: left;
   display: block;
   font-family: $secondary-regular;
@@ -137,14 +144,32 @@
   color: $white;
 }
 
+.channel__subscribe-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #9B9B9B;
+
+  .icon {
+    margin-bottom: 10px;
+  }
+
+}
+
 // DESKTOP
 @media (min-width: 1024px) {
-  .yt-channel {
-  padding-top: 110px;
-  padding-bottom: 120px;
-  margin-bottom: 70px;
-}
-  .yt__desc {
+
+  .channel-channel {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    margin-bottom: 70px;
+  }
+
+  .channel__desc {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -152,7 +177,8 @@
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  .yt__desc-button {
+
+  .channel__desc-button {
     display: flex;
     align-self: center;
     width: 270px;
@@ -160,42 +186,140 @@
     border: 2px solid rgba(33, 33, 33, 0.2);
     color: $yt-red;
     margin: 0px;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #ff482f;
+      color: #ff482f;
+    }
+    &:active {
+      border: 2px solid #d13d24;
+      color: #d13d24;
+    }
   }
 
-  .yt__sub-button-inner {
+  .channel__sub-button-inner {
     display: block;
     width: 260px;
     text-align: left;
   }
 
-  .yt__button {
+  .channel__button {
     width: 267px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .yt__sub-button-text {
-  text-align: center;
-  display: block;
-  font-size: $font-size-s;
-}
-  .yt__button-text {
+
+  .channel__sub-button-text {
+    text-align: center;
+    display: block;
+    font-size: $font-size-s;
+  }
+
+  .channel__button-text {
     display: block;
     padding-right: 30px;
   }
-  .yt__items-wrapper {
+
+  .channel__items-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  .yt__video-preview {
-    width: 366px;
-    min-height: 230px;
+
+  .channel__video-item {
+    max-width: 314px;
+    padding-right: 10px;
+    box-sizing: border-box;
   }
-  .yt__sub-button {
+
+  .channel__items-wrapper {
+
+    .channel__video-item:last-child {
+      padding-right: 0;
+    }
+
+  }
+
+  .channel__video-preview {
+    width: 304px;
+    height: 198px;
+    min-height: auto;
+
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  .channel__sub-button {
     width: 365px;
+
+    &:hover,
+    &:focus {
+      background-color: #ff482f;
+    }
+    &:active {
+      background-color: #d13d24;
+    }
+
   }
+
+
+  .channel__subscribe-text {
+    flex-direction: row;
+    justify-content: center;
+
+    span {
+      order: 1;
+    }
+
+    .icon {
+      order: 2;
+
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+  }
+
+}
+
+@media (min-width: 1260px) {
+
+  .channel {
+
+    .container {
+      padding: 0px 50px;
+    }
+
+  }
+
+  .channel__items-wrapper {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .channel__video-item {
+    max-width: 365px;
+    padding: 0px;
+  }
+
+  .channel__video-preview {
+    width: 365px;
+    height: 230px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .channel {
+
+    .container {
+      padding: 0px 157px;
+    }
+
+  }
+
 }

@@ -48,8 +48,9 @@ gulp.task("scripts", function() {
         .src([
             // Берем все необходимые библиотеки
             "app/libs/jquery/dist/jquery.min.js", // Берем jQuery
+            "app/libs/owl.carousel/dist/owl.carousel.min.js", // Берем OWl
             "app/libs/datepicker/datepicker.js",
-            "app/libs/owl.carousel/dist/owl.carousel.min.js" // Берем OWl
+            "app/libs/exit-intent/jquery.exitintent.min.js"
         ])
         .pipe(concat("libs.min.js")) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
