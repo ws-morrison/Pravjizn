@@ -1,5 +1,6 @@
 .modal {
-  display: flex;
+  display: none;
+  position: relative;
   flex-direction: column;
   top: 20px;
   max-width: 1358px;
@@ -13,11 +14,33 @@
   background-color: #ffffff;
   z-index: 103;
   box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.5);
+
   &--overflow {
     position: absolute;
-    // overflow: scroll;
-    // height: 100%;
   }
+
+  &__close-btn {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    right: 15px;
+
+    font-size: 0px;
+    background-image: url("../../img/closer_icon.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+    z-index: 10;
+  }
+
+}
+
+.modal.show {
+  display: flex;
 }
 
 .modal__col-1 {
@@ -147,7 +170,7 @@
 // DESKTOP
 @media (min-width: $desktop) {
   .modal {
-    display: flex;
+    //display: flex;
     // position: fixed;
     flex-direction: row;
     top: 100px;
@@ -166,6 +189,12 @@
     &--column {
       flex-direction: column;
     }
+
+    &__close-btn {
+      top: 30px;
+      right: 30px;
+    }
+
   }
 
   .modal__col-1 {
