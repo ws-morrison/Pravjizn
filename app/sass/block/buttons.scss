@@ -234,21 +234,21 @@
 
 // Modal Close Button
 .button__close-modal {
-  display: block;
-  width: 16px;
-  height: 16px;
-  border: none;
-  background-image: url("../../img/closer_icon.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 15px;
-  margin-top: 15px;
+  //display: block;
+  //border: none;
+  //width: 16px;
+  //height: 16px;
+  //background-image: url("../../img/closer_icon.svg");
+  //background-color: transparent;
+  //background-repeat: no-repeat;
+  //position: absolute;
+  //right: 15px;
+  //margin-top: 15px;
 }
 @media (min-width: $desktop) {
   .button__close-modal {
-    right: 30px;
-    margin-top: 30px;
+    //right: 30px;
+    //margin-top: 30px;
   }
 }
 @media (min-width: $desktop-full) {

@@ -5,6 +5,7 @@
 @import "fonts";
 @import "global";
 @import "icons";
+@import "../libs/datepicker/datepicker";
 
 //blocks
 @import "block/header";
@@ -16,7 +17,7 @@
 @import "block/pod";
 @import "block/programs";
 @import "block/app";
-@import "block/yt-channel";
+@import "block/channel";
 @import "block/services";
 @import "block/info-services";
 @import "block/info-desktop";
@@ -28,6 +29,7 @@
 @import "block/drop-menu";
 @import "block/shop-carousel";
 @import "block/logo";
+@import "block/datepicker-custom";
 
 @import "block/modal";
 @import "block/form-gift";

@@ -1,0 +1,79 @@
+.datepicker-top-left, .datepicker-top-right {
+  border: none;
+}
+
+.datepicker-top-left::before, .datepicker-top-right::before {
+  border: none;
+}
+
+.datepicker-container.dp-container {
+  width: 279px;
+  line-height: 21px;
+  font-family: $secondary-regular;
+  font-size: 16px;
+  color: #9B9B9B;
+
+  //border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+.datepicker-panel {
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  padding: 6px;
+}
+
+.datepicker-container::before, .datepicker-container::after {
+  display: none;
+}
+
+.dp-dates {
+  //display: flex;
+  //justify-content: center;
+}
+
+.dp-dates, .dp-months, .dp-years {
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    color: #212121;
+  }
+
+}
+
+.dp-dates__week {
+  display: flex;
+  justify-content: space-between;
+  color: #212121;
+
+  &::before {
+    display: none !important;
+  }
+
+  &::after {
+    display: none !important;
+  }
+}
+
+.datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+  color: $yt-red;
+}
+
+.datepicker-panel > ul > li.muted, .datepicker-panel > ul > li.muted:hover {
+  opacity: 0.4;
+}
+
+.datepicker-panel > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datepicker-panel > ul > li:hover, .datepicker-panel > ul > li.highlighted, .datepicker-panel > ul > li.highlighted:hover {
+  background-color: transparent;
+}
+
+.datepicker-panel > ul > li:hover {
+  opacity: 0.5;
+}

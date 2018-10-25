@@ -2,6 +2,26 @@
   padding-top: 65px;
   padding-bottom: 80px;
 }
+
+.patron-form {
+
+  input {
+    border: 1px solid #cccccc;
+  }
+
+  input:hover {
+    border-color: rgba(33, 33, 33, 0.54);
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #212121;
+    //box-shadow: 0 0 1px 0px #212121;
+    //border: none;
+  }
+
+}
+
 .patron__img-wrapper {
   display: flex;
   justify-content: center;
@@ -30,7 +50,6 @@
   box-sizing: border-box;
   width: 279px;
   min-height: 60px;
-  border: 1px solid #cccccc;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -52,37 +71,31 @@
   }
 }
 
-input[type="text"].patron-form__input:hover,
-input[type="number"].patron-form__input:hover,
-input[type="email"].patron-form__input:hover {
-  outline: none;
-  opacity: 0.5;
-  box-shadow: 0 0 1px 1px #212121;
+.patron-form__input-wrapper {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    padding: 20px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
 }
 
-input[type="text"].patron-form__input:focus,
-input[type="number"].patron-form__input:focus,
-input[type="email"].patron-form__input:focus {
-  outline: none;
-  box-shadow: 0 0 1px 1px #212121;
-  color: #212121;
-}
-
-input[value].patron-form__input {
-  color: $primary-text;
-}
-
-.patron-form__label--calendar-thumb::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/calendar_icon.svg");
-  background-repeat: no-repeat;
-  z-index: 2;
-  top: 48px;
-  left: 20px;
-}
+//.patron-form__input--date-mobile {
+//  position: relative;
+//  &::-webkit-datetime-edit { padding: 1em; }
+//  &::-webkit-datetime-edit-fields-wrapper { background: silver; }
+//  &::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+//  &::-webkit-datetime-edit-month-field { color: blue; }
+//  &::-webkit-datetime-edit-day-field { color: green; }
+//  &::-webkit-datetime-edit-year-field { color: purple; }
+//  &::-webkit-inner-spin-button { display: none; }
+//  &::-webkit-calendar-picker-indicator { background: orange; }
+//}
 
 .patron__button {
   width: 260px;

@@ -49,6 +49,14 @@
   border-width: 100%;
 }
 
+.info-services__wrapper.active {
+
+  .info-services__title {
+    color: $accient;
+  }
+
+}
+
 .info-services__wrapper:last-child {
   border-bottom: none;
   border-top: 1px solid $service-item-border;
