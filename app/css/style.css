@@ -661,6 +661,7 @@ a:focus {
     width: 60px;
     height: 45px;
     margin-right: 10px;
+    padding-right: 25px;
     background-image: url("../../img/icon/main_logo-green-small.svg");
     background-repeat: no-repeat; }
 
@@ -812,6 +813,11 @@ a:focus {
     top: 40%;
     left: 34%; }
 
+@media (min-width: 768px) {
+  .icon__footer {
+    margin-right: 0;
+    padding-right: 0; } }
+
 @media (min-width: 1024px) {
   .icon__bell-bg {
     display: block;
@@ -848,7 +854,16 @@ a:focus {
       background-image: url("../img/mini_arrow_white_down.svg");
       background-repeat: no-repeat;
       top: 45%;
-      left: 40%; } }
+      left: 40%; }
+  .icon__footer {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 45px;
+    margin-right: 10px;
+    padding-right: 25px;
+    background-image: url("../../img/icon/main_logo-green-small.svg");
+    background-repeat: no-repeat; } }
 
 .datepicker-container {
   background-color: #fff;
@@ -3988,6 +4003,10 @@ a:focus {
   max-height: 0;
   overflow: hidden; }
 
+.footer-list__sober {
+  margin: 0;
+  list-style: none; }
+
 .footer-list.show {
   max-height: 100%; }
 
@@ -4084,6 +4103,9 @@ a:focus {
 .promo-app--border {
   border-top: 2px solid #ece9cb; }
 
+.props__sober {
+  border: none; }
+
 @media (min-width: 768px) {
   .props,
   .social,
@@ -4114,6 +4136,13 @@ a:focus {
     padding-bottom: 65px; }
   .footer-item {
     width: 100%; }
+    .footer-item--order-left {
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+          -ms-flex-order: -1;
+              order: -1; }
+    .footer-item--sober-margin {
+      margin-left: 80px; }
   .footer-item__heading {
     text-align: left; }
   .footer-item__heading::after {
@@ -4152,6 +4181,7 @@ a:focus {
     padding-left: 137px;
     padding-right: 137px; }
   .props {
+    width: 370px;
     padding: 0; }
   .props__heading {
     margin-top: 0; } }
@@ -6285,7 +6315,103 @@ input[value].sober-webinar__input {
       margin: 0 auto; } }
 
 .way-to-help {
-  display: none; }
+  display: none;
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .way-to-help__author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .way-to-help__author-heading {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #212121; }
+  .way-to-help__author-caption {
+    font-family: "MuseoSansCyrl-500It", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121; }
+  .way-to-help__title {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .way-to-help__title-text {
+    display: inline-block;
+    margin-bottom: 29px;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9B9B9B; }
+    .way-to-help__title-text--big {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      color: #212121; }
+    .way-to-help__title-text--yellow {
+      color: #F7F606;
+      margin-bottom: 0; }
+    .way-to-help__title-text--narrow {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      font-family: "Museo Cyrillic Thin", sans-serif;
+      margin-bottom: 30px; }
+  @media (min-width: 1260px) {
+    .way-to-help__title-text {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 19px; }
+      .way-to-help__title-text--big {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 51px; }
+      .way-to-help__title-text--narrow {
+        font-family: "Museo Cyrillic Thin", sans-serif;
+        width: 50%;
+        font-size: 45px;
+        line-height: 50px; }
+      .way-to-help__title-text--yellow {
+        margin-bottom: 0; } }
+  .way-to-help__title {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 25px; }
+    .way-to-help__title--none {
+      display: none; }
+  .way-to-help__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0; }
+    .way-to-help__title-text--big {
+      margin-bottom: 0; }
+  .way-to-help__list {
+    display: none; }
 
 @media (min-width: 1024px) {
   .way-to-help {

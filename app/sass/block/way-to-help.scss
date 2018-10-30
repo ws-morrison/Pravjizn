@@ -1,32 +1,32 @@
 .way-to-help {
-  display: none;
-  // padding-top: 40px;
-  // padding-bottom: 50px;
+  // display: none;
+  padding-top: 40px;
+  padding-bottom: 50px;
 
-  // @include author-heading-text($primary-text);
+  @include author-heading-text($primary-text);
 
-  // @include title-text($faded, $primary-text);
+  @include title-text($faded, $primary-text);
 
-  // &__title {
-  //   align-items: center;
-  //   margin-bottom: 25px;
-  //   &--none {
-  //     display: none;
-  //   }
-  // }
+  &__title {
+    align-items: center;
+    margin-bottom: 25px;
+    &--none {
+      display: none;
+    }
+  }
 
-  // &__title-text {
-  //   display: inline-block;
-  //   margin-bottom: 15px;
-  //   margin-top: 0;
+  &__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0;
 
-  //   &--big {
-  //     margin-bottom: 0;
-  //   }
-  // }
-  // &__list {
-  //   display: none;
-  // }
+    &--big {
+      margin-bottom: 0;
+    }
+  }
+  &__list {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop) {

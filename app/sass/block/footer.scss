@@ -36,6 +36,11 @@
   overflow: hidden;
 }
 
+.footer-list__sober {
+  margin: 0;
+  list-style: none;
+}
+
 .footer-list.show {
   max-height: 100%;
 }
@@ -54,39 +59,31 @@
 .props {
   padding-top: 30px;
   padding-bottom: 40px;
-  // border-top: 2px solid $footer-border;
 }
+
 .props__heading {
   font-family: $primary-medium;
   font-size: $font-size-l;
   color: $primary-text;
 }
+
 .props__text-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .props__text {
   font-family: $secondary-regular;
   font-size: $font-size-s;
   color: $primary-text;
   line-height: 22px;
   position: relative;
-
-  // &--thumb::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 50px;
-  //   height: 50px;
-  //   background-image: url("../../img/icon/main_logo-green-small.svg");
-  //   background-repeat: no-repeat;
-  // }
 }
 
 .social {
   padding-top: 30px;
   padding-bottom: 40px;
-  // border-top: 2px solid $footer-border;
 }
 .social__heading {
   font-family: $primary-medium;
@@ -139,20 +136,11 @@
 .props,
 .social,
 .promo-app--border {
-  // position: relative;
   border-top: 2px solid #ece9cb;
 }
-
-// .props::before,
-// .social::before,
-// .promo-app--border::before {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 2px;
-//   background-color: #ECE9CB;
-//   background-size: 100% 100%;
-// }
+.props__sober {
+  border: none;
+}
 
 @media (min-width: $tablet) {
   .props,
@@ -179,15 +167,25 @@
     padding-top: 120px;
     padding-bottom: 65px;
   }
+
   .footer-item {
     width: 100%;
+    &--order-left {
+      order: -1;
+    }
+    &--sober-margin {
+      margin-left: 80px;
+    }
   }
+
   .footer-item__heading {
     text-align: left;
   }
+
   .footer-item__heading::after {
     display: none;
   }
+
   .footer-list {
     text-align: left;
   }
@@ -201,6 +199,7 @@
       flex-direction: row-reverse;
     }
   }
+
   .footer-container {
     padding-right: 20px;
     padding-left: 20px;
@@ -213,9 +212,12 @@
     padding-left: 137px;
     padding-right: 137px;
   }
+
   .props {
+    width: 370px;
     padding: 0;
   }
+
   .props__heading {
     margin-top: 0;
   }

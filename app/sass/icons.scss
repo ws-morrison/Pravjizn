@@ -68,6 +68,7 @@
     width: 60px;
     height: 45px;
     margin-right: 10px;
+    padding-right: 25px;
     background-image: url("../../img/icon/main_logo-green-small.svg");
     background-repeat: no-repeat;
   }
@@ -364,7 +365,14 @@
 //  background-color: #83818157;
 //  animation: ripple 0.15s ease;
 //}
-
+@media (min-width: $tablet) {
+  .icon {
+    &__footer {
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}
 @media (min-width: $desktop) {
   .icon__bell-bg {
     display: block;
@@ -400,6 +408,18 @@
       background-repeat: no-repeat;
       top: 45%;
       left: 40%;
+    }
+  }
+  .icon {
+    &__footer {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 45px;
+      margin-right: 10px;
+      padding-right: 25px;
+      background-image: url("../../img/icon/main_logo-green-small.svg");
+      background-repeat: no-repeat;
     }
   }
 }
