@@ -49,13 +49,22 @@
   color: $primary-text;
   text-decoration: none;
   line-height: 22px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
 }
 
 .props {
   padding-top: 30px;
   padding-bottom: 40px;
-  // border-top: 2px solid $footer-border;
 }
+
 .props__heading {
   font-family: $primary-medium;
   font-size: $font-size-l;
@@ -72,8 +81,8 @@
 .social {
   padding-top: 30px;
   padding-bottom: 40px;
-  // border-top: 2px solid $footer-border;
 }
+
 .social__heading {
   font-family: $primary-medium;
   font-size: $font-size-l;
@@ -125,20 +134,8 @@
 .props,
 .social,
 .promo-app--border {
-  // position: relative;
   border-top: 2px solid #ece9cb;
 }
-
-// .props::before,
-// .social::before,
-// .promo-app--border::before {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 2px;
-//   background-color: #ECE9CB;
-//   background-size: 100% 100%;
-// }
 
 @media (min-width: $tablet) {
   .props,

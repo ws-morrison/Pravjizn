@@ -154,7 +154,13 @@ $(document).ready(function () {
     $(".jsShowHistory").click(function (e) {
         e.preventDefault();
         $(".modal__history").addClass("show");
-        $(".modal-overlay").removeClass("visually-hidden");
+        $(".modal-overlay").removeClass('visually-hidden');
+        $("html, body").animate(
+            {
+                scrollTop: $("body").offset().top
+            },
+            2000
+        );
     });
 
     function modalClose() {
@@ -183,10 +189,10 @@ $(document).ready(function () {
         setInterval(function () {
             var currentTitle = titles[i];
 
-            $('.jsTitle').fadeTo( 1000, 1 );
+            $('.jsTitle').fadeTo(1000, 1);
             $('.jsTitle').html(currentTitle);
-            setTimeout(function() {
-                $('.jsTitle').fadeTo( 1000, 0 )
+            setTimeout(function () {
+                $('.jsTitle').fadeTo(1000, 0)
             }, 5000);
 
             if (i <= titles.length) {
@@ -194,7 +200,7 @@ $(document).ready(function () {
             } else {
                 i = 0;
             }
-            
+
         }, 6000);
 
     }
@@ -202,7 +208,6 @@ $(document).ready(function () {
     titleRotation();
 
     //Datepicker https://fengyuanchen.github.io/datepicker/
-
     $('.jsDatePicker').datepicker({
         language: 'ru-RU',
         format: 'dd.mm.yyyy',
@@ -235,15 +240,78 @@ $(document).ready(function () {
         '  </div>\n' +
         '</div>'
     });
-    // $(window).load(function () {
-    //     if ($(window).width() >= 1024) {
-    // $('.jsDatePicker').datepicker();
-    // } else {
-    //
-    //     $('.patron-form__label--calendar-thumb').find('.jsDatePicker').each(function() {
-    //         $("<input type='date' class=\"jsDatePicker patron-form__input patron-form__input--date patron-form__input--date-mob\" placeholder=\"01.01.1980\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder = '01.01.1980'\" required/> ").insertBefore(this);
-    //     }).remove();
-    // }
-    // });
+
+    //SELECT модальной формы пожертвований
+    function selsec2init() {
+
+        $('#DonationPaymentForm_reminder_period').select2({
+            minimumResultsForSearch: -1,
+            width: '100%',
+            dropdownParent: $('#js-reminder-period')
+        });
+
+        // закостылил пока, чтобы не тратить время
+        $('#DonationPaymentForm_reminder_period2').select2({
+            minimumResultsForSearch: -1,
+            width: '100%',
+            dropdownParent: $('#js-reminder-period-2')
+        });
+
+    }
+
+    //табы модальной формы пожертвований
+    var dataTab = '';
+    var dataForm = '';
+
+    //online, sms, bank
+    setDefaultForm('online');
+
+    selsec2init();
+
+    function setDefaultForm(name) {
+        $('.jsPaymentFormWrapper').find(`[data-form='${name}']`).addClass('show');
+    }
+
+    $('.jsPaymentTypeTab').on('click', function (e) {
+        e.preventDefault();
+        $('.jsPaymentTypeTab').removeClass('active');
+        $(this).addClass('active');
+
+        dataTab = $(this).attr('data-tab');
+        dataForm = $('.jsPaymentFormWrapper').find(`[data-form='${dataTab}']`);
+
+        $('.jsPaymentForm').removeClass('show');
+        dataForm.addClass('show');
+
+    });
+
+    $('.jsPeriodBtn').on('click', function () {
+        $('.payment-form__wrapper-period').removeClass('show');
+
+        dataTab = $(this).attr('data-period');
+        dataForm = $('.jsPaymentFormWrapper').find(`[data-period='${dataTab}']`);
+
+        $('.payment-form__wrapper-period').removeClass('show');
+        dataForm.addClass('show');
+    });
+
+    //PHONE mask
+    $('#jsPhoneMask').mask("+7 (999) 999 99 99");
+
+
+    //открыть модальное пожертвования
+    $('.jsOpenDonationForm').each(function() {
+        $(this).on('click', function (e) {
+            e.preventDefault();
+
+            modalClose();
+
+            var windowTopPosition = $(document).scrollTop();
+
+            $('#modalPayment').addClass('show');
+            $('#modalPayment').css({'top' : windowTopPosition + 20 + 'px'});
+            $('.modal-overlay').removeClass('visually-hidden');
+        });
+    })
 
 });

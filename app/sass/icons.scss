@@ -2,6 +2,97 @@
   display: block;
   content: "";
 
+  font-size: 0px;
+
+
+  &__mts {
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/icon/icon-mts.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__mega {
+    width: 35px;
+    height: 35px;
+
+    background-image: url("../img/icon/icon-megafon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__bee {
+    width: 36px;
+    height: 37px;
+
+    background-image: url("../img/icon/icon-bee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__tele {
+    width: 74px;
+    height: 29px;
+
+    background-image: url("../img/icon/icon-tele.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__visa {
+    width: 52px;
+    height: 15px;
+
+    background-image: url("../img/icon/icon-visa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__mc {
+    width: 35px;
+    height: 25px;
+
+    background-image: url("../img/icon/icon-ms.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__mir {
+    width: 45px;
+    height: 13px;
+
+    background-image: url("../img/icon/icon-mir.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  &__yakassa {
+    width: 81px;
+    height: 23px;
+
+    background-image: url("../img/icon/icon-yakassa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
   &__calendar {
     width: 20px;
     height: 20px;
@@ -47,11 +138,11 @@
     width: 22px;
     background-image: url("../img/icon/notification_lines.svg");
 
-    -webkit-animation: ring 4s .7s ease-in-out infinite;
+    -webkit-animation: ring 4s 0s ease-in-out infinite;
     -webkit-transform-origin: 50% 4px;
-    -moz-animation: ring 4s .7s ease-in-out infinite;
+    -moz-animation: ring 4s 0s ease-in-out infinite;
     -moz-transform-origin: 50% 4px;
-    animation: ring 4s .7s ease-in-out infinite;
+    animation: ring 4s 0s ease-in-out infinite;
     transform-origin: 50% 4px;
   }
 
@@ -164,48 +255,6 @@
   }
 }
 
-.icon__bell-bg {
-  //display: block;
-  //width: 38px;
-  //height: 38px;
-  //border-radius: 100%;
-  //position: absolute;
-  //top: -33px;
-  //right: 111px;
-  //background-color: transparent;
-  //z-index: 103;
-
-  //&::before {
-  //  content: "";
-  //  position: absolute;
-  //  width: 16px;
-  //  height: 20px;
-  //  top: 8px;
-  //  left: 10.5px;
-  //  background-image: url("../img/icon/notification_icon.svg");
-  //  background-repeat: no-repeat;
-  //  z-index: 101;
-  //}
-
-  //&:hover:before {
-  //  content: "";
-  //  position: absolute;
-  //  width: 23px;
-  //  height: 23px;
-  //  top: 6px;
-  //  left: 7px;
-  //  background-image: url("../img/icon/notification_lines.svg");
-  //  background-repeat: no-repeat;
-  //  z-index: 102;
-  //}
-
-}
-
-//.icon__bell-bg:active {
-//  background-color: #83818157;
-//  animation: ripple 0.15s ease;
-//}
-
 @media (min-width: $desktop) {
   .icon__bell-bg {
     display: block;
@@ -234,7 +283,6 @@
     &::before {
       content: "";
       position: absolute;
-      // display: block;
       width: 10px;
       height: 8px;
       background-image: url("../img/mini_arrow_white_down.svg");

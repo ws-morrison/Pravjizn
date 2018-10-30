@@ -17,6 +17,43 @@
   border-radius: 35px;
   box-sizing: border-box;
 
+  &--tab {
+    position: relative;
+    margin: 0px;
+    margin-right: 0px;
+    padding: 0px 20px;
+
+    width: auto;
+    height: 58px;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    line-height: $font-size-desktop-m;
+    color: $primary-text;
+
+    background-color: transparent;
+  }
+
+  &--tab.active {
+    color: $accient-2;
+    background-color: $white;
+  }
+
+  &--tab.active::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+
+    border-radius: 35px;
+    background-image: linear-gradient(90deg, #F79F33 0%, #C5322E 100%);
+    z-index: -1;
+  }
+
+  &--tab:hover {
+    color: $accient-2;
+  }
+
   &--black {
     color: $primary-text;
   }

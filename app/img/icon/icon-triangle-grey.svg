@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Portal_glavnaja" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pop_up_payment_once" transform="translate(-922.000000, -677.000000)" fill="#CCCCCC">
+            <g id="имя" transform="translate(293.000000, 616.000000)">
+                <g id="Group-9">
+                    <g id="Group-11">
+                        <path d="M633.179556,68.5637172 L629.154219,62.4587911 C628.863744,62.0182509 628.995621,61.4322 629.448772,61.1498099 C629.60574,61.0519927 629.788275,61 629.974723,61 L638.025397,61 C638.563656,61 639,61.4242007 639,61.9474787 C639,62.1287373 638.946519,62.3061921 638.845901,62.4587911 L634.820564,68.5637172 C634.53009,69.0042575 633.927262,69.1324636 633.47411,68.8500735 C633.355845,68.7763742 633.255365,68.6786911 633.179556,68.5637172 Z" id="Triangle"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
