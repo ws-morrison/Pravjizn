@@ -1,0 +1,713 @@
+.payment-form {
+  padding-top: 55px;
+  padding-bottom: 95px;
+
+  width: 100%;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-family: $primary-regular;
+    font-size: 35px;
+    line-height: 45px;
+    color: $primary-text;
+  }
+
+}
+
+.payment-form__type {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 48px;
+}
+
+.payment-form__form {
+  display: none;
+}
+
+.payment-form__form.show {
+  display: block;
+}
+
+.payment-form__period {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-form__period-radio {
+  display: flex;
+  width: 307px;
+  height: 46px;
+  margin-bottom: 34px;
+
+  input {
+    display: none;
+  }
+
+  input + label {
+    width: 100%;
+    position: relative;
+
+    text-align: center;
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    line-height: $font-size-desktop-m;
+    color: $primary-text;
+  }
+
+  input + label::after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 2px;
+    background-color: $color--border-gray;
+  }
+
+  input:hover + label {
+    color: $accient-2;
+  }
+
+  input:checked + label {
+    color: $accient-2;
+  }
+
+  input:checked + label::after {
+    background-color: $accient-2;
+  }
+
+}
+
+.payment-form__amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.payment-form__amount-radio {
+  position: relative;
+  height: 29.5px;
+
+  input {
+    display: none;
+  }
+
+  input + label {
+
+    b {
+      font-family: $secondary-regular;
+      font-size: $font-size-l;
+      line-height: $font-size-desktop-m;
+      color: $primary-text;
+      font-weight: normal;
+    }
+
+    i {
+      font-family: $font--third-regular; /*не уверен, но помоему шрифт кривой *TEMP* */
+      font-size: $font-size-l;
+      line-height: $font-size-desktop-m;
+      color: $primary-text;
+      font-style: normal;
+    }
+
+  }
+
+  input + label::after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: -2px;
+
+    width: calc(100% + 4px);
+    height: 2px;
+  }
+
+  input:checked + label {
+
+    b {
+      color: $accient-2;
+    }
+
+    i {
+      color: $accient-2;
+    }
+
+  }
+
+  input:hover + label {
+
+    b {
+      color: $accient-2;
+    }
+
+    i {
+      color: $accient-2;
+    }
+
+  }
+
+  input:checked + label::after {
+    background-color: $accient-2;
+  }
+
+  input:focus + label {
+
+  }
+
+}
+
+.payment-form__amount-input {
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  line-height: 26px;
+  color: $primary-text;
+
+  input {
+    padding: 0px 20px;
+    width: 168px;
+    height: 50px;
+
+    text-align: center;
+    border: 1px solid $grey-border;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  input {
+    border: 1px solid $color--border-gray;
+  }
+
+  input:hover {
+    border-color: rgba(33, 33, 33, 0.54);
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #212121;
+  }
+
+}
+
+.payment-form__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-family: $secondary-regular;
+
+  box-sizing: border-box;
+  background-color: $secondary-bg;
+
+  &-container {
+    max-width: 695px;
+    margin: 0 auto;
+  }
+
+  .button--green {
+    max-width: 192px;
+    margin: 0;
+  }
+
+  &-period {
+    display: none;
+  }
+
+  &-period.show {
+    display: block;
+  }
+
+  .payment-form__col {
+    width: 50%;
+  }
+
+}
+
+.payment-form__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  margin-bottom: 30px;
+}
+
+.payment-form__phone {
+  max-width: 314px;
+  flex: 1;
+
+  .payment-form__input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .payment-form__input--summ {
+    margin-bottom: 30px;
+  }
+
+  .button {
+    max-width: none;
+    margin-bottom: 25px;
+  }
+
+}
+
+.payment-form__info {
+  padding-left: 85px;
+
+  box-sizing: border-box;
+  flex: 1;
+
+  b {
+
+  }
+
+}
+
+.payment-form__bank-title {
+  align-items: center;
+
+  p {
+    display: inline-block;
+    padding-left: 30px;
+    max-width: 665px;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    line-height: 24px;
+  }
+
+}
+
+.payment-form__wrapper {
+
+  .payment-form__row:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.payment-form__input {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  max-width: 372px;
+  margin-right: 8px;
+
+  &--wide {
+    max-width: 504px;
+  }
+
+  &-title {
+    margin-bottom: 15px;
+
+    font-size: $font-size-xs;
+    line-height: 20px;
+    color: $primary-text;
+  }
+
+  input {
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: $font-size-m;
+    line-height: 26px;
+    color: $primary-text;
+
+    border-radius: 30px;
+    border: 1px solid $grey-border;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: $accient-2;
+  }
+
+}
+
+.payment-form__input-wrapper {
+  position: relative;
+  display: flex;
+
+  input {
+    padding-right: 50px;
+    flex: 1;
+  }
+
+  i {
+    position: absolute;
+    height: 24px;
+
+    top: 0px;
+    bottom: 0px;
+    right: 19px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-family: $font--third-regular; /*не уверен, но помоему шрифт кривой *TEMP* */
+    font-size: $font-size-l;
+    line-height: $font-size-desktop-m;
+    color: $primary-text;
+    font-style: normal;
+  }
+
+}
+
+.payment-form__select {
+  margin-right: 8px;
+  max-width: 284px;
+  flex: 1;
+
+  .select2-container--default {
+    height: 56px;
+
+    border-radius: 30px;
+    border: none;
+
+    .select2-selection--single {
+      height: 100%;
+      padding-left: 30px;
+      padding-right: 50px;
+
+      border-radius: 30px;
+      border: 1px solid $grey-border;
+      outline: none;
+
+      .select2-selection__rendered {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+
+        font-size: $font-size-m;
+        line-height: 26px;
+        color: $primary-text;
+      }
+
+      .select2-selection__arrow {
+        top: 0px;
+        bottom: 0px;
+        right: 26px;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        width: 10px;
+        height: 8px;
+
+        transition: transform 0.3s;
+        transform: rotate(0deg);
+
+        b {
+          position: relative;
+          display: block;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          margin-left: 0;
+          margin-top: 0px;
+
+          border: none;
+          background-image: url("../img/icon/icon-triangle-grey.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+
+      }
+
+    }
+
+    .select2-dropdown {
+      border-color: $accient-2;
+
+      .select2-results {
+        padding: 0px 30px;
+      }
+
+      .select2-results__option {
+        padding: 0px;
+
+        font-size: $font-size-m;
+        line-height: 26px;
+        color: $primary-text;
+      }
+
+      .select2-results__option[aria-selected=true] {
+        background-color: transparent;
+        color: $accient;
+      }
+
+      .select2-results__option--highlighted[aria-selected] {
+        color: $accient;
+        background-color: transparent;
+      }
+
+    }
+
+    .select2-dropdown--below {
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      .select2-results__option {
+        margin-bottom: 17px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        box-shadow: 0px 10px 20px 0px rgba(250, 165, 51, 0.1);
+        border-radius: 30px;
+      }
+
+    }
+
+    .select2-dropdown--above {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+      .select2-results__option {
+        margin-top: 17px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        box-shadow: 0px -10px 20px 0px rgba(250, 165, 51, 0.1);
+        border-radius: 30px;
+      }
+
+    }
+
+  }
+
+  .select2-container--focus {
+
+    .select2-selection--single {
+      border-color: $accient-2;
+    }
+
+  }
+
+  .select2-container--open {
+
+    .select2-selection--single {
+      border-color: $accient-2;
+
+      .select2-selection__arrow {
+        transform: rotate(180deg);
+      }
+
+    }
+
+  }
+
+  .select2-container--open.select2-container--below {
+
+    .select2-selection--single {
+      border-bottom: none;
+    }
+
+  }
+
+  .select2-container--open.select2-container--above {
+
+    .select2-selection--single {
+      border-top: none;
+    }
+
+  }
+
+}
+
+.payment-form__checkbox {
+  display: flex;
+  align-items: center;
+
+  input {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    padding: 2px 0px;
+    padding-left: 50px;
+
+    font-family: $secondary-regular;
+    font-size: $font-size-xs;
+    line-height: 18px;
+    color: $faded;
+
+    a {
+      color: $accient-2;
+      text-decoration: none;
+    }
+
+  }
+
+  input + label::before {
+    position: absolute;
+    content: '';
+
+    width: 29px;
+    height: 29px;
+    top: 0px;
+    bottom: 0px;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    left: 0px;
+    background-color: $white;
+
+    border-radius: 2px;
+    border: 1px solid $color--border-gray;
+  }
+
+  input:checked + label::before {
+    background-image: url("../img/icon/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  input:hover + label::before {
+    border-color: $accient-2;
+  }
+
+  &--agreement {
+    margin-right: 50px;
+    margin-left: 20px;
+
+    label {
+      max-width: 280px;
+    }
+
+  }
+
+  &--reminder {
+
+    label {
+      max-width: 208px;
+    }
+
+  }
+
+}
+
+.payment-form__payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 33px;
+
+  &-item {
+    font-size: 0px;
+    margin-right: 18px;
+  }
+
+  &-item:last-child {
+    margin-right: 0px;
+  }
+
+}
+
+.payment-form__text {
+  text-align: center;
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  line-height: 18px;
+  color: $faded;
+
+  p {
+    margin: 0px;
+  }
+
+  a {
+    color: $accient-2;
+    text-decoration: none;
+  }
+
+}
+
+.payment-form__info {
+
+  p {
+    font-size: $font-size-xs;
+    font-family: $secondary-regular;
+    line-height: 20px;
+  }
+
+}
+
+.payment-form__info-title {
+  margin-bottom: 40px;
+
+  b {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+}
+
+.payment-form__operator {
+  margin-bottom: 42px;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 11px;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+
+    .icon {
+      margin-right: 23px;
+    }
+
+    .icon:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+}
+
+.payment-form__info-politics {
+
+  a {
+    color: $accient-2;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+}
