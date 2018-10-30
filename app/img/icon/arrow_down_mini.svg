@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_down_mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="vostanovlenie_svjatin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help_materials_confirm" transform="translate(-968.000000, -555.000000)" fill="#CCCCCC">
+            <g id="Group-2-Copy" transform="translate(600.000000, 494.000000)">
+                <g id="Group" transform="translate(0.000000, 35.000000)">
+                    <path d="M372.179556,33.5637172 L368.154219,27.4587911 C367.863744,27.0182509 367.995621,26.4322 368.448772,26.1498099 C368.60574,26.0519927 368.788275,26 368.974723,26 L377.025397,26 C377.563656,26 378,26.4242007 378,26.9474787 C378,27.1287373 377.946519,27.3061921 377.845901,27.4587911 L373.820564,33.5637172 C373.53009,34.0042575 372.927262,34.1324636 372.47411,33.8500735 C372.355845,33.7763742 372.255365,33.6786911 372.179556,33.5637172 Z" id="arrow_down_mini"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

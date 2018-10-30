@@ -114,10 +114,15 @@
     }
   }
 
+  &--webinar-form {
+    margin-bottom: 20px;
+  }
   &--vk {
     color: $vk;
     border: 2px solid $vk;
     background-color: inherit;
+
+    margin-bottom: 40px;
     // position: relative;
     // &::before {
     //   position: absolute;
@@ -277,5 +282,13 @@
       box-sizing: content-box;
       padding: 0 40px 0 40px;
     }
+
+    &--webinar-form,
+    &--vk {
+      max-width: 460px;
+    }
   }
+  // &--form-wide {
+  //   max-width: 380px;
+  // }
 }

@@ -61,12 +61,26 @@
   font-size: $font-size-l;
   color: $primary-text;
 }
-
+.props__text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .props__text {
   font-family: $secondary-regular;
   font-size: $font-size-s;
   color: $primary-text;
   line-height: 22px;
+  position: relative;
+
+  // &--thumb::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 50px;
+  //   height: 50px;
+  //   background-image: url("../../img/icon/main_logo-green-small.svg");
+  //   background-repeat: no-repeat;
+  // }
 }
 
 .social {
@@ -183,6 +197,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
   }
   .footer-container {
     padding-right: 20px;

@@ -155,6 +155,12 @@ $(document).ready(function () {
         e.preventDefault();
         $(".modal__history").addClass("show");
         $(".modal-overlay").removeClass("visually-hidden");
+        $("html, body").animate(
+            {
+                scrollTop: $("body").offset().top
+            },
+            2000
+        );
     });
 
     function modalClose() {

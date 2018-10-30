@@ -2,6 +2,9 @@
   display: block;
   padding-top: 40px;
   background-color: $primary-bg;
+  &--bg-none {
+    background-color: #fff;
+  }
 }
 
 .info-service-item {
@@ -42,6 +45,23 @@
   margin-bottom: 25px;
 }
 
+.info-service-item__lead {
+  font-family: $primary-medium;
+  font-size: $font-size-xl;
+  color: $accient;
+  text-align: center;
+  line-height: 30px;
+}
+
+.info-service-item__button-caption {
+  font-family: $secondary-regular;
+  font-size: $font-size-m;
+  color: $primary-text;
+  line-height: 26px;
+  &--accient {
+    color: $accient;
+  }
+}
 .info-services__wrapper {
   position: relative;
   border-bottom: 1px solid $service-item-border;
@@ -50,11 +70,9 @@
 }
 
 .info-services__wrapper.active {
-
   .info-services__title {
     color: $accient;
   }
-
 }
 
 .info-services__wrapper:last-child {
@@ -68,14 +86,18 @@
   text-align: center;
   line-height: 26px;
   color: $primary-text;
+  &--accient {
+    text-decoration: none;
+    color: $accient;
+  }
 }
 
-.info-service-item__caption {
-  font-family: $secondary-regular;
-  font-size: $font-size-s;
-  color: $faded;
-  font-style: italic;
-}
+// .info-service-item__caption {
+//   font-family: $secondary-regular;
+//   font-size: $font-size-s;
+//   color: $faded;
+//   font-style: italic;
+// }
 
 .info-service-item__button {
   width: 260px;
@@ -103,6 +125,50 @@
   height: 42px;
   &--orange {
     background-image: url("../img/icon/main_logo-dark-orange-small.svg");
+  }
+  &--mb {
+    margin-bottom: 30px;
+  }
+}
+
+.info-service-item__social-list {
+  width: 280px;
+  display: flex;
+  // flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.info-service-item__social-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-color: lightskyblue;
+  &--vk {
+    background-color: #426eab;
+    background-image: url("../../img/icon/vk_share.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  &--fb {
+    background-color: #3b5998;
+    background-image: url("../../img/icon/fb_share.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  &--ok {
+    background-color: #ff9800;
+    background-image: url("../../img/icon/ok_share.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  &--tw {
+    background-color: #50abf1;
+    background-image: url("../../img/icon/twitter_share.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 

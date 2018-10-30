@@ -9,14 +9,11 @@
     background-position: center;
   }
   &--sober-bg {
-    background-image: url("../img/bratstvo_main_big.png");
+    background-image: url("../../img/bratstvo_main_big-filter.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1240px;
     margin-bottom: 50px;
-
-    //
-    background-color: #4d80a9;
   }
 
   @include title-text($white, $white);
