@@ -1,5 +1,8 @@
 .pod {
-  padding-bottom: 100px;
+  &--main-padding {
+    padding-bottom: 100px;
+  }
+
   overflow: hidden;
 
   @include author-heading-text($primary-text);
@@ -35,7 +38,7 @@
   }
 
   &--grey-bg {
-    padding-top: 50px;
+    // padding-top: 50px;
     background-color: rgba(236, 236, 229, 0.23);
   }
   &__greeting-text {
@@ -160,7 +163,9 @@
 
 @media (min-width: $desktop) {
   .pod {
-    padding-bottom: 180px;
+    &--main-padding {
+      padding-bottom: 180px;
+    }
 
     .donate-form {
       padding: 0px;
@@ -186,9 +191,12 @@
     .button {
       height: auto;
       max-width: 192px;
+
+      // max-width: 270px;
     }
+
     &--grey-bg {
-      padding-top: 120px;
+      // padding-top: 120px;
       background-color: rgba(236, 236, 229, 0.23);
     }
   }
@@ -244,8 +252,12 @@
 }
 
 @media (min-width: $desktop-full) {
+
   .pod {
-    padding-bottom: 204px;
+
+    &--main-padding {
+      padding-bottom: 204px;
+    }
 
     &__title-text--big {
       margin-bottom: 75px;

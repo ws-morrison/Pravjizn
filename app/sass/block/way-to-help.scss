@@ -1,5 +1,8 @@
 .way-to-help {
-  // display: none;
+  &--mobile-hidden {
+    display: none;
+  }
+
   padding-top: 40px;
   padding-bottom: 50px;
 
@@ -34,6 +37,10 @@
     display: block;
     padding-top: 120px;
     padding-bottom: 120px;
+
+    &--mobile-hidden {
+      display: block;
+    }
 
     &__item {
       display: flex;

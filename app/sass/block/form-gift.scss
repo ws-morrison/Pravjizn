@@ -171,6 +171,9 @@ input[value].form-gift__input {
     font-size: $font-size-desktop-xl;
     line-height: 45px;
     color: $primary-text;
+    &--accient {
+      color: $accient;
+    }
   }
 
   .form-gift__wrapper {

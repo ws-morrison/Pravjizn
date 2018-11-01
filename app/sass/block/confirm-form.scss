@@ -1,0 +1,210 @@
+.confirm-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.confirm-form__desc-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.confirm-form__desc-title {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: inline-block;
+  font-family: $primary-regular;
+  font-size: $font-size-ms;
+  color: $faded;
+}
+
+.confirm-form__desc-text {
+  padding: 0;
+  margin: 0 auto;
+
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: $primary-regular;
+  font-size: $font-size-m;
+  line-height: 20px;
+  color: $primary-text;
+}
+
+.confirm-form__button {
+  margin-bottom: 20px;
+}
+.confirm-form__label {
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  line-height: 26px;
+  color: $primary-text;
+  margin: 0;
+
+  position: relative;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm-form__input {
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  color: $faded;
+  line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid $grey-border;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.confirm-form__caption {
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.confirm-form__caption-text {
+  padding: 0;
+  margin: 0;
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  color: $faded;
+  line-height: 20px;
+}
+
+.confirm-form__link {
+  padding: 0;
+  margin: 0;
+
+  font-family: $secondary-regular;
+  font-size: $font-size-xs;
+  color: $accient-2;
+  line-height: 20px;
+}
+
+input[type="text"].confirm-form__input:hover,
+input[type="number"].confirm-form__input:hover,
+input[type="email"].confirm-form__input:hover {
+  outline: none;
+  opacity: 0.5;
+  box-shadow: 0 0 1px 1px #212121;
+}
+
+input[type="text"].confirm-form__input:focus,
+input[type="number"].confirm-form__input:focus,
+input[type="email"].confirm-form__input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #212121;
+  color: #212121;
+}
+input[value].confirm-form__input {
+  color: $primary-text;
+}
+
+// DESKTOP
+@media (min-width: $desktop) {
+  .confirm-form {
+    padding-left: 68px;
+  }
+
+  .confirm-form__desc-wrapper {
+    margin: 0;
+  }
+  .confirm-form__desc-title {
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 55px;
+    display: inline-block;
+    font-family: $primary-regular;
+    font-size: $font-size-desktop-s;
+    color: $faded;
+  }
+
+  .confirm-form__desc-text {
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 30px;
+    display: inline-block;
+    font-family: $primary-regular;
+    font-size: $font-size-desktop-xl;
+    line-height: 45px;
+    color: $primary-text;
+    &--accient {
+      color: $accient;
+    }
+  }
+
+  .confirm-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .confirm-form__button {
+    margin: 0;
+    margin-bottom: 25px;
+    max-width: 404px;
+  }
+
+  .confirm-form__input {
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    color: $faded;
+    line-height: 26px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 21px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    max-width: 352px;
+    width: 100%;
+    // padding-top: 17px;
+    // padding-bottom: 17px;
+    // padding-left: 25px;
+    // padding-right: 25px;
+    // border: 1px solid $grey-border;
+    // border-radius: 30px;
+    // margin-top: 10px;
+    // margin-bottom: 35px;
+    // max-width: 352px;
+    // width: 100%;
+  }
+
+  .confirm-form__caption {
+    width: 100%;
+    margin: 0;
+  }
+
+  .confirm-form__caption-text {
+    padding: 0;
+    margin: 0;
+    font-family: $secondary-regular;
+    font-size: $font-size-xs;
+    color: $faded;
+    line-height: 20px;
+  }
+
+  .confirm-form__link {
+    padding: 0;
+    margin: 0;
+
+    font-family: $secondary-regular;
+    font-size: $font-size-xs;
+    color: $accient-2;
+    line-height: 20px;
+  }
+}

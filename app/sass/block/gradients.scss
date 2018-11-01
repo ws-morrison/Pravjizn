@@ -29,8 +29,18 @@
   }
 }
 
+.out-section {
+  background-color: rgba(236, 236, 229, 0.23);
+  padding-bottom: 40px;
+}
+
 //DESKTOP
 @media (min-width: $desktop) {
+
+  .out-section {
+    padding-bottom: 120px;
+  }
+
   .gradient-background {
     display: flex;
     justify-content: center;
@@ -58,7 +68,11 @@
       background-image: linear-gradient(90deg, #30b9ac 0%, #4795ee 100%);
     }
     &--color-grey {
-      background-image: linear-gradient(90deg, rgba(207, 204, 185, 0.205)  100%, rgba(207, 204, 185, 0.205) 100%);
+      background-image: linear-gradient(
+        90deg,
+        rgba(207, 204, 185, 0.205) 100%,
+        rgba(207, 204, 185, 0.205) 100%
+      );
     }
     &--center-align {
       margin: 0 auto;
