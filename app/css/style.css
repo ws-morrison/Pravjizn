@@ -4891,7 +4891,8 @@ a:focus {
     padding-top: 120px;
     padding-bottom: 146px; }
   .modal__help-confirm .modal__col-1 {
-    padding: 160px 69px 70px 69px; } }
+    padding: 160px 69px 70px 69px;
+    margin-bottom: 0; } }
 
 .form-gift {
   display: -webkit-box;
@@ -5483,6 +5484,8 @@ input[value].confirm-form__input {
   position: relative; }
   .gallery__item--big {
     width: 545px; }
+  .gallery__item--sober-big {
+    width: 545px; }
 
 .gallery__video-item {
   padding: 7px;
@@ -5502,10 +5505,16 @@ input[value].confirm-form__input {
     background-position: center;
     top: 36%;
     left: 39%; }
+  .gallery__video-item--big {
+    width: 820px;
+    margin-bottom: 90px; }
+    .gallery__video-item--big::before {
+      top: 44%;
+      left: 44%; }
 
 .gallery__form-item {
   padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-bottom: 40px; }
   .gallery__form-item--grey-bg {
     background-color: rgba(236, 236, 229, 0.23); }
   .gallery__form-item--small {
@@ -5582,9 +5591,13 @@ input[value].confirm-form__input {
       font-size: 35px;
       color: #212121;
       line-height: 45px; }
+  .gallery__title-wrapper {
+    width: 75%;
+    text-align: center;
+    margin-bottom: 60px; }
   .gallery__form-item {
     padding-top: 110px;
-    padding-bottom: 120px; }
+    padding-bottom: 100px; }
     .gallery__form-item--small {
       padding-top: 60px;
       padding-bottom: 40px; }
@@ -6864,3 +6877,65 @@ input[value].sober-webinar__input {
         background-image: url("../../img/icon/twitter_share.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%; } }
+
+.personal-history {
+  padding-top: 120px; }
+  .personal-history--bg {
+    background-image: url("../../img/bratstvo_main_big-filter.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -webkit-background-size: 1360px 1360px;
+            background-size: 1360px;
+    margin-bottom: 50px; }
+  .personal-history__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 45px;
+    color: #FFF;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 113px; }
+  .personal-history__author {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    text-align: center; }
+  .personal-history__author-name {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    color: #212121;
+    line-height: 24px;
+    margin-bottom: 10px; }
+    .personal-history__author-name--accient {
+      color: #FF482F; }
+  .personal-history__author-caption {
+    margin: 0;
+    padding: 0;
+    font-family: "MuseoSansCyrl-500It", sans-serif;
+    font-size: 16px;
+    color: #9B9B9B;
+    line-height: 26px; }
+  .personal-history__author-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .personal-history__img-wrapper {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-bottom: 65px; }
+  .personal-history .gallery__title {
+    margin-bottom: 25px; }
+  .personal-history .gallery__content-text {
+    margin-bottom: 80px; }
+  .personal-history .gallery__wrapper {
+    margin-bottom: 90px; }

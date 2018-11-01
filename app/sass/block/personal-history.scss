@@ -1,0 +1,75 @@
+.personal-history {
+  padding-top: 120px;
+
+  &--bg {
+    background-image: url("../../img/bratstvo_main_big-filter.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 1360px;
+    margin-bottom: 50px;
+  }
+
+  // @include author-heading-text($primary-text);
+  // @include title-text($faded, $primary-text);
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: $primary-regular;
+    font-size: $font-size-desktop-2xl;
+    color: $white;
+    text-align: center;
+    line-height: 50px;
+
+    margin-bottom: 113px;
+  }
+
+  &__author {
+    align-self: center;
+    text-align: center;
+  }
+
+  &__author-name {
+    margin: 0;
+    padding: 0;
+    font-family: $primary-medium;
+    font-size: $font-size-desktop-m;
+    color: $primary-text;
+    line-height: 24px;
+
+    margin-bottom: 10px;
+    &--accient {
+      color: $accient;
+    }
+  }
+
+  &__author-caption {
+    margin: 0;
+    padding: 0;
+    font-family: $secondary-regular-italic;
+    font-size: $font-size-s;
+    color: $faded;
+    line-height: 26px;
+  }
+
+  &__author-item {
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: 65px;
+  }
+
+  &__img-wrapper {
+    align-self: center;
+    margin-bottom: 65px;
+  }
+
+  .gallery__title {
+    margin-bottom: 25px;
+  }
+  .gallery__content-text{
+    margin-bottom: 80px;
+  }
+  .gallery__wrapper {
+    margin-bottom: 90px;
+  }
+}

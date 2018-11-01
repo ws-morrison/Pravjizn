@@ -182,6 +182,19 @@ $(document).ready(function() {
     );
   });
 
+  // Personal History
+  $(".jsShowPersonalHistory").click(function(e) {
+    e.preventDefault();
+    $(".personal-history").addClass("show");
+    $(".modal-overlay").removeClass("visually-hidden");
+    $("html, body").animate(
+      {
+        scrollTop: $("body").offset().top
+      },
+      2000
+    );
+  });
+
   // Confirm Pray
   $(".jsShowPrayConfirm").click(function(e) {
     e.preventDefault();

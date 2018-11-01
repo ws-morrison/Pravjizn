@@ -48,6 +48,9 @@
   &--big {
     width: 545px;
   }
+  &--sober-big {
+    width: 545px;
+  }
 }
 
 .gallery__video-item {
@@ -71,11 +74,20 @@
     top: 36%;
     left: 39%;
   }
+
+  &--big {
+    width: 820px;
+    margin-bottom: 90px;
+    &::before {
+      top: 44%;
+      left: 44%;
+    }
+  }
 }
 
 .gallery__form-item {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   &--grey-bg {
     background-color: rgba(236, 236, 229, 0.23);
   }
@@ -150,11 +162,17 @@
         line-height: 45px;
       }
     }
+
+    &__title-wrapper {
+      width: 75%;
+      text-align: center;
+      margin-bottom: 60px;
+    }
   }
 
   .gallery__form-item {
     padding-top: 110px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     &--small {
       padding-top: 60px;
       padding-bottom: 40px;
