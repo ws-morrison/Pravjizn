@@ -530,6 +530,8 @@ a:focus {
   padding: 0 20px 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .container--grey-bg {
+    background-color: rgba(236, 236, 229, 0.23); }
 
 .visually-hidden {
   max-width: 0;
