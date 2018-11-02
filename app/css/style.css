@@ -5489,28 +5489,29 @@ input[value].confirm-form__input {
 
 .gallery__video-item {
   padding: 7px;
-  position: relative; }
+  position: relative;
+  width: 280px; }
   .gallery__video-item::before {
     content: "";
     position: absolute;
     width: 80px;
     height: 80px;
     -webkit-border-radius: 50%;
-    border-radius: 50%;
+            border-radius: 50%;
     background-color: #fff;
     background-image: url(../img/icon/play_orange.svg);
     background-repeat: no-repeat;
     -webkit-background-size: 17px 21px;
-    background-size: 17px 21px;
+            background-size: 17px 21px;
     background-position: center;
     top: 36%;
     left: 39%; }
   .gallery__video-item--big {
-    width: 820px;
-    margin-bottom: 90px; }
+    width: 300px;
+    margin-bottom: 40px; }
     .gallery__video-item--big::before {
-      top: 44%;
-      left: 44%; }
+      top: 30%;
+      left: 37%; }
 
 .gallery__form-item {
   padding-top: 60px;
@@ -5570,6 +5571,33 @@ input[value].confirm-form__input {
 
 .gallery__form-wrapper--hidden::before {
   display: none; }
+
+@media (min-width: 768px) {
+  .gallery__video-item {
+    padding: 7px;
+    position: relative;
+    width: 580px; }
+    .gallery__video-item::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #fff;
+      background-image: url(../img/icon/play_orange.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: 17px 21px;
+              background-size: 17px 21px;
+      background-position: center;
+      top: 36%;
+      left: 39%; }
+    .gallery__video-item--big {
+      width: 748px;
+      margin-bottom: 90px; }
+      .gallery__video-item--big::before {
+        top: 44%;
+        left: 44%; } }
 
 @media (min-width: 1024px) {
   .gallery__content-text {
@@ -5639,7 +5667,32 @@ input[value].confirm-form__input {
             justify-content: center;
     width: 60%;
     margin: 0 auto;
-    margin-bottom: 120px; } }
+    margin-bottom: 120px; }
+  .gallery__video-item {
+    padding: 7px;
+    position: relative;
+    width: 365px; }
+    .gallery__video-item::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #fff;
+      background-image: url(../img/icon/play_orange.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: 17px 21px;
+              background-size: 17px 21px;
+      background-position: center;
+      top: 36%;
+      left: 39%; }
+    .gallery__video-item--big {
+      width: 820px;
+      margin-bottom: 90px; }
+      .gallery__video-item--big::before {
+        top: 44%;
+        left: 44%; } }
 
 .report {
   background-color: #fafaf9; }
@@ -6879,7 +6932,7 @@ input[value].sober-webinar__input {
         background-position: 50% 50%; } }
 
 .personal-history {
-  padding-top: 120px; }
+  padding-top: 40px; }
   .personal-history--bg {
     background-image: url("../../img/bratstvo_main_big-filter.png");
     background-repeat: no-repeat;
@@ -6891,11 +6944,11 @@ input[value].sober-webinar__input {
     margin: 0;
     padding: 0;
     font-family: "Museo Cyrillic Regular", sans-serif;
-    font-size: 45px;
+    font-size: 24px;
     color: #FFF;
     text-align: center;
-    line-height: 50px;
-    margin-bottom: 113px; }
+    line-height: 35px;
+    margin-bottom: 30px; }
   .personal-history__author {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
@@ -6910,13 +6963,13 @@ input[value].sober-webinar__input {
     line-height: 24px;
     margin-bottom: 10px; }
     .personal-history__author-name--accient {
-      color: #FF482F; }
+      color: #FFF; }
   .personal-history__author-caption {
     margin: 0;
     padding: 0;
     font-family: "MuseoSansCyrl-500It", sans-serif;
     font-size: 16px;
-    color: #9B9B9B;
+    color: #FFF;
     line-height: 26px; }
   .personal-history__author-item {
     display: -webkit-box;
@@ -6927,15 +6980,83 @@ input[value].sober-webinar__input {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-bottom: 95px; }
   .personal-history__img-wrapper {
+    width: 280px;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
-    margin-bottom: 65px; }
+    margin: 0 auto;
+    margin-bottom: 25px; }
   .personal-history .gallery__title {
     margin-bottom: 25px; }
   .personal-history .gallery__content-text {
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
   .personal-history .gallery__wrapper {
-    margin-bottom: 90px; }
+    margin-bottom: 50px; }
+
+@media (min-width: 1024px) {
+  .personal-history {
+    padding-top: 120px; }
+    .personal-history--bg {
+      background-image: url("../../img/bratstvo_main_big-filter.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      -webkit-background-size: 1360px 1360px;
+              background-size: 1360px;
+      margin-bottom: 50px; }
+    .personal-history__title {
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Cyrillic Regular", sans-serif;
+      font-size: 45px;
+      color: #FFF;
+      text-align: center;
+      line-height: 50px;
+      margin-bottom: 113px; }
+    .personal-history__author {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      text-align: center; }
+    .personal-history__author-name {
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Cyrillic Medium", sans-serif;
+      font-size: 24px;
+      color: #212121;
+      line-height: 24px;
+      margin-bottom: 10px; }
+      .personal-history__author-name--accient {
+        color: #FF482F; }
+    .personal-history__author-caption {
+      margin: 0;
+      padding: 0;
+      font-family: "MuseoSansCyrl-500It", sans-serif;
+      font-size: 16px;
+      color: #9B9B9B;
+      line-height: 26px; }
+    .personal-history__author-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 0; }
+    .personal-history__img-wrapper {
+      width: unset;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-bottom: 65px; }
+    .personal-history .gallery__title {
+      margin-bottom: 25px; }
+    .personal-history .gallery__content-text {
+      margin-bottom: 80px; }
+    .personal-history .gallery__wrapper {
+      margin-bottom: 90px; } }
