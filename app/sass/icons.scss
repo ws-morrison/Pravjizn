@@ -72,6 +72,24 @@
     background-image: url("../../img/icon/main_logo-green-small.svg");
     background-repeat: no-repeat;
   }
+
+  &__email {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+
+    background-repeat: no-repeat;
+    &--mail {
+      background-image: url("../img/icon/mailru_icon.png");
+    }
+    &--gmail {
+      height: 19px;
+      background-image: url("../img/icon/gmail.png");
+    }
+    &--ya {
+      background-image: url("../img/icon/yandex.png");
+    }
+  }
 }
 
 @-webkit-keyframes ring {

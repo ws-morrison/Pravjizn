@@ -135,6 +135,15 @@
     //   left: 40px;
     // }
   }
+
+  &--email {
+    background-color: $white;
+    color: $accient;
+    border: 2px solid #f65500;
+    box-shadow: 0 10px 20px 0 #ebebeb;
+    margin-bottom: 25px;
+    max-width: 273px;
+  }
 }
 
 .button--yellow {
@@ -271,6 +280,12 @@
   .button__close-modal {
     //right: 30px;
     //margin-top: 30px;
+  }
+
+  .button {
+    &--email {
+      margin-bottom: 0;
+    }
   }
 }
 @media (min-width: $desktop-full) {

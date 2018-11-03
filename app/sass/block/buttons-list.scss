@@ -1,0 +1,30 @@
+.buttons-list {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $primary-text;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .buttons-list {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
