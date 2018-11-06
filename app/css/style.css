@@ -1945,6 +1945,8 @@ a:focus {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .feedback__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .feedback__title {
     text-align: center;
     display: -webkit-box;
@@ -2026,6 +2028,11 @@ a:focus {
     position: absolute;
     top: -56px;
     left: -20px; }
+  .feedback__item-text--primary-large {
+    font-family: "Museo Cyrillic Thin", sans-serif;
+    font-size: 30px;
+    color: #212121;
+    line-height: 40px; }
 
 .feedback__img-wrapper {
   width: 373px;
@@ -2164,6 +2171,8 @@ a:focus {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .pod__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .pod__title {
     text-align: center;
     display: -webkit-box;
@@ -5409,6 +5418,8 @@ input[value].confirm-form__input {
   font-size: 16px;
   line-height: 26px;
   color: #212121; }
+  .gallery__author-caption--normal {
+    font-family: "Museo Sans Cyrl Regular", sans-serif; }
 
 .gallery__title {
   text-align: center;
@@ -5939,6 +5950,8 @@ input[value].confirm-form__input {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .sober-support__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .sober-support__title {
     text-align: center;
     display: -webkit-box;
@@ -6056,6 +6069,8 @@ input[value].confirm-form__input {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .conclude-pray__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .conclude-pray__title {
     text-align: center;
     display: -webkit-box;
@@ -6210,6 +6225,8 @@ input[value].confirm-form__input {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .location__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .location__title {
     text-align: center;
     display: -webkit-box;
@@ -6316,6 +6333,8 @@ input[value].confirm-form__input {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .sober-webinar__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .sober-webinar__title {
     text-align: center;
     display: -webkit-box;
@@ -6701,6 +6720,8 @@ input[value].sober-webinar__input {
     font-size: 16px;
     line-height: 26px;
     color: #212121; }
+    .way-to-help__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
   .way-to-help__title {
     text-align: center;
     display: -webkit-box;
@@ -6769,6 +6790,74 @@ input[value].sober-webinar__input {
       margin-bottom: 0; }
   .way-to-help__list {
     display: none; }
+  .way-to-help__social-list {
+    width: 320px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-top: 20px; }
+  .way-to-help__social-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: lightskyblue; }
+    .way-to-help__social-link--vk {
+      background-color: #426eab;
+      background-image: url("../../img/icon/vk_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .way-to-help__social-link--fb {
+      background-color: #3b5998;
+      background-image: url("../../img/icon/fb_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .way-to-help__social-link--ok {
+      background-color: #ff9800;
+      background-image: url("../../img/icon/ok_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .way-to-help__social-link--tw {
+      background-color: #50abf1;
+      background-image: url("../../img/icon/twitter_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .way-to-help__social-link--tg {
+      background-color: #2b9fda;
+      background-image: url("../../img/icon/telegram.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+  .way-to-help__social-list.feedback-list {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative; }
+    .way-to-help__social-list.feedback-list:before {
+      display: none; }
+
+@media (min-width: 768px) {
+  .way-to-help__social-list.feedback-list {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative; }
+    .way-to-help__social-list.feedback-list:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 294px;
+      height: 113px;
+      background-image: url("../../img/signature.png");
+      background-repeat: no-repeat;
+      left: 95%; } }
 
 @media (min-width: 1024px) {
   .way-to-help {
@@ -6963,7 +7052,25 @@ input[value].sober-webinar__input {
         background-color: #50abf1;
         background-image: url("../../img/icon/twitter_share.svg");
         background-repeat: no-repeat;
-        background-position: 50% 50%; } }
+        background-position: 50% 50%; }
+      .way-to-help__social-link--tg {
+        background-color: #2b9fda;
+        background-image: url("../../img/icon/telegram.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%; }
+    .way-to-help__social-list.feedback-list {
+      width: 150px;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      .way-to-help__social-list.feedback-list:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 294px;
+        height: 113px;
+        background-image: url("../../img/signature.png");
+        background-repeat: no-repeat;
+        left: 145%; } }
 
 .personal-history {
   padding-top: 40px; }
@@ -7202,3 +7309,388 @@ input[value].sober-webinar__input {
             flex-direction: row;
     width: 80%;
     margin: 0 auto; } }
+
+.join-pray {
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .join-pray--bg {
+    background-color: #FAF7DF; }
+  .join-pray__author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .join-pray__author-heading {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #212121; }
+  .join-pray__author-caption {
+    font-family: "MuseoSansCyrl-500It", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121; }
+    .join-pray__author-caption--normal {
+      font-family: "Museo Sans Cyrl Regular", sans-serif; }
+  .join-pray__title {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .join-pray__title-text {
+    display: inline-block;
+    margin-bottom: 29px;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9B9B9B; }
+    .join-pray__title-text--big {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      color: #212121; }
+    .join-pray__title-text--yellow {
+      color: #F7F606;
+      margin-bottom: 0; }
+    .join-pray__title-text--narrow {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 31px;
+      font-family: "Museo Cyrillic Thin", sans-serif;
+      margin-bottom: 30px; }
+  @media (min-width: 1260px) {
+    .join-pray__title-text {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 19px; }
+      .join-pray__title-text--big {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 51px; }
+      .join-pray__title-text--narrow {
+        font-family: "Museo Cyrillic Thin", sans-serif;
+        width: 50%;
+        font-size: 45px;
+        line-height: 50px; }
+      .join-pray__title-text--yellow {
+        margin-bottom: 0; } }
+  .join-pray__title {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .join-pray__title-text {
+    display: inline-block;
+    margin-top: 0; }
+    .join-pray__title-text--big {
+      font-size: 25px;
+      margin-bottom: 30px;
+      line-height: 35px; }
+  .join-pray__item-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .join-pray__item {
+    width: 80%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    border: 5px solid #efede6;
+    background-color: #FFF;
+    padding: 70px 20px 20px 20px;
+    margin-bottom: 35px; }
+  .join-pray__item-heading-wrapper {
+    margin-bottom: 60px; }
+  .join-pray__item-heading {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 20px;
+    color: #212121;
+    text-align: center;
+    line-height: 24px; }
+    .join-pray__item-heading--accient {
+      color: #FF482F; }
+
+@media (min-width: 1024px) {
+  .join-pray {
+    padding-top: 120px;
+    padding-bottom: 120px; }
+    .join-pray__title-text {
+      display: inline-block;
+      margin-top: 0; }
+      .join-pray__title-text--big {
+        font-size: 35px;
+        margin-bottom: 50px;
+        line-height: 45px; }
+    .join-pray__item {
+      margin: unset;
+      margin-bottom: 35px;
+      width: 545px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 5px solid #efede6;
+      background-color: #FFF;
+      padding: 70px 20px 20px 20px; } }
+
+@media (min-width: 1440px) {
+  .join-pray {
+    padding-bottom: 140px; }
+    .join-pray__item-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      position: relative;
+      margin-bottom: 57px; }
+      .join-pray__item-wrapper::before {
+        content: "";
+        position: absolute;
+        width: 103.8px;
+        height: 76.2px;
+        background-image: url("../../img/icon/arrow-orange-next.svg");
+        background-repeat: no-repeat;
+        right: 20%;
+        top: 10%; }
+      .join-pray__item-wrapper::after {
+        content: "";
+        position: absolute;
+        width: 103.8px;
+        height: 76.2px;
+        background-image: url("../../img/icon/arrow-orange-next.svg");
+        background-repeat: no-repeat;
+        right: 20%;
+        bottom: 10%;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
+    .join-pray__item--align-right {
+      position: absolute;
+      right: -10%;
+      top: 25%; } }
+
+.unsubscribe {
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .unsubscribe__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 20px;
+    color: #029754;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 20px; }
+  .unsubscribe__text {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Sans Cyrl Regular", sans-serif;
+    font-size: 18px;
+    color: #212121;
+    text-align: center;
+    line-height: 26px; }
+
+@media (min-width: 1024px) {
+  .unsubscribe {
+    padding-top: 160px;
+    padding-bottom: 140px; }
+    .unsubscribe__title {
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Cyrillic Regular", sans-serif;
+      font-size: 35px;
+      color: #029754;
+      text-align: center;
+      line-height: 35px;
+      margin-bottom: 20px; }
+    .unsubscribe__text-wrapper {
+      margin: 0 auto; }
+    .unsubscribe__text {
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Sans Cyrl Regular", sans-serif;
+      font-size: 18px;
+      color: #212121;
+      text-align: center;
+      line-height: 26px; } }
+
+.check-email {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(236, 236, 229, 0.23); }
+  .check-email__email__thumb {
+    content: "";
+    width: 133px;
+    height: 133px;
+    background-image: url("../../img/icon/mail_check.png");
+    background-repeat: no-repeat; }
+  .check-email__content-title {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 25px;
+    color: #212121;
+    line-height: 25px; }
+  .check-email__content-lead {
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 20px;
+    color: #029754;
+    line-height: 25px; }
+  .check-email__content-text {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Sans Cyrl Regular", sans-serif;
+    font-size: 16px;
+    color: #212121;
+    line-height: 20px; }
+  .check-email__col-1 {
+    margin: 0 auto;
+    width: 90%; }
+  .check-email__col-2 {
+    display: none; }
+
+@media (min-width: 768px) {
+  .check-email__col-1 {
+    margin: 0 auto;
+    width: 75%; } }
+
+@media (min-width: 1024px) {
+  .check-email {
+    padding-top: 140px;
+    padding-bottom: 175px; }
+    .check-email__email__thumb {
+      content: "";
+      width: 133px;
+      height: 133px;
+      background-image: url("../../img/icon/mail_check.png");
+      background-repeat: no-repeat; }
+    .check-email__content-title {
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Cyrillic Regular", sans-serif;
+      font-size: 35px;
+      color: #212121;
+      line-height: 35px;
+      width: 82%; }
+    .check-email__content-lead {
+      font-family: "Museo Cyrillic Medium", sans-serif;
+      font-size: 24px;
+      color: #029754;
+      line-height: 30px;
+      width: 61%; }
+    .check-email__content-text {
+      margin: 0;
+      padding: 0;
+      font-family: "Museo Sans Cyrl Regular", sans-serif;
+      font-size: 18px;
+      color: #212121;
+      line-height: 26px;
+      width: 82%; }
+    .check-email__item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      width: 100%; }
+    .check-email__col-1 {
+      width: 68%; }
+    .check-email__col-2-inner {
+      background-color: #fff;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 174px;
+      padding-bottom: 174px; }
+    .check-email__col-2 {
+      display: block;
+      width: 58%;
+      margin-bottom: 0;
+      margin-right: 110px; }
+    .check-email__thumb-wrapper {
+      width: 33%; } }

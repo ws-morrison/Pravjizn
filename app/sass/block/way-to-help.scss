@@ -30,8 +30,85 @@
   &__list {
     display: none;
   }
-}
+  &__social-list {
+    width: 320px;
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
 
+  &__social-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    background-color: lightskyblue;
+    &--vk {
+      background-color: #426eab;
+      background-image: url("../../img/icon/vk_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    &--fb {
+      background-color: #3b5998;
+      background-image: url("../../img/icon/fb_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    &--ok {
+      background-color: #ff9800;
+      background-image: url("../../img/icon/ok_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    &--tw {
+      background-color: #50abf1;
+      background-image: url("../../img/icon/twitter_share.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--tg {
+      background-color: #2b9fda;
+      background-image: url("../../img/icon/telegram.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+  &__social-list.feedback-list {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    &:before {
+      display: none;
+    }
+  }
+}
+@media (min-width: $tablet) {
+  .way-to-help {
+    &__social-list.feedback-list {
+      width: 150px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      &:before {
+        // display:none;
+        display: block;
+        content: "";
+        position: absolute;
+        width: 294px;
+        height: 113px;
+        background-image: url("../../img/signature.png");
+        background-repeat: no-repeat;
+        left: 95%;
+      }
+    }
+  }
+}
 @media (min-width: $desktop) {
   .way-to-help {
     display: block;
@@ -52,6 +129,7 @@
 
       // Временно
       margin-bottom: 70px;
+
       &--thumb-1 {
         &::before {
           content: "";
@@ -241,6 +319,28 @@
         background-image: url("../../img/icon/twitter_share.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
+      }
+
+      &--tg {
+        background-color: #2b9fda;
+        background-image: url("../../img/icon/telegram.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+    &__social-list.feedback-list {
+      width: 150px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 294px;
+        height: 113px;
+        background-image: url("../../img/signature.png");
+        background-repeat: no-repeat;
+        left: 145%;
       }
     }
   }

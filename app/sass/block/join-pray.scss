@@ -1,0 +1,139 @@
+.join-pray {
+  &--bg {
+    background-color: $secondary-bg;
+  }
+
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  @include author-heading-text($primary-text);
+  @include title-text($faded, $primary-text);
+
+  &__title {
+    align-items: center;
+  }
+
+  &__title-text {
+    display: inline-block;
+    margin-top: 0;
+
+    &--big {
+      font-size: $font-size-xxl;
+      margin-bottom: 30px;
+      line-height: 35px;
+    }
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border: 5px solid #efede6;
+    background-color: $white;
+    padding: 70px 20px 20px 20px;
+    margin-bottom: 35px;
+  }
+
+  &__item-heading-wrapper {
+    margin-bottom: 60px;
+  }
+
+  &__item-heading {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $primary-text;
+    text-align: center;
+    line-height: 24px;
+    &--accient {
+      color: $accient;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .join-pray {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__title-text {
+      display: inline-block;
+      margin-top: 0;
+
+      &--big {
+        font-size: $font-size-desktop-xl;
+        margin-bottom: 50px;
+        line-height: 45px;
+      }
+    }
+
+    &__item {
+      margin: unset;
+      margin-bottom: 35px;
+
+      width: 545px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 5px solid #efede6;
+      background-color: $white;
+      padding: 70px 20px 20px 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-l) {
+  .join-pray {
+    padding-bottom: 140px;
+
+    &__item-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+
+      margin-bottom: 57px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 103.8px;
+        height: 76.2px;
+        background-image: url("../../img/icon/arrow-orange-next.svg");
+        background-repeat: no-repeat;
+        right: 20%;
+        top: 10%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 103.8px;
+        height: 76.2px;
+        background-image: url("../../img/icon/arrow-orange-next.svg");
+        background-repeat: no-repeat;
+        right: 20%;
+        bottom: 10%;
+        transform: rotate(90deg);
+      }
+    }
+
+    &__item {
+      &--align-right {
+        position: absolute;
+        right: -10%;
+        top: 25%;
+      }
+    }
+  }
+}

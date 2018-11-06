@@ -1,0 +1,62 @@
+.unsubscribe {
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $accient-success;
+    text-align: center;
+    line-height: 35px;
+
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    color: $primary-text;
+    text-align: center;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .unsubscribe {
+    padding-top: 160px;
+    padding-bottom: 140px;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+
+      font-family: $primary-regular;
+      font-size: $font-size-desktop-xl;
+      color: $accient-success;
+      text-align: center;
+      line-height: 35px;
+
+      margin-bottom: 20px;
+    }
+    &__text-wrapper {
+      // width: 50%;
+      margin: 0 auto;
+    }
+    &__text {
+      margin: 0;
+      padding: 0;
+
+      font-family: $secondary-regular;
+      font-size: $font-size-m;
+      color: $primary-text;
+      text-align: center;
+      line-height: 26px;
+    }
+  }
+}

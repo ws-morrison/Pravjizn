@@ -39,6 +39,13 @@
     top: -56px;
     left: -20px;
   }
+
+  &--primary-large {
+    font-family: $primary-thin;
+    font-size: $font-size-2xl;
+    color: $primary-text;
+    line-height: 40px;
+  }
 }
 
 .feedback__img-wrapper {

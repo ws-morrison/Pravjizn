@@ -1,0 +1,139 @@
+.check-email {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(236, 236, 229, 0.23);
+  &__email__thumb {
+    content: "";
+    width: 133px;
+    height: 133px;
+    background-image: url("../../img/icon/mail_check.png");
+    background-repeat: no-repeat;
+  }
+
+  &__content-title {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primary-regular;
+    font-size: $font-size-xxl;
+    color: $primary-text;
+    line-height: 25px;
+  }
+
+  &__content-lead {
+    font-family: $primary-medium;
+    font-size: $font-size-l;
+    color: $accient-success;
+    line-height: 25px;
+  }
+
+  &__content-text {
+    margin: 0;
+    padding: 0;
+
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $primary-text;
+    line-height: 20px;
+  }
+  &__col-1 {
+    margin: 0 auto;
+    width: 90%;
+  }
+  &__col-2 {
+    // width: 100%;
+    // margin-bottom: 30px;
+    display: none;
+  }
+}
+// .gradient-background--color-grey.check-email__col-2 {
+//   background-image: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+// }
+@media (min-width: $tablet) {
+  .check-email {
+    &__col-1 {
+      margin: 0 auto;
+      width: 75%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .check-email {
+    padding-top: 140px;
+    padding-bottom: 175px;
+
+    &__email__thumb {
+      content: "";
+      width: 133px;
+      height: 133px;
+      background-image: url("../../img/icon/mail_check.png");
+      background-repeat: no-repeat;
+    }
+
+    &__content-title {
+      margin: 0;
+      padding: 0;
+
+      font-family: $primary-regular;
+      font-size: $font-size-desktop-xl;
+      color: $primary-text;
+      line-height: 35px;
+      width: 82%;
+    }
+
+    &__content-lead {
+      font-family: $primary-medium;
+      font-size: $font-size-xl;
+      color: $accient-success;
+      line-height: 30px;
+      width: 61%;
+    }
+
+    &__content-text {
+      margin: 0;
+      padding: 0;
+
+      font-family: $secondary-regular;
+      font-size: $font-size-m;
+      color: $primary-text;
+      line-height: 26px;
+      width: 82%;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      width: 100%;
+    }
+
+    &__col-1 {
+      width: 68%;
+      // margin-right: 110px;
+    }
+
+    &__col-2-inner {
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 174px;
+      padding-bottom: 174px;
+    }
+
+    &__col-2 {
+      display: block;
+      width: 58%;
+      margin-bottom: 0;
+      margin-right: 110px;
+    }
+
+    &__thumb-wrapper {
+      width: 33%;
+    }
+  }
+}

@@ -43,6 +43,9 @@
     font-size: 16px;
     line-height: 26px;
     color: $color;
+    &--normal {
+      font-family: $secondary-regular;
+    }
   }
 }
 
