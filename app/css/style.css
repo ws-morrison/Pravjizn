@@ -1012,6 +1012,17 @@ a:focus {
     -webkit-background-size: 1240px 1240px;
             background-size: 1240px;
     margin-bottom: 50px; }
+  .header--repair-bg {
+    background-image: -webkit-linear-gradient(225deg, #02c7b5 0%, #029550 100%);
+    background-image: -o-linear-gradient(225deg, #02c7b5 0%, #029550 100%);
+    background-image: linear-gradient(-135deg, #02c7b5 0%, #029550 100%);
+    -webkit-box-shadow: 0 10px 20px 0 rgba(2, 152, 86, 0.1);
+            box-shadow: 0 10px 20px 0 rgba(2, 152, 86, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 1240px 1240px;
+            background-size: 1240px;
+    margin-bottom: 50px; }
   .header--grey-bg {
     background-color: rgba(236, 236, 229, 0.23); }
   .header__title {
@@ -1081,6 +1092,13 @@ a:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.header__title-caption {
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  line-height: 20px; }
 
 .header-nav {
   width: 100%;
@@ -2099,6 +2117,8 @@ a:focus {
     margin-bottom: 160px; }
   .feedback__item {
     max-width: none; }
+  .feedback__item-text {
+    margin-bottom: 42px; }
   .feedback__item-wrapper {
     padding-bottom: 0;
     padding-left: 50%; }
@@ -2302,6 +2322,12 @@ a:focus {
     -webkit-background-size: 280px 280px;
             background-size: 280px;
     background-repeat: no-repeat; }
+  .pod__img--repair {
+    width: 280px;
+    background-image: url("../img/old_church_small.png");
+    -webkit-background-size: 280px 280px;
+            background-size: 280px;
+    background-repeat: no-repeat; }
 
 .pod__quote-text {
   margin: 0px;
@@ -2379,6 +2405,8 @@ a:focus {
     margin-right: auto; }
   .pod-item__title {
     padding-top: 50px; }
+    .pod-item__title--unset-padding {
+      padding: 0; }
   .pod__item-wrapper {
     padding-bottom: 0; }
   .pod__img-wrapper {
@@ -2415,6 +2443,8 @@ a:focus {
     max-width: 510px; }
   .pod-item__title {
     padding-top: 70px; }
+    .pod-item__title--unset-padding {
+      padding: 0; }
   .pod-item__title-text {
     margin-top: 0;
     margin-bottom: 40px;

@@ -105,6 +105,12 @@
     background-size: 280px;
     background-repeat: no-repeat;
   }
+  &--repair {
+    width: 280px;
+    background-image: url("../img/old_church_small.png");
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
 }
 
 .pod__quote-text {
@@ -208,6 +214,9 @@
   }
   .pod-item__title {
     padding-top: 50px;
+    &--unset-padding {
+      padding: 0;
+    }
   }
   .pod__item-wrapper {
     padding-bottom: 0;
@@ -252,9 +261,7 @@
 }
 
 @media (min-width: $desktop-full) {
-
   .pod {
-
     &--main-padding {
       padding-bottom: 204px;
     }
@@ -269,6 +276,9 @@
   }
   .pod-item__title {
     padding-top: 70px;
+    &--unset-padding {
+      padding: 0;
+    }
   }
   .pod-item__title-text {
     margin-top: 0;
