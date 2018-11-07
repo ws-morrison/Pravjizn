@@ -22,7 +22,7 @@ $(document).ready(function() {
     loop: true,
     nav: false,
     dots: true,
-    margin: 15,
+    margin: 40,
     responsiveBaseWidth: "history-slider__item",
     responsive: {
       320: {

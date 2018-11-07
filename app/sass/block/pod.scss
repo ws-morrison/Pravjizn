@@ -217,9 +217,15 @@
     &--unset-padding {
       padding: 0;
     }
+    &--small-padding {
+      padding-top: 30px;
+    }
   }
   .pod__item-wrapper {
     padding-bottom: 0;
+    &--narrow {
+      padding-left: 85px;
+    }
   }
 
   .pod__img-wrapper {
@@ -253,10 +259,17 @@
   .pod__quote-text {
     &--narrow {
       width: 77%;
+      padding-left: 85px;
     }
   }
   .history-slider {
     padding-top: 120px;
+  }
+
+  .pod__author {
+    &--narrow {
+      padding-left: 85px;
+    }
   }
 }
 
@@ -279,6 +292,9 @@
     &--unset-padding {
       padding: 0;
     }
+    &--small-padding {
+      padding-top: 30px;
+    }
   }
   .pod-item__title-text {
     margin-top: 0;
@@ -289,12 +305,15 @@
   .pod__img-wrapper {
     left: 500px;
     &--sober {
-      left: 600px;
+      left: 580px;
     }
   }
 
   .pod__author {
     margin-bottom: 50px;
+    &--narrow {
+      padding-left: 85px;
+    }
   }
 }
 

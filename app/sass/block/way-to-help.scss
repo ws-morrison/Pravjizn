@@ -252,6 +252,9 @@
       display: flex;
       justify-content: space-around;
       margin-bottom: 80px;
+      &--narrow {
+        width: 47%;
+      }
     }
 
     &__list-outer {
@@ -274,6 +277,9 @@
       text-decoration: none;
       background-color: #fff;
       padding: 18px 25px 18px 25px;
+      &--grey-bg {
+        background-color: #FAFAF9;
+      }
     }
 
     &__title {

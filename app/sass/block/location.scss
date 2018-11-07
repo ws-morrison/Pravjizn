@@ -20,6 +20,27 @@
       margin-bottom: 0;
     }
   }
+
+  &__caption {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+  &__caption-text {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $faded;
+    text-align: center;
+    line-height: 30px;
+    &--accient {
+      font-family: $primary-bold;
+      color: $accient;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -34,6 +55,25 @@
 
       // Временно
       max-width: 1025px;
+    }
+
+    &__caption {
+      display: flex;
+    }
+    &__caption-text {
+      margin: 0;
+      padding: 0;
+
+      display: inline;
+      font-family: $primary-regular;
+      font-size: $font-size-l;
+      color: $faded;
+      text-align: center;
+      line-height: 30px;
+      &--accient {
+        font-family: $primary-bold;
+        color: $accient;
+      }
     }
   }
 }

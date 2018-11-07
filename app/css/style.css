@@ -2407,8 +2407,12 @@ a:focus {
     padding-top: 50px; }
     .pod-item__title--unset-padding {
       padding: 0; }
+    .pod-item__title--small-padding {
+      padding-top: 30px; }
   .pod__item-wrapper {
     padding-bottom: 0; }
+    .pod__item-wrapper--narrow {
+      padding-left: 85px; }
   .pod__img-wrapper {
     width: 650px;
     height: 533px;
@@ -2430,9 +2434,12 @@ a:focus {
     .pod__img--sober {
       width: 460px; }
   .pod__quote-text--narrow {
-    width: 77%; }
+    width: 77%;
+    padding-left: 85px; }
   .history-slider {
-    padding-top: 120px; } }
+    padding-top: 120px; }
+  .pod__author--narrow {
+    padding-left: 85px; } }
 
 @media (min-width: 1260px) {
   .pod--main-padding {
@@ -2445,6 +2452,8 @@ a:focus {
     padding-top: 70px; }
     .pod-item__title--unset-padding {
       padding: 0; }
+    .pod-item__title--small-padding {
+      padding-top: 30px; }
   .pod-item__title-text {
     margin-top: 0;
     margin-bottom: 40px;
@@ -2452,9 +2461,11 @@ a:focus {
   .pod__img-wrapper {
     left: 500px; }
     .pod__img-wrapper--sober {
-      left: 600px; }
+      left: 580px; }
   .pod__author {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+    .pod__author--narrow {
+      padding-left: 85px; } }
 
 .program-item {
   max-width: 1440px;
@@ -6321,6 +6332,22 @@ input[value].confirm-form__input {
     margin-top: 0; }
     .location__title-text--big {
       margin-bottom: 0; }
+  .location__caption {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px; }
+  .location__caption-text {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Cyrillic Regular", sans-serif;
+    font-size: 20px;
+    color: #9B9B9B;
+    text-align: center;
+    line-height: 30px; }
+    .location__caption-text--accient {
+      font-family: "Museo Cyrillic Bold", sans-serif;
+      color: #FF482F; }
 
 @media (min-width: 1024px) {
   .location {
@@ -6330,7 +6357,24 @@ input[value].confirm-form__input {
     .location__map {
       width: 78%;
       margin: 0 auto;
-      max-width: 1025px; } }
+      max-width: 1025px; }
+    .location__caption {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .location__caption-text {
+      margin: 0;
+      padding: 0;
+      display: inline;
+      font-family: "Museo Cyrillic Regular", sans-serif;
+      font-size: 20px;
+      color: #9B9B9B;
+      text-align: center;
+      line-height: 30px; }
+      .location__caption-text--accient {
+        font-family: "Museo Cyrillic Bold", sans-serif;
+        color: #FF482F; } }
 
 .sober-webinar {
   padding-top: 50px;
@@ -7019,6 +7063,8 @@ input[value].sober-webinar__input {
           -ms-flex-pack: distribute;
               justify-content: space-around;
       margin-bottom: 80px; }
+      .way-to-help__list--narrow {
+        width: 47%; }
     .way-to-help__list-outer {
       padding: 2.5px;
       -webkit-border-radius: 100px;
@@ -7041,6 +7087,8 @@ input[value].sober-webinar__input {
       text-decoration: none;
       background-color: #fff;
       padding: 18px 25px 18px 25px; }
+      .way-to-help__list-item--grey-bg {
+        background-color: #FAFAF9; }
     .way-to-help__title {
       margin-bottom: 75px; }
     .way-to-help__social-list {
