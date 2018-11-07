@@ -7,21 +7,30 @@
   background-image: linear-gradient(90deg, #dfdfdf 0%, #838383 100%);
   // background-image: none;
   &--color-1 {
-    background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
+    // background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
+    background-image: none;
   }
   &--color-2 {
-    background-image: linear-gradient(90deg, #c65ada 0%, #7547b5 100%);
+    // background-image: linear-gradient(90deg, #c65ada 0%, #7547b5 100%);
+    background-image: none;
   }
   &--color-3 {
-    background-image: linear-gradient(90deg, #00c3af 0%, #00954f 100%);
+    // background-image: linear-gradient(90deg, #00c3af 0%, #00954f 100%);
+    background-image: none;
   }
   &--color-4 {
-    background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%);
+    // background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%);
+    background-image: none;
   }
   &--color-5 {
-    background-image: linear-gradient(90deg, #30b9ac 0%, #4795ee 100%);
+    // background-image: linear-gradient(90deg, #30b9ac 0%, #4795ee 100%);
+    background-image: none;
   }
   &--color-6 {
+    background-image: none;
+  }
+  &--color-grey {
+    // background-image: linear-gradient(90deg,rgba(207, 204, 185, 0.205) 100%,rgba(207, 204, 185, 0.205) 100%);
     background-image: none;
   }
   &--center-align {
@@ -36,7 +45,6 @@
 
 //DESKTOP
 @media (min-width: $desktop) {
-
   .out-section {
     padding-bottom: 120px;
   }

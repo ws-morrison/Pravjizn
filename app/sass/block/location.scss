@@ -1,6 +1,6 @@
 .location {
   padding-top: 50px;
-  // padding-bottom: 50px;
+  padding-bottom: 70px;
 
   @include author-heading-text($primary-text);
 
@@ -25,7 +25,7 @@
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
   }
   &__caption-text {
     margin: 0;
@@ -46,6 +46,7 @@
 @media (min-width: $desktop) {
   .location {
     padding-top: 125px;
+    padding-bottom: 140px;
     &__title--big {
       margin-bottom: 65px;
     }

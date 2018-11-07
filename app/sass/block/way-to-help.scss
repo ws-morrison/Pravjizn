@@ -3,6 +3,10 @@
     display: none;
   }
 
+  &--bg {
+    background-color: $secondary-bg;
+  }
+
   padding-top: 40px;
   padding-bottom: 50px;
 
@@ -28,8 +32,77 @@
     }
   }
   &__list {
-    display: none;
+    display: block;
   }
+
+  &__lead {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
+    color: $accient;
+    text-align: center;
+    line-height: 30px;
+
+    padding: 0;
+    // margin: 0;
+
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    text-align: left;
+    line-height: 26px;
+    color: $primary-text;
+
+    padding: 0;
+    margin: 0;
+
+    margin-top: 30px;
+    // margin-bottom: 15px;
+    &--accient {
+      color: $accient;
+    }
+    &--doted {
+      text-decoration-style: dotted;
+    }
+    &--bold {
+      font-family: $secondary-bold;
+      color: #0f0f0f;
+    }
+  }
+
+  &__list-item {
+    display: block;
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $primary-text;
+    text-align: center;
+    line-height: 24px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 18px 25px 18px 25px;
+    &--active {
+      color: $accient;
+    }
+    &--grey-bg {
+      background-color: #fafaf9;
+    }
+    &--bg {
+      background-color: $secondary-bg;
+    }
+  }
+
+  &__caption {
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $faded;
+    font-style: italic;
+  }
+
   &__social-list {
     width: 320px;
     display: flex;
@@ -87,7 +160,21 @@
       display: none;
     }
   }
+
+  &__thumb {
+    margin: 0 auto;
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 47px;
+    background-repeat: no-repeat;
+
+    &--orange {
+      background-image: url("../../img/icon/main_logo-orange-small.svg");
+    }
+  }
 }
+
 @media (min-width: $tablet) {
   .way-to-help {
     &__social-list.feedback-list {
@@ -109,6 +196,7 @@
     }
   }
 }
+
 @media (min-width: $desktop) {
   .way-to-help {
     display: block;
@@ -188,9 +276,15 @@
         padding-top: 75px;
         padding-bottom: 75px;
       }
+      &--bg {
+        background-color: $secondary-bg;
+      }
     }
 
     &__lead {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
       font-family: $primary-medium;
       font-size: $font-size-xl;
       color: $accient;
@@ -198,7 +292,7 @@
       line-height: 30px;
 
       padding: 0;
-      margin: 0;
+      // margin: 0;
 
       margin-bottom: 40px;
     }
@@ -224,6 +318,9 @@
       &--bold {
         font-family: $secondary-bold;
         color: #0f0f0f;
+      }
+      &--narrow {
+        width: 50%;
       }
     }
 
@@ -277,8 +374,14 @@
       text-decoration: none;
       background-color: #fff;
       padding: 18px 25px 18px 25px;
+      &--active {
+        color: $accient;
+      }
       &--grey-bg {
-        background-color: #FAFAF9;
+        background-color: #fafaf9;
+      }
+      &--bg {
+        background-color: $secondary-bg;
       }
     }
 
