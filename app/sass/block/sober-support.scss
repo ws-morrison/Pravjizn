@@ -20,6 +20,9 @@
     &--big {
       margin-bottom: 0;
     }
+    &--narrow {
+      width: 80%;
+    }
   }
   &__lead {
     font-family: $primary-thin;

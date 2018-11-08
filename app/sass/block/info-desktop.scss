@@ -121,6 +121,11 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
+  .info-desktop--report .info-desktop__wrapper {
+    padding-bottom: 55px;
+  }
+
   .info-desktop__left_col {
     display: flex;
     align-items: center;

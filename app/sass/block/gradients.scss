@@ -36,6 +36,9 @@
   &--center-align {
     margin: 0 auto;
   }
+  &--margin-top {
+    margin-top: 30px;
+  }
 }
 
 .out-section {
@@ -84,6 +87,9 @@
     }
     &--center-align {
       margin: 0 auto;
+    }
+    &--margin-top {
+      margin-top: 70px;
     }
   }
 }

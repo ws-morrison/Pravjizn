@@ -144,6 +144,11 @@
     margin-bottom: 25px;
     max-width: 273px;
   }
+  &__report-button {
+    max-width: 273px;
+    color: $accient;
+    border: 2px solid #212121;
+  }
 }
 
 .button--yellow {
@@ -286,6 +291,10 @@
     &--email {
       margin-bottom: 0;
     }
+    &__report-button {
+      color: $accient;
+      border: 2px solid #212121;
+    }
   }
 }
 @media (min-width: $desktop-full) {
@@ -301,6 +310,10 @@
     &--webinar-form,
     &--vk {
       max-width: 460px;
+    }
+    &__report-button {
+      color: $accient;
+      border: 2px solid rgba(33, 33, 33, 0.23);
     }
   }
   // &--form-wide {
