@@ -263,7 +263,7 @@
           <div class="gradient-background gradient-background--color-1 gradient-background--center-align way-to-help__col-2">
             <div class="way-to-help__col-2-inner way-to-help__col-2-inner--bg">
               <span class="way-to-help__thumb way-to-help__thumb--orange"></span>
-              <a href="" class="button button--orange jsShowPrayConfirm">Помочь материалами</a>
+              <a href="" class="button button--orange jsShowMaterialsConfirm">Помочь материалами</a>
             </div>
           </div>
         </div>
@@ -283,7 +283,7 @@
           <div class="gradient-background gradient-background--color-1 gradient-background--center-align way-to-help__col-2">
             <div class="way-to-help__col-2-inner way-to-help__col-2-inner--bg">
               <span class="way-to-help__thumb way-to-help__thumb--orange"></span>
-              <a href="" class="button button--orange jsShowPrayConfirm">Помочь физическим трудом</a>
+              <a href="" class="button button--orange jsShowWorkConfirm">Помочь физическим трудом</a>
               <p class="way-to-help__desc way-to-help__desc--narrow">Волонтеры получают кров, пищу и ежедневное
                 благословение</p>
             </div>
@@ -626,6 +626,127 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <div class="modal modal--overflow modal__materials-confirm jsShowMaterialsConfirm">
+    <a href="#" class="modal__close-btn jsModalCloseBtn">Close</a>
+    <div class="modal__col-1 modal__col-1--column modal__col-1--align-top">
+      <p class="modal__col-1-confirm-text"><span class="modal__col-1-confirm-text modal__col-1-confirm-text--bold">17</span>
+        проверенных фондом иереев и
+        игуменов в <span class="modal__col-1-confirm-text modal__col-1-confirm-text--bold">Краснодарском крае</span>,
+        нуждающиеся в
+        помощи, смогут связаться с вами напрямую</p>
+      <div class="modal__narrow-img-wrapper">
+        <img class="modal__narrow-img" src="./img/old_church_small.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal__col-2">
+      <form action="" class="confirm-form confirm-form--row">
+
+        <p class="confirm-form__desc-text">Укажите, в каком регионе и какими именно материалами Вы хотите помочь:</p>
+        <div class="confirm-form__wrapper">
+
+          <label for="" class="confirm-form__label">Выберите ваш регион
+            <select name="" id="" class="confirm-form__input confirm-form__input--wide">
+              <option value="">Краснодарский край</option>
+            </select>
+          </label>
+
+          <label for="" class="confirm-form__label">Какими материалы можете помочь
+            <select name="" id="" class="confirm-form__input confirm-form__input--wide">
+              <option value="">Стройматериалы</option>
+            </select>
+          </label>
+
+          <label class="confirm-form__label">Введите ваш телефон
+            <input class="confirm-form__input confirm-form__input--wide" type="email" name="gift__form" id="confirm-form-input"
+              placeholder="+7 (123) 456 78 90" onfocus="this.placeholder=''" onblur="this.placeholder='+7 (123) 456 78 90'"
+              value="">
+          </label>
+
+
+          <label class="confirm-form__label">Введите ваш e-mail, чтобы прислать смету и др. документы
+            <input class="confirm-form__input confirm-form__input--wide" type="email" name="gift__form" id="confirm-form-input"
+              placeholder="example@mail.ru" onfocus="this.placeholder=''" onblur="this.placeholder='example@mail.ru'"
+              value="">
+          </label>
+          <button class="button confirm-form__button button--blue service-item__button-link" type="submit">Помочь
+            материалами
+          </button>
+        </div>
+
+        <div class="confirm-form__caption">
+          <p class="confirm-form__caption-text">Нажимая на кнопку, я соглашаюсь с условиями</p>
+          <p class="confirm-form__caption-text"><a href="" class="confirm-form__link">политики конфиденциальности</a> и
+            <a href="" class="confirm-form__link">договором
+              оферты</a></p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="modal modal--overflow modal__work-confirm jsShowWorkConfirm">
+    <a href="#" class="modal__close-btn jsModalCloseBtn">Close</a>
+    <div class="modal__col-1 modal__col-1--column modal__col-1--align-top">
+      <p class="modal__col-1-confirm-text"><span class="modal__col-1-confirm-text modal__col-1-confirm-text--bold">17</span>
+        проверенных фондом иереев и
+        игуменов в <span class="modal__col-1-confirm-text modal__col-1-confirm-text--bold">Краснодарском крае</span>,
+        нуждающиеся в
+        помощи, смогут связаться с вами напрямую</p>
+      <div class="modal__narrow-img-wrapper">
+        <img class="modal__narrow-img" src="./img/old_church_small.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal__col-2">
+      <form action="" class="confirm-form confirm-form--row">
+
+        <p class="confirm-form__desc-text">Укажите, в каком регионе и как именно Вы хотите помочь:</p>
+        <div class="confirm-form__wrapper">
+
+          <label for="" class="confirm-form__label">Выберите ваш регион
+            <select name="" id="" class="confirm-form__input confirm-form__input--wide">
+              <option value="">Краснодарский край</option>
+            </select>
+          </label>
+
+          <label for="" class="confirm-form__label">Например: разнорабочий, агроном и т.д.
+            <select name="" id="" class="confirm-form__input confirm-form__input--wide">
+              <option value="">Агроном</option>
+            </select>
+          </label>
+
+          <label class="confirm-form__label">Введите ваш телефон
+            <input class="confirm-form__input confirm-form__input--wide" type="email" name="gift__form" id="confirm-form-input"
+              placeholder="+7 (123) 456 78 90" onfocus="this.placeholder=''" onblur="this.placeholder='+7 (123) 456 78 90'"
+              value="">
+          </label>
+
+
+          <label class="confirm-form__label">Введите ваш e-mail, чтобы прислать смету и др. документы
+            <input class="confirm-form__input confirm-form__input--wide" type="email" name="gift__form" id="confirm-form-input"
+              placeholder="example@mail.ru" onfocus="this.placeholder=''" onblur="this.placeholder='example@mail.ru'"
+              value="">
+          </label>
+          <button class="button confirm-form__button button--blue service-item__button-link" type="submit">Помочь физическим трудом
+          </button>
+        </div>
+
+        <div class="confirm-form__caption">
+          <p class="confirm-form__caption-text">Нажимая на кнопку, я соглашаюсь с условиями</p>
+          <p class="confirm-form__caption-text"><a href="" class="confirm-form__link">политики конфиденциальности</a> и
+            <a href="" class="confirm-form__link">договором
+              оферты</a></p>
+        </div>
+      </form>
+
     </div>
   </div>
 

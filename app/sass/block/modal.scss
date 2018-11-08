@@ -48,6 +48,20 @@
     text-align: center;
     line-height: 20px;
   }
+
+  &__col-1-confirm-text {
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $primary-text;
+    text-align: center;
+    line-height: 30px;
+
+    width: 75%;
+
+    &--bold {
+      font-family: $primary-bold;
+    }
+  }
 }
 
 .modal.show {
@@ -64,8 +78,13 @@
   padding-right: 20px;
   padding-bottom: 0;
   padding-left: 20px;
+
   &--column {
     flex-direction: column;
+  }
+
+  &--align-top {
+    justify-content: flex-start;
   }
 }
 
@@ -81,6 +100,11 @@
   border: 5px solid #efede6;
   padding: 20px;
   margin-bottom: 5px;
+}
+
+.modal__narrow-img-wrapper {
+  width: 80%;
+  max-width: 322px;
 }
 
 .modal__img {
@@ -178,10 +202,12 @@
     padding-bottom: 10px;
     padding-left: 50px;
   }
+
   .modal__img {
     min-height: auto;
   }
 }
+
 // DESKTOP
 @media (min-width: $desktop) {
   .modal {
@@ -229,6 +255,10 @@
 
     &--column {
       flex-direction: column;
+    }
+
+    &--align-top {
+      justify-content: flex-start;
     }
   }
 

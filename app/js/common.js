@@ -233,6 +233,33 @@ $(document).ready(function() {
     );
   });
 
+
+  // Materials Confirm
+  $(".jsShowMaterialsConfirm").click(function (e) {
+    e.preventDefault();
+    $(".modal__materials-confirm").addClass("show");
+    $(".modal-overlay").removeClass("visually-hidden");
+    $("html, body").animate(
+      {
+        scrollTop: $("body").offset().top
+      },
+      1200
+    );
+  });
+
+  // Work Confirm
+  $(".jsShowWorkConfirm").click(function (e) {
+    e.preventDefault();
+    $(".modal__work-confirm").addClass("show");
+    $(".modal-overlay").removeClass("visually-hidden");
+    $("html, body").animate(
+      {
+        scrollTop: $("body").offset().top
+      },
+      1200
+    );
+  });
+
   function modalClose() {
     $(".modal").removeClass("show");
     $(".modal-overlay").addClass("visually-hidden");
