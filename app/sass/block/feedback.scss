@@ -104,6 +104,9 @@
   .feedback {
     padding-top: 129px;
     padding-bottom: 150px;
+    &--large-padding {
+      padding-bottom: 200px;
+    }
 
     &__title-text {
       width: 100%;
@@ -129,6 +132,7 @@
 
   .feedback__item-text {
     margin-bottom: 42px;
+    width: 69%;
   }
 
   .feedback__item-wrapper {

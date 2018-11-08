@@ -1092,6 +1092,9 @@ a:focus {
   text-align: center;
   line-height: 20px; }
 
+.header__repair .header__title-caption {
+  width: 38%; }
+
 .header-nav {
   width: 100%;
   display: -webkit-box;
@@ -2106,6 +2109,8 @@ a:focus {
   .feedback {
     padding-top: 129px;
     padding-bottom: 150px; }
+    .feedback--large-padding {
+      padding-bottom: 200px; }
     .feedback__title-text {
       width: 100%;
       max-width: 600px;
@@ -2120,7 +2125,8 @@ a:focus {
   .feedback__item {
     max-width: none; }
   .feedback__item-text {
-    margin-bottom: 42px; }
+    margin-bottom: 42px;
+    width: 69%; }
   .feedback__item-wrapper {
     padding-bottom: 0;
     padding-left: 50%; }
@@ -2404,7 +2410,8 @@ a:focus {
   .pod__item {
     max-width: 50%;
     margin: unset;
-    margin-right: auto; }
+    margin-right: auto;
+    position: relative; }
   .pod-item__title {
     padding-top: 50px; }
     .pod-item__title--unset-padding {
@@ -2439,7 +2446,9 @@ a:focus {
     width: 77%;
     padding-left: 85px; }
   .history-slider {
-    padding-top: 120px; }
+    padding-top: 80px; }
+    .history-slider--repair {
+      padding-top: 20px; }
   .pod__author--narrow {
     padding-left: 85px; } }
 
@@ -2459,7 +2468,7 @@ a:focus {
   .pod-item__title-text {
     margin-top: 0;
     margin-bottom: 40px;
-    width: 92%; }
+    width: 86%; }
   .pod__img-wrapper {
     left: 500px; }
     .pod__img-wrapper--sober {
@@ -2468,6 +2477,28 @@ a:focus {
     margin-bottom: 50px; }
     .pod__author--narrow {
       padding-left: 85px; } }
+
+@media (min-width: 1440px) {
+  .pod-item--arrows-thumbs::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 22px;
+    background-image: url("../../img/icon/arrows_mini_left.svg");
+    background-repeat: no-repeat;
+    left: -15%;
+    top: 49%; }
+  .pod-item--arrows-thumbs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 22px;
+    background-image: url("../../img/icon/arrows_mini_right.svg");
+    background-repeat: no-repeat;
+    right: -135%;
+    top: 49%; } }
 
 .program-item {
   max-width: 1440px;
