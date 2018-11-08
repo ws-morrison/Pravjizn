@@ -41,7 +41,7 @@ $(document).ready(function() {
     }
   });
 
-  // Add text in form button
+  // Add text in form button Sobber
   $(window).resize(function() {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtn").html("Помочь Братству Трезвости");
@@ -50,6 +50,19 @@ $(document).ready(function() {
   $(window).resize(function() {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtn").html("Помочь Братству Трезвости");
+    }
+  });
+
+
+  // Add text in form button Repair
+  $(window).resize(function () {
+    if ($(window).width() >= 1024) {
+      $(".jsInnerTextBtnRepair").html("Помочь восстановить храм");
+    }
+  });
+  $(window).resize(function () {
+    if ($(window).width() >= 1024) {
+      $(".jsInnerTextBtnRepair").html("Помочь восстановить храм");
     }
   });
 
