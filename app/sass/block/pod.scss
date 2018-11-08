@@ -22,6 +22,7 @@
     &--big {
       margin-bottom: 0;
     }
+
     &--big-modal {
       font-size: $font-size-desktop-xl;
       color: $primary-text;
@@ -41,6 +42,7 @@
     padding-top: 50px;
     background-color: rgba(236, 236, 229, 0.23);
   }
+
   &__greeting-text {
     display: block;
   }
@@ -54,6 +56,7 @@
 .pod__item-wrapper {
   position: relative;
   padding-bottom: 384px;
+
   &--modal {
     padding-bottom: 284px;
   }
@@ -75,10 +78,12 @@
   right: 0px;
   margin-left: auto;
   margin-right: auto;
+
   &--modal {
     width: 320px;
     height: 285px;
   }
+
   &--sober {
     bottom: -20px;
     left: -95px;
@@ -92,6 +97,7 @@
   background-image: url("../img/batushka_img.png");
   background-size: 468px 384px;
   background-repeat: no-repeat;
+
   &--modal {
     background-size: 100%;
     width: 71%;
@@ -99,12 +105,14 @@
     left: -10px;
     position: relative;
   }
+
   &--sober {
     width: 280px;
     background-image: url("../img/woman_sad.png");
     background-size: 280px;
     background-repeat: no-repeat;
   }
+
   &--repair {
     width: 280px;
     background-image: url("../img/old_church_small.png");
@@ -117,6 +125,15 @@
   margin: 0px;
   margin-bottom: 40px;
   @include text-main($primary-text);
+
+  &--accient {
+    display: block;
+    margin-top: 10px;
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
+    color: $accient;
+    line-height: 24px;
+  }
 }
 
 .pod__quote-link {
@@ -130,6 +147,7 @@
 .history-slider {
   margin-bottom: 90px;
 }
+
 .history-slider__caption {
   font-family: $secondary-regular;
 }
@@ -148,6 +166,7 @@
     right: 0px;
     margin-left: auto;
     margin-right: auto;
+
     &--modal {
       width: 480px;
       height: 285px;
@@ -217,15 +236,19 @@
 
   .pod-item__title {
     padding-top: 50px;
+
     &--unset-padding {
       padding: 0;
     }
+
     &--small-padding {
       padding-top: 30px;
     }
   }
+
   .pod__item-wrapper {
     padding-bottom: 0;
+
     &--narrow {
       padding-left: 85px;
     }
@@ -237,10 +260,12 @@
 
     left: 460px;
     top: 0px;
+
     &--modal {
       width: 586px;
       left: 81%;
     }
+
     &--sober {
       width: 460px;
       left: 500px;
@@ -251,9 +276,11 @@
     width: 100%;
     height: 100%;
     background-size: 100%;
+
     &--modal {
       width: 75%;
     }
+
     &--sober {
       width: 460px;
     }
@@ -265,8 +292,10 @@
       padding-left: 85px;
     }
   }
+
   .history-slider {
     padding-top: 80px;
+
     &--repair {
       padding-top: 20px;
     }
@@ -276,6 +305,10 @@
     &--narrow {
       padding-left: 85px;
     }
+  }
+
+  .repair-history .pod__title-text--big-modal {
+    width: 75%;
   }
 }
 
@@ -293,15 +326,19 @@
   .pod__item {
     max-width: 510px;
   }
+
   .pod-item__title {
     padding-top: 70px;
+
     &--unset-padding {
       padding: 0;
     }
+
     &--small-padding {
       padding-top: 30px;
     }
   }
+
   .pod-item__title-text {
     margin-top: 0;
     margin-bottom: 40px;
@@ -311,6 +348,7 @@
 
   .pod__img-wrapper {
     left: 500px;
+
     &--sober {
       left: 580px;
     }
@@ -318,6 +356,7 @@
 
   .pod__author {
     margin-bottom: 50px;
+
     &--narrow {
       padding-left: 85px;
     }

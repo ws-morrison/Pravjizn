@@ -22,6 +22,7 @@
 
     text-align: center;
     margin-bottom: 50px;
+
     &--big {
       font-size: $font-size-desktop-xl;
       color: $accient-success;
@@ -32,6 +33,64 @@
 
   .header-nav {
     margin-bottom: 30px;
+  }
+
+  &__callback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__callback-email {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $accient;
+    text-align: center;
+    line-height: 24px;
+
+    margin-bottom: 40px;
+  }
+
+  &__callback-caption {
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $primary-text;
+    line-height: 30px;
+    text-align: center;
+
+    margin-bottom: 5px;
+  }
+
+  &__callback-phone {
+    margin: 0;
+    padding: 0;
+
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $accient;
+    text-align: center;
+    line-height: 24px;
+
+    margin-bottom: 5px;
+  }
+
+  &__callback-change {
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $faded;
+    text-decoration-style: dotted;
+    line-height: 30px;
   }
 }
 
@@ -59,6 +118,7 @@
       padding: 0;
       color: $primary-text;
       margin-bottom: 50px;
+
       &--big {
         font-size: $font-size-desktop-2xl;
         color: #029754;

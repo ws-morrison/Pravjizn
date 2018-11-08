@@ -17,6 +17,7 @@
   &__title {
     align-items: center;
     margin-bottom: 25px;
+
     &--none {
       display: none;
     }
@@ -31,6 +32,7 @@
       margin-bottom: 0;
     }
   }
+
   &__list {
     display: block;
   }
@@ -62,13 +64,16 @@
     margin: 0;
 
     margin-top: 30px;
+
     // margin-bottom: 15px;
     &--accient {
       color: $accient;
     }
+
     &--doted {
       text-decoration-style: dotted;
     }
+
     &--bold {
       font-family: $secondary-bold;
       color: #0f0f0f;
@@ -85,12 +90,15 @@
     text-decoration: none;
     background-color: #fff;
     padding: 18px 25px 18px 25px;
+
     &--active {
       color: $accient;
     }
+
     &--grey-bg {
       background-color: #fafaf9;
     }
+
     &--bg {
       background-color: $secondary-bg;
     }
@@ -110,6 +118,10 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     margin-top: 20px;
+
+    &--align-left {
+      justify-content: flex-start;
+    }
   }
 
   &__social-link {
@@ -119,24 +131,28 @@
     border-radius: 50%;
 
     background-color: lightskyblue;
+
     &--vk {
       background-color: #426eab;
       background-image: url("../../img/icon/vk_share.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
+
     &--fb {
       background-color: #3b5998;
       background-image: url("../../img/icon/fb_share.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
+
     &--ok {
       background-color: #ff9800;
       background-image: url("../../img/icon/ok_share.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
+
     &--tw {
       background-color: #50abf1;
       background-image: url("../../img/icon/twitter_share.svg");
@@ -151,11 +167,13 @@
       background-position: 50% 50%;
     }
   }
+
   &__social-list.feedback-list {
     width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
+
     &:before {
       display: none;
     }
@@ -182,17 +200,29 @@
       margin-top: 10px;
       margin-bottom: 10px;
       position: relative;
-      &:before {
-        // display:none;
-        display: block;
-        content: "";
-        position: absolute;
-        width: 294px;
-        height: 113px;
-        background-image: url("../../img/signature.png");
-        background-repeat: no-repeat;
-        left: 95%;
-      }
+
+      // &:before {
+      //   // display:none;
+      //   display: block;
+      //   content: "";
+      //   position: absolute;
+      //   width: 294px;
+      //   height: 113px;
+      //   background-image: url("../../img/signature.png");
+      //   background-repeat: no-repeat;
+      //   left: 95%;
+      // }
+    }
+
+    &__social-list.feedback-list--thumb:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 294px;
+      height: 113px;
+      background-image: url("../../img/signature.png");
+      background-repeat: no-repeat;
+      left: 145%;
     }
   }
 }
@@ -233,6 +263,7 @@
           z-index: 1;
         }
       }
+
       &--thumb-2 {
         &::before {
           content: "";
@@ -276,6 +307,7 @@
         padding-top: 75px;
         padding-bottom: 75px;
       }
+
       &--bg {
         background-color: $secondary-bg;
       }
@@ -308,17 +340,21 @@
       margin: 0;
 
       margin-top: 30px;
+
       // margin-bottom: 15px;
       &--accient {
         color: $accient;
       }
+
       &--doted {
         text-decoration-style: dotted;
       }
+
       &--bold {
         font-family: $secondary-bold;
         color: #0f0f0f;
       }
+
       &--narrow {
         width: 50%;
       }
@@ -349,6 +385,7 @@
       display: flex;
       justify-content: space-around;
       margin-bottom: 80px;
+
       &--narrow {
         width: 47%;
       }
@@ -358,6 +395,7 @@
       padding: 2.5px;
       border-radius: 100px;
       background-image: none;
+
       &--active {
         background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
       }
@@ -374,12 +412,15 @@
       text-decoration: none;
       background-color: #fff;
       padding: 18px 25px 18px 25px;
+
       &--active {
         color: $accient;
       }
+
       &--grey-bg {
         background-color: #fafaf9;
       }
+
       &--bg {
         background-color: $secondary-bg;
       }
@@ -396,6 +437,10 @@
       flex-wrap: nowrap;
       justify-content: space-around;
       margin-top: 20px;
+
+      &--align-left {
+        justify-content: flex-start;
+      }
     }
 
     &__social-link {
@@ -405,24 +450,28 @@
       border-radius: 50%;
 
       background-color: lightskyblue;
+
       &--vk {
         background-color: #426eab;
         background-image: url("../../img/icon/vk_share.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }
+
       &--fb {
         background-color: #3b5998;
         background-image: url("../../img/icon/fb_share.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }
+
       &--ok {
         background-color: #ff9800;
         background-image: url("../../img/icon/ok_share.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }
+
       &--tw {
         background-color: #50abf1;
         background-image: url("../../img/icon/twitter_share.svg");
@@ -437,20 +486,22 @@
         background-position: 50% 50%;
       }
     }
+
     &__social-list.feedback-list {
       width: 150px;
       margin-top: 40px;
       margin-bottom: 40px;
-      &:before {
-        display: block;
-        content: "";
-        position: absolute;
-        width: 294px;
-        height: 113px;
-        background-image: url("../../img/signature.png");
-        background-repeat: no-repeat;
-        left: 145%;
-      }
+    }
+
+    &__social-list.feedback-list--thumb:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 294px;
+      height: 113px;
+      background-image: url("../../img/signature.png");
+      background-repeat: no-repeat;
+      left: 145%;
     }
   }
 }

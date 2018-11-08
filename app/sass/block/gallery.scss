@@ -20,6 +20,7 @@
     &--big {
       margin-bottom: 0;
     }
+
     &--big-modal {
       font-size: $font-size-xl;
       color: $primary-text;
@@ -27,12 +28,14 @@
     }
   }
 }
+
 .gallery__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
   &--big {
     flex-direction: row;
   }
@@ -48,6 +51,7 @@
   &--big {
     width: 545px;
   }
+
   &--sober-big {
     width: 545px;
   }
@@ -78,6 +82,7 @@
   &--big {
     width: 300px;
     margin-bottom: 40px;
+
     &::before {
       top: 30%;
       left: 37%;
@@ -88,9 +93,11 @@
 .gallery__form-item {
   padding-top: 60px;
   padding-bottom: 40px;
+
   &--grey-bg {
     background-color: rgba(236, 236, 229, 0.23);
   }
+
   &--small {
     padding-top: 0;
     padding-bottom: 0;
@@ -109,6 +116,13 @@
   margin: 0 auto;
 
   margin-bottom: 60px;
+
+  &--unset-padding {
+    padding: 0;
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+  }
 }
 
 .gallery__form-wrapper {
@@ -120,6 +134,7 @@
   justify-content: center;
   position: relative;
 }
+
 .gallery__form-wrapper::before {
   content: "";
   width: 80px;
@@ -131,6 +146,7 @@
   background-image: url("../img/icon/main_logo-green.svg");
   background-repeat: no-repeat;
 }
+
 .gallery__form-wrapper--hidden::before {
   display: none;
 }
@@ -162,6 +178,7 @@
     &--big {
       width: 748px;
       margin-bottom: 90px;
+
       &::before {
         top: 44%;
         left: 44%;
@@ -169,6 +186,7 @@
     }
   }
 }
+
 // DESKTOP
 @media (min-width: $desktop) {
   .gallery {
@@ -190,6 +208,7 @@
       &--big {
         margin-bottom: 0;
       }
+
       &--big-modal {
         font-size: $font-size-desktop-xl;
         color: $primary-text;
@@ -207,6 +226,7 @@
   .gallery__form-item {
     padding-top: 110px;
     padding-bottom: 100px;
+
     &--small {
       padding-top: 60px;
       padding-bottom: 40px;
@@ -219,6 +239,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 115px;
+
     &--big {
       flex-direction: row;
     }
@@ -236,6 +257,13 @@
     margin: 0 auto;
 
     margin-bottom: 120px;
+
+    &--unset-padding {
+      padding: 0;
+      margin: 0 auto;
+
+      margin-bottom: 50px;
+    }
   }
 
   .gallery__video-item {
@@ -263,6 +291,7 @@
     &--big {
       width: 820px;
       margin-bottom: 90px;
+
       &::before {
         top: 44%;
         left: 44%;

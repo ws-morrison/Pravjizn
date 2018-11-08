@@ -53,14 +53,13 @@ $(document).ready(function() {
     }
   });
 
-
   // Add text in form button Repair
-  $(window).resize(function () {
+  $(window).resize(function() {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtnRepair").html("Помочь восстановить храм");
     }
   });
-  $(window).resize(function () {
+  $(window).resize(function() {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtnRepair").html("Помочь восстановить храм");
     }
@@ -199,6 +198,19 @@ $(document).ready(function() {
   $(".jsShowPersonalHistory").click(function(e) {
     e.preventDefault();
     $(".personal-history").addClass("show");
+    $(".modal-overlay").removeClass("visually-hidden");
+    $("html, body").animate(
+      {
+        scrollTop: $("body").offset().top
+      },
+      2000
+    );
+  });
+
+  // Repair history
+  $(".jsShowRepairHistory").click(function(e) {
+    e.preventDefault();
+    $(".repair-history").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
     $("html, body").animate(
       {

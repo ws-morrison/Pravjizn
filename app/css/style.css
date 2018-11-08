@@ -2344,6 +2344,13 @@ a:focus {
   font-size: 18px;
   line-height: 26px;
   color: #212121; }
+  .pod__quote-text--accient {
+    display: block;
+    margin-top: 10px;
+    font-family: "Museo Cyrillic Medium", sans-serif;
+    font-size: 24px;
+    color: #FF482F;
+    line-height: 24px; }
 
 .pod__quote-link {
   font-size: 18px;
@@ -2450,7 +2457,9 @@ a:focus {
     .history-slider--repair {
       padding-top: 20px; }
   .pod__author--narrow {
-    padding-left: 85px; } }
+    padding-left: 85px; }
+  .repair-history .pod__title-text--big-modal {
+    width: 75%; } }
 
 @media (min-width: 1260px) {
   .pod--main-padding {
@@ -5666,6 +5675,10 @@ input[value].confirm-form__input {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 60px; }
+  .gallery__content-text--unset-padding {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px; }
 
 .gallery__form-wrapper {
   background-color: #FFF;
@@ -5796,6 +5809,10 @@ input[value].confirm-form__input {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 120px; }
+    .gallery__content-text--unset-padding {
+      padding: 0;
+      margin: 0 auto;
+      margin-bottom: 50px; }
   .gallery__video-item {
     padding: 7px;
     position: relative;
@@ -6964,6 +6981,11 @@ input[value].sober-webinar__input {
         -ms-flex-pack: distribute;
             justify-content: space-around;
     margin-top: 20px; }
+    .way-to-help__social-list--align-left {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
   .way-to-help__social-link {
     display: block;
     width: 60px;
@@ -7019,15 +7041,15 @@ input[value].sober-webinar__input {
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative; }
-    .way-to-help__social-list.feedback-list:before {
-      display: block;
-      content: "";
-      position: absolute;
-      width: 294px;
-      height: 113px;
-      background-image: url("../../img/signature.png");
-      background-repeat: no-repeat;
-      left: 95%; } }
+  .way-to-help__social-list.feedback-list--thumb:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 294px;
+    height: 113px;
+    background-image: url("../../img/signature.png");
+    background-repeat: no-repeat;
+    left: 145%; } }
 
 @media (min-width: 1024px) {
   .way-to-help {
@@ -7210,6 +7232,11 @@ input[value].sober-webinar__input {
           -ms-flex-pack: distribute;
               justify-content: space-around;
       margin-top: 20px; }
+      .way-to-help__social-list--align-left {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
     .way-to-help__social-link {
       display: block;
       width: 60px;
@@ -7246,15 +7273,15 @@ input[value].sober-webinar__input {
       width: 150px;
       margin-top: 40px;
       margin-bottom: 40px; }
-      .way-to-help__social-list.feedback-list:before {
-        display: block;
-        content: "";
-        position: absolute;
-        width: 294px;
-        height: 113px;
-        background-image: url("../../img/signature.png");
-        background-repeat: no-repeat;
-        left: 145%; } }
+    .way-to-help__social-list.feedback-list--thumb:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 294px;
+      height: 113px;
+      background-image: url("../../img/signature.png");
+      background-repeat: no-repeat;
+      left: 145%; } }
 
 .personal-history {
   padding-top: 40px; }
@@ -7420,6 +7447,63 @@ input[value].sober-webinar__input {
 
 .thanks-header .header-nav {
   margin-bottom: 30px; }
+
+.thanks-header__callback {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.thanks-header__callback-email {
+  margin: 0;
+  padding: 0;
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  color: #FF482F;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 40px; }
+
+.thanks-header__callback-caption {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  color: #212121;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 5px; }
+
+.thanks-header__callback-phone {
+  margin: 0;
+  padding: 0;
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  color: #FF482F;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 5px; }
+
+.thanks-header__callback-change {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  color: #9B9B9B;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  line-height: 30px; }
 
 @media (min-width: 1024px) {
   .thanks-header__title {
