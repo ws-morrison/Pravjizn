@@ -1026,9 +1026,9 @@ a:focus {
             background-size: 1240px;
     margin-bottom: 50px; }
   .header--repair-bg {
-    background-image: url(../../img/repair-mobile-header.png);
+    background-image: url(../../img/old_church_small-filter.png);
     background-repeat: no-repeat;
-    background-position: 45%;
+    background-position: 30%;
     -webkit-background-size: 605px 605px;
             background-size: 605px; }
   .header--grey-bg {
@@ -1190,9 +1190,9 @@ a:focus {
 
 @media (min-width: 600px) {
   .header--repair-bg {
-    background-image: url(../../img/repair-mobile-header.png);
+    background-image: url(../../img/old_church_small-filter.png);
     background-repeat: no-repeat;
-    background-position: 45%;
+    background-position: 30%;
     -webkit-background-size: 905px 905px;
             background-size: 905px; } }
 

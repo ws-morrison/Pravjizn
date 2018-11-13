@@ -18,9 +18,9 @@
   }
 
   &--repair-bg {
-    background-image: url(../../img/repair-mobile-header.png);
+    background-image: url(../../img/old_church_small-filter.png);
     background-repeat: no-repeat;
-    background-position: 45%;
+    background-position: 30%;
     background-size: 605px;
   }
 
@@ -124,9 +124,9 @@
 @media (min-width: 600px) {
   .header {
     &--repair-bg {
-      background-image: url(../../img/repair-mobile-header.png);
+      background-image: url(../../img/old_church_small-filter.png);
       background-repeat: no-repeat;
-      background-position: 45%;
+      background-position: 30%;
       background-size: 905px;
     }
   }
