@@ -91,9 +91,11 @@
     background-color: #fff;
     padding: 18px 25px 18px 25px;
 
-    &--active {
-      color: $accient;
-    }
+    cursor: pointer;
+
+    // &--active {
+    //   color: $accient;
+    // }
 
     &--grey-bg {
       background-color: #fafaf9;
@@ -183,13 +185,7 @@
     margin: 0 auto;
     display: block;
     width: 42px;
-    height: 42px;
     margin-bottom: 47px;
-    background-repeat: no-repeat;
-
-    &--orange {
-      background-image: url("../../img/icon/main_logo-orange-small.svg");
-    }
   }
 }
 
@@ -238,7 +234,8 @@
     }
 
     &__item {
-      display: flex;
+      // display: flex;
+      display: none;
       justify-content: space-evenly;
       align-items: center;
       position: relative;
@@ -368,15 +365,10 @@
     }
 
     &__thumb {
+      margin: 0 auto;
       display: block;
-      width: 42px;
-      height: 42px;
+      width: 62px;
       margin-bottom: 47px;
-      background-repeat: no-repeat;
-
-      &--orange {
-        background-image: url("../../img/icon/main_logo-orange-small.svg");
-      }
     }
 
     &__list {
@@ -397,13 +389,14 @@
       background-image: none;
 
       &--active {
+        color: $accient;
         background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
       }
     }
 
     &__list-item {
       display: block;
-      border-radius: 100px;
+      border-radius: 50px;
       font-family: $primary-regular;
       font-size: $font-size-l;
       color: $primary-text;
@@ -424,7 +417,12 @@
       &--bg {
         background-color: $secondary-bg;
       }
+
+      &:hover {
+        color: $accient;
+      }
     }
+
 
     &__title {
       margin-bottom: 75px;
@@ -504,4 +502,31 @@
       left: 145%;
     }
   }
+
+  .way-to-help .active {
+    display: flex;
+
+    color: $accient;
+    // background-color: $secondary-bg;
+  }
+
+  .way-to-help__list-outer.active {
+    color: $accient;
+
+    background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
+  }
+
+  // .way-to-help__list-item.active {
+  //   display: block;
+  //   border-radius: 50px;
+  //   font-family: $primary-regular;
+  //   font-size: $font-size-l;
+  //   color: $primary-text;
+  //   text-align: center;
+  //   line-height: 24px;
+  //   text-decoration: none;
+  //   // background-color: #fff;
+  //   background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
+  //   padding: 18px 25px 18px 25px;
+  // }
 }

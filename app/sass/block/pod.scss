@@ -48,6 +48,11 @@
   }
 }
 
+.pod-item--arrows-thumbs--left,
+.pod-item--arrows-thumbs--right {
+  display: none;
+}
+
 .pod__item {
   max-width: 500px;
   margin: 0 auto;
@@ -116,6 +121,13 @@
   &--repair {
     width: 280px;
     background-image: url("../img/old_church_small.png");
+    background-size: 280px;
+    background-repeat: no-repeat;
+  }
+
+  &--repair-done {
+    width: 280px;
+    background-image: url("../img/woman_sad.png");
     background-size: 280px;
     background-repeat: no-repeat;
   }
@@ -357,34 +369,64 @@
   .pod__author {
     margin-bottom: 50px;
 
-    &--narrow {
+    &--55ow {
       padding-left: 85px;
     }
   }
 }
 
 @media (min-width: $desktop-l) {
-  .pod-item--arrows-thumbs::after {
+  .pod-item--arrows-thumbs--left {
     content: "";
     display: block;
     position: absolute;
     width: 55px;
-    height: 22px;
+    height: 55px;
     background-image: url("../../img/icon/arrows_mini_left.svg");
     background-repeat: no-repeat;
     left: -15%;
     top: 49%;
+
+    border-radius: 50px;
+    background-position: 50% 45%;
+
+    &:hover {
+      border: 1px solid #CCCCCC;
+    }
+
+    &:focus {
+      border: 1px solid #CCCCCC;
+    }
+
+    &:active {
+      border: 1px solid #FF482F;
+    }
   }
 
-  .pod-item--arrows-thumbs::before {
+  .pod-item--arrows-thumbs--right {
     content: "";
     display: block;
     position: absolute;
     width: 55px;
-    height: 22px;
+    height: 55px;
     background-image: url("../../img/icon/arrows_mini_right.svg");
     background-repeat: no-repeat;
     right: -135%;
     top: 49%;
+
+    border-radius: 50px;
+    background-position: 50% 45%;
+
+    &:hover {
+      border: 1px solid #CCCCCC;
+    }
+
+    &:focus {
+      border: 1px solid #CCCCCC;
+    }
+
+    &:active {
+      border: 1px solid #FF482F;
+    }
   }
 }

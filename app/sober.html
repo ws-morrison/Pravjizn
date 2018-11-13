@@ -333,7 +333,8 @@
       <div class="container">
         <div class="service-item">
           <div class="service-item__left-col">
-            <span class="service-item__thumb service-item__thumb--lightblue"></span>
+            <!-- <span class="service-item__thumb service-item__thumb--lightblue"></span> -->
+            <img src="./img/icon/main_logo-lightblue.svg" alt="" class="service-item__thumb">
             <div class="service-title">
               <p class="service-title__heading">Правжизнь</p>
               <p class="service-title__name">Ежедневные молитвы</p>
@@ -352,7 +353,8 @@
 
         <div class="service-item service-item--reverse-row">
           <div class="service-item__left-col">
-            <span class="service-item__thumb service-item__thumb--lightgreen"></span>
+            <!-- <span class="service-item__thumb service-item__thumb--lightgreen"></span> -->
+            <img src="./img/icon/main_logo-lightgreen.svg" alt="" class="service-item__thumb">
             <div class="service-title">
               <p class="service-title__heading">Правжизнь</p>
               <p class="service-title__name">Исправление трудом</p>
@@ -370,7 +372,8 @@
 
         <div class="service-item">
           <div class="service-item__left-col">
-            <span class="service-item__thumb service-item__thumb--orange"></span>
+            <!-- <span class="service-item__thumb service-item__thumb--orange"></span> -->
+            <img src="./img/icon/main_logo-orange.svg" alt="" class="service-item__thumb">
             <div class="service-title">
               <p class="service-title__heading">Правжизнь</p>
               <p class="service-title__name">Теплое жилье при храме</p>
@@ -394,7 +397,7 @@
 
         <div class="gradient-background gradient-background--color-6 gradient-background--center-align">
           <div class="gallery__form-wrapper gallery__form-wrapper--hidden">
-            <div class="gallery__form-item gallery__form-item--small gallery__form-item--grey-bg">
+            <div class="gallery__form-item gallery__form-item--small">
               <form action="" class="donate-form donate-form--modal">
                 <div class="donate-form__wrapper donate-form__wrapper--modal-row donate-form__wrapper--desktop-wide">
                   <div class="donate-form__input-wrapper">
@@ -479,7 +482,7 @@
         <div class="info-desktop__wrapper">
           <div class="info-desktop__left_col">
             <ul class="info-desktop__list">
-              <li class="info-desktop__item" data-info="2018-may">Май, 2018</li>
+              <li class="info-desktop__item active" data-info="2018-may">Май, 2018</li>
               <li class="info-desktop__item" data-info="2018-april">Апрель, 2018</li>
               <li class="info-desktop__item" data-info="2018-march">Март, 2018</li>
               <li class="info-desktop__item" data-info="2018-february">Февраль, 2018</li>
@@ -551,7 +554,10 @@
 
       <div class="sober-webinar__item">
         <div class="sober-webinar__img-wrapper">
-          <img src="./img/church_small_case_2.png" alt="" class="sober-webinar__img">
+          <div class="sober-webinar__img">
+            <i class="icon icon__play icon__play--sober"></i>
+
+          </div>
         </div>
 
         <form action="" class="sober-webinar__form">
@@ -595,6 +601,9 @@
           <p class="info-services__title info-services__title--container">Финансы</p>
           <div class="info-service-item visually-hidden">
             <p class="info-service-item__lead">Открываем новые центры каждый месяц!</p>
+
+<!-- TODO поправить текст, сделать отступы -->
+
             <p class="info-service-item__desc">Все поступающие средства мы отправляем храмам уже на следующий день.</p>
             <p class="info-service-item__desc">Чем быстрее организуем центры реабилитации — тем больше жизней мы
               спасем!</p>
@@ -675,17 +684,17 @@
 
         <div class="way-to-help__list">
           <div class="way-to-help__list-outer way-to-help__list-outer--active">
-            <a href="" class="way-to-help__list-item">Финансы</a>
+            <span class="way-to-help__list-item way-to-help__list-item--active" data-info="finance">Финансы</span>
           </div>
           <div class="way-to-help__list-outer">
-            <a href="" class="way-to-help__list-item">Молитва</a>
+            <span class="way-to-help__list-item" data-info="pray">Молитва</span>
           </div>
           <div class="way-to-help__list-outer">
-            <a href="" class="way-to-help__list-item">Инфоподдержка</a>
+            <span class="way-to-help__list-item" data-info="info-support">Инфоподдержка</span>
           </div>
         </div>
 
-        <div class="way-to-help__item way-to-help__item--thumb-1">
+        <div class="way-to-help__item active way-to-help__item--thumb-1" data-info="finance">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Открываем новые центры каждый месяц!</p>
             <p class="way-to-help__desc">Все поступающие средства мы отправляем храмам уже на следующий день.</p>
@@ -713,7 +722,7 @@
         </div>
 
         <!-- ////////////// -->
-        <div class="way-to-help__item way-to-help__item--thumb-2">
+        <div class="way-to-help__item way-to-help__item--thumb-2" data-info="pray">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Присоединяйтесь к совместной молитве
               о помощи в нашем
@@ -731,7 +740,8 @@
 
           <div class="gradient-background gradient-background--color-1 gradient-background--center-align way-to-help__col-2">
             <div class="way-to-help__col-2-inner">
-              <span class="way-to-help__thumb way-to-help__thumb--orange"></span>
+              <!-- <span class="way-to-help__thumb way-to-help__thumb--orange"></span> -->
+              <img src="./img/icon/main_logo-orange.svg" alt="" class="way-to-help__thumb">
               <a href="" class="button button--orange jsShowPrayConfirm">Присоединиться к молитве</a>
               <p class="way-to-help__desc">Сейчас с нами молится <span class="way-to-help__desc way-to-help__desc--accient">14</span>
                 человек по средам.</p>
@@ -740,7 +750,7 @@
         </div>
 
         <!-- //////// -->
-        <div class="way-to-help__item way-to-help__item--thumb-1">
+        <div class="way-to-help__item way-to-help__item--thumb-1" data-info="info-support">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Будут ли Россия трезветь — зависит только от нас</p>
             <p class="way-to-help__desc">Расскажите о проекте «Братство Трезвости» друзьям!</p>
@@ -794,7 +804,8 @@
           <div class="props props__sober footer-container">
             <p class="props__heading">Организатор акции</p>
             <div class="props__text-wrapper">
-              <i class="icon__footer"></i>
+              <!-- <i class="icon__footer"></i> -->
+              <img src="./img/icon/main_logo-green.svg" alt="" class="icon__footer">
               <p class="props__text props__text--thumb">
                 Благотворительный фонд «Правжизнь»
                 ОГРН 73445454523 ИНН 7726324509</p>

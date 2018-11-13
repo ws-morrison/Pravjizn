@@ -98,6 +98,10 @@
     background-color: rgba(236, 236, 229, 0.23);
   }
 
+  &--secondary-bg {
+    background-color: $secondary-bg;
+  }
+
   &--small {
     padding-top: 0;
     padding-bottom: 0;

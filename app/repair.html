@@ -13,7 +13,7 @@
 <body>
   <header class="header header--repair-bg header__repair">
     <div class="container container--wide">
-      <nav class="header-nav header-nav--space-between">
+<nav class="header-nav header-nav__sober header-nav--space-between header-nav--small">
         <div class="header__logo-wrapper">
           <span class="header-nav__logo"></span>
           <div class="header-nav__heading-wrapper">
@@ -96,15 +96,18 @@
 
         <div class="way-to-help__list way-to-help__list--narrow">
           <div class="way-to-help__list-outer way-to-help__list-outer--active">
-            <a href="" class="way-to-help__list-item way-to-help__list-item--grey-bg">Актуальные сборы</a>
+            <span class="way-to-help__list-item way-to-help__list-item--active way-to-help__list-item--grey-bg active"
+              data-info="actual">Актуальные
+              сборы</span>
           </div>
           <div class="way-to-help__list-outer">
-            <a href="" class="way-to-help__list-item way-to-help__list-item--grey-bg">Уже собрали средства</a>
+            <span class="way-to-help__list-item way-to-help__list-item--grey-bg" data-info="done">Уже собрали
+              средства</span>
           </div>
         </div>
-
-        <div class="pod__item pod-item--arrows-thumbs">
-
+        <div class="pod__item" data-info="actual">
+          <span class="pod-item--arrows-thumbs--left"></span>
+          <span class="pod-item--arrows-thumbs--right"></span>
           <div class="pod__item-wrapper pod__item-wrapper--narrow">
             <div class="pod-item__title pod-item__title--centering pod-item__title--small-padding">
               <p class="pod-item__title-text">Нужна воскресная школа
@@ -131,6 +134,38 @@
             <a href="#" class="link pod__quote-link jsShowRepairHistory">Читать полностью</a>
           </p>
         </div>
+
+
+
+        <!-- <div class="pod__item" data-info="done">
+          <span class="pod-item--arrows-thumbs--left"></span>
+          <span class="pod-item--arrows-thumbs--right"></span>
+          <div class="pod__item-wrapper pod__item-wrapper--narrow">
+            <div class="pod-item__title pod-item__title--centering pod-item__title--small-padding">
+              <p class="pod-item__title-text">Нужна воскресная школа
+                в деревне Власовка,
+                Пермский край</p>
+            </div>
+
+            <div class="pod-item__title pod-item__title--centering pod-item__title--unset-padding">
+              <p class="pod-item__title-text">«Уже 190 детей из окрестных
+                деревень ждут открытия
+                воскресной школы»</p>
+            </div>
+
+            <div class="pod__img-wrapper pod__img-wrapper--sober">
+              <div class="pod__img pod__img--repair-done"></div>
+            </div>
+          </div>
+
+          <p class="pod__quote-text pod__quote-text--narrow">
+            <span class="pod__greeting-text">Здравствуйте, братья и сестры!</span>
+            Просим посильной помощи отцу Владимиру (Дроздову) и его приходу, которым просто негде обучить желающих
+            воцерковитья
+            ребят!
+            <a href="#" class="link pod__quote-link jsShowRepairHistory">Читать полностью</a>
+          </p>
+        </div> -->
 
         <div class="owl-carousel owl-theme loop history-slider history-slider--repair">
           <div class="history-slider__item">
@@ -198,9 +233,154 @@
         </div>
       </div>
     </section>
+    <!-- MOBILE -->
+    <section class="info-services info-services__repair">
+      <!-- <div class="container"> -->
+
+      <div class="section__desc">
+        <div class="container">
+          <p class="section__text section__text-width section__text--grey">Просим вас — поддержите наш проект! Помочь
+            может
+            каждый!</p>
+          <p class="section__text section__text-width section__text--large">Помогите спасти больше людей</p>
+        </div>
+      </div>
+
+      <div class="info-services__list">
+
+        <div class="info-services__wrapper jsInfoBtn">
+          <p class="info-services__title info-services__title--container">Финансы
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg class="icon__info-list" width="6px" height="5px" viewBox="0 0 6 5" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+              <title>arrow_down_mini_small</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Adaptive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="vostanovlenija_sviatyn" transform="translate(-204.000000, -4637.000000)" fill="#F65500">
+                  <g id="Group-9" transform="translate(111.000000, 4626.000000)">
+                    <path d="M95.5077336,15.7273232 L93.0925311,11.9117445 C92.9182466,11.6364068 92.9973724,11.270125 93.2692635,11.0936312 C93.363444,11.0324954 93.472965,11 93.5848335,11 L98.4152384,11 C98.7381933,11 99,11.2651254 99,11.5921742 C99,11.7054608 98.9679113,11.8163701 98.9075408,11.9117445 L96.4923384,15.7273232 C96.3180539,16.0026609 95.9563571,16.0827897 95.684466,15.9062959 C95.6135067,15.8602339 95.553219,15.799182 95.5077336,15.7273232 Z"
+                      id="arrow_down_mini_small"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+          </p>
+          <div class="info-service-item visually-hidden">
+            <p class="info-service-item__lead">Открываем новые центры каждый месяц!</p>
+            <p class="info-service-item__desc">Все поступающие средства мы отправляем храмам уже на следующий день.</p>
+            <p class="info-service-item__desc">
+              Чем быстрее организуем центры реабилитации — тем больше жизней мы спасем!</p>
+            <div class="gradient-background gradient-background--color-3 gradient-background--center-align">
+              <div class="gallery__form-wrapper gallery__form-wrapper--hidden">
+                <div class="gallery__form-item gallery__form-item--small gallery__form-item--secondary-bg">
+                  <form action="" class="donate-form donate-form--modal">
+                    <div class="donate-form__wrapper donate-form__wrapper--modal-row donate-form__wrapper--desktop-wide">
+                      <div class="donate-form__input-wrapper">
+                        <input class="donate-form__input donate-form__input--modal donate-form__input--accient donate-form__input--border-orange"
+                          type="number" name="donate__form" id="" min="0" value="500" onfocus="this.value=''" onblur="this.value='500'">
+                        <span class="donate-form__input-thumb donate-form__input-thumb--modal-form">р/месяц</span>
+                      </div>
+                      <!-- <button class="button button--modal-form button--blue jsInnerTextBtnRepair" type="submit">Помочь</button> -->
+                      <button class="button button--modal-form button--green button--form-wide jsInnerTextBtnRepair"
+                        type="submit">Помочь</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="info-services__wrapper jsInfoBtn">
+          <p class="info-services__title info-services__title--container">
+            Молитва
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg class="icon__info-list" width="6px" height="5px" viewBox="0 0 6 5" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+              <title>arrow_down_mini_small</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Adaptive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="vostanovlenija_sviatyn" transform="translate(-204.000000, -4637.000000)" fill="#F65500">
+                  <g id="Group-9" transform="translate(111.000000, 4626.000000)">
+                    <path d="M95.5077336,15.7273232 L93.0925311,11.9117445 C92.9182466,11.6364068 92.9973724,11.270125 93.2692635,11.0936312 C93.363444,11.0324954 93.472965,11 93.5848335,11 L98.4152384,11 C98.7381933,11 99,11.2651254 99,11.5921742 C99,11.7054608 98.9679113,11.8163701 98.9075408,11.9117445 L96.4923384,15.7273232 C96.3180539,16.0026609 95.9563571,16.0827897 95.684466,15.9062959 C95.6135067,15.8602339 95.553219,15.799182 95.5077336,15.7273232 Z"
+                      id="arrow_down_mini_small"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </p>
+          <div class="info-service-item visually-hidden">
+            <p class="info-service-item__lead">Присоединяйтесь к совместной молитве
+              о помощи в нашем
+              деле</p>
+            <p class="info-service-item__desc">В 20:00 каждый вторник мы <span class="info-service-item__desc info-service-item__desc--accient">читаем
+                по соглашению</span> акафист
+              Святителю
+              Николаю.</p>
+            <p class="info-service-item__desc">Господь говорит: <br>
+              <span class="info-service-item__desc info-service-item__desc--bold">Если двое</span> из вас согласятся на
+              земле просить
+              о всяком деле, то,
+              чего бы ни попросили,
+              <span class="info-service-item__desc info-service-item__desc--bold">будет им от Отца
+                Моего</span>
+              Небесного</p>
+            <p class="info-service-item__caption">Мф. 18:19-20 </p>
+            <img src="./img/icon/main_logo-orange.svg" alt="" class="info-service-item__thumb info-service-item__thumb--mb">
+            <a href="#" class=" button info-service-item__button button--orange info-service-item__button-link">Присоединиться
+              к
+              молитве</a>
+            <p class="info-service-item__desc">Сейчас с нами молится <span class="info-service-item__desc info-service-item__desc--accient">14</span>
+              человек по средам</p>
+          </div>
+        </div>
+
+        <div class="info-services__wrapper jsInfoBtn">
+          <p class="info-services__title info-services__title--container">Инфоподдержка
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg class="icon__info-list" width="6px" height="5px" viewBox="0 0 6 5" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+              <title>arrow_down_mini_small</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Adaptive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="vostanovlenija_sviatyn" transform="translate(-204.000000, -4637.000000)" fill="#F65500">
+                  <g id="Group-9" transform="translate(111.000000, 4626.000000)">
+                    <path d="M95.5077336,15.7273232 L93.0925311,11.9117445 C92.9182466,11.6364068 92.9973724,11.270125 93.2692635,11.0936312 C93.363444,11.0324954 93.472965,11 93.5848335,11 L98.4152384,11 C98.7381933,11 99,11.2651254 99,11.5921742 C99,11.7054608 98.9679113,11.8163701 98.9075408,11.9117445 L96.4923384,15.7273232 C96.3180539,16.0026609 95.9563571,16.0827897 95.684466,15.9062959 C95.6135067,15.8602339 95.553219,15.799182 95.5077336,15.7273232 Z"
+                      id="arrow_down_mini_small"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+          </p>
+          <div class="info-service-item visually-hidden">
+            <p class="info-service-item__lead">Будут ли Россия трезветь — зависит только от нас</p>
+            <p class="info-service-item__desc">Поделиться в социальных сетях</p>
+            <div class="way-to-help__social-list">
+              <a href="" class="way-to-help__social-link way-to-help__social-link--vk"></a>
+              <a href="" class="way-to-help__social-link way-to-help__social-link--fb"></a>
+              <a href="" class="way-to-help__social-link way-to-help__social-link--ok"></a>
+              <a href="" class="way-to-help__social-link way-to-help__social-link--tw"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- </div> -->
+    </section>
 
     <!-- DESKTOP -->
-    <section class="way-to-help way-to-help--bg">
+    <section class="way-to-help way-to-help--bg way-to-help--mobile-hidden">
       <div class="container">
 
         <div class="way-to-help__title">
@@ -209,24 +389,24 @@
         </div>
 
         <div class="way-to-help__list">
-          <div class="way-to-help__list-outer way-to-help__list-outer--active">
-            <a href="" class="way-to-help__list-item way-to-help__list-item--accient way-to-help__list-item--bg">Молитва</a>
+          <div class="way-to-help__list-outer active">
+            <span class="way-to-help__list-item way-to-help__list-item--bg active" data-info="pray">Молитва</span>
           </div>
           <div class="way-to-help__list-outer">
-            <a href="" class="way-to-help__list-item way-to-help__list-item--bg">Стройматериалы</a>
+            <span class="way-to-help__list-item way-to-help__list-item--bg" data-info="materials">Стройматериалы</span>
           </div>
           <div class="way-to-help__list-outer">
-            <a href="" class="way-to-help__list-item way-to-help__list-item--bg">Труд</a>
+            <span class="way-to-help__list-item way-to-help__list-item--bg" data-info="work">Труд</span>
           </div>
           <div class="way-to-help__list-outer">
-            <a href="" class="way-to-help__list-item way-to-help__list-item--bg">Инфоподдержка</a>
+            <span class="way-to-help__list-item way-to-help__list-item--bg" data-info="info-support">Инфоподдержка</span>
           </div>
         </div>
 
 
 
         <!-- ////////////// -->
-        <div class="way-to-help__item way-to-help__item--thumb-2">
+        <div class="way-to-help__item active way-to-help__item--thumb-2" data-info="pray">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Присоединяйтесь к совместной молитве
               о помощи в нашем
@@ -244,7 +424,8 @@
 
           <div class="gradient-background gradient-background--color-1 gradient-background--center-align way-to-help__col-2">
             <div class="way-to-help__col-2-inner way-to-help__col-2-inner--bg">
-              <span class="way-to-help__thumb way-to-help__thumb--orange"></span>
+              <!-- <img src="./img/icon/main_logo-orange.svg" alt="" class="service-item__thumb"> -->
+              <img src="./img/icon/main_logo-orange.svg" alt="" class="way-to-help__thumb">
               <a href="" class="button button--orange jsShowPrayConfirm">Присоединиться к молитве</a>
               <p class="way-to-help__desc">Сейчас с нами молится <br> <span class="way-to-help__desc way-to-help__desc--accient">14</span>
                 человек по средам.</p>
@@ -253,7 +434,7 @@
         </div>
 
         <!-- ////////////// -->
-        <div class="way-to-help__item way-to-help__item--thumb-2">
+        <div class="way-to-help__item way-to-help__item--thumb-2" data-info="materials">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Помогите стройматериалами храмам и монастырям</p>
             <p class="way-to-help__desc">Вы можете самостоятельно закупить стройматериалы и привезти их.</p>
@@ -262,7 +443,8 @@
 
           <div class="gradient-background gradient-background--color-1 gradient-background--center-align way-to-help__col-2">
             <div class="way-to-help__col-2-inner way-to-help__col-2-inner--bg">
-              <span class="way-to-help__thumb way-to-help__thumb--orange"></span>
+              <!-- <img src="./img/icon/main_logo-orange.svg" alt="" class="service-item__thumb"> -->
+              <img src="./img/icon/main_logo-orange.svg" alt="" class="way-to-help__thumb">
               <a href="" class="button button--orange jsShowMaterialsConfirm">Помочь материалами</a>
             </div>
           </div>
@@ -270,7 +452,7 @@
 
 
         <!-- ////////////// -->
-        <div class="way-to-help__item way-to-help__item--thumb-2">
+        <div class="way-to-help__item way-to-help__item--thumb-2" data-info="work">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Примите личное участие в восстановлении храмов и монастырей!</p>
             <p class="way-to-help__desc">Блаженство предрекается труженикам, а дела их отмечаюстся в вечности:</p>
@@ -282,7 +464,8 @@
 
           <div class="gradient-background gradient-background--color-1 gradient-background--center-align way-to-help__col-2">
             <div class="way-to-help__col-2-inner way-to-help__col-2-inner--bg">
-              <span class="way-to-help__thumb way-to-help__thumb--orange"></span>
+              <!-- <img src="./img/icon/main_logo-orange.svg" alt="" class="service-item__thumb"> -->
+              <img src="./img/icon/main_logo-orange.svg" alt="" class="way-to-help__thumb">
               <a href="" class="button button--orange jsShowWorkConfirm">Помочь физическим трудом</a>
               <p class="way-to-help__desc way-to-help__desc--narrow">Волонтеры получают кров, пищу и ежедневное
                 благословение</p>
@@ -291,13 +474,14 @@
         </div>
 
         <!-- //////// -->
-        <div class="way-to-help__item way-to-help__item--thumb-1">
+        <div class="way-to-help__item way-to-help__item--thumb-1" data-info="info-support">
           <div class="way-to-help__col-1">
             <p class="way-to-help__lead">Будут ли Россия трезветь — зависит только от нас</p>
             <p class="way-to-help__desc">Расскажите о проекте «Братство Трезвости» друзьям!</p>
           </div>
 
-          <div class="gradient-background gradient-background--color-grey gradient-background--center-align way-to-help__col-2">
+          <div class="gradient-background gradient-background--color-grey gradient-background--center-align way-to-help__col-2"
+            data-info="info-support">
             <div class="way-to-help__col-2-inner way-to-help__col-2-inner--small way-to-help__col-2-inner--bg">
               <p class="way-to-help__desc">Поделиться в социальных сетях</p>
               <div class="way-to-help__social-list">
@@ -378,7 +562,7 @@
         <div class="info-desktop__wrapper">
           <div class="info-desktop__left_col">
             <ul class="info-desktop__list">
-              <li class="info-desktop__item" data-info="2018-may">Май, 2018</li>
+              <li class="info-desktop__item active" data-info="2018-may">Май, 2018</li>
               <li class="info-desktop__item" data-info="2018-april">Апрель, 2018</li>
               <li class="info-desktop__item" data-info="2018-march">Март, 2018</li>
               <li class="info-desktop__item" data-info="2018-february">Февраль, 2018</li>
@@ -501,7 +685,7 @@
           <div class="props props__sober footer-container">
             <p class="props__heading">Организатор акции</p>
             <div class="props__text-wrapper">
-              <i class="icon__footer"></i>
+              <img src="./img/icon/main_logo-green.svg" alt="" class="icon__footer">
               <p class="props__text props__text--thumb">
                 Благотворительный фонд «Правжизнь»
                 ОГРН 73445454523 ИНН 7726324509</p>
@@ -735,7 +919,8 @@
               placeholder="example@mail.ru" onfocus="this.placeholder=''" onblur="this.placeholder='example@mail.ru'"
               value="">
           </label>
-          <button class="button confirm-form__button button--blue service-item__button-link" type="submit">Помочь физическим трудом
+          <button class="button confirm-form__button button--blue service-item__button-link" type="submit">Помочь
+            физическим трудом
           </button>
         </div>
 

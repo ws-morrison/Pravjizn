@@ -2,6 +2,7 @@
   display: block;
   padding-top: 40px;
   background-color: $primary-bg;
+
   &--bg-none {
     background-color: #fff;
   }
@@ -11,33 +12,58 @@
   }
 }
 
+.info-services__repair .section__text--grey {
+  margin-bottom: 10px;
+}
+
+.info-services__repair .way-to-help__social-list {
+  margin-bottom: 55px;
+}
+
+.info-services__repair .info-services__title {
+  position: relative;
+}
+
 .info-service-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.info-service-item .donate-form {
+  margin-bottom: 55px;
 }
 
 .info-services__title {
   font-family: $primary-thin;
   font-size: $font-size-l;
   text-align: center;
+  position: relative;
   &--container {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   &--active {
     color: $accient;
   }
+
   &--color-1 {
     color: $secondary-accient;
   }
+
   &--color-2 {
     color: $link-color;
   }
+
   &--color-3 {
     color: $accient;
   }
 }
+
 .info-services__heading {
   display: block;
   font-family: $primary-thin;
@@ -55,6 +81,9 @@
   color: $accient;
   text-align: center;
   line-height: 30px;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .info-service-item__button-caption {
@@ -62,10 +91,12 @@
   font-size: $font-size-m;
   color: $primary-text;
   line-height: 26px;
+
   &--accient {
     color: $accient;
   }
 }
+
 .info-services__wrapper {
   position: relative;
   border-bottom: 1px solid $service-item-border;
@@ -94,14 +125,35 @@
     text-decoration: none;
     color: $accient;
   }
+
+  &--bold {
+    font-family: $secondary-bold;
+  }
 }
 
-// .info-service-item__caption {
-//   font-family: $secondary-regular;
-//   font-size: $font-size-s;
-//   color: $faded;
-//   font-style: italic;
-// }
+.info-services__repair {
+  background-color: $secondary-bg;
+}
+
+.info-services__repair .info-service-item__caption {
+  align-self: flex-start;
+}
+
+.info-services__repair .info-service-item__desc {
+  text-align: left;
+}
+
+.info-services__repair .info-service-item {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.info-service-item__caption {
+  font-family: $secondary-regular;
+  font-size: $font-size-s;
+  color: $faded;
+  font-style: italic;
+}
 
 .info-service-item__button {
   width: 260px;
@@ -126,10 +178,7 @@
 
 .info-service-item__thumb {
   width: 42px;
-  height: 42px;
-  &--orange {
-    background-image: url("../img/icon/main_logo-dark-orange-small.svg");
-  }
+  background-repeat: no-repeat;
   &--mb {
     margin-bottom: 30px;
   }
@@ -138,7 +187,6 @@
 .info-service-item__social-list {
   width: 280px;
   display: flex;
-  // flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
@@ -150,24 +198,28 @@
   border-radius: 50%;
 
   background-color: lightskyblue;
+
   &--vk {
     background-color: #426eab;
     background-image: url("../../img/icon/vk_share.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
   &--fb {
     background-color: #3b5998;
     background-image: url("../../img/icon/fb_share.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
   &--ok {
     background-color: #ff9800;
     background-image: url("../../img/icon/ok_share.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
   &--tw {
     background-color: #50abf1;
     background-image: url("../../img/icon/twitter_share.svg");

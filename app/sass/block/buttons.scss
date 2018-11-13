@@ -24,11 +24,13 @@
   &--white {
     color: $white;
     border: 2px solid $white;
+
     &:hover,
     &:focus {
       background-color: #ffffff;
       color: #238f4b;
     }
+
     &:active {
       opacity: 0.8;
     }
@@ -43,6 +45,7 @@
     color: #026837;
     border: 2px solid #026837;
     box-shadow: 0 10px 20px 0 rgba(2, 104, 55, 0.1);
+
     &:hover,
     &:focus {
       color: #02c7b5;
@@ -55,6 +58,7 @@
     color: #1b1564;
     border: 2px solid #1b1564;
     box-shadow: 0 10px 20px 0 rgba(27, 21, 100, 0.1);
+
     &:hover,
     &:focus {
       color: #5b71a6;
@@ -72,6 +76,7 @@
       border: 2px solid $button-yellow;
       background-color: $button-yellow;
     }
+
     &:active {
       color: $primary-text;
       border: 2px solid $button-solid-orange;
@@ -101,12 +106,14 @@
   &--border-ylw {
     color: $white;
     border: 2px solid #f7f606;
+
     &:hover,
     &:focus {
       color: $primary-text;
       border: 2px solid $button-yellow;
       background-color: $button-yellow;
     }
+
     &:active {
       color: $primary-text;
       border: 2px solid $button-solid-orange;
@@ -117,6 +124,7 @@
   &--webinar-form {
     margin-bottom: 20px;
   }
+
   &--vk {
     color: $vk;
     border: 2px solid $vk;
@@ -144,21 +152,35 @@
     margin-bottom: 25px;
     max-width: 273px;
   }
+
   &__report-button {
     max-width: 273px;
     color: $accient;
     border: 2px solid #212121;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #ff482f;
+      color: #ff482f;
+    }
+
+    &:active {
+      border: 2px solid #d13d24;
+      color: #d13d24;
+    }
   }
 }
 
 .button--yellow {
   background-image: linear-gradient(90deg, #f7f606 0%, #f7a406 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #f7f606;
   }
+
   &:active {
     background-image: none;
     background-color: #f7a406;
@@ -169,11 +191,13 @@
   color: $white;
   background-image: linear-gradient(90deg, #02c7b5 0%, #029550 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #02c7b5;
   }
+
   &:active {
     background-image: none;
     background-color: #029550;
@@ -184,11 +208,13 @@
   color: $white;
   background-image: linear-gradient(90deg, #2fb9aa 0%, #4794ef 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #2fb9aa;
   }
+
   &:active {
     background-image: none;
     background-color: #4794ef;
@@ -199,25 +225,30 @@
   color: $white;
   background-image: linear-gradient(90deg, #faa533 0%, #c42f2e 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #faa533;
   }
+
   &:active {
     background-image: none;
     background-color: #c42f2e;
   }
 }
+
 .button--purple {
   color: $white;
   background-image: linear-gradient(90deg, #c65ada 0%, #7547b5 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #c65ada;
   }
+
   &:active {
     background-image: none;
     background-color: #7547b5;
@@ -228,11 +259,13 @@
   color: $white;
   background-image: linear-gradient(90deg, #5bdbc7 0%, #40a854 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #5bdbc7;
   }
+
   &:active {
     background-image: none;
     background-color: #40a854;
@@ -243,11 +276,13 @@
   color: $white;
   background-image: linear-gradient(90deg, #0085ef 0%, #00a7a7 100%);
   box-shadow: 0 10px 20px 0 rgba(250, 165, 51, 0.1);
+
   &:hover,
   &:focus {
     background-image: none;
     background-color: #0085ef;
   }
+
   &:active {
     background-image: none;
     background-color: #00a7a7;
@@ -262,6 +297,7 @@
     background-image: none;
     background-color: #e7533c;
   }
+
   &:active {
     background-image: none;
     background-color: #c42f2e;
@@ -281,6 +317,7 @@
   //right: 15px;
   //margin-top: 15px;
 }
+
 @media (min-width: $desktop) {
   .button__close-modal {
     //right: 30px;
@@ -291,15 +328,19 @@
     &--email {
       margin-bottom: 0;
     }
+
     &__report-button {
       color: $accient;
       border: 2px solid #212121;
     }
   }
 }
+
 @media (min-width: $desktop-full) {
+
   // NEW
   .button {
+
     &--big-white-green,
     &--big-white-blue {
       min-height: 60px;
@@ -311,11 +352,13 @@
     &--vk {
       max-width: 460px;
     }
+
     &__report-button {
       color: $accient;
       border: 2px solid rgba(33, 33, 33, 0.23);
     }
   }
+
   // &--form-wide {
   //   max-width: 380px;
   // }

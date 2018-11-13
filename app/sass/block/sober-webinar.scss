@@ -2,8 +2,8 @@
   padding-top: 50px;
   padding-bottom: 37px;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   @include author-heading-text($primary-text);
 
@@ -34,7 +34,23 @@
 
   &__img {
     width: 100%;
-    height: 100%;
+    // height: 100%;
+
+    height: 349px;
+
+    // content: "";
+    // display: block;
+
+    background-image: url("../../img/church_video.png");
+    background-repeat: no-repeat;
+    background-size: 555px 349px;
+    background-position: -100px 0;
+
+  }
+
+  &__form {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__label {
@@ -72,20 +88,44 @@
   &--bg {
     background-color: $secondary-bg;
   }
+
   &__checkbox-label {
     font-family: $secondary-regular;
     font-size: $font-size-xs;
     color: $faded;
     line-height: 15px;
+
     &--accient {
       text-decoration: none;
       color: $accient;
     }
   }
+
   &__label-text {
     display: block;
     margin-left: 30px;
     max-width: 280px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 80px;
+    //   height: 80px;
+    //   -webkit-border-radius: 50%;
+    //   border-radius: 50%;
+    //   background-color: #fff;
+    //   background-image: url(../img/icon/play_orange.svg);
+    //   background-repeat: no-repeat;
+    //   -webkit-background-size: 17px 21px;
+    //   background-size: 17px 21px;
+    //   background-position: center;
+    //   top: 36%;
+    //   left: 39%;
+    // }
   }
 }
 
@@ -97,8 +137,48 @@
     }
 
     &__img {
-      width: 555px;
+      // width: 555px;
+
+
+      width: 100%;
+      // height: 100%;
+
+      height: 349px;
+
+      // content: "";
+      // display: block;
+
+      background-image: url("../../img/church_video.png");
+      background-repeat: no-repeat;
+      background-size: 555px 349px;
+      background-position: 50% 0;
     }
+  }
+
+  &__form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 80px;
+    //   height: 80px;
+    //   -webkit-border-radius: 50%;
+    //   border-radius: 50%;
+    //   background-color: #fff;
+    //   background-image: url(../img/icon/play_orange.svg);
+    //   background-repeat: no-repeat;
+    //   -webkit-background-size: 17px 21px;
+    //   background-size: 17px 21px;
+    //   background-position: center;
+    //   top: 36%;
+    //   left: 39%;
+    // }
   }
 }
 
@@ -154,12 +234,56 @@ input[value].sober-webinar__input {
       }
     }
 
+    // &__img {
+    //   width: 555px;
+    // }
     &__img {
       width: 555px;
+
+
+      // width: 100%;
+      // height: 100%;
+
+      height: 349px;
+
+      // content: "";
+      // display: block;
+
+      background-image: url("../../img/church_video.png");
+      background-repeat: no-repeat;
+      background-size: 555px 349px;
+      background-position: 50% 0;
     }
+
     &__input {
       background-color: $secondary-bg;
     }
+
+    &__form {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 80px;
+    //   height: 80px;
+    //   -webkit-border-radius: 50%;
+    //   border-radius: 50%;
+    //   background-color: #fff;
+    //   background-image: url(../img/icon/play_orange.svg);
+    //   background-repeat: no-repeat;
+    //   -webkit-background-size: 17px 21px;
+    //   background-size: 17px 21px;
+    //   background-position: center;
+    //   top: 36%;
+    //   left: 39%;
+    // }
   }
 }
 
@@ -171,12 +295,6 @@ input[value].sober-webinar__input {
     &__title--big {
       margin-bottom: 65px;
     }
-
-    // &__item {
-    //   display: flex;
-    //   justify-content: space-around;
-    //   align-items: center;
-    // }
 
     &__item {
       display: flex;
@@ -205,15 +323,43 @@ input[value].sober-webinar__input {
       }
     }
 
+    &__img-wrapper {
+      position: relative;
+
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   width: 80px;
+      //   height: 80px;
+      //   -webkit-border-radius: 50%;
+      //   border-radius: 50%;
+      //   background-color: #fff;
+      //   background-image: url(../img/icon/play_orange.svg);
+      //   background-repeat: no-repeat;
+      //   -webkit-background-size: 17px 21px;
+      //   background-size: 17px 21px;
+      //   background-position: center;
+      //   top: 36%;
+      //   left: 39%;
+      // }
+    }
+
     &__img {
       width: 555px;
     }
+
     &__input {
       background-color: $secondary-bg;
       width: 460px;
     }
+
     &__input-wrapper {
       justify-content: flex-start;
+    }
+
+    &__form {
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 }

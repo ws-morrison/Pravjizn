@@ -1,9 +1,9 @@
 "use strict";
 
 // Dropdown footer menu
-$(document).ready(function() {
-  var onFooterMenu = function() {
-    $(".opened-item").on("click", function(evt) {
+$(document).ready(function () {
+  var onFooterMenu = function () {
+    $(".opened-item").on("click", function (evt) {
       evt.preventDefault();
       var list = $(this).find(".open-list");
       if (list.hasClass("show") != true) {
@@ -25,7 +25,7 @@ $(document).ready(function() {
   // };
   // onChangeTitleColor();
 
-  $(window).load(function() {
+  $(window).load(function () {
     if ($(window).width() >= 1024) {
       $(".open-list").addClass("show");
     } else {
@@ -33,7 +33,7 @@ $(document).ready(function() {
     }
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() >= 1024) {
       $(".open-list").addClass("show");
     } else {
@@ -42,38 +42,38 @@ $(document).ready(function() {
   });
 
   // Add text in form button Sobber
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtn").html("Помочь Братству Трезвости");
     }
   });
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtn").html("Помочь Братству Трезвости");
     }
   });
 
   // Add text in form button Repair
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtnRepair").html("Помочь восстановить храм");
     }
   });
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() >= 1024) {
       $(".jsInnerTextBtnRepair").html("Помочь восстановить храм");
     }
   });
 
   // Dropdown header menu
-  var OnBurgerMenu = function() {
-    $(".burger").on("click", function() {
+  var OnBurgerMenu = function () {
+    $(".burger").on("click", function () {
       $(".drop-menu").slideToggle(300);
       $(".drop-menu").css("display", "flex");
     });
 
     // Burger animation
-    $(".burger").click(function() {
+    $(".burger").click(function () {
       $(this).toggleClass("open");
       $(".menu").toggleClass("opened-menu");
     });
@@ -95,9 +95,8 @@ $(document).ready(function() {
   // onInfoServices();
 
   // Anchor
-  $("#app-anchor").click(function() {
-    $("html, body").animate(
-      {
+  $("#app-anchor").click(function () {
+    $("html, body").animate({
         scrollTop: $(".app").offset().top
       },
       2000
@@ -128,11 +127,11 @@ $(document).ready(function() {
   // alex m - переключение пунктов "Информационные сервисы"
 
   //mob
-  $(".jsInfoBtn").on("click", function() {
+  $(".jsInfoBtn").on("click", function () {
     if (
       $(this)
-        .children(".info-service-item")
-        .hasClass("visually-hidden")
+      .children(".info-service-item")
+      .hasClass("visually-hidden")
     ) {
       $(".info-service-item").addClass("visually-hidden");
       $(".jsInfoBtn").removeClass("active");
@@ -152,7 +151,7 @@ $(document).ready(function() {
   var infoItem = $(".info-desktop__item");
   var infoItemContent = $(".info-desktop__right-outer");
 
-  infoItem.on("click", function() {
+  infoItem.on("click", function () {
     infoItem.removeClass("active");
     infoItemContent.removeClass("active");
 
@@ -162,32 +161,64 @@ $(document).ready(function() {
     $(infoItemData).addClass("active");
   });
 
-  $(".jsChannelSubscribe").on("click", function(e) {
+
+  // way-to-help
+  var wayToHelpItem = $(".way-to-help__list-item");
+  var wayToHelpItemContent = $(".way-to-help__item");
+  var wayToHelpOuter = $(".way-to-help__list-outer");
+
+  wayToHelpItem.on("click", function () {
+
+    wayToHelpItem.removeClass("active");
+    wayToHelpItemContent.removeClass("active");
+
+    var wayToHelpItemDataValue = $(this).attr("data-info");
+    var wayToHelpItemData = "[data-info=" + wayToHelpItemDataValue + "]";
+
+    $(wayToHelpItemData).addClass("active");
+
+
+    $(wayToHelpOuter).on("click", function () {
+      if (
+        $(this)
+        .children(".way-to-help__list-item")
+        .hasClass("active")
+      ) {
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+    });
+
+  });
+
+
+
+  $(".jsChannelSubscribe").on("click", function (e) {
     e.preventDefault();
     $(".jsIconBell").addClass("active");
   });
 
-  $(".jsModalExitBtn").on("click", function(e) {
+  $(".jsModalExitBtn").on("click", function (e) {
     e.preventDefault();
     $(".jsModalExit").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
   });
 
-  $(".modal-overlay").on("click", function() {
+  $(".modal-overlay").on("click", function () {
     modalClose();
   });
 
-  $(".jsModalCloseBtn").on("click", function(e) {
+  $(".jsModalCloseBtn").on("click", function (e) {
     e.preventDefault();
     modalClose();
   });
 
-  $(".jsShowHistory").click(function(e) {
+  $(".jsShowHistory").click(function (e) {
     e.preventDefault();
     $(".modal__history").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("body").offset().top
       },
       2000
@@ -195,12 +226,11 @@ $(document).ready(function() {
   });
 
   // Personal History
-  $(".jsShowPersonalHistory").click(function(e) {
+  $(".jsShowPersonalHistory").click(function (e) {
     e.preventDefault();
     $(".personal-history").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("body").offset().top
       },
       2000
@@ -208,12 +238,11 @@ $(document).ready(function() {
   });
 
   // Repair history
-  $(".jsShowRepairHistory").click(function(e) {
+  $(".jsShowRepairHistory").click(function (e) {
     e.preventDefault();
     $(".repair-history").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("body").offset().top
       },
       2000
@@ -221,12 +250,11 @@ $(document).ready(function() {
   });
 
   // Confirm Pray
-  $(".jsShowPrayConfirm").click(function(e) {
+  $(".jsShowPrayConfirm").click(function (e) {
     e.preventDefault();
     $(".modal__help-confirm").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("body").offset().top
       },
       1200
@@ -239,8 +267,7 @@ $(document).ready(function() {
     e.preventDefault();
     $(".modal__materials-confirm").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("body").offset().top
       },
       1200
@@ -252,8 +279,7 @@ $(document).ready(function() {
     e.preventDefault();
     $(".modal__work-confirm").addClass("show");
     $(".modal-overlay").removeClass("visually-hidden");
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: $("body").offset().top
       },
       1200
@@ -280,12 +306,12 @@ $(document).ready(function() {
 
     var i = 1;
 
-    setInterval(function() {
+    setInterval(function () {
       var currentTitle = titles[i];
 
       $(".jsTitle").fadeTo(1000, 1);
       $(".jsTitle").html(currentTitle);
-      setTimeout(function() {
+      setTimeout(function () {
         $(".jsTitle").fadeTo(1000, 0);
       }, 5000);
 
@@ -305,8 +331,7 @@ $(document).ready(function() {
     language: "ru-RU",
     format: "dd.mm.yyyy",
     trigger: $(".jsCalendarBtn"),
-    template:
-      '<div class="datepicker-container dp-container">\n' +
+    template: '<div class="datepicker-container dp-container">\n' +
       '  <div class="datepicker-panel dp-years" data-view="years picker">\n' +
       '    <ul class="dp-years__nav">\n' +
       '      <li data-view="years prev">&lsaquo;</li>\n' +
