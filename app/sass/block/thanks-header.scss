@@ -31,6 +31,15 @@
     }
   }
 
+  &__title-lead {
+    font-family: $primary-regular;
+    font-size: $font-size-l;
+    color: $primary-text;
+    // letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+  }
+
   .header-nav {
     margin-bottom: 30px;
   }
@@ -41,7 +50,7 @@
     align-items: center;
   }
 
-  &__callback-email {
+  &__accient-text {
     margin: 0;
     padding: 0;
 
@@ -68,7 +77,7 @@
     margin-bottom: 5px;
   }
 
-  &__callback-phone {
+  &__accient-text {
     margin: 0;
     padding: 0;
 
@@ -123,6 +132,14 @@
         font-size: $font-size-desktop-2xl;
         color: #029754;
         margin-bottom: 20px;
+      }
+      &--narrow {
+        width: 72%;
+      }
+    }
+    &__title-lead {
+      &--narrow {
+        width: 64%;
       }
     }
   }

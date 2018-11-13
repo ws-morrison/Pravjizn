@@ -48,8 +48,7 @@
   }
 }
 
-.pod-item--arrows-thumbs--left,
-.pod-item--arrows-thumbs--right {
+.pod-item__arrows-thumbs {
   display: none;
 }
 
@@ -376,7 +375,7 @@
 }
 
 @media (min-width: $desktop-l) {
-  .pod-item--arrows-thumbs--left {
+  .pod-item__arrows-thumbs--left {
     content: "";
     display: block;
     position: absolute;
@@ -403,7 +402,7 @@
     }
   }
 
-  .pod-item--arrows-thumbs--right {
+  .pod-item__arrows-thumbs--right {
     content: "";
     display: block;
     position: absolute;

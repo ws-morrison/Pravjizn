@@ -2338,8 +2338,7 @@ a:focus {
   .pod__greeting-text {
     display: block; }
 
-.pod-item--arrows-thumbs--left,
-.pod-item--arrows-thumbs--right {
+.pod-item__arrows-thumbs {
   display: none; }
 
 .pod__item {
@@ -2557,7 +2556,7 @@ a:focus {
       padding-left: 85px; } }
 
 @media (min-width: 1440px) {
-  .pod-item--arrows-thumbs--left {
+  .pod-item__arrows-thumbs--left {
     content: "";
     display: block;
     position: absolute;
@@ -2570,13 +2569,13 @@ a:focus {
     -webkit-border-radius: 50px;
             border-radius: 50px;
     background-position: 50% 45%; }
-    .pod-item--arrows-thumbs--left:hover {
+    .pod-item__arrows-thumbs--left:hover {
       border: 1px solid #CCCCCC; }
-    .pod-item--arrows-thumbs--left:focus {
+    .pod-item__arrows-thumbs--left:focus {
       border: 1px solid #CCCCCC; }
-    .pod-item--arrows-thumbs--left:active {
+    .pod-item__arrows-thumbs--left:active {
       border: 1px solid #FF482F; }
-  .pod-item--arrows-thumbs--right {
+  .pod-item__arrows-thumbs--right {
     content: "";
     display: block;
     position: absolute;
@@ -2589,11 +2588,11 @@ a:focus {
     -webkit-border-radius: 50px;
             border-radius: 50px;
     background-position: 50% 45%; }
-    .pod-item--arrows-thumbs--right:hover {
+    .pod-item__arrows-thumbs--right:hover {
       border: 1px solid #CCCCCC; }
-    .pod-item--arrows-thumbs--right:focus {
+    .pod-item__arrows-thumbs--right:focus {
       border: 1px solid #CCCCCC; }
-    .pod-item--arrows-thumbs--right:active {
+    .pod-item__arrows-thumbs--right:active {
       border: 1px solid #FF482F; } }
 
 .program-item {
@@ -7644,6 +7643,13 @@ input[value].sober-webinar__input {
     color: #029754;
     margin-bottom: 30px; }
 
+.thanks-header__title-lead {
+  font-family: "Museo Cyrillic Regular", sans-serif;
+  font-size: 20px;
+  color: #212121;
+  text-align: center;
+  line-height: 30px; }
+
 .thanks-header .header-nav {
   margin-bottom: 30px; }
 
@@ -7662,7 +7668,7 @@ input[value].sober-webinar__input {
       -ms-flex-align: center;
           align-items: center; }
 
-.thanks-header__callback-email {
+.thanks-header__accient-text {
   margin: 0;
   padding: 0;
   font-family: "Museo Cyrillic Regular", sans-serif;
@@ -7683,7 +7689,7 @@ input[value].sober-webinar__input {
   text-align: center;
   margin-bottom: 5px; }
 
-.thanks-header__callback-phone {
+.thanks-header__accient-text {
   margin: 0;
   padding: 0;
   font-family: "Museo Cyrillic Regular", sans-serif;
@@ -7732,7 +7738,11 @@ input[value].sober-webinar__input {
     .thanks-header__title-text--big {
       font-size: 45px;
       color: #029754;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+    .thanks-header__title-text--narrow {
+      width: 72%; }
+  .thanks-header__title-lead--narrow {
+    width: 64%; } }
 
 .buttons-list {
   display: -webkit-box;
@@ -7762,6 +7772,12 @@ input[value].sober-webinar__input {
     text-align: center;
     line-height: 30px;
     margin-bottom: 35px; }
+    .buttons-list__heading--faded {
+      font-family: "Museo Sans Cyrl Regular", sans-serif;
+      font-size: 18px;
+      color: #9B9B9B;
+      line-height: 26px;
+      margin-top: 50px; }
 
 @media (min-width: 1024px) {
   .buttons-list__wrapper {
@@ -7951,7 +7967,13 @@ input[value].sober-webinar__input {
               align-items: center;
       border: 5px solid #efede6;
       background-color: #FFF;
-      padding: 70px 20px 20px 20px; } }
+      padding: 70px 20px 20px 20px; }
+  .join-pray__item-wrapper .thanks-priest__item-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 @media (min-width: 1440px) {
   .join-pray {
@@ -7996,7 +8018,27 @@ input[value].sober-webinar__input {
     .join-pray__item--align-right {
       position: absolute;
       right: -10%;
-      top: 25%; } }
+      top: 25%; }
+  .join-pray__item-wrapper.thanks-priest__item-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .join-pray__item-wrapper.thanks-priest__item-wrapper:before {
+      content: "";
+      position: absolute;
+      width: 103.8px;
+      height: 76.2px;
+      background-image: url("../../img/icon/arrow-orange-next.svg");
+      background-repeat: no-repeat;
+      right: 45%;
+      top: 10%;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .join-pray__item-wrapper.thanks-priest__item-wrapper:after {
+      display: none; } }
 
 .unsubscribe {
   padding-top: 40px;

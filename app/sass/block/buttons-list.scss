@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
   }
+
   &__heading {
     font-family: $primary-regular;
     font-size: $font-size-l;
@@ -14,6 +15,14 @@
     text-align: center;
     line-height: 30px;
     margin-bottom: 35px;
+
+    &--faded {
+      font-family: $secondary-regular;
+      font-size: $font-size-m;
+      color: $faded;
+      line-height: 26px;
+      margin-top: 50px;
+    }
   }
 }
 
