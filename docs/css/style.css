@@ -895,6 +895,12 @@ a:focus {
   .icon__main-logo {
     width: 100%; } }
 
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .icon__play--sober {
+    top: 40%;
+    left: 45%; } }
+
 .datepicker-container {
   background-color: #fff;
   direction: ltr;
@@ -1528,7 +1534,11 @@ a:focus {
 /* стили только для IE10 и IE11 */
 @media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
   .donate-form__input-thumb--modal-form.donate-form__input-thumb {
-    right: 45px; } }
+    right: 75px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .donate-form__input-thumb--modal-form.donate-form__input-thumb {
+    right: 75px; } }
 
 .section__desc {
   margin: 0 auto;
@@ -1964,13 +1974,18 @@ a:focus {
 
 /* стили только для IE10 и IE11 */
 @media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
-  .button--white {
+  .button--white,
+  .button__report-button,
+  .button--webinar-form,
+  .button--vk,
+  .button--orange {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px; } }
 
 @media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
-  .button--white {
+  .button--white,
+  .button__report-button {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -1978,7 +1993,9 @@ a:focus {
   .button--big-white-blue {
     margin-right: 15%;
     position: relative;
-    top: 30px; } }
+    top: 30px; }
+  .button.button--modal-form.button--form-wide {
+    margin-right: 16%; } }
 
 .feedback {
   padding-top: 50px;
@@ -2200,6 +2217,25 @@ a:focus {
     .feedback__title-text--big {
       font-size: 35px;
       line-height: 45px; } }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .feedback__author--narrow {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 320px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .feedback__author--narrow {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 480px; } }
 
 .pod {
   overflow: hidden; }
@@ -2551,7 +2587,23 @@ a:focus {
       border: 1px solid #FF482F; } }
 
 /* стили только для IE10 и IE11 */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .pod__title {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 320px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .pod__title {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 1024px; }
   .pod__item {
     right: 300px; } }
 
@@ -3416,14 +3468,27 @@ a:focus {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px; }
+  .service-item__heading {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 320px; }
   .service-item__desc {
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 100%;
-    max-width: 280px; } }
+    width: 80%;
+    max-width: 320px; } }
 
 @media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .service-item__heading {
+    width: 100%;
+    max-width: 525px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 30px; }
   .service-item__desc {
     width: 100%;
     max-width: 525px;
@@ -3593,6 +3658,8 @@ a:focus {
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  .info-service-item__social-list--margin-bottom {
+    margin-bottom: 50px; }
 
 .info-service-item__social-link {
   display: block;
@@ -3627,13 +3694,20 @@ a:focus {
 
 /* стили только для IE10 и IE11 */
 @media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .info-service-item__lead {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 320px; }
   .info-service-item__desc {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100%;
-    max-width: 280px; } }
+    width: 80%;
+    max-width: 320px; } }
 
 .info-desktop {
   display: none; }
@@ -4853,13 +4927,20 @@ a:focus {
     color: #9B9B9B;
     text-align: center;
     line-height: 20px; }
+  .modal__col-1-text-wrapper {
+    margin: 0 auto;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: block;
+    max-width: 400px;
+    width: 100%; }
   .modal__col-1-confirm-text {
     font-family: "Museo Cyrillic Regular", sans-serif;
     font-size: 20px;
     color: #212121;
     text-align: center;
     line-height: 30px;
-    width: 75%; }
+    width: 100%; }
     .modal__col-1-confirm-text--bold {
       font-family: "Museo Cyrillic Bold", sans-serif; }
 
@@ -5082,6 +5163,27 @@ a:focus {
   .modal__help-confirm .modal__col-1 {
     padding: 160px 69px 70px 69px;
     margin-bottom: 0; } }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .modal__col-1--column {
+    display: block; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .modal__col-1--column {
+    display: block; }
+  .modal__col-1-text-wrapper {
+    margin: 0 auto;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: block;
+    max-width: 400px;
+    width: 100%; }
+  .modal__col-1-confirm-text {
+    width: 100%; }
+  .modal__narrow-img-wrapper {
+    width: 322px;
+    margin: 0 auto; } }
 
 .form-gift {
   display: -webkit-box;
@@ -5538,6 +5640,21 @@ input[value].confirm-form__input {
     font-size: 13px;
     color: #F65500;
     line-height: 20px; } }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .confirm-form__button {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .confirm-form__button {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .confirm-form__wrapper {
+    margin: 0; } }
 
 .gallery__author {
   display: -webkit-box;
@@ -6162,6 +6279,25 @@ input[value].confirm-form__input {
       line-height: 40px;
       margin-top: 65px; } }
 
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .sober-support__title-text--big {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 320px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .sober-support__title-text--big {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 1024px; } }
+
 .conclude-pray {
   padding-top: 40px;
   padding-bottom: 50px; }
@@ -6307,6 +6443,21 @@ input[value].confirm-form__input {
         text-decoration: none; }
     .conclude-pray__button {
       max-width: 405px; } }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .conclude-pray__button {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    right: 10%; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .conclude-pray__button {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    right: 10%; } }
 
 .location {
   padding-top: 50px;
@@ -6724,6 +6875,24 @@ input[value].sober-webinar__input {
     .sober-webinar__form {
       padding-left: 0px;
       padding-right: 0px; } }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .sober-webinar__title-text--big {
+    max-width: 280px; }
+  .sober-webinar__img-wrapper {
+    display: block;
+    text-align: center; }
+  .sober-webinar__img {
+    width: 320px;
+    margin: 0 auto; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .sober-webinar__title-text--big {
+    max-width: 980px; }
+  .sober-webinar__img {
+    width: 555px;
+    margin: 0 auto; } }
 
 .gradient-background {
   display: -webkit-box;
@@ -7510,6 +7679,28 @@ input[value].sober-webinar__input {
   .thanks-header__title-lead--narrow {
     width: 64%; } }
 
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .join-pray__img-wrapper {
+    width: 95%;
+    max-width: 520px; }
+  .thanks-header__title-text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 320px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .thanks-header__title-text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 1024px; } }
+
 .buttons-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7778,6 +7969,47 @@ input[value].sober-webinar__input {
               transform: rotate(-45deg); }
     .join-pray__item-wrapper.thanks-priest__item-wrapper:after {
       display: none; } }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
+  .join-pray__title-text--big {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 320px; }
+  .join-pray__item-heading {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 320px; }
+  .join-pray__item-wrapper--block {
+    display: block; }
+  .join-pray__item--align-right {
+    margin-top: 0; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1024px), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .join-pray__title-text--big {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 1024px; }
+  .join-pray__item--left-ie {
+    float: left; }
+  .join-pray__item--align-right {
+    margin-top: 204px; }
+  .join-pray__item-heading {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 520px; } }
+
+@media (-ms-high-contrast: active) and (min-width: 1440px), (-ms-high-contrast: none) and (min-width: 1440px) {
+  .join-pray__item-wrapper::after {
+    top: 900px; }
+  .join-pray__item-wrapper::before {
+    top: 70px; } }
 
 .unsubscribe {
   padding-top: 40px;
