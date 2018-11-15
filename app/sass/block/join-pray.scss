@@ -164,3 +164,70 @@
     }
   }
 }
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .join-pray__title-text--big {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 80%;
+      max-width: 320px;
+    }
+
+    .join-pray__item-heading {
+      display: block;
+      margin: 0 auto;
+      // margin-bottom: 5px;
+      // margin-top: 5px;
+      width: 80%;
+      max-width: 320px;
+    }
+
+    .join-pray__item-wrapper--block {
+      display: block;
+    }
+
+    .join-pray__item--align-right {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .join-pray__title-text--big {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 80%;
+      max-width: 1024px;
+    }
+
+    .join-pray__item--left-ie {
+      float: left;
+    }
+
+    .join-pray__item--align-right {
+      margin-top: 204px;
+    }
+
+    .join-pray__item-heading {
+      display: block;
+      margin: 0 auto;
+      width: 95%;
+      max-width: 520px;
+    }
+  }
+
+  @media (min-width: $desktop-l) {
+    .join-pray__item-wrapper::after {
+      top: 900px;
+    }
+
+    .join-pray__item-wrapper::before {
+      top: 70px;
+    }
+  }
+}

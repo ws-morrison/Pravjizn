@@ -237,3 +237,31 @@ input[value].confirm-form__input {
     line-height: 20px;
   }
 }
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+
+    .confirm-form__button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+    .confirm-form__button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .confirm-form__wrapper {
+      margin: 0;
+    }
+  }
+}

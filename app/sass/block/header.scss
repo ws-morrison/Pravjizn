@@ -138,6 +138,7 @@
       background-image: url("../../img/vostanovlenie_svyatyn-filtered.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-position-y: 0;
       background-size: 1095px;
       margin-bottom: 50px;
     }
@@ -168,6 +169,7 @@
       background-image: url("../../img/vostanovlenie_svyatyn-filtered.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-position-y: 0;
       background-size: 1440px;
       margin-bottom: 50px;
     }
@@ -228,6 +230,7 @@
       background-image: url("../../img/vostanovlenie_svyatyn-filtered.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-position-y: 0;
       background-size: 1440px;
       margin-bottom: 50px;
     }
@@ -258,5 +261,15 @@
     &__sober {
       margin-bottom: 100px;
     }
+  }
+}
+
+/* стили только для IE10 и IE11 */
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+  .header-nav {
+    display: flex;
+    width: 80%;
   }
 }

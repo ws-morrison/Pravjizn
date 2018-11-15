@@ -42,6 +42,7 @@
   font-size: $font-size-l;
   text-align: center;
   position: relative;
+
   &--container {
     padding-left: 20px;
     padding-right: 20px;
@@ -121,6 +122,7 @@
   text-align: center;
   line-height: 26px;
   color: $primary-text;
+
   &--accient {
     text-decoration: none;
     color: $accient;
@@ -179,6 +181,7 @@
 .info-service-item__thumb {
   width: 42px;
   background-repeat: no-repeat;
+
   &--mb {
     margin-bottom: 30px;
   }
@@ -189,6 +192,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  &--margin-bottom {
+    margin-bottom: 50px;
+  }
 }
 
 .info-service-item__social-link {
@@ -231,5 +237,34 @@
 @media (min-width: $desktop) {
   .info-services {
     display: none;
+  }
+}
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .info-service-item__lead {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 320px;
+    }
+
+    .info-service-item__desc {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
   }
 }

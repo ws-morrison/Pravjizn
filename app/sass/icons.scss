@@ -515,3 +515,16 @@
     }
   }
 }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .icon__play--sober {
+      top: 40%;
+      left: 45%;
+    }
+  }
+
+  @media (min-width: $desktop) {}
+}

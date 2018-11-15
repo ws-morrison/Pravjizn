@@ -429,3 +429,34 @@
     }
   }
 }
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .pod__title {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .pod__title {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 1024px;
+    }
+
+    .pod__item {
+      right: 300px;
+    }
+  }
+}

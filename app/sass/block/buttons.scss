@@ -305,25 +305,7 @@
 }
 
 // Modal Close Button
-.button__close-modal {
-  //display: block;
-  //border: none;
-  //width: 16px;
-  //height: 16px;
-  //background-image: url("../../img/closer_icon.svg");
-  //background-color: transparent;
-  //background-repeat: no-repeat;
-  //position: absolute;
-  //right: 15px;
-  //margin-top: 15px;
-}
-
 @media (min-width: $desktop) {
-  .button__close-modal {
-    //right: 30px;
-    //margin-top: 30px;
-  }
-
   .button {
     &--email {
       margin-bottom: 0;
@@ -358,8 +340,72 @@
       border: 2px solid rgba(33, 33, 33, 0.23);
     }
   }
+}
 
-  // &--form-wide {
-  //   max-width: 380px;
-  // }
+
+// IE
+// @media (min-width: 320px) and (-ms-high-contrast: active),
+// (-ms-high-contrast: none) {
+//   .button--big-white-green {
+//     margin-right: 15%;
+//     position: relative;
+//     top: 30px;
+//   }
+
+//   .button--big-white-blue {
+//     margin-right: 15%;
+//     position: relative;
+//     top: 0px;
+//   }
+// }
+
+// @media (screen) and (-ms-high-contrast: active),
+// (-ms-high-contrast: none) {
+
+//   .button--big-white-green,
+//   .button--big-white-blue {
+//     margin-right: 15%;
+//     position: relative;
+//     top: 30px;
+//   }
+// }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+
+    .button--white,
+    .button__report-button,
+    .button--webinar-form,
+    .button--vk,
+    .button--orange {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+    .button--white,
+    .button__report-button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .button--big-white-green,
+    .button--big-white-blue {
+      margin-right: 15%;
+      position: relative;
+      top: 30px;
+    }
+
+    .button.button--modal-form.button--form-wide {
+      margin-right: 16%;
+    }
+  }
 }

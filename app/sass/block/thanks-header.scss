@@ -133,14 +133,46 @@
         color: #029754;
         margin-bottom: 20px;
       }
+
       &--narrow {
         width: 72%;
       }
     }
+
     &__title-lead {
       &--narrow {
         width: 64%;
       }
+    }
+  }
+}
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .join-pray__img-wrapper {
+      width: 95%;
+      max-width: 520px;
+    }
+    .thanks-header__title-text {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 90%;
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .thanks-header__title-text {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 90%;
+      max-width: 1024px;
     }
   }
 }

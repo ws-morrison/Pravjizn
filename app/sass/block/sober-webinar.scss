@@ -363,3 +363,34 @@ input[value].sober-webinar__input {
     }
   }
 }
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .sober-webinar__title-text--big {
+      max-width: 280px;
+    }
+
+    .sober-webinar__img-wrapper {
+      display: block;
+      text-align: center;
+    }
+
+    .sober-webinar__img {
+      width: 320px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .sober-webinar__title-text--big {
+      max-width: 980px;
+    }
+
+    .sober-webinar__img {
+      width: 555px;
+      margin: 0 auto;
+    }
+  }
+}

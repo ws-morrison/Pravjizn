@@ -140,15 +140,7 @@
 }
 
 .gallery__form-wrapper::before {
-  content: "";
-  width: 80px;
-  min-height: 80px;
-  position: absolute;
-  display: block;
-  top: -40px;
-  left: 40px;
-  background-image: url("../img/icon/main_logo-green.svg");
-  background-repeat: no-repeat;
+  display: none;
 }
 
 .gallery__form-wrapper--hidden::before {
@@ -225,6 +217,20 @@
       text-align: center;
       margin-bottom: 60px;
     }
+
+    &__form-wrapper {
+      &:before {
+        content: "";
+        width: 80px;
+        min-height: 80px;
+        position: absolute;
+        display: block;
+        top: -40px;
+        left: 40px;
+        background-image: url("../img/icon/main_logo-green.svg");
+        background-repeat: no-repeat;
+      }
+    }
   }
 
   .gallery__form-item {
@@ -300,6 +306,24 @@
         top: 44%;
         left: 44%;
       }
+    }
+  }
+}
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .gallery__title-text--big-modal {
+      max-width: 280px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+    .gallery__title-text--big-modal {
+      max-width: 980px;
     }
   }
 }

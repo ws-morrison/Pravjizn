@@ -22,7 +22,7 @@ gulp.task("sass", function() {
                 this.emit('end');
             })
             .pipe(
-                autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], {
+                autoprefixer(["last 4 versions"], {
                     cascade: true
                 })
             ) // Создаем префиксы

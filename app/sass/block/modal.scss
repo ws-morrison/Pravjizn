@@ -49,6 +49,14 @@
     line-height: 20px;
   }
 
+  &__col-1-text-wrapper {
+    margin: 0 auto;
+    align-self: center;
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+
   &__col-1-confirm-text {
     font-family: $primary-regular;
     font-size: $font-size-l;
@@ -56,7 +64,7 @@
     text-align: center;
     line-height: 30px;
 
-    width: 75%;
+    width: 100%;
 
     &--bold {
       font-family: $primary-bold;
@@ -325,6 +333,41 @@
     .modal__col-1 {
       padding: 160px 69px 70px 69px;
       margin-bottom: 0;
+    }
+  }
+}
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+
+    .modal__col-1--column {
+      display: block;
+    }
+
+  }
+
+  @media (min-width: $desktop) {
+    .modal__col-1--column {
+      display: block;
+    }
+
+    .modal__col-1-text-wrapper {
+      margin: 0 auto;
+      align-self: center;
+      display: block;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .modal__col-1-confirm-text {
+      width: 100%;
+    }
+
+    .modal__narrow-img-wrapper {
+      width: 322px;
+      margin: 0 auto;
     }
   }
 }

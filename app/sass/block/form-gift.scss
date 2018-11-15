@@ -15,10 +15,12 @@
   line-height: 24px;
   color: $accient-2;
 }
+
 .form-gift__desc-wrapper {
   display: block;
   width: 100%;
 }
+
 .form-gift__desc-title {
   padding: 0;
   margin: 0;
@@ -59,6 +61,7 @@
   padding-left: 31px;
   padding-right: 31px;
 }
+
 .form-gift__label {
   position: relative;
 }
@@ -120,6 +123,7 @@ input[type="email"].form-gift__input:focus {
   box-shadow: 0 0 1px 1px #212121;
   color: #212121;
 }
+
 input[value].form-gift__input {
   color: $primary-text;
 }
@@ -147,9 +151,11 @@ input[value].form-gift__input {
     line-height: 24px;
     color: $accient-2;
   }
+
   .form-gift__desc-wrapper {
     margin: 0;
   }
+
   .form-gift__desc-title {
     padding: 0;
     margin: 0;
@@ -171,6 +177,7 @@ input[value].form-gift__input {
     font-size: $font-size-desktop-xl;
     line-height: 45px;
     color: $primary-text;
+
     &--accient {
       color: $accient;
     }
@@ -192,6 +199,7 @@ input[value].form-gift__input {
     padding-left: 31px;
     padding-right: 31px;
   }
+
   .form-gift__label {
     position: relative;
   }
@@ -224,6 +232,7 @@ input[value].form-gift__input {
     margin-right: 10px;
     margin-bottom: 0px;
   }
+
   .form-gift__caption {
     width: 100%;
     margin: 0;
@@ -246,5 +255,31 @@ input[value].form-gift__input {
     font-size: $font-size-xs;
     color: $accient-2;
     line-height: 20px;
+  }
+}
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .gift-form__button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      right: 10%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+    .gift-form__button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      right: 10%;
+    }
   }
 }

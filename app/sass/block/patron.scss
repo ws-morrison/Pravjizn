@@ -27,17 +27,21 @@
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .patron__img {
   width: 260px;
   height: 340px;
 }
+
 .patron-form__wrapper {
   display: flex;
   justify-content: center;
 }
+
 .patron-form {
   margin-top: 20px;
 }
+
 .patron-form__label {
   font-family: $secondary-regular;
   font-size: $font-size-s;
@@ -45,6 +49,7 @@
   color: $primary-text;
   position: relative;
 }
+
 .patron-form__input {
   display: block;
   box-sizing: border-box;
@@ -59,13 +64,16 @@
   color: $faded;
   position: relative;
   z-index: 1;
+
   &--name {
     padding-left: 20px;
   }
+
   &--date {
     padding-left: 60px;
     position: relative;
   }
+
   &--email {
     padding-left: 30px;
   }
@@ -117,6 +125,7 @@
     padding-top: 110px;
     padding-bottom: 90px;
   }
+
   .patron__wrapper {
     margin: 0 auto;
     display: flex;
@@ -135,11 +144,38 @@
     width: 340px;
     height: 460px;
   }
+
   .patron-form__input {
     width: 460px;
   }
+
   .patron__button {
     width: 330px;
     margin: 0;
+  }
+}
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .patron__button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      right: 10%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+    .patron__button {
+      // min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      right: 10%;
+    }
   }
 }

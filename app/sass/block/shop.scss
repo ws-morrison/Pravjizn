@@ -3,6 +3,7 @@
   padding-bottom: 50px;
   background-color: $primary-bg;
 }
+
 .shop__logo {
   width: 60px;
   // height: 60px;
@@ -44,8 +45,33 @@
     padding-bottom: 110px;
     margin-bottom: 60px;
   }
+
   .shop-desc__text {
     margin-top: 30px;
     margin-bottom: 36px;
+  }
+}
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .shop__button {
+      //  min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+
+    .shop__button {
+      //  min-height: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }

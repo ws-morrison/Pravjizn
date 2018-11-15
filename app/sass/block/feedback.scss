@@ -22,6 +22,7 @@
 .feedback__item-wrapper {
   position: relative;
   padding-bottom: 376px;
+
   &--sober-mobile {
     position: relative;
     padding-bottom: 300px;
@@ -92,6 +93,7 @@
   font-size: $font-size-m;
   line-height: 26px;
 }
+
 .feedback-sober__text {
   font-family: $primary-regular;
   font-size: $font-size-xl;
@@ -105,6 +107,7 @@
   .feedback {
     padding-top: 129px;
     padding-bottom: 150px;
+
     &--large-padding {
       padding-bottom: 200px;
     }
@@ -147,6 +150,7 @@
 
     bottom: -270px;
     left: -610px;
+
     &--bottom {
       top: -150px;
     }
@@ -164,6 +168,7 @@
 
   .feedback__author {
     padding-left: 50%;
+
     &--narrow {
       width: 33%;
     }
@@ -194,6 +199,34 @@
         font-size: 35px;
         line-height: 45px;
       }
+    }
+  }
+}
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .feedback__author--narrow {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+
+    .feedback__author--narrow {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 480px;
     }
   }
 }

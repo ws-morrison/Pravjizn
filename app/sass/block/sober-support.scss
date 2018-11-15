@@ -20,10 +20,12 @@
     &--big {
       margin-bottom: 0;
     }
+
     &--narrow {
       width: 80%;
     }
   }
+
   &__lead {
     font-family: $primary-thin;
     font-size: $font-size-xl;
@@ -45,6 +47,7 @@
     &__title {
       margin-bottom: 75px;
     }
+
     // &__title--big {
     //   margin-bottom: 75px;
     // }
@@ -52,10 +55,38 @@
       margin: 0 auto;
       width: 65%;
     }
+
     &__lead {
       font-size: $font-size-2xl;
       line-height: 40px;
       margin-top: 65px;
+    }
+  }
+}
+
+
+/* стили только для IE10 и IE11 */
+@media (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  @media (min-width: $mobile) {
+    .sober-support__title-text--big {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .sober-support__title-text--big {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 80%;
+      max-width: 1024px;
     }
   }
 }
