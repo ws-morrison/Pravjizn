@@ -18,6 +18,15 @@ select {
   -o-appearance: none;
   -webkit-appearance: none;
 }
+select {
+ outline: none;
+}
+
+select:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 1px 1px #F65500;
+}
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

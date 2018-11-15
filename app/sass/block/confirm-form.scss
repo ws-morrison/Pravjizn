@@ -48,6 +48,7 @@
   // align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .confirm-form__input {
@@ -63,7 +64,7 @@
   border: 1px solid $grey-border;
   border-radius: 30px;
   margin-top: 10px;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
   max-width: 200px;
   width: 100%;
 }
@@ -175,6 +176,7 @@ input[value].confirm-form__input {
 
   .confirm-form__label {
     width: 404px;
+    margin-bottom: 35px;
   }
 
   .confirm-form__button {
@@ -196,7 +198,7 @@ input[value].confirm-form__input {
     border: 1px solid #cccccc;
     border-radius: 30px;
     margin-top: 10px;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
     max-width: 352px;
     width: 100%;
     // padding-top: 17px;

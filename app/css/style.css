@@ -449,6 +449,15 @@ select {
   -o-appearance: none;
   -webkit-appearance: none; }
 
+select {
+  outline: none; }
+
+select:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 0 1px 1px #F65500;
+          box-shadow: 0 0 1px 1px #F65500; }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -5480,7 +5489,8 @@ input[value].form-gift__input {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-bottom: 25px; }
 
 .confirm-form__input {
   -webkit-box-sizing: content-box;
@@ -5497,7 +5507,6 @@ input[value].form-gift__input {
   -webkit-border-radius: 30px;
           border-radius: 30px;
   margin-top: 10px;
-  margin-bottom: 35px;
   max-width: 200px;
   width: 100%; }
 
@@ -5600,7 +5609,8 @@ input[value].confirm-form__input {
     width: 405px;
     margin: unset; }
   .confirm-form__label {
-    width: 404px; }
+    width: 404px;
+    margin-bottom: 35px; }
   .confirm-form__button {
     margin: 0;
     margin-bottom: 25px;
@@ -5618,7 +5628,6 @@ input[value].confirm-form__input {
     -webkit-border-radius: 30px;
             border-radius: 30px;
     margin-top: 10px;
-    margin-bottom: 35px;
     max-width: 352px;
     width: 100%; }
   .confirm-form__caption {
