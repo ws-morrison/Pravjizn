@@ -192,8 +192,6 @@ $(document).ready(function () {
 
   });
 
-
-
   $(".jsChannelSubscribe").on("click", function (e) {
     e.preventDefault();
     $(".jsIconBell").addClass("active");
