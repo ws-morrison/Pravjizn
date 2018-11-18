@@ -52,9 +52,17 @@
   display: none;
 }
 
+.jsPodItem {
+  display: none;
+}
+
 .pod__item {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.jsPodItem.active {
+  display: block;
 }
 
 .pod__item-wrapper {
@@ -375,59 +383,59 @@
 }
 
 @media (min-width: $desktop-l) {
-  .pod-item__arrows-thumbs--left {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-image: url("../../img/icon/arrows_mini_left.svg");
-    background-repeat: no-repeat;
-    left: -15%;
-    top: 49%;
+  // .pod-item__arrows-thumbs--left {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 55px;
+  //   height: 55px;
+  //   background-image: url("../../img/icon/arrows_mini_left.svg");
+  //   background-repeat: no-repeat;
+  //   left: -15%;
+  //   top: 49%;
 
-    border-radius: 50px;
-    background-position: 50% 45%;
+  //   border-radius: 50px;
+  //   background-position: 50% 45%;
 
-    &:hover {
-      border: 1px solid #CCCCCC;
-    }
+  //   &:hover {
+  //     border: 1px solid #CCCCCC;
+  //   }
 
-    &:focus {
-      border: 1px solid #CCCCCC;
-    }
+  //   &:focus {
+  //     border: 1px solid #CCCCCC;
+  //   }
 
-    &:active {
-      border: 1px solid #FF482F;
-    }
-  }
+  //   &:active {
+  //     border: 1px solid #FF482F;
+  //   }
+  // }
 
-  .pod-item__arrows-thumbs--right {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-image: url("../../img/icon/arrows_mini_right.svg");
-    background-repeat: no-repeat;
-    right: -135%;
-    top: 49%;
+  // .pod-item__arrows-thumbs--right {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 55px;
+  //   height: 55px;
+  //   background-image: url("../../img/icon/arrows_mini_right.svg");
+  //   background-repeat: no-repeat;
+  //   right: -135%;
+  //   top: 49%;
 
-    border-radius: 50px;
-    background-position: 50% 45%;
+  //   border-radius: 50px;
+  //   background-position: 50% 45%;
 
-    &:hover {
-      border: 1px solid #CCCCCC;
-    }
+  //   &:hover {
+  //     border: 1px solid #CCCCCC;
+  //   }
 
-    &:focus {
-      border: 1px solid #CCCCCC;
-    }
+  //   &:focus {
+  //     border: 1px solid #CCCCCC;
+  //   }
 
-    &:active {
-      border: 1px solid #FF482F;
-    }
-  }
+  //   &:active {
+  //     border: 1px solid #FF482F;
+  //   }
+  // }
 }
 
 

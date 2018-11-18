@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".shop-carousel").owlCarousel({
     items: 10,
     loop: true,
@@ -79,5 +79,13 @@ $(document).ready(function() {
         items: 2
       }
     }
+  });
+
+  $(".podSlider").owlCarousel({
+    items: 1,
+    responsiveBaseWidth: "pod__item",
+    loop: true,
+    nav: true,
+    dots: false,
   });
 });
