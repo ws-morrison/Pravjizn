@@ -5,9 +5,11 @@
 
 .app__image {
   width: 254px;
-  min-height: 225px;
+  min-height: 205px;
   background-image: url("../img/iphone_x.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
   margin: 0 auto;
   margin-bottom: 45px;
 }
@@ -44,12 +46,14 @@
   font-family: $primary-regular;
   font-size: $font-size-s;
   line-height: 20px;
+
   &--large {
     font-family: $primary-regular;
     font-size: $font-size-xl;
     margin: 0;
     line-height: 30px;
   }
+
   &--grey {
     font-family: $secondary-regular;
     color: $faded;
@@ -71,9 +75,11 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 10px;
+
   &--appstore {
     background-image: url("../img/app_store.svg");
   }
+
   &--playstore {
     background-image: url("../img/google_play.svg");
   }
@@ -85,37 +91,45 @@
     margin-top: 35px;
     margin-bottom: 75px;
   }
+
   .app__wrapper-list {
     width: 480px;
     margin-top: 50px;
   }
+
   .app__list {
     margin-bottom: 20px;
   }
+
   .app__wrapper {
     margin-top: 55px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
   }
+
   .app__image {
     min-height: 510px;
   }
+
   .app__left-col {
     margin-right: 25px;
   }
+
   .app__desktop-wrapper {
     width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+
   .app__logos {
     display: flex;
     flex-direction: row;
     align-self: center;
     margin: 25px 0;
   }
+
   .app__logo {
     margin: 10px;
   }
