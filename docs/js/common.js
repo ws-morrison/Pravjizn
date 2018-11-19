@@ -161,7 +161,6 @@ $(document).ready(function () {
     $(infoItemData).addClass("active");
   });
 
-
   // way-to-help
   var wayToHelpItem = $(".way-to-help__list-item");
   var wayToHelpItemContent = $(".way-to-help__item");
@@ -176,19 +175,32 @@ $(document).ready(function () {
     var wayToHelpItemData = "[data-info=" + wayToHelpItemDataValue + "]";
 
     $(wayToHelpItemData).addClass("active");
+  });
+
+  wayToHelpOuter.on("click", function () {
+    wayToHelpOuter.removeClass("active");
+    $(this).addClass("active");
+  });
 
 
-    $(wayToHelpOuter).on("click", function () {
-      if (
-        $(this)
-        .children(".way-to-help__list-item")
-        .hasClass("active")
-      ) {
-        $(this).addClass("active");
-      } else {
-        $(this).removeClass("active");
-      }
-    });
+
+  // history _b POD
+  var historyPodItem = $(".way-to-help__list-item");
+  var historyPodItemContent = $(".owl-item.cloned.active .pod__item");
+  var historyPodItemOuter = $(".way-to-help__list-outer");
+
+  historyPodItem.on("click", function () {
+    console.log(historyPodItemContent);
+    historyPodItem.removeClass("active");
+    historyPodItemContent.removeClass("active");
+
+    var historyPodItemDataValue = $(this).attr("data-info");
+    var historyPodItemData = "[data-info=" + historyPodItemDataValue + "]";
+    $(historyPodItemData).addClass("active");
+  });
+  historyPodItemOuter.on("click", function () {
+    historyPodItemOuter.removeClass("active");
+    $(this).addClass("active");
 
   });
 

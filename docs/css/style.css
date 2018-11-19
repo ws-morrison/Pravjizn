@@ -2343,9 +2343,15 @@ a:focus {
 .pod-item__arrows-thumbs {
   display: none; }
 
+.jsPodItem {
+  display: none; }
+
 .pod__item {
   max-width: 500px;
   margin: 0 auto; }
+
+.jsPodItem.active {
+  display: block; }
 
 .pod__item-wrapper {
   position: relative;
@@ -2547,44 +2553,6 @@ a:focus {
     margin-bottom: 50px; }
     .pod__author--55ow {
       padding-left: 85px; } }
-
-@media (min-width: 1440px) {
-  .pod-item__arrows-thumbs--left {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-image: url("../img/icon/arrows_mini_left.svg");
-    background-repeat: no-repeat;
-    left: -15%;
-    top: 49%;
-    border-radius: 50px;
-    background-position: 50% 45%; }
-    .pod-item__arrows-thumbs--left:hover {
-      border: 1px solid #CCCCCC; }
-    .pod-item__arrows-thumbs--left:focus {
-      border: 1px solid #CCCCCC; }
-    .pod-item__arrows-thumbs--left:active {
-      border: 1px solid #FF482F; }
-  .pod-item__arrows-thumbs--right {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-image: url("../img/icon/arrows_mini_right.svg");
-    background-repeat: no-repeat;
-    right: -135%;
-    top: 49%;
-    border-radius: 50px;
-    background-position: 50% 45%; }
-    .pod-item__arrows-thumbs--right:hover {
-      border: 1px solid #CCCCCC; }
-    .pod-item__arrows-thumbs--right:focus {
-      border: 1px solid #CCCCCC; }
-    .pod-item__arrows-thumbs--right:active {
-      border: 1px solid #FF482F; } }
 
 /* стили только для IE10 и IE11 */
 @media (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: none) and (min-width: 320px) {
