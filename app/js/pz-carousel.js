@@ -85,7 +85,13 @@ $(document).ready(function () {
     items: 1,
     responsiveBaseWidth: "pod__item",
     loop: true,
-    nav: true,
+    nav: false,
     dots: false,
+    margin: 50,
+    responsive: {
+      1440: {
+        nav: true,
+      }
+    }
   });
 });

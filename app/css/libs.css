@@ -442,6 +442,45 @@
   border: 1px solid #FF482F;
 }
 
+/* podSlider */
+.podSlider.owl-theme .owl-nav button.owl-next,
+.podSlider.owl-theme .owl-nav button.owl-prev {
+  position: absolute;
+  top: 240px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  font-size: 0
+}
+
+.podSlider.owl-theme .owl-nav button.owl-prev {
+  left: 0;
+  background-image: url(../img/icon/arrows_mini_left.svg);
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+  background-position: 50% 45%;
+}
+
+.podSlider.owl-theme .owl-nav button.owl-next {
+  right: 0;
+  background-image: url(../img/icon/arrows_mini_right.svg);
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  background-position: 50% 45%
+}
+
+.podSlider.owl-theme .owl-nav button.owl-next:focus,
+.podSlider.owl-theme .owl-nav button.owl-next:hover,
+.podSlider.owl-theme .owl-nav button.owl-prev:focus,
+.podSlider.owl-theme .owl-nav button.owl-prev:hover {
+  border: 1px solid #ccc
+}
+
+.podSlider.owl-theme .owl-nav button.owl-next:active,
+.podSlider.owl-theme .owl-nav button.owl-prev:active {
+  border: 1px solid #ff482f
+}
 
 /* Select 2 */
 .select2-container {
