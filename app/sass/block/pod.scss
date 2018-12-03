@@ -35,7 +35,11 @@
   }
 
   &__author-heading {
-    margin-bottom: 5px;
+    font-family: $primary-medium;
+    font-size: $font-size-xl;
+    color: $primary-text;
+    line-height: 30px;
+    // margin-bottom: 5px;
   }
 
   &--grey-bg {
@@ -323,6 +327,9 @@
   .pod__author {
     &--narrow {
       padding-left: 85px;
+    }
+    &--align-right {
+      margin-left: 220px;
     }
   }
 

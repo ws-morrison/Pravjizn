@@ -384,7 +384,94 @@
   border: 1px solid #ff482f
 }
 
-/* podSlider */
+
+/* Shop icons arrows */
+.shop-icons__carousel.owl-theme .owl-nav button.owl-prev {
+  left: -90px;
+  background-image: url(../img/icon/arrows_mini_left.svg);
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+  background-position: 50% 45%;
+}
+
+.shop-icons__carousel.owl-theme .owl-nav button.owl-next,
+.shop-icons__carousel.owl-theme .owl-nav button.owl-prev {
+  position: absolute;
+  top: 36%;
+  display: block;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+
+}
+
+.shop-icons__carousel.owl-theme .owl-nav button.owl-next {
+  right: -90px;
+  background-image: url(../img/icon/arrows_mini_right.svg);
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+  background-position: 50% 45%;
+}
+
+.shop-icons__carousel.owl-theme .owl-nav button.owl-prev:focus,
+.shop-icons__carousel.owl-theme .owl-nav button.owl-next:focus,
+.shop-icons__carousel.owl-theme .owl-nav button.owl-prev:hover,
+.shop-icons__carousel.owl-theme .owl-nav button.owl-next:hover {
+  border: 1px solid #CCCCCC;
+}
+
+.shop-icons__carousel.owl-theme .owl-nav button.owl-prev:active,
+.shop-icons__carousel.owl-theme .owl-nav button.owl-next:active {
+  border: 1px solid #FF482F;
+}
+
+
+/* Shop  mini-icons arrows */
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-prev {
+  left: -90px;
+  background-image: url(../img/icon/arrows_mini_left.svg);
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+  background-position: 50% 45%;
+}
+
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-next,
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-prev {
+  position: absolute;
+  top: 25%;
+  display: block;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+
+}
+
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-next {
+  right: -90px;
+  background-image: url(../img/icon/arrows_mini_right.svg);
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+  background-position: 50% 45%;
+}
+
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-prev:focus,
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-next:focus,
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-prev:hover,
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-next:hover {
+  border: 1px solid #CCCCCC;
+}
+
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-prev:active,
+.shop-icons__small-carousel.owl-theme .owl-nav button.owl-next:active {
+  border: 1px solid #FF482F;
+}
+
+
+
 .podSlider.owl-theme .owl-nav button.owl-next,
 .podSlider.owl-theme .owl-nav button.owl-prev {
   position: absolute;
@@ -399,9 +486,8 @@
   left: 0;
   background-image: url(../img/icon/arrows_mini_left.svg);
   background-repeat: no-repeat;
-
   border-radius: 50px;
-  background-position: 50% 45%;
+  background-position: 50% 45%
 }
 
 .podSlider.owl-theme .owl-nav button.owl-next {
@@ -1058,7 +1144,7 @@
   display: none
 }
 
-,
+
 .select2-container--default.select2-container--focus .select2-selection--multiple,
 .select2-container--default .select2-search--dropdown .select2-search__field,
 .select2-container--default .select2-selection--multiple,

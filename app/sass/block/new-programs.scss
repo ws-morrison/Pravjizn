@@ -1,0 +1,142 @@
+.new-programs {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  // overflow: hidden;
+
+  @include author-heading-text($primary-text);
+
+  @include title-text($faded, $primary-text);
+
+  &__title {
+    align-items: center;
+    margin-bottom: 25px;
+
+  }
+
+  &__title-text {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+    &--big {
+      margin-bottom: 0;
+    }
+
+    &--narrow {
+      width: 80%;
+    }
+  }
+
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    max-width: 1260px;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    position: relative;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+
+    width: 320px;
+    min-height: 583px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-repeat: no-repeat;
+    background-size: 585px 583px;
+    background-position: 0 0;
+
+    &--pray {
+      background-image: url("../../img/moleben.jpg");
+    }
+
+    &--candle {
+      background-image: url("../../img/candle.jpg");
+    }
+  }
+
+  &__item-icon--orange:before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../../img/icon/main_logo-dark-orange.svg");
+  }
+    &__item-icon--green:before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: -40px;
+      left: 40px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("../../img/icon/main_logo-green.svg");
+    }
+
+  &__text-wrapper {
+    text-align: center;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    color: $white;
+
+    font-family: $secondary-regular;
+    font-size: $font-size-m;
+    line-height: 24px;
+
+    margin-bottom: 30px;
+
+    &--big {
+      font-family: $primary-medium;
+      font-size: $font-size-xl;
+      color: #FFFFFF;
+      line-height: 26px;
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+
+@media (min-width: $desktop-full) {
+  .new-programs {
+    padding-bottom: 0;
+
+    &__item {
+      width: 585px;
+
+      &:nth-child(1) {
+        margin-right: 18px;
+      }
+
+      &:nth-child(2) {
+        margin-left: 18px;
+      }
+    }
+  }
+}

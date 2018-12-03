@@ -1,3 +1,10 @@
+.programs {
+  &__new-programs {
+    // padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .program-item {
   max-width: 1440px;
   margin: 0 auto;
@@ -15,6 +22,14 @@
   &--sobriety {
     background-image: url("../img/bratstvo_trezvosty.jpg");
   }
+
+  &--pray {
+    background-image: url("../img/moleben.jpg");
+  }
+
+  &--candle {
+    background-image: url("../img/candle.jpg");
+  }
 }
 
 .program__desc {
@@ -22,6 +37,7 @@
   color: $white;
   margin-bottom: 30px;
 }
+
 .program__desc-heading {
   font-family: $primary-medium;
   font-size: $font-size-xl;
@@ -42,8 +58,16 @@
 .programs__container {
   padding: 0 120px;
 }
+
 //DESKTOP
 @media (min-width: $desktop) {
+  .programs {
+    &__new-programs {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
   .programs__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -58,18 +82,21 @@
     position: relative;
     background-repeat: no-repeat;
   }
+
   .container--program-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 90px;
   }
+
   .program__desc-lead {
     display: block;
     width: 280px;
     margin: 0 auto;
     position: relative;
   }
+
   .program__desc-lead--left::after {
     content: "";
     position: absolute;
@@ -80,6 +107,7 @@
     left: -85px;
     bottom: -50px;
   }
+
   .program__desc-lead--right::before {
     content: "";
     position: absolute;
@@ -90,12 +118,15 @@
     right: -85px;
     bottom: -50px;
   }
+
   .program-item:nth-child(1) {
     margin-left: 120px;
   }
+
   .program-item:nth-child(2) {
     margin-right: 120px;
   }
+
   .logo {
     margin-right: 340px;
   }

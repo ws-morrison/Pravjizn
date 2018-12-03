@@ -17,6 +17,48 @@ $(document).ready(function () {
     }
   });
 
+
+  $(".shop-icons__carousel").owlCarousel({
+    // items: 1,
+    loop: true,
+    dots: false,
+    margin: 15,
+    responsiveBaseWidth: ".shop-icons__item",
+    responsive: {
+      320: {
+        items: 1
+      },
+      1024: {
+        items: 2,
+      },
+      1440: {
+        items: 3,
+        nav: true,
+      }
+    }
+  });
+
+  $(".shop-icons__small-carousel").owlCarousel({
+    // items: 1,
+    loop: true,
+    dots: false,
+    margin: 15,
+    responsiveBaseWidth: ".shop-icons__item",
+    responsive: {
+      320: {
+        items: 1
+      },
+      1024: {
+        items: 4,
+      },
+      1440: {
+        items: 5,
+        nav: true
+      }
+    }
+  });
+
+
   $(".history-slider").owlCarousel({
     // items: 1,
     loop: true,

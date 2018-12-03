@@ -1,0 +1,16 @@
+.social-feedback {
+  // padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__content {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social-feedback {
+    // padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

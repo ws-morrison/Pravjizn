@@ -109,7 +109,26 @@
     margin-bottom: 3px;
     margin-left: 8px;
   }
+
+
 }
+
+// .icon__pod-author {
+//   position: relative;
+
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     display: block;
+//     width: 120px;
+//     height: 120px;
+//     background-image: url("../img/church_small.jpg");
+//     background-position: 0 0;
+//     background-size: 100%;
+//     left: -140px;
+//     top: -15px;
+//   }
+// }
 
 @-webkit-keyframes ring {
   0% {
@@ -512,6 +531,24 @@
       // height: 42px;
       // background-image: url("../img/icon/main_logo-dark-orange.svg");
       // background-repeat: no-repeat;
+    }
+  }
+
+
+  .icon__pod-author {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 120px;
+      height: 120px;
+      background-image: url("../img/church_small.jpg");
+      background-position: 0 0;
+      background-size: 100%;
+      left: -140px;
+      top: -15px;
     }
   }
 }

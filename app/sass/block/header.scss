@@ -24,11 +24,42 @@
     background-size: 605px;
   }
 
+  &--remember-bg {
+    margin-bottom: 50px;
+    background-image: url("../../img/church.jpg");
+    background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 1240px;
+    // margin-bottom: 50px;
+  }
+
   &--grey-bg {
     background-color: rgba(236, 236, 229, 0.23);
   }
 
   @include title-text($white, $white);
+
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {}
+
+  &__list-link {
+    text-decoration: none;
+    font-family: $secondary-regular;
+    font-size: $font-size-s;
+    color: $white;
+    line-height: 18px;
+  }
 }
 
 .header__title {
@@ -52,6 +83,10 @@
   align-items: center;
   padding-top: 25px;
   margin-bottom: 33px;
+
+  &--wide {
+    justify-content: space-between;
+  }
 }
 
 .header__logo-wrapper {
@@ -172,6 +207,19 @@
       background-position-y: 0;
       background-size: 1440px;
       margin-bottom: 50px;
+    }
+
+    &--remember {
+      margin-bottom: 120px;
+    }
+
+    &__list-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 372px;
+      justify-content: space-between;
+      align-items: flex-start;
+      order: 3;
     }
   }
 

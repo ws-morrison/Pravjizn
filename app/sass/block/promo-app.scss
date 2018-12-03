@@ -1,14 +1,48 @@
 .promo-app {
   padding-top: 30px;
-}
-  .promo-app--right {
-    display: none;
+
+  &__main {
+    display: flex;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 19.6px;
+      background-image: url("../../img/apple_mini-white.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100%;
+      left: -10px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 19.6px;
+      background-image: url("../../img/google_mini-white.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100%;
+      top: 25px;
+      left: -10px;
+    }
   }
+}
+
+.promo-app--right {
+  display: none;
+}
 
 .promo-app__heading {
   font-family: $primary-medium;
   font-size: $font-size-l;
   color: $primary-text;
+
   &--white-text {
     color: $white;
   }
@@ -21,9 +55,12 @@
   padding: 0;
   margin: 0;
 
+  text-decoration: none;
+
   &--white-text {
     color: $white;
   }
+
   &--small {
     font-size: $font-size-2xs;
     line-height: 14px;
@@ -35,6 +72,7 @@
   position: relative;
   margin-bottom: 20px;
 }
+
 .phone-thumb::before {
   content: "";
   display: block;
@@ -45,6 +83,7 @@
   background-repeat: no-repeat;
   top: 0;
   left: -10px;
+
   &--white {
     background-image: url("../img/phone_mini-white.svg");
   }
@@ -68,30 +107,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &--margin-bottom {
     margin-bottom: 30px;
   }
+
   &--header {
     margin: 0;
     padding-left: 20px;
   }
 }
+
 .promo-app__logos-link {
   display: block;
   width: 22px;
   height: 27px;
   align-self: center;
   background-repeat: no-repeat;
+
   &--appstore {
     background-image: url("../img/apple_mini.svg");
   }
+
   &--playstore {
     background-image: url("../img/google_mini.svg");
     align-self: flex-end;
   }
+
   &--appstore-white {
     background-image: url("../img/apple_mini-white.svg");
   }
+
   &--playstore-white {
     background-image: url("../img/google_mini-white.svg");
     align-self: flex-end;
@@ -106,10 +152,12 @@
 
   .promo-app__logos {
     display: none;
+
     &--margin-left {
       margin-left: 20px;
     }
   }
+
   .promo-app--order {
     margin: 0;
     padding: 0;
@@ -117,6 +165,7 @@
     margin-right: auto;
     margin-left: 40px;
   }
+
   .promo-app--right {
     display: block;
     margin-right: unset;
@@ -139,6 +188,7 @@
   .promo-app__text .promo-app__text--small .promo-app__text--white-text {
     margin: 0px;
   }
+
   .promo-app__logos--desktop {
     width: 75px;
     min-height: 35px;
